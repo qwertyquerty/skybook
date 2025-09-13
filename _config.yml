@@ -3,6 +3,8 @@ theme: jekyll-theme-chirpy
 
 lang: en
 
+safe: true
+
 timezone:
 
 title: Skybook
@@ -93,7 +95,7 @@ assets:
     enabled: false
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: false # The option for PWA feature (installable)
   cache:
     enabled: false # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
