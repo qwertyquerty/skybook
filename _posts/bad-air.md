@@ -4,10 +4,11 @@ title: Bad Air
 description: Why Link gets bad air
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch]
+tags: [glitch, minor]
 pin: true
 math: true
 mermaid: true
+date: 2025-09-12 00:00:00
 ---
 
 Bad air is a glitch that *Twilight Princess* speedrunners often caution about. If Link goes underwater and resurfaces before the air meter appears, it'll appear much sooner the next time he goes underwater, effectively giving him less air. But why does this happen?

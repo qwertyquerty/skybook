@@ -4,10 +4,11 @@ title: Mistargeted DMA
 description: Executing archive files as program code
 author: wolfegarden
 categories: [Glitches]
-tags: [glitch, ACE, unsolved]
+tags: [glitch, ACE, unsolved, major]
 pin: true
 math: true
 mermaid: true
+date: 2025-09-12 00:00:00
 ---
 
 ## The Glitch

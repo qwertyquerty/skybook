@@ -8,6 +8,7 @@ tags: [reference, RNG]
 pin: true
 math: true
 mermaid: true
+date: 2025-09-12 00:00:00
 ---
 
 Almost all random number generation in *Twilight Princess* is done with the following functions from `SSystem/SComponent/c_math.cpp`

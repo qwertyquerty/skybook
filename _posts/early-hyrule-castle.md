@@ -8,6 +8,7 @@ tags: [theory, EHC, unsolved]
 pin: true
 math: true
 mermaid: true
+date: 2025-09-12 00:00:00
 ---
 
 Early Hyrule Castle (EHC), or Barrier Skip, is a theoretical sequence break which would involve getting to Hyrule Castle before defeating Zant. Depending on what would be required for the sequence break, it could allow skipping as much as the second half of Lakebed Temple, and all of Snowpeak Ruins, Arbiter's Grounds, City in the Sky, and Palace of Twilight. It has yet to be solved, but it would be a major skip that would likely save a lot of time (potentially over an hour) in categories such as Any% if a method was discovered. Because of how massive of a sequence break this would be, this trick has been sought out relentlessly for decades by many different players, ever since the game's release. The purpose of this page is to document all of the various avenues that have been searched, so that an interested glitch hunter can get caught up to pace with what has already been tried.

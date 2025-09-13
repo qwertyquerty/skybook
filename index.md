@@ -5,4 +5,4 @@ layout: page
 
 # Skybook
 
-> A technical documentation of Twilight Princess glitches
+> A technical documentation of Twilight Princess glitches, theory, and mechanics

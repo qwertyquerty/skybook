@@ -8,6 +8,7 @@ tags: [theory, EHC, actor-corruption]
 pin: true
 math: true
 mermaid: true
+date: 2025-09-12 00:00:00
 ---
 
 No glitch in _Twilight Princess_ has been hunted more than Early Hyrule Castle. If found, a way to get
