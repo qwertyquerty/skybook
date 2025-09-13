@@ -3,8 +3,8 @@ layout: post
 title: Mistargeted DMA
 description: Executing archive files as program code
 author: wolfegarden
-categories: [Techniques]
-tags: [technique, ACE, unsolved]
+categories: [Glitches]
+tags: [glitch, ACE, unsolved]
 pin: true
 math: true
 mermaid: true
