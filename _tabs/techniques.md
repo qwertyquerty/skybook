@@ -1,6 +1,7 @@
 ---
+layout: category
 title: Techniques
-icon: fas fa-box
+icon: fas fa-wrench
 order: 1
-url: /categories/techniques
+override_url: /categories/techniques/
 ---

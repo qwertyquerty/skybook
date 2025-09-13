@@ -1,6 +1,7 @@
 ---
+layout: category
 title: Theory
-icon: fas fa-box
+icon: fas fa-file
 order: 2
-url: /categories/theory
+override_url: /categories/theory/
 ---
