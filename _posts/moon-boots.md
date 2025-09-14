@@ -8,7 +8,7 @@ tags: [glitch]
 pin: true
 math: true
 mermaid: true
-date: 2025-09-13 00:00:00
+date: 2025-09-14 00:00:00
 ---
 
 ## How it works
