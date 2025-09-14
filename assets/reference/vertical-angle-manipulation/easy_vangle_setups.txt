@@ -1,0 +1,3064 @@
+-13000: top
+-12488: top c+a 2fu 3fu
+-11976: top 2fd
+-11464: top 3fd
+-10952: top c+a 2fu
+-10518: top 2fd c+a 3fu
+-10440: top 2fd 3fd
+-10134: top 3fd c+a 3fu
+-10006: top 2fd c+a 2fu
+-9928: top c+a
+-9750: top c+a 2fu c+a 3fu
+-9622: top 3fd c+a 2fu
+-9494: top c+a c+a 2fu 2fu
+-9416: top c+a 2fu 3fd
+-9238: top c+a 2fu c+a 2fu
+-8982: top c+a c+a 3fu
+-8904: top c+a 2fd
+-8657: top c+a c+a c+a 3fu 3fu
+-8598: top 3fd c+a
+-8470: top c+a c+a 2fu
+-8392: top c+a 3fd
+-8273: top 2fd c+a c+a 3fu
+-8214: top c+a 2fd c+a 3fu
+-8145: top c+a c+a c+a 2fu 3fu
+-7985: top 3fd c+a c+a 3fu
+-7958: top c+a c+a 2fd 3fu
+-7889: top c+a c+a 2fu c+a 3fu
+-7880: top c+a 2fd 2fd
+-7830: top c+a 3fd c+a 3fu
+-7761: top 2fd c+a c+a 2fu
+-7702: top c+a 2fd c+a 2fu
+-7697: top c+a 2fu c+a c+a 3fu
+-7633: top c+a c+a c+a 2fu 2fu
+-7601: top 3fd c+a 3fu c+a
+-7574: top 3fd c+a 2fd
+-7505: top 2fd c+a 2fu c+a
+-7473: top 3fd c+a c+a 2fu
+-7446: top c+a c+a
+-7377: top c+a c+a 2fu c+a 2fu
+-7368: top c+a 2fd 3fd
+-7318: top c+a 3fd c+a 2fu
+-7313: top c+a 2fu c+a 3fu c+a
+-7261: top c+a c+a c+a c+a 3fu 3fu
+-7217: top 3fd c+a 2fu c+a
+-7190: top c+a 2fu c+a 2fd
+-7185: top c+a 2fu c+a c+a 2fu
+-7121: top c+a c+a c+a 3fu
+-7062: top 3fd c+a 3fd
+-6934: top c+a c+a 2fu 3fd
+-6929: top c+a 2fu c+a 2fu c+a
+-6877: top c+a c+a c+a 3fu c+a 3fu
+-6856: top c+a 3fd 3fd
+-6749: top c+a c+a c+a c+a 2fu 3fu
+-6737: top 2fd c+a c+a
+-6678: top c+a 2fd c+a
+-6609: top c+a c+a c+a 2fu
+-6589: top 2fd c+a c+a c+a 3fu
+-6545: top c+a 2fd c+a c+a 3fu
+-6493: top c+a c+a c+a 2fu c+a 3fu
+-6449: top 3fd c+a c+a
+-6422: top c+a c+a 2fd
+-6373: top 3fd c+a c+a c+a 3fu
+-6365: top c+a c+a c+a 3fu c+a 2fu
+-6353: top c+a c+a 2fd c+a 3fu
+-6301: top c+a c+a 2fu c+a c+a 3fu
+-6294: top c+a 3fd c+a
+-6257: top c+a 3fd c+a c+a 3fu
+-6237: top c+a c+a c+a c+a 2fu 2fu
+-6214: top c+a c+a c+a c+a c+a 3fu 3fu
+-6205: top 2fd c+a c+a 3fu c+a
+-6161: top c+a 2fu c+a c+a
+-6157: top c+a 2fu c+a c+a c+a 3fu
+-6109: top c+a c+a c+a 2fu 3fu c+a
+-6097: top c+a c+a c+a 2fd 3fu
+-6077: top 2fd c+a c+a c+a 2fu
+-6033: top c+a 2fd c+a c+a 2fu
+-5989: top 3fd c+a c+a 3fu c+a
+-5981: top c+a c+a c+a 2fu c+a 2fu
+-5969: top c+a c+a 3fd c+a 3fu
+-5917: top c+a c+a 2fu c+a 3fu c+a
+-5910: top c+a c+a 3fd
+-5873: top 2fd 3fd c+a c+a
+-5861: top 3fd c+a c+a c+a 2fu
+-5841: top c+a c+a 2fd c+a 2fu
+-5830: top c+a c+a c+a c+a 3fu c+a 3fu
+-5821: top 2fd c+a c+a 2fu c+a
+-5789: top c+a c+a 2fu c+a c+a 2fu
+-5777: top c+a 2fd c+a 2fu c+a
+-5773: top c+a 2fu c+a c+a 3fu c+a
+-5745: top c+a 3fd c+a c+a 2fu
+-5725: top c+a c+a c+a c+a 3fu
+-5713: top 2fd c+a c+a 2fd
+-5702: top c+a c+a c+a c+a c+a 2fu 3fu
+-5701: top 3fd c+a 3fu c+a c+a
+-5681: top 3fd c+a 2fd c+a
+-5654: top c+a 2fd c+a 2fd
+-5645: top c+a 2fu c+a c+a c+a 2fu
+-5629: top 2fd c+a 2fu c+a c+a
+-5605: top 3fd c+a c+a 2fu c+a
+-5585: top c+a c+a c+a
+-5542: top c+a c+a c+a 3fu c+a c+a 3fu
+-5533: top c+a c+a 2fu c+a 2fu c+a
+-5526: top c+a 2fd 3fd c+a
+-5489: top c+a 3fd c+a 2fu c+a
+-5485: top c+a 2fu c+a 3fu c+a c+a
+-5457: top c+a c+a 3fd c+a 2fu
+-5446: top c+a c+a c+a c+a 2fu c+a 3fu
+-5429: top c+a c+a c+a c+a c+a c+a 3fu 3fu
+-5425: top 3fd c+a c+a 2fd
+-5413: top 3fd c+a 2fu c+a c+a
+-5398: top c+a c+a 2fd 2fd
+-5393: top c+a 2fu c+a 2fd c+a
+-5389: top c+a 2fu c+a c+a 2fu c+a
+-5341: top c+a c+a c+a 3fu c+a
+-5329: top c+a c+a 2fu c+a 2fd
+-5326: top 2fd c+a c+a c+a c+a 3fu
+-5318: top c+a c+a c+a c+a 3fu c+a 2fu
+-5297: top 3fd c+a 3fd c+a
+-5293: top c+a 2fd c+a c+a c+a 3fu
+-5270: top c+a 3fd c+a 2fd
+-5254: top c+a c+a c+a 2fu c+a c+a 3fu
+-5213: top c+a c+a c+a c+a 2fu
+-5201: top 2fd c+a c+a 3fd
+-5197: top c+a 2fu c+a 2fu c+a c+a
+-5190: top c+a c+a c+a c+a c+a 2fu 2fu
+-5164: top 3fd c+a c+a c+a c+a 3fu
+-5158: top c+a c+a c+a 3fu c+a 3fu c+a
+-5149: top c+a c+a 2fd c+a c+a 3fu
+-5142: top c+a 2fd c+a 3fd
+-5137: top c+a 2fu c+a c+a 2fd
+-5110: top c+a c+a 2fu c+a c+a c+a 3fu
+-5077: top c+a 3fd c+a c+a c+a 3fu
+-5073: top c+a c+a c+a 2fu 3fd
+-5062: top c+a c+a c+a c+a 2fu 3fu c+a
+-5053: top 2fd c+a c+a c+a
+-5045: top c+a c+a c+a c+a c+a 3fu c+a 3fu
+-5030: top c+a c+a c+a 3fu c+a c+a 2fu
+-5009: top c+a 2fd c+a c+a
+-5002: top c+a 2fu c+a c+a c+a c+a 3fu
+-4957: top c+a c+a c+a 2fu c+a
+-4942: top 2fd c+a c+a c+a 3fu c+a
+-4934: top c+a c+a c+a c+a 2fu c+a 2fu
+-4917: top c+a c+a c+a c+a c+a c+a 2fu 3fu
+-4913: top 3fd c+a c+a 3fd
+-4909: top c+a 2fd c+a c+a 3fu c+a
+-4886: top c+a c+a 2fd 3fd
+-4870: top c+a c+a c+a 2fu c+a 3fu c+a
+-4861: top c+a c+a 3fd c+a c+a 3fu
+-4840: top c+a c+a c+a c+a c+a c+a c+a 3fu 3fu
+-4837: top 3fd c+a c+a c+a
+-4817: top c+a c+a 2fd c+a
+-4814: top 2fd c+a c+a c+a c+a 2fu
+-4781: top c+a 2fd c+a c+a c+a 2fu
+-4780: top 3fd c+a c+a c+a 3fu c+a
+-4774: top c+a c+a c+a 3fu c+a 2fu c+a
+-4765: top c+a c+a 2fu c+a c+a
+-4758: top c+a 3fd c+a 3fd
+-4757: top c+a c+a c+a c+a 3fu c+a c+a 3fu
+-4742: top c+a c+a c+a 2fu c+a c+a 2fu
+-4726: top c+a c+a 2fu c+a c+a 3fu c+a
+-4721: top c+a 3fd c+a c+a
+-4701: top c+a c+a c+a c+a 2fd 3fu
+-4693: top c+a 3fd c+a c+a 3fu c+a
+-4678: top c+a c+a c+a c+a c+a 3fu
+-4661: top c+a c+a c+a c+a c+a 2fu c+a 3fu
+-4654: top 2fd c+a c+a 3fu c+a c+a
+-4652: top 3fd c+a c+a c+a c+a 2fu
+-4637: top c+a c+a 2fd c+a c+a 2fu
+-4625: top c+a 2fu c+a c+a 3fd
+-4621: top c+a 2fu c+a c+a c+a
+-4618: top c+a 2fu c+a c+a c+a 3fu c+a
+-4598: top c+a c+a 2fu c+a c+a c+a 2fu
+-4582: top c+a c+a c+a 2fu 3fu c+a c+a
+-4573: top c+a c+a c+a 3fd c+a 3fu
+-4565: top c+a 3fd c+a c+a c+a 2fu
+-4561: top c+a c+a c+a 2fd
+-4558: top 2fd c+a c+a c+a 2fu c+a
+-4541: top c+a c+a c+a 3fu c+a c+a c+a 3fu
+-4533: top c+a c+a c+a c+a c+a 3fu c+a 2fu
+-4525: top c+a 2fd c+a c+a 2fu c+a
+-4492: top 3fd c+a c+a 3fu c+a c+a
+-4490: top c+a 2fu c+a c+a c+a c+a 2fu
+-4486: top c+a c+a c+a 2fu c+a 2fu c+a
+-4477: top 2fd c+a 2fd c+a c+a
+-4469: top c+a c+a c+a c+a 2fu c+a c+a 3fu
+-4456: top c+a c+a c+a c+a c+a c+a 3fu c+a 3fu
+-4445: top c+a c+a c+a 2fd c+a 2fu
+-4438: top c+a c+a 2fu c+a 3fu c+a c+a
+-4433: top c+a c+a 3fd c+a
+-4405: top c+a c+a c+a c+a c+a c+a 2fu 2fu
+-4396: top 3fd c+a c+a c+a 2fu c+a
+-4381: top c+a c+a 2fd c+a 2fu c+a
+-4379: top 2fd c+a c+a c+a c+a c+a 3fu
+-4374: top c+a c+a 3fd 3fd
+-4373: top c+a c+a c+a c+a 3fu c+a 3fu c+a
+-4366: top 2fd c+a c+a 2fu c+a c+a
+-4354: top c+a 2fd c+a c+a c+a c+a 3fu
+-4349: top c+a c+a 3fd c+a c+a 2fu
+-4342: top c+a c+a 2fu c+a c+a 2fu c+a
+-4333: top c+a 2fd c+a 2fu c+a c+a
+-4330: top c+a 2fu c+a c+a 3fu c+a c+a
+-4328: top c+a c+a c+a c+a c+a c+a c+a 2fu 3fu
+-4325: top c+a c+a c+a 2fu c+a c+a c+a 3fu
+-4317: top c+a c+a c+a 3fu c+a 2fd
+-4309: top c+a 3fd c+a c+a 2fu c+a
+-4294: top c+a c+a c+a c+a 3fu c+a
+-4285: top 2fd c+a c+a 2fd c+a
+-4277: top c+a c+a c+a c+a c+a 2fu 3fu c+a
+-4276: top 3fd c+a 3fu c+a c+a c+a
+-4261: top 3fd c+a 2fd c+a c+a
+-4257: top 3fd c+a c+a c+a c+a c+a 3fu
+-4246: top c+a c+a 2fd c+a c+a c+a 3fu
+-4245: top c+a c+a c+a c+a 3fu c+a c+a 2fu
+-4241: top c+a 2fd c+a 2fd c+a
+-4234: top c+a 2fu c+a c+a c+a 2fu c+a
+-4222: top 2fd c+a 2fu c+a c+a c+a
+-4217: top c+a c+a 2fu c+a c+a c+a c+a 3fu
+-4204: top 3fd c+a c+a 2fu c+a c+a
+-4192: top c+a 3fd c+a c+a c+a c+a 3fu
+-4189: top c+a c+a c+a c+a
+-4168: top c+a c+a c+a c+a c+a 3fu c+a c+a 3fu
+-4166: top c+a c+a c+a c+a c+a 2fu
+-4157: top c+a c+a c+a 3fu c+a c+a 3fu c+a
+-4150: top c+a c+a 2fu c+a 2fu c+a c+a
+-4149: top c+a c+a c+a c+a c+a 2fu c+a 2fu
+-4145: top c+a 2fd 3fd c+a c+a
+-4136: top c+a 2fu c+a c+a c+a c+a c+a 3fu
+-4117: top c+a 3fd c+a 2fu c+a c+a
+-4114: top c+a 2fu c+a 3fu c+a c+a c+a
+-4102: top c+a c+a c+a 2fd c+a c+a 3fu
+-4093: top c+a c+a 3fd c+a 2fu c+a
+-4085: top c+a c+a c+a c+a 2fu c+a 3fu c+a
+-4072: top c+a c+a c+a c+a c+a c+a 2fu c+a 3fu
+-4069: top 3fd c+a c+a 2fd c+a
+-4061: top c+a c+a c+a 3fd c+a 2fu
+-4060: top 3fd c+a 2fu c+a c+a c+a
+-4049: top c+a c+a c+a 3fd
+-4045: top c+a 2fu c+a 2fd c+a c+a
+-4042: top c+a 2fu c+a c+a 2fu c+a c+a
+-4030: top c+a c+a 3fd c+a c+a c+a 3fu
+-4029: top 2fd c+a c+a c+a 2fd
+-4006: top c+a c+a c+a 3fu c+a c+a
+-3997: top c+a c+a 2fu c+a 2fd c+a
+-3995: top 2fd c+a c+a c+a c+a 3fu c+a
+-3989: top c+a c+a c+a c+a 3fu c+a 2fu c+a
+-3985: top c+a 2fd c+a c+a 2fd
+-3973: top c+a 2fu 3fd c+a c+a c+a
+-3970: top c+a 2fd c+a c+a c+a 3fu c+a
+-3957: top c+a c+a c+a c+a 2fu c+a c+a 2fu
+-3953: top c+a 3fd c+a 2fd c+a
+-3952: top c+a c+a c+a c+a 3fu c+a c+a c+a 3fu
+-3944: top c+a c+a c+a c+a c+a c+a 3fu c+a 2fu
+-3941: top c+a c+a c+a 2fu c+a c+a 3fu c+a
+-3933: top c+a c+a c+a 2fu c+a 2fd
+-3910: top c+a c+a c+a c+a 2fu c+a
+-3901: top 2fd c+a c+a 3fd c+a
+-3898: top c+a 2fu c+a 2fu c+a c+a c+a
+-3893: top c+a c+a c+a c+a c+a c+a 3fu
+-3886: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu 3fu
+-3880: top c+a c+a c+a c+a c+a 2fu c+a c+a 3fu
+-3873: top 3fd c+a c+a c+a c+a 3fu c+a
+-3869: top c+a c+a c+a 3fu c+a 3fu c+a c+a
+-3867: top 2fd c+a c+a c+a c+a c+a 2fu
+-3862: top c+a c+a 2fd c+a c+a 3fu c+a
+-3857: top c+a 2fd c+a 3fd c+a
+-3853: top c+a 2fu c+a c+a 2fd c+a
+-3842: top c+a 2fd c+a c+a c+a c+a 2fu
+-3833: top c+a c+a 2fu c+a c+a c+a 3fu c+a
+-3816: top c+a c+a c+a c+a c+a c+a c+a 2fu 2fu
+-3814: top c+a c+a c+a 3fd c+a c+a 3fu
+-3813: top 3fd c+a c+a c+a 2fd
+-3808: top c+a 3fd c+a c+a c+a 3fu c+a
+-3805: top c+a c+a c+a 3fu c+a 3fd
+-3797: top c+a c+a c+a c+a 2fu 3fu c+a c+a
+-3793: top c+a c+a 2fd c+a 2fd
+-3790: top 2fd c+a c+a c+a c+a
+-3784: top c+a c+a c+a c+a c+a 3fu c+a 3fu c+a
+-3773: top c+a c+a c+a 3fu c+a c+a 2fu c+a
+-3757: top c+a 2fd c+a c+a c+a
+-3752: top c+a 2fu c+a c+a c+a c+a 3fu c+a
+-3745: top 3fd c+a c+a c+a c+a c+a 2fu
+-3741: top c+a c+a 2fu c+a c+a 2fd
+-3736: top c+a c+a c+a c+a 2fu c+a c+a c+a 3fu
+-3734: top c+a c+a 2fd c+a c+a c+a 2fu
+-3718: top c+a c+a c+a 2fu c+a c+a
+-3707: top 2fd c+a c+a c+a 3fu c+a c+a
+-3705: top c+a c+a 2fu c+a c+a c+a c+a 2fu
+-3701: top c+a c+a c+a c+a 2fu c+a 2fu c+a
+-3697: top c+a 3fd c+a c+a 2fd
+-3688: top c+a c+a c+a c+a c+a c+a 2fu 3fu c+a
+-3685: top 3fd c+a c+a 3fd c+a
+-3682: top c+a 2fd c+a c+a 3fu c+a c+a
+-3680: top c+a 3fd c+a c+a c+a c+a 2fu
+-3677: top c+a c+a c+a c+a 2fu 3fd
+-3669: top 2fd c+a c+a c+a c+a c+a c+a 3fu
+-3665: top c+a c+a 2fd 3fd c+a
+-3656: top c+a c+a c+a c+a c+a 3fu c+a c+a 2fu
+-3654: top c+a c+a c+a c+a c+a 2fd 3fu
+-3653: top c+a c+a c+a 2fu c+a 3fu c+a c+a
+-3650: top c+a 2fd c+a c+a c+a c+a c+a 3fu
+-3646: top c+a c+a 3fd c+a c+a 3fu c+a
+-3630: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a 3fu
+-3628: top 3fd c+a c+a c+a c+a
+-3624: top c+a 2fu c+a c+a c+a c+a c+a 2fu
+-3613: top c+a c+a 2fd c+a c+a
+-3611: top 2fd c+a c+a c+a c+a 2fu c+a
+-3597: top c+a 2fu c+a c+a c+a 2fd
+-3590: top c+a c+a c+a 2fd c+a c+a 2fu
+-3586: top c+a 2fd c+a c+a c+a 2fu c+a
+-3585: top 3fd c+a c+a c+a 3fu c+a c+a
+-3581: top c+a c+a c+a 3fu c+a 2fu c+a c+a
+-3577: top 3fd c+a c+a c+a c+a c+a c+a 3fu
+-3574: top c+a c+a 2fu c+a c+a c+a
+-3569: top c+a c+a 2fd c+a c+a c+a c+a 3fu
+-3568: top c+a c+a c+a c+a 3fu c+a c+a 3fu c+a
+-3560: top c+a c+a c+a c+a c+a c+a 2fu c+a 2fu
+-3557: top c+a c+a c+a 2fu c+a c+a 2fu c+a
+-3547: top c+a c+a 2fu c+a c+a c+a c+a c+a 3fu
+-3545: top c+a c+a 2fu c+a c+a 3fu c+a c+a
+-3541: top c+a 3fd c+a c+a c+a
+-3537: top c+a c+a c+a 2fd 2fd
+-3528: top c+a 3fd c+a c+a c+a c+a c+a 3fu
+-3526: top c+a c+a c+a c+a 3fd c+a 3fu
+-3520: top c+a 3fd c+a c+a 3fu c+a c+a
+-3518: top c+a c+a 3fd c+a c+a c+a 2fu
+-3517: top 2fd c+a c+a c+a 3fd
+-3509: top c+a c+a c+a c+a c+a 3fu c+a
+-3502: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a 2fu
+-3496: top c+a c+a c+a c+a c+a 2fu c+a 3fu c+a
+-3491: top 2fd c+a c+a 3fu c+a c+a c+a
+-3489: top 3fd c+a c+a c+a c+a 2fu c+a
+-3486: top c+a 2fu c+a c+a c+a c+a c+a c+a 3fu
+-3478: top c+a c+a 2fd c+a c+a 2fu c+a
+-3473: top c+a 2fd c+a c+a 3fd
+-3469: top c+a 2fu c+a c+a 3fd c+a
+-3466: top c+a 2fu c+a c+a c+a c+a
+-3464: top c+a 2fu c+a c+a c+a 3fu c+a c+a
+-3461: top c+a c+a c+a 2fd c+a c+a c+a 3fu
+-3449: top c+a c+a 2fu c+a c+a c+a 2fu c+a
+-3440: top c+a c+a c+a c+a 3fu c+a c+a c+a 2fu
+-3438: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a 3fu
+-3437: top c+a c+a c+a 2fu 3fu c+a c+a c+a
+-3430: top c+a c+a c+a 2fd 3fu c+a c+a
+-3424: top c+a 3fd c+a c+a c+a 2fu c+a
+-3421: top c+a c+a c+a 2fd c+a
+-3419: top 2fd c+a c+a c+a 2fu c+a c+a
+-3409: top c+a c+a 3fd c+a 2fd
+-3407: top c+a c+a 3fd c+a c+a c+a c+a 3fu
+-3406: top c+a c+a c+a 3fu c+a c+a c+a 3fu c+a
+-3400: top c+a c+a c+a c+a c+a 3fu c+a 2fu c+a
+-3398: top c+a c+a c+a c+a 2fd c+a 2fu
+-3394: top c+a 2fd c+a c+a 2fu c+a c+a
+-3381: top c+a c+a c+a c+a c+a c+a 2fu
+-3374: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu 2fu
+-3369: top 3fd c+a c+a 3fu c+a c+a c+a
+-3368: top c+a c+a c+a c+a c+a 2fu c+a c+a 2fu
+-3365: top c+a c+a c+a 2fu c+a 2fu c+a c+a
+-3358: top 2fd c+a 2fd c+a c+a c+a
+-3352: top c+a c+a c+a c+a 2fu c+a c+a 3fu c+a
+-3334: top c+a c+a c+a 2fd c+a 2fu c+a
+-3329: top 2fd c+a 3fu c+a c+a c+a c+a
+-3325: top c+a c+a 3fd c+a c+a
+-3317: top c+a c+a c+a c+a 2fd c+a c+a 3fu
+-3304: top c+a c+a c+a c+a c+a c+a c+a 3fu
+-3302: top c+a c+a c+a 3fd c+a c+a 2fu
+-3301: top 3fd c+a c+a c+a 3fd
+-3297: top 3fd c+a c+a c+a 2fu c+a c+a
+-3294: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 3fu
+-3286: top c+a c+a 2fd c+a 2fu c+a c+a
+-3285: top 2fd c+a c+a c+a c+a c+a 3fu c+a
+-3281: top c+a c+a 2fd c+a 3fd
+-3280: top c+a c+a c+a c+a 3fu c+a 3fu c+a c+a
+-3278: top c+a c+a c+a 3fu c+a c+a c+a c+a 2fu
+-3275: top 2fd c+a c+a 2fu c+a c+a c+a
+-3270: top c+a c+a c+a c+a 3fu c+a 2fd
+-3266: top c+a 2fd c+a c+a c+a c+a 3fu c+a
+-3262: top c+a c+a 3fd c+a c+a 2fu c+a
+-3257: top c+a c+a 2fu c+a c+a 2fu c+a c+a
+-3250: top c+a 2fd c+a 2fu c+a c+a c+a
+-3248: top c+a 2fu c+a c+a 3fu c+a c+a c+a
+-3246: top c+a c+a c+a c+a c+a c+a c+a 2fu 3fu c+a
+-3245: top c+a c+a c+a 3fd c+a c+a c+a 3fu
+-3244: top c+a c+a c+a 2fu c+a c+a c+a 3fu c+a
+-3238: top c+a c+a c+a 3fu c+a 2fd c+a
+-3232: top c+a 3fd c+a c+a 2fu c+a c+a
+-3229: top c+a c+a 2fu c+a c+a 3fd
+-3224: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fu
+-3221: top c+a c+a c+a c+a 3fu c+a c+a
+-3214: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a 2fu
+-3208: top c+a c+a c+a c+a c+a 2fu 3fu c+a c+a
+-3207: top 3fd c+a 3fu c+a c+a c+a c+a
+-3196: top 3fd c+a 2fd c+a c+a c+a
+-3193: top 3fd c+a c+a c+a c+a c+a 3fu c+a
+-3186: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 3fu
+-3185: top c+a 3fd c+a c+a 3fd
+-3184: top c+a c+a c+a c+a 3fu c+a c+a 2fu c+a
+-3181: top c+a 2fd c+a 2fd c+a c+a
+-3176: top c+a 2fu c+a c+a c+a 2fu c+a c+a
+-3167: top 2fd c+a 2fu c+a c+a c+a c+a
+-3165: top c+a c+a c+a c+a 2fd
+-3163: top c+a c+a 2fu c+a c+a c+a c+a 3fu c+a
+-3157: top 2fd c+a c+a c+a c+a c+a c+a 2fu
+-3153: top 3fd c+a c+a 2fu c+a c+a c+a
+-3144: top c+a 3fd c+a c+a c+a c+a 3fu c+a
+-3142: top c+a c+a c+a c+a c+a
+-3138: top c+a 2fd c+a c+a c+a c+a c+a 2fu
+-3136: top 2fd c+a c+a c+a c+a c+a c+a c+a 3fu
+-3125: top c+a c+a c+a c+a c+a 2fu c+a
+-3122: top c+a 2fd c+a c+a c+a c+a c+a c+a 3fu
+-3118: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fu
+-3116: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fu
+-3113: top c+a c+a 2fu c+a 2fu c+a c+a c+a
+-3112: top c+a c+a c+a c+a c+a 2fu c+a 2fu c+a
+-3109: top c+a 2fd 3fd c+a c+a c+a
+-3105: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 3fu
+-3102: top c+a 2fu c+a c+a c+a c+a c+a 3fu c+a
+-3088: top c+a 3fd c+a 2fu c+a c+a c+a
+-3086: top c+a 2fu c+a 3fu c+a c+a c+a c+a
+-3085: top c+a 2fu c+a c+a c+a 3fd
+-3077: top c+a c+a c+a 2fd c+a c+a 3fu c+a
+-3072: 3fu 3fu
+-3070: top c+a c+a 3fd c+a 2fu c+a c+a
+-3067: top 3fd c+a c+a c+a c+a c+a c+a c+a 3fu
+-3065: top 3fd c+a c+a c+a c+a c+a c+a 2fu
+-3064: top c+a c+a c+a c+a 2fu c+a 3fu c+a c+a
+-3061: top c+a c+a 2fd c+a c+a c+a c+a c+a 3fu
+-3057: top c+a c+a 2fd c+a c+a c+a c+a 2fu
+-3054: top c+a c+a c+a c+a c+a c+a 2fu c+a 3fu c+a
+-3052: top 3fd c+a c+a 2fd c+a c+a
+-3046: top c+a c+a c+a 3fd c+a 2fu c+a
+-3045: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a 3fu
+-3037: top c+a c+a c+a 3fd c+a
+-3035: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+-3034: top c+a 2fu c+a 2fd c+a c+a c+a
+-3032: top c+a 2fu c+a c+a 2fu c+a c+a c+a
+-3030: top c+a 3fd c+a c+a c+a c+a c+a c+a 3fu
+-3029: top c+a c+a c+a c+a 3fd c+a c+a 3fu
+-3025: top c+a c+a c+a 2fd 3fd
+-3023: top c+a c+a 3fd c+a c+a c+a 3fu c+a
+-3022: top 2fd c+a c+a c+a 2fd c+a
+-3016: top c+a 3fd c+a c+a c+a c+a c+a 2fu
+-3014: top c+a c+a c+a c+a 3fd c+a 2fu
+-3005: top c+a c+a c+a 3fu c+a c+a c+a
+-2999: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a 3fu
+-2998: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a 2fu
+-2997: top 2fd c+a c+a c+a c+a 3fu c+a c+a
+-2992: top c+a c+a c+a c+a 3fu c+a 2fu c+a c+a
+-2990: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu 2fu
+-2989: top c+a 2fd c+a c+a 2fd c+a
+-2982: top c+a c+a c+a 3fu c+a c+a 2fd
+-2980: top c+a c+a c+a 2fd c+a c+a c+a c+a 3fu
+-2978: top c+a 2fd c+a c+a c+a 3fu c+a c+a
+-2974: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fu
+-2968: top c+a c+a c+a c+a 2fu c+a c+a 2fu c+a
+-2965: top c+a 3fd c+a 2fd c+a c+a
+-2958: top c+a c+a c+a c+a c+a c+a 3fu c+a 2fu c+a
+-2956: top c+a c+a c+a 2fu c+a c+a 3fu c+a c+a
+-2950: top c+a c+a c+a 2fu c+a 2fd c+a
+-2949: top c+a c+a c+a 2fd c+a c+a c+a 2fu
+-2940: top c+a c+a 3fd c+a c+a c+a c+a c+a 3fu
+-2933: top c+a c+a c+a c+a 2fu c+a c+a
+-2926: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a 2fu
+-2924: top c+a 2fu c+a 2fu c+a c+a c+a c+a
+-2920: top c+a c+a c+a c+a c+a c+a 3fu c+a
+-2910: top c+a c+a c+a c+a c+a 2fu c+a c+a 3fu c+a
+-2905: top 3fd c+a c+a c+a c+a 3fu c+a c+a
+-2902: top c+a c+a c+a 3fu c+a 3fu c+a c+a c+a
+-2901: top 2fd c+a c+a c+a c+a c+a 2fu c+a
+-2897: top c+a c+a 3fd c+a 3fd
+-2895: top c+a c+a 3fd c+a c+a c+a c+a 2fu
+-2893: top c+a 2fd c+a 3fd c+a c+a
+-2890: top c+a 2fu c+a c+a 2fd c+a c+a
+-2886: top c+a c+a c+a c+a 2fu c+a 2fd
+-2882: top c+a 2fd c+a c+a c+a c+a 2fu c+a
+-2875: top c+a c+a 2fu c+a c+a c+a 3fu c+a c+a
+-2872: top c+a c+a c+a c+a 2fd c+a c+a c+a 3fu
+-2869: top c+a c+a c+a c+a c+a c+a 2fd 3fu
+-2862: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-2861: top c+a c+a c+a 3fd c+a c+a 3fu c+a
+-2860: top 3fd c+a c+a c+a 2fd c+a
+-2856: top c+a 3fd c+a c+a c+a 3fu c+a c+a
+-2854: top c+a c+a c+a 2fu 3fd c+a c+a
+-2848: top c+a c+a c+a c+a 2fu 3fu c+a c+a c+a
+-2845: top c+a c+a 2fd c+a 2fd c+a
+-2843: top 2fd c+a c+a c+a c+a c+a
+-2836: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a 2fu
+-2830: top c+a c+a c+a 3fu c+a c+a 2fu c+a c+a
+-2818: top c+a 2fd c+a c+a c+a c+a
+-2814: top c+a 2fu c+a c+a c+a c+a 3fu c+a c+a
+-2809: top 3fd c+a c+a c+a c+a c+a 2fu c+a
+-2806: top c+a c+a 2fu c+a c+a 2fd c+a
+-2805: top c+a c+a c+a c+a 2fd c+a c+a 2fu
+-2802: top c+a c+a c+a c+a 2fu c+a c+a c+a 3fu c+a
+-2801: top c+a c+a 2fd c+a c+a c+a 2fu c+a
+-2792: top c+a c+a c+a c+a c+a c+a c+a 2fu
+-2789: top c+a c+a c+a 2fu c+a c+a c+a
+-2787: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fu
+-2782: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fu
+-2781: top 2fd c+a c+a c+a 3fu c+a c+a c+a
+-2779: top c+a c+a 2fu c+a c+a c+a c+a 2fu c+a
+-2776: top c+a c+a c+a c+a 2fu c+a 2fu c+a c+a
+-2773: top c+a 3fd c+a c+a 2fd c+a
+-2766: top 2fd c+a c+a c+a c+a 2fd
+-2764: top 3fd c+a c+a 3fd c+a c+a
+-2762: top c+a 2fd c+a c+a 3fu c+a c+a c+a
+-2760: top c+a 3fd c+a c+a c+a c+a 2fu c+a
+-2758: top c+a c+a c+a c+a 3fu c+a 3fd
+-2752: top 2fd c+a c+a c+a c+a c+a c+a 3fu c+a
+-2749: top c+a c+a 2fd 3fd c+a c+a
+-2742: top c+a c+a c+a c+a c+a 3fu c+a c+a 2fu c+a
+-2741: top c+a c+a c+a c+a c+a 3fd c+a 3fu
+-2740: top c+a c+a c+a 2fu c+a 3fu c+a c+a c+a
+-2738: top c+a 2fd c+a c+a c+a c+a c+a 3fu c+a
+-2736: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-2735: top c+a c+a 3fd c+a c+a 3fu c+a c+a
+-2733: top c+a 2fd c+a c+a c+a 2fd
+-2728: top c+a c+a c+a c+a c+a 2fd c+a c+a 3fu
+-2726: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a 3fu
+-2721: top 3fd c+a c+a c+a c+a c+a
+-2718: top c+a 2fu c+a c+a c+a c+a c+a 2fu c+a
+-2715: top c+a c+a c+a 3fu c+a c+a c+a c+a c+a 2fu
+-2710: top c+a c+a 2fd c+a c+a c+a
+-2709: top 2fd c+a c+a c+a c+a 2fu c+a c+a
+-2698: top c+a 2fu c+a c+a c+a 2fd c+a
+-2694: top c+a c+a c+a 2fu c+a c+a 2fd
+-2693: top c+a c+a c+a 2fd c+a c+a 2fu c+a
+-2690: top c+a 2fd c+a c+a c+a 2fu c+a c+a
+-2689: top 3fd c+a c+a c+a 3fu c+a c+a c+a
+-2688: 3fu c+a 3fu
+-2686: top c+a c+a c+a 3fu c+a 2fu c+a c+a c+a
+-2683: top 3fd c+a c+a c+a c+a c+a c+a 3fu c+a
+-2681: top c+a c+a 2fu c+a c+a c+a c+a
+-2677: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a 3fu
+-2674: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fu
+-2670: top c+a c+a c+a c+a c+a c+a 2fu c+a 2fu c+a
+-2668: top c+a c+a c+a 2fu c+a c+a 2fu c+a c+a
+-2661: top c+a c+a 2fu c+a c+a c+a c+a c+a 3fu c+a
+-2659: top c+a c+a 2fu c+a c+a 3fu c+a c+a c+a
+-2656: top c+a 3fd c+a c+a c+a c+a
+-2653: top c+a c+a c+a c+a 3fd
+-2646: top c+a 3fd c+a c+a c+a c+a c+a 3fu c+a
+-2645: top c+a c+a c+a c+a 3fd c+a c+a c+a 3fu
+-2640: top c+a 3fd c+a c+a 3fu c+a c+a c+a
+-2639: top c+a c+a 3fd c+a c+a c+a 2fu c+a
+-2638: top 2fd c+a c+a c+a 3fd c+a
+-2632: top c+a c+a c+a c+a c+a 3fu c+a c+a
+-2630: top c+a c+a c+a c+a c+a 2fu 3fd
+-2624: top 2fd c+a c+a c+a c+a c+a c+a c+a 2fu
+-2622: top c+a c+a c+a c+a c+a 2fu c+a 3fu c+a c+a
+-2619: top 2fd c+a c+a 3fu c+a c+a c+a c+a
+-2617: top 3fd c+a c+a c+a c+a 2fu c+a c+a
+-2615: top c+a 2fu c+a c+a c+a c+a c+a c+a 3fu c+a
+-2613: top c+a c+a c+a c+a c+a 2fd c+a 2fu
+-2610: top c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+-2609: top c+a c+a 2fd c+a c+a 2fu c+a c+a
+-2605: top c+a 2fd c+a c+a 3fd c+a
+-2604: top 3fd c+a c+a c+a c+a 2fd
+-2602: top c+a 2fu c+a c+a 3fd c+a c+a
+-2600: top c+a 2fu c+a c+a c+a c+a c+a
+-2598: top c+a 2fu c+a c+a c+a 3fu c+a c+a c+a
+-2596: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a 3fu
+-2595: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a 2fu
+-2593: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+-2589: top c+a c+a 2fd c+a c+a 2fd
+-2587: top c+a c+a 2fu c+a c+a c+a 2fu c+a c+a
+-2580: top c+a c+a c+a c+a 3fu c+a c+a c+a 2fu c+a
+-2578: top c+a c+a c+a 2fu 3fu c+a c+a c+a c+a
+-2573: top c+a c+a c+a 2fd 3fu c+a c+a c+a
+-2568: top c+a 3fd c+a c+a c+a 2fu c+a c+a
+-2566: top c+a c+a c+a 2fd c+a c+a
+-2565: top 2fd c+a c+a c+a 2fu c+a c+a c+a
+-2560: 2fu 3fu
+-2557: top c+a c+a 3fd c+a 2fd c+a
+-2556: top c+a c+a 3fd c+a c+a c+a c+a 3fu c+a
+-2555: top 3fd c+a c+a c+a c+a c+a c+a c+a 2fu
+-2550: top c+a c+a 2fu c+a c+a c+a 2fd
+-2549: top c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+-2546: top c+a 2fd c+a c+a 2fu c+a c+a c+a
+-2536: top c+a c+a c+a c+a c+a c+a 2fu c+a
+-2533: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fu
+-2531: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu 2fu c+a
+-2527: top 3fd c+a c+a 3fu c+a c+a c+a c+a
+-2526: top c+a 2fu c+a c+a c+a c+a 2fu c+a c+a
+-2524: top c+a c+a c+a 2fu c+a 2fu c+a c+a c+a
+-2519: top 2fd c+a 2fd c+a c+a c+a c+a
+-2518: top c+a 3fd c+a c+a c+a c+a c+a c+a 2fu
+-2517: top c+a 3fd c+a c+a c+a 2fd
+-2514: top c+a c+a c+a c+a 2fu c+a c+a 3fu c+a c+a
+-2513: top c+a c+a c+a 3fd 3fd
+-2501: top c+a c+a c+a 2fd c+a 2fu c+a c+a
+-2497: top 2fd c+a 3fu c+a c+a c+a c+a c+a
+-2494: top c+a c+a 3fd c+a c+a c+a
+-2488: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a 3fu
+-2487: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fu
+-2485: top c+a c+a c+a c+a c+a c+a 2fd c+a 3fu
+-2478: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-2477: top c+a c+a c+a 3fd c+a c+a 2fu c+a
+-2476: top 3fd c+a c+a c+a 3fd c+a
+-2473: top 3fd c+a c+a c+a 2fu c+a c+a c+a
+-2470: top c+a c+a c+a 3fu c+a c+a 3fd
+-2468: top c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+-2465: top c+a c+a 2fd c+a 2fu c+a c+a c+a
+-2464: top 2fd c+a c+a c+a c+a c+a 3fu c+a c+a
+-2461: top c+a c+a 2fd c+a 3fd c+a
+-2459: top c+a c+a c+a 3fu c+a c+a c+a c+a 2fu c+a
+-2457: top 2fd c+a c+a 2fu c+a c+a c+a c+a
+-2453: top c+a c+a c+a c+a 3fu c+a 2fd c+a
+-2451: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fu
+-2450: top c+a 2fd c+a c+a c+a c+a 3fu c+a c+a
+-2447: top c+a c+a 3fd c+a c+a 2fu c+a c+a
+-2443: top c+a c+a 2fu c+a c+a 2fu c+a c+a c+a
+-2442: top c+a 2fu c+a c+a c+a c+a 2fd
+-2438: top c+a 2fd c+a 2fu c+a c+a c+a c+a
+-2436: top c+a 2fu c+a c+a 3fu c+a c+a c+a c+a
+-2434: top c+a c+a c+a 3fd c+a c+a c+a 3fu c+a
+-2433: top c+a c+a c+a 2fu c+a c+a c+a 3fu c+a c+a
+-2429: top c+a c+a c+a 3fu c+a 2fd c+a c+a
+-2428: top c+a c+a 3fd c+a c+a c+a c+a c+a 2fu
+-2424: top c+a 3fd c+a c+a 2fu c+a c+a c+a
+-2422: top c+a c+a 2fu c+a c+a 3fd c+a
+-2418: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fu c+a
+-2416: top c+a c+a c+a c+a 3fu c+a c+a c+a
+-2411: top 2fd c+a c+a 2fd c+a c+a c+a
+-2406: top 3fd c+a 3fu c+a c+a c+a c+a c+a
+-2397: top c+a c+a c+a 2fd c+a 2fd
+-2395: top 3fd c+a c+a c+a c+a c+a 3fu c+a c+a
+-2389: top c+a 3fd c+a c+a 3fd c+a
+-2388: top c+a c+a c+a c+a 3fu c+a c+a 2fu c+a c+a
+-2386: top c+a 2fd c+a 2fd c+a c+a c+a
+-2382: top c+a 2fu c+a c+a c+a 2fu c+a c+a c+a
+-2376: top 2fd c+a 2fu c+a c+a c+a c+a c+a
+-2374: top c+a c+a c+a c+a 2fd c+a
+-2373: top c+a c+a 2fu c+a c+a c+a c+a 3fu c+a c+a
+-2368: top 2fd c+a c+a c+a c+a c+a c+a 2fu c+a
+-2365: top 3fd c+a c+a 2fu c+a c+a c+a c+a
+-2360: top c+a c+a c+a c+a 2fd c+a c+a c+a 2fu
+-2358: top c+a 3fd c+a c+a c+a c+a 3fu c+a c+a
+-2357: top c+a c+a c+a c+a c+a c+a
+-2354: top c+a 2fd c+a c+a c+a c+a c+a 2fu c+a
+-2352: top 2fd c+a c+a c+a c+a c+a c+a c+a 3fu c+a
+-2350: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-2344: top c+a c+a c+a c+a c+a 2fu c+a c+a
+-2343: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fu
+-2342: top c+a 2fd c+a c+a c+a c+a c+a c+a 3fu c+a
+-2339: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fu c+a
+-2337: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fu c+a
+-2335: top c+a c+a 2fu c+a 2fu c+a c+a c+a c+a
+-2334: top c+a c+a c+a c+a c+a 2fu c+a 2fu c+a c+a
+-2332: top c+a 2fd 3fd c+a c+a c+a c+a
+-2327: top c+a 2fu c+a c+a c+a c+a c+a 3fu c+a c+a
+-2316: top c+a 3fd c+a 2fu c+a c+a c+a c+a
+-2315: top c+a 2fu c+a 3fu c+a c+a c+a c+a c+a
+-2314: top c+a 2fu c+a c+a c+a 3fd c+a
+-2308: top c+a c+a c+a 2fd c+a c+a 3fu c+a c+a
+-2306: top c+a c+a c+a 3fd c+a c+a c+a c+a 2fu
+-2304: 3fu c+a c+a 3fu
+-2303: top c+a c+a 3fd c+a 2fu c+a c+a c+a
+-2301: top c+a c+a 3fd c+a c+a 2fd
+-2299: top 3fd c+a c+a c+a c+a c+a c+a 2fu c+a
+-2298: top c+a c+a c+a c+a 2fu c+a 3fu c+a c+a c+a
+-2296: top c+a c+a 2fd c+a c+a c+a c+a c+a 3fu c+a
+-2293: top c+a c+a 2fd c+a c+a c+a c+a 2fu c+a
+-2289: top 3fd c+a c+a 2fd c+a c+a c+a
+-2285: top c+a c+a c+a 3fd c+a 2fu c+a c+a
+-2284: top 3fd c+a 2fu c+a c+a c+a c+a c+a
+-2280: top c+a c+a c+a c+a c+a c+a c+a 2fd 3fu
+-2278: top c+a c+a c+a 3fd c+a c+a
+-2277: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fu c+a
+-2276: top c+a 2fu c+a 2fd c+a c+a c+a c+a
+-2274: top c+a 2fu c+a c+a 2fu c+a c+a c+a c+a
+-2272: top c+a c+a c+a c+a 3fd c+a c+a 3fu c+a
+-2269: top c+a c+a c+a 2fd 3fd c+a
+-2268: top c+a c+a 3fd c+a c+a c+a 3fu c+a c+a
+-2267: top 2fd c+a c+a c+a 2fd c+a c+a
+-2262: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+-2261: top c+a c+a c+a c+a 3fd c+a 2fu c+a
+-2254: top 2fd c+a c+a c+a c+a 3fd
+-2249: top c+a c+a 2fu c+a 2fd c+a c+a c+a
+-2248: top 2fd c+a c+a c+a c+a 3fu c+a c+a c+a
+-2244: top c+a c+a c+a c+a 3fu c+a 2fu c+a c+a c+a
+-2242: top c+a 2fd c+a c+a 2fd c+a c+a
+-2237: top c+a c+a c+a 3fu c+a c+a 2fd c+a
+-2235: top c+a 2fu 3fd c+a c+a c+a c+a c+a
+-2234: top c+a 2fd c+a c+a c+a 3fu c+a c+a c+a
+-2231: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fu c+a
+-2229: top c+a c+a c+a c+a c+a 3fd c+a 2fu
+-2226: top c+a c+a c+a c+a 2fu c+a c+a 2fu c+a c+a
+-2224: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-2221: top c+a 2fd c+a c+a c+a 3fd
+-2217: top c+a c+a c+a 2fu c+a c+a 3fu c+a c+a c+a
+-2216: top c+a c+a c+a c+a c+a 2fd c+a c+a 2fu
+-2214: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fu
+-2213: top c+a c+a c+a 2fu c+a 2fd c+a c+a
+-2212: top c+a c+a c+a 2fd c+a c+a c+a 2fu c+a
+-2201: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fu
+-2200: top c+a c+a c+a c+a 2fu c+a c+a c+a
+-2197: top c+a c+a c+a c+a 3fu c+a c+a 2fd
+-2195: top 2fd c+a c+a 3fd c+a c+a c+a
+-2193: top c+a 2fu c+a 2fu c+a c+a c+a c+a c+a
+-2190: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a
+-2182: top c+a c+a c+a 2fu c+a c+a 3fd
+-2179: top 3fd c+a c+a c+a c+a 3fu c+a c+a c+a
+-2176: 2fu c+a 3fu
+-2173: top c+a c+a 3fd c+a 3fd c+a
+-2172: top c+a c+a 3fd c+a c+a c+a c+a 2fu c+a
+-2171: top 3fd c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-2170: top c+a 2fd c+a 3fd c+a c+a c+a
+-2168: top c+a 2fu c+a c+a 2fd c+a c+a c+a
+-2165: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+-2162: top c+a 2fd c+a c+a c+a c+a 2fu c+a c+a
+-2157: top c+a c+a 2fu c+a c+a c+a 3fu c+a c+a c+a
+-2154: top c+a c+a c+a c+a 2fd c+a c+a c+a 3fu c+a
+-2152: top c+a c+a c+a c+a c+a c+a 2fd 3fu c+a
+-2149: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fu
+-2147: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a
+-2146: top c+a c+a c+a 3fd c+a c+a 3fu c+a c+a
+-2145: top 3fd c+a c+a c+a 2fd c+a c+a
+-2142: top c+a 3fd c+a c+a c+a 3fu c+a c+a c+a
+-2141: top c+a c+a c+a c+a 2fd 2fd
+-2136: top c+a c+a c+a c+a 2fu 3fu c+a c+a c+a c+a
+-2134: top c+a 3fd c+a c+a c+a c+a c+a c+a c+a 2fu
+-2133: top 2fd c+a c+a c+a c+a c+a c+a
+-2123: top c+a c+a c+a 3fu c+a c+a 2fu c+a c+a c+a
+-2118: top c+a c+a c+a c+a c+a 2fd
+-2114: top c+a 2fd c+a c+a c+a c+a c+a
+-2111: top c+a 2fu c+a c+a c+a c+a 3fu c+a c+a c+a
+-2107: top 3fd c+a c+a c+a c+a c+a 2fu c+a c+a
+-2105: top c+a c+a 2fu c+a c+a 2fd c+a c+a
+-2104: top c+a c+a c+a c+a 2fd c+a c+a 2fu c+a
+-2103: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-2101: top c+a c+a c+a c+a c+a 2fu c+a 2fd
+-2094: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-2092: top 3fd c+a c+a c+a c+a 3fd
+-2087: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fu c+a
+-2086: top 2fd c+a c+a c+a 3fu c+a c+a c+a c+a
+-2085: top c+a c+a 2fu c+a c+a c+a c+a 2fu c+a c+a
+-2084: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+-2082: top c+a c+a c+a c+a 2fu c+a 2fu c+a c+a c+a
+-2080: top c+a 3fd c+a c+a 2fd c+a c+a
+-2077: top c+a c+a 2fd c+a c+a 3fd
+-2075: top 2fd c+a c+a c+a c+a 2fd c+a
+-2073: top 3fd c+a c+a 3fd c+a c+a c+a
+-2072: top c+a 2fd c+a c+a 3fu c+a c+a c+a c+a
+-2070: top c+a 3fd c+a c+a c+a c+a 2fu c+a c+a
+-2069: top c+a c+a c+a c+a 2fu 3fd c+a c+a
+-2064: top 2fd c+a c+a c+a c+a c+a c+a 3fu c+a c+a
+-2062: top c+a c+a 2fd 3fd c+a c+a c+a
+-2056: top c+a c+a c+a c+a c+a 2fd 3fu c+a c+a
+-2055: top c+a c+a c+a 2fu c+a 3fu c+a c+a c+a c+a
+-2054: top c+a 2fd c+a c+a c+a c+a c+a 3fu c+a c+a
+-2052: top c+a c+a 3fd c+a c+a 3fu c+a c+a c+a
+-2050: top c+a 2fd c+a c+a c+a 2fd c+a
+-2048: 2fu 2fu
+-2046: top c+a c+a c+a c+a c+a 2fd c+a c+a 3fu c+a
+-2044: top c+a c+a 3fd c+a c+a c+a c+a c+a c+a 2fu
+-2041: top 3fd c+a c+a c+a c+a c+a c+a
+-2039: top c+a 2fu c+a c+a c+a c+a c+a 2fu c+a c+a
+-2038: top c+a c+a 2fu c+a c+a c+a 3fd
+-2033: top c+a c+a 2fd c+a c+a c+a c+a
+-2032: top 2fd c+a c+a c+a c+a 2fu c+a c+a c+a
+-2024: top c+a 2fu c+a c+a c+a 2fd c+a c+a
+-2021: top c+a c+a c+a 2fu c+a c+a 2fd c+a
+-2020: top c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+-2018: top c+a 2fd c+a c+a c+a 2fu c+a c+a c+a
+-2017: top 3fd c+a c+a c+a 3fu c+a c+a c+a c+a
+-2016: 3fu c+a 3fu c+a
+-2015: top c+a c+a c+a 3fu c+a 2fu c+a c+a c+a c+a
+-2013: top c+a c+a c+a 3fd c+a 2fd
+-2011: top c+a c+a 2fu c+a c+a c+a c+a c+a
+-2008: top c+a 3fd c+a 3fd c+a c+a c+a
+-2006: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fu c+a
+-2005: top c+a 3fd c+a c+a c+a 3fd
+-2003: top c+a c+a c+a c+a c+a c+a 2fu c+a 2fu c+a c+a
+-2001: top c+a c+a c+a 2fu c+a c+a 2fu c+a c+a c+a
+-1995: top c+a c+a 2fu c+a c+a 3fu c+a c+a c+a c+a
+-1992: top c+a 3fd c+a c+a c+a c+a c+a
+-1990: top c+a c+a c+a c+a 3fd c+a
+-1984: top c+a c+a c+a c+a 2fd 3fu c+a c+a c+a
+-1981: top c+a c+a c+a 3fu c+a c+a c+a 2fd
+-1980: top c+a c+a 3fd c+a c+a c+a 2fu c+a c+a
+-1979: top 2fd c+a c+a c+a 3fd c+a c+a
+-1976: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+-1974: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-1973: top c+a c+a c+a c+a c+a c+a 2fd c+a 2fu
+-1968: top 2fd c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1966: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-1965: top 2fd c+a c+a 3fu c+a c+a c+a c+a c+a
+-1963: top 3fd c+a c+a c+a c+a 2fu c+a c+a c+a
+-1960: top c+a c+a c+a c+a c+a 2fd c+a 2fu c+a
+-1958: top c+a 2fd c+a c+a c+a c+a c+a c+a 2fu c+a
+-1957: top c+a c+a 2fd c+a c+a 2fu c+a c+a c+a
+-1954: top c+a 2fd c+a c+a 3fd c+a c+a
+-1953: top 3fd c+a c+a c+a c+a 2fd c+a
+-1952: top c+a 2fu c+a c+a 3fd c+a c+a c+a
+-1950: top c+a 2fu c+a c+a c+a c+a c+a c+a
+-1949: top c+a 2fu c+a c+a c+a 3fu c+a c+a c+a c+a
+-1947: top c+a c+a c+a 2fd c+a c+a c+a 3fu c+a c+a
+-1945: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fu c+a
+-1942: top c+a c+a 2fd c+a c+a 2fd c+a
+-1941: top c+a c+a 2fu c+a c+a c+a 2fu c+a c+a c+a
+-1934: top c+a c+a c+a 2fu 3fu c+a c+a c+a c+a c+a
+-1930: top c+a 2fu c+a c+a c+a c+a 3fd
+-1926: top c+a 3fd c+a c+a c+a 2fu c+a c+a c+a
+-1925: top c+a c+a c+a 2fd c+a c+a c+a
+-1924: top 2fd c+a c+a c+a 2fu c+a c+a c+a c+a
+-1922: top c+a c+a c+a 3fd c+a c+a c+a c+a c+a 2fu
+-1920: 3fu c+a c+a c+a 3fu
+-1918: top c+a c+a 3fd c+a 2fd c+a c+a
+-1917: top 3fd c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1913: top c+a c+a 2fu c+a c+a c+a 2fd c+a
+-1912: top c+a c+a c+a c+a 2fd c+a 2fu c+a c+a
+-1910: top c+a 2fd c+a c+a 2fu c+a c+a c+a c+a
+-1909: top c+a c+a c+a c+a 2fu c+a c+a 2fd
+-1902: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1900: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fu c+a
+-1896: top c+a c+a c+a c+a c+a c+a c+a 2fd c+a 3fu
+-1895: top c+a 2fu c+a c+a c+a c+a 2fu c+a c+a c+a
+-1893: top c+a c+a c+a 2fu c+a 2fu c+a c+a c+a c+a
+-1890: top 2fd c+a 2fd c+a c+a c+a c+a c+a
+-1889: top c+a 3fd c+a c+a c+a c+a c+a c+a 2fu c+a
+-1888: top c+a 3fd c+a c+a c+a 2fd c+a
+-1885: top c+a c+a c+a 2fd c+a 3fd
+-1876: top c+a c+a c+a 2fd c+a 2fu c+a c+a c+a
+-1873: top 2fd c+a 3fu c+a c+a c+a c+a c+a c+a
+-1871: top c+a c+a 3fd c+a c+a c+a c+a
+-1866: top c+a c+a c+a c+a 2fd c+a c+a 3fu c+a c+a
+-1864: top c+a c+a c+a c+a c+a 3fu c+a 2fd c+a
+-1859: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a
+-1858: top c+a c+a c+a 3fd c+a c+a 2fu c+a c+a
+-1857: top 3fd c+a c+a c+a 3fd c+a c+a
+-1855: top 3fd c+a c+a c+a 2fu c+a c+a c+a c+a
+-1853: top c+a c+a c+a 3fu c+a c+a 3fd c+a
+-1851: top c+a c+a c+a 2fd c+a c+a c+a c+a 2fu c+a
+-1849: top c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+-1848: top 2fd c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-1846: top c+a c+a 2fd c+a 3fd c+a c+a
+-1845: top c+a c+a c+a c+a c+a c+a 2fu 3fd
+-1843: top 2fd c+a c+a 2fu c+a c+a c+a c+a c+a
+-1840: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-1838: top c+a c+a c+a c+a c+a c+a c+a c+a 2fd 3fu
+-1836: top c+a c+a 3fd c+a c+a 2fu c+a c+a c+a
+-1833: top c+a c+a 2fu c+a c+a 2fu c+a c+a c+a c+a
+-1832: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fu
+-1830: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-1829: top c+a 2fd c+a 2fu c+a c+a c+a c+a c+a
+-1827: top c+a 2fu c+a c+a 3fu c+a c+a c+a c+a c+a
+-1822: top c+a c+a c+a 3fu c+a 2fd c+a c+a c+a
+-1821: top c+a c+a 3fd c+a c+a c+a c+a c+a 2fu c+a
+-1819: top 2fd c+a c+a c+a c+a c+a 2fd
+-1818: top c+a 3fd c+a c+a 2fu c+a c+a c+a c+a
+-1817: top c+a c+a 2fu c+a c+a 3fd c+a c+a
+-1814: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fu c+a c+a
+-1812: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-1809: top 2fd c+a c+a 2fd c+a c+a c+a c+a
+-1805: top 3fd c+a 3fu c+a c+a c+a c+a c+a c+a
+-1798: top c+a c+a c+a 2fd c+a 2fd c+a
+-1794: top c+a 2fd c+a c+a c+a c+a 2fd
+-1792: 2fu c+a c+a 3fu
+-1790: top c+a 2fd c+a 2fd c+a c+a c+a c+a
+-1789: top c+a c+a 3fd c+a c+a 3fd
+-1787: top c+a 2fu c+a c+a c+a 2fu c+a c+a c+a c+a
+-1782: top 2fd c+a 2fu c+a c+a c+a c+a c+a c+a
+-1781: top c+a c+a c+a c+a 2fd c+a c+a
+-1776: top 2fd c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1774: top 3fd c+a c+a 2fu c+a c+a c+a c+a c+a
+-1770: top c+a c+a c+a c+a 2fd c+a c+a c+a 2fu c+a
+-1768: top c+a c+a c+a c+a c+a c+a c+a
+-1766: top c+a 2fd c+a c+a c+a c+a c+a 2fu c+a c+a
+-1765: top c+a c+a c+a 2fu c+a c+a c+a 2fd
+-1763: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1758: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1753: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fu c+a c+a
+-1752: top c+a c+a 2fu c+a 2fu c+a c+a c+a c+a c+a
+-1751: top c+a c+a c+a c+a c+a 2fu c+a 2fu c+a c+a c+a
+-1749: top c+a c+a c+a c+a 3fd c+a c+a c+a c+a 2fu
+-1737: top c+a 3fd c+a 2fu c+a c+a c+a c+a c+a
+-1736: bot c+a c+a c+a c+a c+a c+a c+a 3fu 3fu
+-1731: top c+a c+a c+a 2fd c+a c+a 3fu c+a c+a c+a
+-1730: top c+a c+a c+a 3fd c+a c+a c+a c+a 2fu c+a
+-1728: 3fu 3fu c+a c+a
+-1726: top c+a c+a 3fd c+a c+a 2fd c+a
+-1725: top 3fd c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1720: top c+a c+a 2fd c+a c+a c+a c+a 2fu c+a c+a
+-1717: top 3fd c+a c+a 2fd c+a c+a c+a c+a
+-1714: top c+a c+a c+a 3fd c+a 2fu c+a c+a c+a
+-1713: top 3fd c+a 2fu c+a c+a c+a c+a c+a c+a
+-1710: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-1709: top c+a c+a c+a 3fd c+a c+a c+a
+-1708: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fu c+a c+a
+-1707: top c+a 2fu c+a 2fd c+a c+a c+a c+a c+a
+-1706: top c+a 2fu c+a c+a 2fu c+a c+a c+a c+a c+a
+-1702: top c+a c+a c+a 2fd 3fd c+a c+a
+-1701: top 2fd c+a c+a c+a 2fd c+a c+a c+a
+-1700: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+-1697: top 3fd c+a c+a c+a c+a c+a 2fd
+-1696: top c+a c+a c+a c+a 3fd c+a 2fu c+a c+a
+-1691: top c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-1687: top c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+-1686: top c+a c+a 2fd c+a c+a c+a 2fd
+-1685: top c+a c+a c+a c+a 3fu c+a c+a 3fd
+-1682: top c+a 2fd c+a c+a 2fd c+a c+a c+a
+-1678: top c+a c+a c+a 3fu c+a c+a 2fd c+a c+a
+-1677: top c+a 2fu 3fd c+a c+a c+a c+a c+a c+a
+-1676: top c+a 2fd c+a c+a c+a 3fu c+a c+a c+a c+a
+-1674: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1672: top c+a c+a c+a c+a c+a 3fd c+a 2fu c+a
+-1670: top c+a c+a c+a c+a 2fu c+a c+a 2fu c+a c+a c+a
+-1668: top c+a 3fd c+a 2fd c+a c+a c+a c+a
+-1666: top c+a 2fd c+a c+a c+a 3fd c+a
+-1664: 2fu c+a 2fu
+-1662: top c+a c+a c+a c+a c+a 2fd c+a c+a 2fu c+a
+-1661: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1660: top c+a c+a c+a 2fu c+a 2fd c+a c+a c+a
+-1659: top c+a c+a c+a 2fd c+a c+a c+a 2fu c+a c+a
+-1657: top c+a c+a 2fu c+a c+a c+a c+a 2fd
+-1650: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1648: top c+a c+a c+a c+a 3fu c+a c+a 2fd c+a
+-1647: top 2fd c+a c+a 3fd c+a c+a c+a c+a
+-1645: top c+a 2fu c+a 2fu c+a c+a c+a c+a c+a c+a
+-1643: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-1637: top c+a c+a c+a 2fu c+a c+a 3fd c+a
+-1632: top c+a 3fd c+a c+a c+a c+a 2fd
+-1630: top c+a c+a 3fd c+a 3fd c+a c+a
+-1629: top c+a c+a c+a c+a 2fd 3fd
+-1628: top c+a 2fd c+a 3fd c+a c+a c+a c+a
+-1626: top c+a 2fu c+a c+a 2fd c+a c+a c+a c+a
+-1624: top c+a c+a c+a c+a 2fu c+a 2fd c+a c+a
+-1622: top c+a 2fd c+a c+a c+a c+a 2fu c+a c+a c+a
+-1614: top c+a c+a c+a c+a c+a c+a 2fd 3fu c+a c+a
+-1611: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a
+-1609: top 3fd c+a c+a c+a 2fd c+a c+a c+a
+-1608: top c+a c+a c+a c+a c+a 3fu c+a c+a 2fd
+-1606: top c+a c+a c+a c+a c+a 3fd
+-1601: top c+a c+a 2fd c+a 2fd c+a c+a c+a
+-1600: top 2fd c+a c+a c+a c+a c+a c+a c+a
+-1592: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+-1589: top c+a c+a c+a c+a c+a 2fd c+a
+-1586: top c+a 2fd c+a c+a c+a c+a c+a c+a
+-1582: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-1581: top 3fd c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1579: top c+a c+a 2fu c+a c+a 2fd c+a c+a c+a
+-1578: top c+a c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+-1576: top c+a 2fu c+a c+a c+a c+a c+a 2fd
+-1571: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1569: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1565: top 2fd c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-1564: top c+a c+a 2fu c+a c+a c+a c+a 2fu c+a c+a c+a
+-1563: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fu c+a
+-1562: top c+a c+a c+a c+a 2fu c+a 2fu c+a c+a c+a c+a
+-1560: top c+a 3fd c+a c+a 2fd c+a c+a c+a
+-1558: top c+a c+a 2fd c+a c+a 3fd c+a
+-1557: top 2fd c+a c+a c+a c+a 2fd c+a c+a
+-1555: top 3fd c+a c+a 3fd c+a c+a c+a c+a
+-1554: top c+a 2fd c+a c+a 3fu c+a c+a c+a c+a c+a
+-1553: top c+a 3fd c+a c+a c+a c+a 2fu c+a c+a c+a
+-1552: top c+a c+a c+a c+a 2fu 3fd c+a c+a c+a
+-1547: top c+a c+a 2fd 3fd c+a c+a c+a c+a
+-1542: top c+a c+a c+a 2fd c+a c+a 2fd
+-1538: top c+a 2fd c+a c+a c+a 2fd c+a c+a
+-1536: 3fu
+-1531: top 3fd c+a c+a c+a c+a c+a c+a c+a
+-1530: top c+a 2fu c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1529: top c+a c+a 2fu c+a c+a c+a 3fd c+a
+-1525: top c+a c+a 2fd c+a c+a c+a c+a c+a
+-1524: top 2fd c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1518: top c+a 2fu c+a c+a c+a 2fd c+a c+a c+a
+-1516: top c+a c+a c+a 2fu c+a c+a 2fd c+a c+a
+-1515: top c+a c+a c+a 2fd c+a c+a 2fu c+a c+a c+a
+-1514: top c+a 2fd c+a c+a c+a 2fu c+a c+a c+a c+a
+-1512: top c+a c+a c+a c+a c+a c+a 2fu c+a 2fd
+-1510: top c+a c+a c+a 3fd c+a 2fd c+a
+-1509: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1506: top c+a 3fd c+a 3fd c+a c+a c+a c+a
+-1504: top c+a 3fd c+a c+a c+a 3fd c+a
+-1501: top c+a c+a c+a 3fd c+a 3fd
+-1494: top c+a 3fd c+a c+a c+a c+a c+a c+a
+-1493: top c+a c+a c+a c+a 3fd c+a c+a
+-1488: top c+a c+a c+a c+a 2fd 3fu c+a c+a c+a c+a
+-1486: top c+a c+a c+a 3fu c+a c+a c+a 2fd c+a
+-1485: top 2fd c+a c+a c+a 3fd c+a c+a c+a
+-1482: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fu c+a
+-1481: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-1480: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu 2fu
+-1476: top 2fd c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1475: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1474: top 2fd c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-1473: top 3fd c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1470: top c+a c+a 3fd c+a c+a c+a 2fd
+-1469: top c+a c+a c+a 3fu c+a c+a c+a 3fd
+-1468: top c+a c+a 2fd c+a c+a 2fu c+a c+a c+a c+a
+-1466: bot c+a c+a c+a c+a c+a 3fu c+a c+a 3fu
+-1465: top 3fd c+a c+a c+a c+a 2fd c+a c+a
+-1464: top c+a 2fu c+a c+a 3fd c+a c+a c+a c+a
+-1463: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-1461: top c+a c+a c+a c+a c+a c+a 3fd c+a 2fu
+-1457: top c+a c+a 2fd c+a c+a 2fd c+a c+a
+-1456: top c+a c+a 2fu c+a c+a c+a 2fu c+a c+a c+a c+a
+-1454: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a 2fd
+-1448: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+-1445: top c+a 3fd c+a c+a c+a 2fu c+a c+a c+a c+a
+-1444: top c+a c+a c+a 2fd c+a c+a c+a c+a
+-1443: top 2fd c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1440: 2fu 3fu c+a c+a
+-1439: top c+a c+a 3fd c+a 2fd c+a c+a c+a
+-1435: top c+a c+a 2fu c+a c+a c+a 2fd c+a c+a
+-1434: top c+a c+a c+a c+a 2fd c+a 2fu c+a c+a c+a
+-1433: top c+a 2fd c+a c+a 2fu c+a c+a c+a c+a c+a
+-1432: top c+a c+a c+a c+a 2fu c+a c+a 2fd c+a
+-1427: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1422: top c+a c+a c+a c+a c+a c+a 3fu c+a 2fd c+a
+-1420: top c+a c+a c+a 2fu c+a 2fu c+a c+a c+a c+a c+a
+-1418: top 2fd c+a 2fd c+a c+a c+a c+a c+a c+a
+-1416: top c+a 3fd c+a c+a c+a 2fd c+a c+a
+-1414: top c+a c+a c+a 2fd c+a 3fd c+a
+-1408: 3fu c+a c+a c+a 2fu
+-1407: top c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+-1405: top 2fd c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+-1404: top c+a c+a 3fd c+a c+a c+a c+a c+a
+-1398: top c+a c+a c+a c+a c+a 3fu c+a 2fd c+a c+a
+-1397: top c+a c+a c+a c+a 2fu c+a c+a 3fd
+-1395: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-1394: top c+a c+a c+a 3fd c+a c+a 2fu c+a c+a c+a
+-1393: top 3fd c+a c+a c+a 3fd c+a c+a c+a
+-1392: top c+a c+a c+a c+a 3fu c+a c+a c+a 2fd
+-1390: top c+a c+a c+a 3fu c+a c+a 3fd c+a c+a
+-1389: top c+a c+a c+a 2fd c+a c+a c+a c+a 2fu c+a c+a
+-1387: top c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a
+-1385: top c+a c+a 2fd c+a 3fd c+a c+a c+a
+-1384: top c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fu
+-1383: top 2fd c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1380: top c+a c+a c+a c+a 3fu c+a 2fd c+a c+a c+a
+-1377: top c+a c+a 3fd c+a c+a 2fu c+a c+a c+a c+a
+-1375: top c+a c+a 2fu c+a c+a 2fu c+a c+a c+a c+a c+a
+-1374: top c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+-1372: top c+a 2fd c+a 2fu c+a c+a c+a c+a c+a c+a
+-1367: top c+a c+a c+a 3fu c+a 2fd c+a c+a c+a c+a
+-1365: top 2fd c+a c+a c+a c+a c+a 2fd c+a
+-1364: top c+a 3fd c+a c+a 2fu c+a c+a c+a c+a c+a
+-1363: top c+a c+a 2fu c+a c+a 3fd c+a c+a c+a
+-1359: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-1357: top 2fd c+a c+a 2fd c+a c+a c+a c+a c+a
+-1352: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-1350: top c+a c+a c+a c+a 2fd c+a 2fd
+-1349: top c+a c+a c+a 2fd c+a 2fd c+a c+a
+-1346: top c+a 2fd c+a c+a c+a c+a 2fd c+a
+-1344: 2fu c+a c+a 3fu c+a
+-1343: top c+a 2fd c+a 2fd c+a c+a c+a c+a c+a
+-1342: top c+a c+a 3fd c+a c+a 3fd c+a
+-1341: top c+a 2fu c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1338: bot c+a c+a c+a c+a c+a 2fu c+a c+a c+a 3fu
+-1337: top 2fd c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-1336: top c+a c+a c+a c+a 2fd c+a c+a c+a
+-1333: top c+a c+a c+a c+a c+a c+a 2fd
+-1332: top 2fd c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1331: top 3fd c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1328: top c+a c+a c+a c+a 2fd c+a c+a c+a 2fu c+a c+a
+-1326: top c+a c+a c+a c+a c+a c+a c+a c+a
+-1325: top c+a 2fd c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1324: top c+a c+a c+a 2fu c+a c+a c+a 2fd c+a
+-1323: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1320: top c+a c+a c+a c+a c+a 2fu c+a c+a 2fd
+-1319: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1314: top c+a c+a 2fu c+a 2fu c+a c+a c+a c+a c+a c+a
+-1312: top c+a 2fd 3fd c+a c+a c+a c+a c+a c+a
+-1307: top 2fd c+a c+a c+a c+a c+a 3fd
+-1303: top c+a 3fd c+a 2fu c+a c+a c+a c+a c+a c+a
+-1302: top c+a 2fu c+a c+a c+a 3fd c+a c+a c+a
+-1296: 3fu 3fu c+a c+a c+a
+-1295: top c+a c+a 3fd c+a c+a 2fd c+a c+a
+-1291: bot c+a c+a c+a c+a c+a c+a 3fu 3fu
+-1290: top c+a c+a 2fd c+a c+a c+a c+a 2fu c+a c+a c+a
+-1288: top 3fd c+a c+a 2fd c+a c+a c+a c+a c+a
+-1286: top c+a c+a c+a 3fd c+a 2fu c+a c+a c+a c+a
+-1285: top 3fd c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-1283: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a
+-1282: top c+a 2fd c+a c+a c+a c+a 3fd
+-1281: top c+a 2fu c+a 2fd c+a c+a c+a c+a c+a c+a
+-1280: 2fd c+a c+a 3fu
+-1277: top c+a c+a c+a 2fd 3fd c+a c+a c+a
+-1276: top 2fd c+a c+a c+a 2fd c+a c+a c+a c+a
+-1273: top 3fd c+a c+a c+a c+a c+a 2fd c+a
+-1272: top c+a c+a c+a c+a 3fd c+a 2fu c+a c+a c+a
+-1269: top c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-1266: top c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a
+-1265: top c+a c+a 2fd c+a c+a c+a 2fd c+a
+-1264: top c+a c+a c+a c+a 3fu c+a c+a 3fd c+a
+-1262: top c+a 2fd c+a c+a 2fd c+a c+a c+a c+a
+-1259: top c+a c+a c+a 3fu c+a c+a 2fd c+a c+a c+a
+-1258: top c+a 2fu 3fd c+a c+a c+a c+a c+a c+a c+a
+-1256: top c+a c+a c+a c+a c+a c+a c+a 2fu 3fd
+-1254: top c+a c+a c+a 3fd c+a c+a 2fd
+-1253: top c+a c+a c+a 2fu c+a c+a c+a 3fd
+-1251: top c+a 3fd c+a 2fd c+a c+a c+a c+a c+a
+-1250: top c+a 2fd c+a c+a c+a 3fd c+a c+a
+-1248: 2fu c+a 2fu c+a
+-1247: top c+a c+a c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+-1245: top c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+-1243: top c+a c+a 2fu c+a c+a c+a c+a 2fd c+a
+-1238: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1236: top 2fd c+a c+a 3fd c+a c+a c+a c+a c+a
+-1234: top c+a 2fu c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-1233: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-1230: top c+a c+a c+a 3fu c+a c+a c+a c+a 2fd
+-1228: top c+a c+a c+a 2fu c+a c+a 3fd c+a c+a
+-1224: bot c+a c+a c+a c+a c+a c+a c+a 2fu 3fu
+-1223: top c+a c+a 3fd c+a 3fd c+a c+a c+a
+-1222: top c+a c+a c+a c+a 2fd 3fd c+a
+-1221: top c+a 2fd c+a 3fd c+a c+a c+a c+a c+a
+-1220: top c+a 2fu c+a c+a 2fd c+a c+a c+a c+a c+a
+-1218: top c+a c+a c+a c+a 2fu c+a 2fd c+a c+a c+a
+-1217: top c+a 2fd c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1209: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-1207: top 3fd c+a c+a c+a 2fd c+a c+a c+a c+a
+-1206: top c+a c+a c+a c+a c+a 3fu c+a c+a 2fd c+a
+-1205: top c+a c+a c+a c+a c+a 3fd c+a
+-1201: top c+a c+a 2fd c+a 2fd c+a c+a c+a c+a
+-1200: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+-1198: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-1192: top c+a c+a c+a c+a c+a 2fd c+a c+a
+-1190: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-1187: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a
+-1185: top 3fd c+a c+a c+a c+a c+a 3fd
+-1184: top c+a c+a c+a c+a 2fd c+a c+a 2fu c+a c+a c+a
+-1182: top c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+-1179: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-1177: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1176: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fd
+-1174: top c+a c+a 2fd c+a c+a c+a 3fd
+-1170: top c+a 3fd c+a c+a 2fd c+a c+a c+a c+a
+-1169: top c+a c+a 2fd c+a c+a 3fd c+a c+a
+-1168: top 2fd c+a c+a c+a c+a 2fd c+a c+a c+a
+-1167: top 3fd c+a c+a 3fd c+a c+a c+a c+a c+a
+-1166: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a 2fd
+-1164: top c+a c+a c+a c+a 2fu 3fd c+a c+a c+a c+a
+-1163: bot c+a c+a c+a c+a c+a c+a 2fu c+a 3fu
+-1161: top c+a c+a 2fd 3fd c+a c+a c+a c+a c+a
+-1157: top c+a c+a c+a 2fd c+a c+a 2fd c+a
+-1154: top c+a 2fd c+a c+a c+a 2fd c+a c+a c+a
+-1152: 3fu c+a
+-1147: top 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+-1145: top c+a c+a 2fu c+a c+a c+a c+a 3fd
+-1141: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-1140: top 2fd c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1134: top c+a 2fu c+a c+a c+a 2fd c+a c+a c+a c+a
+-1132: top c+a c+a c+a 2fu c+a c+a 2fd c+a c+a c+a
+-1131: top c+a c+a c+a 2fd c+a c+a 2fu c+a c+a c+a c+a
+-1130: top c+a 2fd c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-1128: 3fu c+a 3fu c+a c+a c+a
+-1126: top c+a c+a c+a 3fd c+a 2fd c+a c+a
+-1125: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-1122: top c+a 3fd c+a 3fd c+a c+a c+a c+a c+a
+-1120: top c+a 3fd c+a c+a c+a c+a 3fd
+-1117: top c+a c+a c+a c+a 3fd 3fd
+-1110: top c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+-1109: top 2fd c+a c+a c+a c+a c+a c+a 2fd
+-1102: top c+a c+a c+a 3fu c+a c+a c+a 2fd c+a c+a
+-1101: top 2fd c+a c+a c+a 3fd c+a c+a c+a c+a
+-1099: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a 3fu
+-1097: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-1096: top c+a c+a c+a c+a c+a 3fu c+a c+a 3fd
+-1094: top c+a c+a c+a c+a c+a 2fd 2fd
+-1091: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-1090: top c+a 2fd c+a c+a c+a c+a c+a 2fd
+-1086: top c+a c+a 3fd c+a c+a c+a 2fd c+a
+-1085: top c+a c+a c+a 3fu c+a c+a c+a 3fd c+a
+-1084: top c+a c+a 2fd c+a c+a 2fu c+a c+a c+a c+a c+a
+-1082: bot c+a c+a c+a c+a c+a 3fu c+a 3fu
+-1081: top 3fd c+a c+a c+a c+a 2fd c+a c+a c+a
+-1080: top c+a 2fu c+a c+a 3fd c+a c+a c+a c+a c+a
+-1079: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+-1077: top c+a c+a c+a c+a c+a c+a 3fd c+a c+a 2fu
+-1073: top c+a c+a 2fd c+a c+a 2fd c+a c+a c+a
+-1070: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fd
+-1068: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fd
+-1064: top c+a 2fu c+a c+a c+a c+a c+a 3fd
+-1060: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-1059: top 2fd c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1056: 2fu 3fu c+a c+a c+a
+-1055: top c+a c+a 3fd c+a 2fd c+a c+a c+a c+a
+-1051: top c+a c+a 2fu c+a c+a c+a 2fd c+a c+a c+a
+-1050: top c+a c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+-1049: top c+a 2fd c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-1048: top c+a c+a c+a c+a 2fu c+a c+a 2fd c+a c+a
+-1043: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-1034: top 2fd c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-1032: top c+a 3fd c+a c+a c+a 2fd c+a c+a c+a
+-1030: top c+a c+a c+a 2fd c+a c+a 3fd
+-1024: 2fu
+-1023: top c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a
+-1020: top c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+-1017: top 3fd c+a c+a c+a c+a c+a c+a 2fd
+-1013: top c+a c+a c+a c+a 2fu c+a c+a 3fd c+a
+-1011: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-1009: top c+a c+a 2fd c+a c+a c+a c+a 2fd
+-1008: top c+a c+a c+a c+a 3fu c+a c+a c+a 2fd c+a
+-1003: top c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a c+a
+-1001: top c+a c+a 2fd c+a 3fd c+a c+a c+a c+a
+-1000: top c+a c+a c+a c+a c+a c+a 2fu c+a 3fd
+-999: top 2fd c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-990: top c+a 2fu c+a c+a c+a c+a 2fd c+a c+a c+a
+-988: top c+a 2fd c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-987: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+-981: top 2fd c+a c+a c+a c+a c+a 2fd c+a c+a
+-979: top c+a c+a 2fu c+a c+a 3fd c+a c+a c+a c+a
+-975: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-973: top 2fd c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-971: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+-968: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-966: top c+a c+a c+a c+a 3fd c+a 2fd
+-965: top c+a c+a c+a 2fd c+a 2fd c+a c+a c+a
+-962: top c+a 2fd c+a c+a c+a c+a 2fd c+a c+a
+-960: 2fu c+a c+a 3fu c+a c+a
+-959: top c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a
+-958: top c+a c+a 3fd c+a c+a c+a 3fd
+-955: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a 3fu
+-954: bot c+a c+a c+a c+a c+a 2fu c+a c+a 3fu
+-953: top 2fd c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+-952: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+-950: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a 2fd
+-949: top c+a c+a c+a c+a c+a c+a 2fd c+a
+-942: top c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-940: top c+a c+a c+a 2fu c+a c+a c+a 2fd c+a c+a
+-939: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-936: top c+a c+a c+a c+a c+a 2fu c+a c+a 2fd c+a
+-935: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-928: top c+a 2fd 3fd c+a c+a c+a c+a c+a c+a c+a
+-926: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+-923: top 2fd c+a c+a c+a c+a c+a 3fd c+a
+-918: top c+a 2fu c+a c+a c+a 3fd c+a c+a c+a c+a
+-912: 3fu 3fu c+a c+a c+a c+a
+-911: top c+a c+a 3fd c+a c+a 2fd c+a c+a c+a
+-907: bot c+a c+a c+a c+a c+a c+a 3fu 3fu c+a
+-904: top 3fd c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-901: top c+a c+a c+a 2fd c+a c+a c+a 2fd
+-899: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a
+-898: top c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+-897: top c+a 2fu c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-896: 2fd c+a 3fu
+-893: top c+a c+a c+a 2fd 3fd c+a c+a c+a c+a
+-892: top 2fd c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-889: top 3fd c+a c+a c+a c+a c+a 2fd c+a c+a
+-885: top c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+-882: top c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a c+a
+-881: top c+a c+a 2fd c+a c+a c+a 2fd c+a c+a
+-880: top c+a c+a c+a c+a 3fu c+a c+a c+a 3fd
+-878: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a 2fd
+-872: top c+a c+a c+a c+a c+a c+a c+a 2fu 3fd c+a
+-870: top c+a c+a c+a 3fd c+a c+a 2fd c+a
+-869: top c+a c+a c+a 2fu c+a c+a c+a 3fd c+a
+-867: top c+a 3fd c+a 2fd c+a c+a c+a c+a c+a c+a
+-866: top c+a 2fd c+a c+a c+a 3fd c+a c+a c+a
+-864: 2fu c+a 2fu c+a c+a
+-861: top c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a
+-859: top c+a c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+-854: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-852: top 2fd c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+-849: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-847: top c+a c+a 3fd c+a c+a c+a c+a 2fd
+-846: top c+a c+a c+a 3fu c+a c+a c+a c+a 2fd c+a
+-844: top c+a c+a c+a 2fu c+a c+a 3fd c+a c+a c+a
+-840: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-839: top c+a c+a 3fd c+a 3fd c+a c+a c+a c+a
+-838: top c+a c+a c+a c+a 2fd c+a 3fd
+-837: top c+a 2fd c+a 3fd c+a c+a c+a c+a c+a c+a
+-836: top c+a 2fu c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-834: top c+a c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+-827: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fu
+-826: bot c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fu
+-825: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-823: top 3fd c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-821: top c+a c+a c+a c+a c+a c+a 3fd
+-817: top c+a c+a 2fd c+a 2fd c+a c+a c+a c+a c+a
+-816: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-814: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu 3fd
+-808: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+-806: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+-803: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-801: top 3fd c+a c+a c+a c+a c+a 3fd c+a
+-798: top c+a 2fu c+a c+a c+a c+a c+a 2fd c+a c+a
+-795: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-794: bot c+a c+a c+a 3fu c+a c+a c+a c+a 3fu
+-793: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-792: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fd c+a
+-790: top c+a c+a 2fd c+a c+a c+a 3fd c+a
+-788: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a 2fd
+-786: top c+a 3fd c+a c+a 2fd c+a c+a c+a c+a c+a
+-785: top c+a c+a 2fd c+a c+a 3fd c+a c+a c+a
+-784: top 2fd c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+-779: bot c+a c+a c+a c+a c+a c+a 2fu 3fu
+-777: top c+a c+a 2fd 3fd c+a c+a c+a c+a c+a c+a
+-773: top c+a c+a c+a 2fd c+a c+a 2fd c+a c+a
+-770: top c+a 2fd c+a c+a c+a 2fd c+a c+a c+a c+a
+-768: 2fd c+a c+a 2fu
+-766: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a 3fu
+-763: top 3fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-761: top c+a c+a 2fu c+a c+a c+a c+a 3fd c+a
+-757: top c+a c+a c+a c+a 2fd c+a c+a 2fd
+-750: top c+a 2fu c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-748: top c+a c+a c+a 2fu c+a c+a 2fd c+a c+a c+a c+a
+-744: top c+a c+a c+a c+a c+a c+a c+a 2fd
+-742: top c+a c+a c+a 3fd c+a c+a 3fd
+-741: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+-739: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fd
+-736: top c+a 3fd c+a c+a c+a c+a 3fd c+a
+-734: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fd
+-733: top c+a c+a c+a c+a 3fd 3fd c+a
+-726: top c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+-725: top c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+-720: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-719: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fu
+-718: top c+a c+a c+a 3fu c+a c+a c+a c+a 3fd
+-717: top 2fd c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+-715: bot c+a c+a c+a c+a 2fu c+a c+a c+a 3fu
+-713: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-712: bot c+a c+a c+a c+a c+a c+a c+a 2fu 2fu
+-710: top c+a c+a c+a c+a c+a 2fd 2fd c+a
+-707: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-706: top c+a 2fd c+a c+a c+a c+a c+a 2fd c+a
+-702: top c+a c+a 3fd c+a c+a c+a 2fd c+a c+a
+-698: bot c+a c+a c+a c+a c+a 3fu 3fu
+-697: top 3fd c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+-695: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-689: top c+a c+a 2fd c+a c+a 2fd c+a c+a c+a c+a
+-686: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a 2fd c+a
+-685: top c+a c+a c+a 3fd c+a c+a c+a 2fd
+-684: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fd c+a
+-680: top c+a 2fu c+a c+a c+a c+a c+a 3fd c+a
+-676: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-672: 2fu 3fu c+a c+a c+a c+a
+-671: top c+a c+a 3fd c+a 2fd c+a c+a c+a c+a c+a
+-667: top c+a c+a c+a 3fu c+a c+a c+a c+a c+a 2fd
+-666: bot c+a c+a c+a 3fu c+a c+a c+a c+a c+a 2fu
+-664: top c+a c+a c+a c+a 2fu c+a c+a c+a 3fd
+-659: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-651: bot c+a c+a c+a c+a c+a c+a 2fu c+a 2fu
+-650: top 2fd c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+-648: top c+a 3fd c+a c+a c+a 2fd c+a c+a c+a c+a
+-646: top c+a c+a c+a 2fd c+a c+a 3fd c+a
+-640: 2fu c+a
+-638: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-636: top c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+-633: top 3fd c+a c+a c+a c+a c+a c+a 2fd c+a
+-629: top c+a c+a c+a c+a 2fu c+a c+a 3fd c+a c+a
+-627: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-626: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fd
+-625: bot c+a c+a 3fu c+a c+a c+a c+a c+a 3fu
+-617: top c+a c+a 2fd c+a 3fd c+a c+a c+a c+a c+a
+-616: top c+a c+a c+a c+a c+a c+a 2fu c+a 3fd c+a
+-606: top c+a 2fu c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+-603: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+-597: top 2fd c+a c+a c+a c+a c+a c+a 3fd
+-592: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-591: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+-589: top 2fd c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-587: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fu
+-584: bot c+a c+a c+a c+a c+a c+a c+a c+a 3fu
+-582: top c+a c+a c+a c+a c+a 2fd 3fd
+-581: top c+a c+a c+a 2fd c+a 2fd c+a c+a c+a c+a
+-578: top c+a 2fd c+a c+a c+a c+a c+a 3fd
+-576: top 2fd c+a c+a c+a c+a c+a c+a c+a 2fd
+-575: top c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-574: top c+a c+a 3fd c+a c+a c+a 3fd c+a
+-571: bot c+a c+a c+a 2fu c+a c+a c+a c+a 3fu
+-570: bot c+a c+a c+a c+a c+a 2fu c+a 3fu
+-568: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-565: top c+a c+a c+a c+a c+a 2fd c+a 2fd
+-562: top c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+-558: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-556: top c+a c+a c+a 2fu c+a c+a c+a c+a 3fd
+-555: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-552: top c+a c+a c+a c+a c+a 2fu c+a c+a 2fd c+a c+a
+-551: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-547: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a 2fd
+-545: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+-542: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fd c+a
+-539: top 2fd c+a c+a c+a c+a c+a 3fd c+a c+a
+-528: 3fu 3fu c+a c+a c+a c+a c+a
+-527: top c+a c+a 3fd c+a c+a 2fd c+a c+a c+a c+a
+-517: top c+a c+a c+a 2fd c+a c+a c+a 2fd c+a
+-515: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a
+-514: top c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+-512: 2fd 3fu
+-509: top c+a c+a c+a 2fd 3fd c+a c+a c+a c+a c+a
+-508: top 2fd c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-507: top 3fd c+a c+a c+a c+a c+a c+a c+a 2fd
+-505: top 3fd c+a c+a c+a c+a c+a c+a 3fd
+-504: bot c+a 3fu c+a c+a c+a c+a c+a c+a 3fu
+-501: top c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+-497: top c+a c+a 2fd c+a c+a c+a c+a 3fd
+-494: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a 2fd c+a
+-486: top c+a c+a c+a 3fd c+a c+a 2fd c+a c+a
+-485: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+-482: top c+a 2fd c+a c+a c+a 3fd c+a c+a c+a c+a
+-480: 2fu c+a 2fu c+a c+a c+a
+-475: top c+a c+a 2fu c+a c+a c+a c+a c+a 3fd
+-470: top c+a 3fd c+a c+a c+a c+a c+a c+a 2fd
+-469: top c+a c+a c+a c+a 3fd c+a c+a 2fd
+-465: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-463: bot c+a c+a 2fu c+a c+a c+a c+a c+a 3fu
+-456: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-454: top c+a c+a c+a c+a 3fd c+a 3fd
+-443: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+-442: bot c+a c+a c+a c+a c+a 2fu c+a c+a 2fu
+-441: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+-439: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fd
+-437: top c+a c+a c+a c+a c+a c+a 3fd c+a
+-433: top c+a c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a
+-432: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-430: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a
+-424: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+-422: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-420: top c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+-419: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-417: top 3fd c+a c+a c+a c+a c+a 3fd c+a c+a
+-414: top c+a 2fu c+a c+a c+a c+a c+a c+a 3fd
+-412: bot 3fu c+a c+a c+a c+a c+a c+a c+a 3fu
+-411: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-410: bot c+a c+a c+a 3fu c+a c+a c+a 3fu
+-409: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+-408: top c+a c+a c+a c+a 2fu c+a c+a c+a 2fd c+a c+a
+-406: top c+a c+a 2fd c+a c+a c+a 3fd c+a c+a
+-403: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fd
+-402: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a 3fu
+-401: top c+a c+a 2fd c+a c+a 3fd c+a c+a c+a c+a
+-400: top 2fd c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-395: bot c+a c+a c+a c+a c+a c+a 2fu 3fu c+a
+-389: top c+a c+a c+a 2fd c+a c+a c+a 3fd
+-386: top c+a 2fd c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-384: 2fd c+a 2fu
+-382: bot c+a 2fu c+a c+a c+a c+a c+a c+a 3fu
+-380: top c+a c+a 3fd c+a c+a c+a c+a c+a 2fd
+-379: top 3fd c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-377: top c+a c+a 2fu c+a c+a c+a c+a 3fd c+a c+a
+-376: bot c+a 3fu c+a c+a c+a c+a c+a c+a c+a 2fu
+-373: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+-366: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a 3fd
+-360: top c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+-358: top c+a c+a c+a 3fd c+a c+a 3fd c+a
+-357: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-352: top c+a 3fd c+a c+a c+a c+a 3fd c+a c+a
+-351: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a 3fu
+-350: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 2fd c+a
+-349: top c+a c+a c+a c+a 3fd 3fd c+a c+a
+-342: top c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-341: top c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+-336: bot 2fu c+a c+a c+a c+a c+a c+a c+a 3fu
+-335: top c+a c+a 3fd c+a c+a c+a c+a 3fd
+-331: bot c+a c+a c+a c+a 2fu c+a c+a 3fu
+-329: top c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+-328: bot c+a c+a c+a c+a c+a c+a c+a 2fu 2fu c+a
+-326: top c+a c+a c+a c+a c+a 2fd 2fd c+a c+a
+-323: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-322: top c+a 2fd c+a c+a c+a c+a c+a 2fd c+a c+a
+-318: top c+a c+a 3fd c+a c+a c+a 2fd c+a c+a c+a
+-314: bot c+a c+a c+a c+a 3fu c+a 3fu
+-312: top c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+-311: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-309: top c+a c+a c+a c+a c+a c+a 2fd 2fd
+-305: top c+a c+a 2fd c+a c+a 2fd c+a c+a c+a c+a c+a
+-302: top c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+-301: top c+a c+a c+a 3fd c+a c+a c+a 2fd c+a
+-300: top c+a c+a c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+-296: top c+a 2fu c+a c+a c+a c+a c+a 3fd c+a c+a
+-295: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fd
+-292: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+-291: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a 3fu
+-288: 2fu 3fu c+a c+a c+a c+a c+a
+-284: bot 3fu c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-282: bot c+a c+a c+a 3fu c+a c+a c+a c+a 2fu
+-280: top c+a c+a c+a c+a 2fu c+a c+a c+a 3fd c+a
+-275: top c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-274: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-267: bot c+a c+a c+a c+a c+a c+a 2fu 2fu
+-262: top c+a c+a c+a 2fd c+a c+a 3fd c+a c+a
+-258: top c+a c+a c+a 3fd c+a c+a c+a c+a 2fd
+-256: 2fu c+a c+a
+-254: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fu
+-252: top c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+-249: top 3fd c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+-245: top c+a c+a c+a c+a 2fd c+a c+a 3fd
+-243: top c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-242: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fd c+a
+-241: bot c+a c+a 3fu c+a c+a c+a c+a 3fu
+-232: top c+a c+a c+a c+a c+a c+a c+a 3fd
+-223: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fu
+-222: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a 3fd
+-219: top c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a c+a
+-214: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+-213: top 2fd c+a c+a c+a c+a c+a c+a 3fd c+a
+-210: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a 3fu
+-208: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-207: top c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a c+a
+-203: bot c+a c+a c+a c+a 2fu c+a c+a c+a 2fu
+-200: bot c+a c+a c+a c+a c+a c+a c+a 3fu
+-198: top c+a c+a c+a c+a c+a 2fd 3fd c+a
+-197: top c+a c+a c+a 2fd c+a 2fd c+a c+a c+a c+a c+a
+-194: top c+a 2fd c+a c+a c+a c+a c+a 3fd c+a
+-192: 2fu c+a c+a 3fu c+a c+a c+a c+a
+-190: top c+a c+a 3fd c+a c+a c+a 3fd c+a c+a
+-187: bot c+a c+a c+a 2fu c+a c+a c+a 3fu
+-186: bot c+a c+a c+a c+a c+a 2fu 3fu
+-184: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+-181: top c+a c+a c+a c+a c+a 3fd c+a 2fd
+-178: top c+a 2fd c+a c+a c+a c+a c+a c+a 2fd c+a
+-176: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+-174: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-173: top c+a c+a c+a 3fd c+a c+a c+a 3fd
+-172: top c+a c+a c+a 2fu c+a c+a c+a c+a 3fd c+a
+-171: top c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+-168: top c+a c+a c+a c+a c+a 2fd c+a c+a 2fd
+-167: top c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+-166: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fd
+-163: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+-161: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+-158: top c+a 2fu c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+-155: top 2fd c+a c+a c+a c+a c+a 3fd c+a c+a c+a
+-153: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+-144: 3fu 3fu c+a c+a c+a c+a c+a c+a
+-133: top c+a c+a c+a 2fd c+a c+a c+a 2fd c+a c+a
+-131: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a
+-130: top c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+-128: 3fu c+a 2fd
+-123: top 3fd c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+-121: top 3fd c+a c+a c+a c+a c+a c+a 3fd c+a
+-120: bot c+a 3fu c+a c+a c+a c+a c+a 3fu
+-117: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+-114: top c+a c+a c+a c+a 2fu c+a c+a c+a c+a 3fd
+-113: bot c+a c+a 3fu c+a c+a c+a c+a c+a 2fu
+-102: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a 3fu
+-101: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fd
+-96: 2fu c+a 2fu c+a c+a c+a c+a
+-91: top c+a c+a 2fu c+a c+a c+a c+a c+a 3fd c+a
+-86: top c+a 3fd c+a c+a c+a c+a c+a c+a c+a 2fd
+-85: top c+a c+a c+a c+a 3fd c+a c+a c+a 2fd
+-82: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+-81: top c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+-79: bot c+a c+a 2fu c+a c+a c+a c+a 3fu
+-72: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fu
+-70: top c+a c+a c+a c+a c+a 3fd 3fd
+-64: top 2fd c+a c+a c+a c+a c+a c+a c+a 3fd
+-59: bot c+a c+a c+a 2fu c+a c+a c+a c+a 2fu
+-58: bot c+a c+a c+a c+a c+a 2fu c+a 2fu
+-57: top c+a c+a c+a c+a c+a c+a c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+-55: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+-53: top c+a c+a c+a c+a c+a 2fd c+a 3fd
+-50: top c+a 2fd c+a c+a c+a c+a c+a c+a 3fd
+-48: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-46: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a
+-40: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+-38: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-36: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+-35: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+-33: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a 3fd
+-30: top c+a 2fu c+a c+a c+a c+a c+a c+a 3fd c+a
+-28: bot 3fu c+a c+a c+a c+a c+a c+a 3fu
+-27: top c+a c+a c+a c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+-26: bot c+a c+a c+a 3fu c+a c+a 3fu
+-25: top c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a
+-22: top c+a c+a 2fd c+a c+a c+a 3fd c+a c+a c+a
+-18: bot c+a 2fd c+a c+a c+a c+a c+a c+a 3fu
+-11: bot c+a c+a c+a c+a c+a c+a 2fu 3fu c+a c+a
+-5: top c+a c+a c+a 2fd c+a c+a c+a 3fd c+a
+0: c+a
+2: bot c+a 2fu c+a c+a c+a c+a c+a 3fu
+4: top c+a c+a 3fd c+a c+a c+a c+a c+a c+a 2fd
+5: top 3fd c+a c+a c+a c+a c+a c+a c+a 3fd
+6: bot c+a c+a c+a 2fu c+a c+a 2fu c+a c+a
+8: bot c+a 3fu c+a c+a c+a c+a c+a c+a 2fu
+10: bot c+a 2fd c+a c+a c+a c+a 3fu c+a c+a c+a
+11: top c+a c+a 2fd c+a c+a c+a c+a c+a 3fd
+15: bot 2fu c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+22: bot c+a c+a 2fu c+a c+a c+a 3fu c+a
+26: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+27: top c+a c+a 2fu c+a c+a c+a c+a c+a c+a 3fd
+32: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+33: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+34: bot c+a 2fu c+a c+a 3fu c+a c+a c+a c+a c+a
+37: bot c+a c+a c+a 2fd c+a c+a c+a 2fu c+a c+a c+a
+42: top c+a 3fd c+a c+a c+a c+a c+a c+a 3fd
+43: top c+a c+a c+a c+a 3fd c+a c+a 3fd
+45: bot c+a 2fu c+a c+a c+a 3fu c+a c+a c+a
+48: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+49: bot c+a c+a 2fu c+a c+a c+a c+a c+a 2fu
+53: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+55: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+56: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+60: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+62: bot c+a 2fu c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+63: bot 2fu c+a c+a c+a c+a c+a c+a 3fu
+70: bot c+a c+a c+a c+a 2fu c+a 3fu
+72: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+73: top c+a 2fu c+a c+a c+a c+a c+a c+a c+a 3fd
+75: top c+a c+a c+a c+a c+a c+a 2fd c+a 2fd
+82: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+86: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+90: bot 3fu c+a c+a c+a c+a c+a 3fu c+a
+92: top c+a c+a c+a 2fd c+a c+a c+a c+a 3fd
+93: bot c+a c+a c+a c+a 3fu 3fu
+96: 2fd c+a 2fd c+a c+a c+a c+a
+100: bot 3fu c+a c+a c+a c+a c+a c+a c+a 2fu
+102: bot c+a c+a c+a 3fu c+a c+a c+a 2fu
+104: bot c+a 2fd c+a c+a c+a c+a c+a 3fu c+a
+110: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fu
+115: bot 2fu c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+118: bot c+a c+a 2fd c+a c+a c+a 3fu c+a c+a c+a
+120: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+123: bot 2fu c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+124: bot c+a c+a c+a 2fd c+a c+a c+a c+a 3fu
+125: bot c+a c+a 3fu c+a c+a 2fu c+a c+a c+a
+126: top c+a c+a c+a 3fd c+a c+a c+a c+a c+a 2fd
+128: 3fd c+a 2fu
+130: bot c+a 2fu c+a c+a c+a c+a c+a c+a 2fu
+132: top c+a c+a 3fd c+a c+a c+a c+a c+a 3fd
+138: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+142: bot c+a c+a 2fu 3fu c+a c+a c+a c+a c+a c+a
+143: bot c+a c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+144: 3fd 3fd c+a c+a c+a c+a c+a c+a
+150: bot c+a c+a 2fu c+a c+a c+a 2fu c+a c+a
+153: bot 2fu c+a c+a c+a c+a 3fu c+a c+a c+a
+160: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fu
+161: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+165: bot c+a c+a 3fd c+a c+a c+a c+a c+a 3fu
+170: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fu c+a
+171: bot c+a c+a 2fd c+a c+a c+a c+a c+a 2fu c+a
+174: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+176: bot 2fu c+a c+a c+a c+a c+a c+a c+a 2fu
+181: bot c+a c+a c+a c+a 2fu c+a c+a 2fu
+183: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a 2fu
+184: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a
+185: bot c+a c+a 2fd c+a c+a c+a c+a 3fu c+a
+190: bot c+a c+a 3fu c+a c+a c+a 3fu
+191: bot 2fu c+a c+a c+a c+a c+a c+a 2fu c+a
+192: 2fd c+a c+a 3fd c+a c+a c+a c+a
+197: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+198: bot c+a c+a c+a c+a 3fu c+a 2fu
+200: top c+a c+a c+a c+a 2fd c+a c+a c+a 3fd
+201: bot c+a 3fd c+a c+a c+a c+a c+a c+a 2fu c+a
+203: top c+a c+a c+a c+a c+a c+a 2fd 3fd
+204: bot 2fu c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+208: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+210: top c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+211: bot 2fu c+a c+a c+a c+a c+a 3fu c+a
+213: bot c+a 3fu c+a c+a c+a 3fu c+a c+a
+214: bot c+a c+a 2fu c+a 2fu c+a c+a c+a c+a c+a
+215: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+216: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+218: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+221: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+225: bot c+a 3fd c+a c+a c+a c+a c+a 3fu c+a
+232: bot c+a c+a c+a c+a 2fd c+a c+a c+a 3fu
+234: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 3fu
+245: bot c+a c+a c+a c+a c+a c+a 3fu
+248: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+250: bot c+a 2fu c+a 3fu c+a c+a c+a c+a c+a c+a
+252: bot c+a c+a 3fd c+a c+a c+a c+a c+a c+a 2fu
+254: top c+a c+a c+a 3fd c+a c+a c+a c+a 3fd
+256: 2fd c+a c+a
+258: bot c+a 2fu c+a c+a c+a c+a 2fu c+a c+a
+262: bot c+a c+a c+a 2fu c+a c+a 3fu
+264: bot c+a 3fu c+a c+a c+a c+a c+a c+a c+a c+a
+267: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fd
+271: bot c+a c+a 3fu c+a c+a c+a c+a 2fu
+280: top c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+282: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+285: bot c+a c+a 2fu c+a c+a 3fu c+a c+a
+286: bot c+a c+a c+a 3fd c+a c+a c+a c+a 3fu
+288: 2fd 3fd c+a c+a c+a c+a c+a
+293: bot c+a c+a c+a 2fd c+a c+a c+a 3fu c+a
+296: bot c+a 2fd c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+299: top c+a c+a c+a c+a 3fd c+a c+a c+a c+a 2fd
+302: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+304: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fu
+305: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+312: bot c+a c+a c+a c+a c+a c+a c+a 2fu
+313: bot c+a c+a 2fd c+a c+a c+a c+a 2fu c+a c+a
+318: bot c+a c+a 3fu c+a c+a c+a 2fu c+a
+322: bot c+a 2fu c+a c+a 2fu c+a c+a c+a c+a c+a
+325: bot c+a c+a c+a 2fu c+a c+a c+a 2fu
+326: bot c+a c+a c+a c+a c+a 2fu 2fu
+330: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+331: top c+a c+a c+a c+a c+a 3fd c+a 3fd
+336: top 2fd c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+338: top c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd c+a
+339: bot 2fu c+a c+a c+a c+a c+a 2fu c+a c+a
+341: bot c+a 3fu c+a c+a c+a 2fu c+a c+a c+a
+343: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a 2fu
+344: top c+a c+a c+a c+a c+a 2fd c+a c+a 3fd
+346: top c+a 2fd c+a c+a c+a c+a c+a c+a c+a 3fd
+347: bot c+a c+a 3fd c+a c+a c+a c+a 3fu c+a
+348: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+349: bot c+a c+a c+a c+a 2fu 2fu c+a c+a
+352: bot c+a 3fu c+a c+a c+a c+a 3fu
+353: bot c+a 3fd c+a c+a c+a c+a c+a 2fu c+a c+a
+356: bot 3fu c+a c+a c+a c+a c+a c+a c+a c+a c+a
+358: bot c+a c+a c+a 3fu c+a c+a c+a c+a c+a
+360: 3fd c+a 3fd c+a c+a c+a c+a c+a
+362: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fu c+a
+366: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+373: bot c+a c+a c+a c+a c+a c+a 2fu c+a
+375: bot 3fu c+a c+a c+a c+a 3fu c+a c+a
+376: bot c+a c+a c+a c+a c+a 2fd c+a c+a 3fu
+377: bot c+a c+a 2fd c+a c+a 2fu c+a c+a c+a c+a c+a
+379: bot c+a c+a c+a 3fu 3fu c+a c+a
+381: bot c+a c+a 3fu c+a c+a 3fu c+a
+384: 2fu c+a 2fd
+386: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+390: bot c+a c+a c+a 2fu c+a c+a 2fu c+a
+392: bot c+a 3fu c+a c+a c+a c+a c+a 2fu
+394: bot c+a 2fd c+a c+a c+a c+a 3fu c+a c+a
+395: top c+a c+a 2fd c+a c+a c+a c+a c+a c+a 3fd
+399: bot 2fu c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+405: bot c+a 2fu 3fu c+a c+a c+a c+a c+a c+a c+a
+406: bot c+a c+a 2fu c+a c+a c+a 3fu
+408: top c+a c+a c+a c+a c+a c+a c+a 2fd 3fd c+a
+410: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fu
+414: bot c+a c+a c+a 3fd c+a c+a c+a c+a 2fu c+a
+416: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+417: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+418: bot c+a 2fu c+a c+a 3fu c+a c+a c+a c+a
+421: bot c+a c+a c+a 2fd c+a c+a c+a 2fu c+a c+a
+424: bot c+a c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+426: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+427: top c+a c+a c+a c+a 3fd c+a c+a c+a 3fd
+429: bot c+a 2fu c+a c+a c+a 3fu c+a c+a
+432: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a
+433: bot c+a c+a 2fu c+a c+a c+a c+a 2fu
+437: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a
+439: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a c+a
+440: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd 3fu
+444: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+446: bot c+a 2fu c+a 2fu c+a c+a c+a c+a c+a c+a
+448: bot c+a c+a c+a c+a 3fd c+a c+a c+a 3fu
+454: bot c+a c+a c+a c+a c+a 3fu c+a
+456: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+458: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fu
+459: top c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fd
+460: bot c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a
+464: bot c+a c+a c+a c+a 3fd c+a c+a c+a c+a 2fu
+466: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+470: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+472: bot c+a 3fu c+a 3fu c+a c+a c+a c+a c+a
+473: bot c+a c+a 2fd c+a c+a 3fu c+a c+a c+a c+a
+474: bot 3fu c+a c+a c+a c+a c+a 3fu
+475: bot c+a c+a 3fd c+a c+a c+a c+a 2fu c+a c+a
+476: top c+a c+a c+a 2fd c+a c+a c+a c+a c+a 3fd
+477: bot c+a c+a c+a 3fu c+a 3fu
+480: 2fd c+a 2fd c+a c+a c+a
+484: bot 3fu c+a c+a c+a c+a c+a c+a 2fu
+486: bot c+a c+a c+a 3fu c+a c+a 2fu
+487: bot c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a c+a
+488: bot c+a 2fd c+a c+a c+a c+a c+a 3fu
+494: bot c+a 2fd c+a c+a c+a c+a c+a c+a 2fu
+497: bot 3fu c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+499: bot 2fu c+a c+a c+a 3fu c+a c+a c+a c+a
+501: bot c+a c+a c+a c+a c+a c+a 2fd 3fu c+a c+a
+502: bot c+a c+a 2fd c+a c+a c+a 3fu c+a c+a
+504: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fu c+a
+507: bot 2fu c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+508: bot c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+509: bot c+a c+a 3fu c+a c+a 2fu c+a c+a
+512: 2fu 3fd
+514: bot c+a 2fu c+a c+a c+a c+a 3fu
+522: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a
+526: bot c+a c+a 2fu 3fu c+a c+a c+a c+a c+a
+527: bot c+a c+a 3fu c+a c+a c+a c+a c+a c+a
+528: 3fd 3fd c+a c+a c+a c+a c+a
+534: bot c+a c+a 2fu c+a c+a c+a 2fu c+a
+537: bot 2fu c+a c+a c+a c+a 3fu c+a c+a
+544: bot c+a 3fu c+a c+a 2fu c+a c+a c+a c+a
+554: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fu
+555: bot c+a c+a 2fd c+a c+a c+a c+a c+a 2fu
+556: bot c+a 3fd c+a c+a c+a c+a 3fu c+a c+a
+558: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+560: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+565: bot c+a c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+568: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a
+569: bot c+a c+a 2fd c+a c+a c+a c+a 3fu
+575: bot 2fu c+a c+a c+a c+a c+a c+a 2fu
+576: 2fd c+a c+a 3fd c+a c+a c+a
+581: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a
+582: bot c+a c+a c+a c+a 2fu c+a 2fu
+584: top c+a c+a c+a c+a 2fd c+a c+a c+a c+a 3fd
+585: bot c+a 3fd c+a c+a c+a c+a c+a c+a 2fu
+587: top c+a c+a c+a c+a c+a c+a 2fd c+a 3fd
+588: bot 2fu c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+594: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+595: bot 2fu c+a c+a c+a c+a c+a 3fu
+597: bot c+a 3fu c+a c+a c+a 3fu c+a
+598: bot c+a c+a 2fu c+a 2fu c+a c+a c+a c+a
+599: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+600: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+602: bot 3fu c+a c+a c+a c+a c+a 2fu c+a
+605: bot c+a c+a c+a c+a 2fu 3fu
+608: bot c+a 2fd c+a c+a 3fu c+a c+a c+a c+a c+a
+609: bot c+a 3fd c+a c+a c+a c+a c+a 3fu
+614: bot 2fu c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+616: bot c+a 2fd c+a c+a c+a c+a c+a 2fu c+a
+626: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a 2fu
+629: bot c+a c+a c+a c+a c+a 2fd c+a 3fu c+a
+632: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+634: bot c+a 2fu c+a 3fu c+a c+a c+a c+a c+a
+636: bot c+a c+a c+a 2fd c+a c+a c+a c+a 2fu
+637: bot c+a c+a c+a 3fd c+a c+a c+a 2fu c+a c+a
+640: 2fd c+a
+642: bot c+a 2fu c+a c+a c+a c+a 2fu c+a
+646: bot c+a c+a c+a 2fd c+a c+a 3fu c+a c+a
+648: bot c+a 3fu c+a c+a c+a c+a c+a c+a c+a
+649: bot c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a c+a
+664: top c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fd
+666: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+669: bot c+a c+a 2fu c+a c+a 3fu c+a
+672: 2fd 3fd c+a c+a c+a c+a
+675: bot 2fu c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+676: bot c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a
+677: bot c+a c+a c+a 2fd c+a c+a c+a 3fu
+680: bot c+a 2fd c+a c+a c+a 2fu c+a c+a c+a c+a
+688: bot c+a 3fu c+a 2fu c+a c+a c+a c+a c+a
+689: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a
+696: bot c+a c+a c+a c+a c+a c+a 2fd c+a 2fu c+a
+697: bot c+a c+a 2fd c+a c+a c+a c+a 2fu c+a
+702: bot c+a c+a 3fu c+a c+a c+a 2fu
+706: bot c+a 2fu c+a c+a 2fu c+a c+a c+a c+a
+710: bot c+a c+a c+a c+a c+a 3fu c+a c+a 2fd c+a
+712: bot c+a c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+714: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+715: top c+a c+a c+a c+a c+a c+a 3fd 3fd
+718: bot c+a c+a 3fd c+a c+a c+a 3fu c+a c+a
+720: bot c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+722: top c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+723: bot 2fu c+a c+a c+a c+a c+a 2fu c+a
+725: bot c+a 3fu c+a c+a c+a 2fu c+a c+a
+728: top c+a c+a c+a c+a c+a 2fd c+a c+a c+a 3fd
+731: bot c+a c+a 3fd c+a c+a c+a c+a 3fu
+733: bot c+a c+a c+a c+a 2fu 2fu c+a
+737: bot c+a 3fd c+a c+a c+a c+a c+a 2fu c+a
+740: bot 3fu c+a c+a c+a c+a c+a c+a c+a c+a
+742: bot c+a c+a c+a 3fu c+a c+a c+a c+a
+744: bot c+a c+a c+a c+a 2fd c+a c+a c+a 2fu
+746: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fu
+750: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+756: bot 2fu c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+757: bot c+a c+a c+a c+a c+a c+a 2fu
+759: bot 3fu c+a c+a c+a c+a 3fu c+a
+761: bot c+a c+a 2fd c+a c+a 2fu c+a c+a c+a c+a
+763: bot c+a c+a c+a 3fu 3fu c+a
+765: bot c+a c+a 3fu c+a c+a 3fu
+768: 2fu c+a c+a 2fd
+770: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a
+774: bot c+a c+a c+a 2fu c+a c+a 2fu
+776: bot c+a 2fd c+a c+a c+a 3fu c+a c+a c+a
+778: bot c+a 2fd c+a c+a c+a c+a 3fu c+a
+783: bot 2fu c+a c+a c+a 2fu c+a c+a c+a c+a
+789: bot c+a 2fu 3fu c+a c+a c+a c+a c+a c+a
+790: bot c+a c+a 2fu c+a c+a 2fu c+a c+a
+792: top c+a c+a c+a c+a c+a c+a c+a 2fd 3fd
+793: bot c+a 3fd c+a c+a c+a 2fu c+a c+a c+a c+a
+798: bot c+a c+a c+a 3fd c+a c+a c+a c+a 2fu
+800: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+801: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+802: bot c+a 2fu c+a c+a 3fu c+a c+a c+a
+805: bot c+a c+a c+a 2fd c+a c+a c+a 2fu c+a
+806: bot c+a 2fu c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+807: bot c+a c+a c+a 2fu c+a c+a 2fd c+a c+a c+a c+a
+808: bot c+a c+a c+a c+a 2fd c+a 2fu c+a c+a c+a
+810: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+813: bot c+a 2fu c+a c+a c+a 3fu c+a
+816: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a
+821: bot c+a c+a c+a c+a 2fd c+a c+a 3fu
+823: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a c+a
+824: bot c+a c+a c+a c+a c+a c+a c+a 2fd 3fu
+828: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+830: bot c+a 2fu c+a 2fu c+a c+a c+a c+a c+a
+831: bot c+a c+a 2fd 3fu c+a c+a c+a c+a c+a c+a
+832: bot c+a c+a c+a c+a 3fd c+a c+a 2fu c+a c+a
+838: bot c+a c+a c+a c+a c+a 3fu
+840: 2fd c+a 3fd c+a c+a c+a
+842: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a 2fu
+843: top c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+844: bot c+a c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+850: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+854: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+856: bot c+a 3fu c+a 3fu c+a c+a c+a c+a
+857: bot c+a c+a 2fd c+a c+a 3fu c+a c+a c+a
+858: bot 3fu c+a c+a c+a c+a 2fu c+a c+a
+859: bot c+a c+a 3fd c+a c+a c+a c+a 2fu c+a
+861: bot c+a c+a c+a 2fu c+a 3fu
+862: bot c+a c+a c+a 3fd c+a c+a 2fu c+a c+a c+a
+864: bot c+a 3fu c+a c+a c+a c+a 2fu
+868: bot c+a c+a 2fu c+a c+a c+a 2fd c+a c+a c+a c+a
+870: bot c+a c+a c+a c+a 2fu c+a c+a 2fd c+a c+a c+a
+871: bot c+a c+a 2fd c+a 2fu c+a c+a c+a c+a c+a
+872: bot c+a 2fd c+a c+a c+a c+a 2fu c+a c+a
+880: bot c+a c+a c+a c+a 3fu c+a 2fd c+a c+a c+a
+881: bot 3fu c+a 2fu c+a c+a c+a c+a c+a c+a
+883: bot 2fu c+a c+a c+a 3fu c+a c+a c+a
+884: bot 3fu 2fd c+a c+a c+a c+a c+a c+a c+a c+a
+885: bot c+a c+a c+a c+a c+a c+a 2fd 3fu c+a
+886: bot c+a c+a 2fd c+a c+a c+a 3fu c+a
+888: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fu
+891: bot 2fu c+a c+a 2fu c+a c+a c+a c+a c+a
+892: bot c+a c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+893: bot c+a c+a c+a 3fd c+a c+a c+a 3fu
+896: 2fu c+a 3fd
+897: bot c+a 3fd c+a c+a c+a 3fu c+a c+a c+a
+898: bot c+a 2fu c+a c+a c+a 2fu c+a c+a
+901: bot c+a 3fd c+a c+a 2fu c+a c+a c+a c+a c+a
+906: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a
+910: bot c+a c+a 2fu 3fu c+a c+a c+a c+a
+911: bot c+a c+a 3fu c+a c+a c+a c+a c+a
+912: 3fd 3fd c+a c+a c+a c+a
+914: bot c+a 2fu c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+918: bot c+a c+a 2fu c+a c+a c+a 2fu
+921: bot 2fu c+a c+a c+a c+a 3fu c+a
+928: bot c+a 3fu c+a c+a 2fu c+a c+a c+a
+930: bot 3fu c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+937: bot c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+940: bot c+a 3fd c+a c+a c+a c+a 3fu c+a
+942: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+944: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+948: bot 2fu c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+949: bot c+a c+a c+a c+a 2fd c+a c+a 2fu c+a
+951: bot c+a c+a c+a 2fu c+a c+a c+a 2fd c+a c+a c+a
+952: bot c+a c+a c+a c+a c+a c+a c+a c+a
+953: bot c+a c+a 2fd c+a c+a c+a 2fu c+a c+a
+960: bot c+a c+a c+a c+a 3fd c+a c+a c+a 2fu
+965: bot c+a c+a c+a 2fu c+a c+a c+a c+a
+966: bot c+a c+a c+a c+a c+a 2fu c+a
+971: top c+a c+a c+a c+a c+a c+a 2fd c+a c+a 3fd
+972: bot 2fu c+a 2fu c+a c+a c+a c+a c+a c+a
+978: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+979: bot 2fu c+a c+a c+a c+a 2fu c+a c+a
+981: bot c+a 3fu c+a c+a c+a 3fu
+982: bot c+a c+a 2fu c+a 2fu c+a c+a c+a
+983: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+986: bot 3fu c+a c+a c+a c+a c+a 2fu
+989: bot c+a c+a c+a 3fu c+a 2fu
+990: bot 3fu c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+992: bot c+a 2fd c+a c+a 3fu c+a c+a c+a c+a
+993: bot c+a 3fd c+a c+a c+a c+a 2fu c+a c+a
+998: bot 2fu c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+1000: bot c+a 2fd c+a c+a c+a c+a c+a 2fu
+1002: bot c+a 3fu c+a c+a 2fd c+a c+a c+a c+a c+a
+1006: bot c+a c+a c+a 3fd c+a 2fu c+a c+a c+a c+a
+1012: bot c+a c+a 2fu c+a c+a c+a c+a 2fd c+a c+a c+a
+1013: bot c+a c+a c+a c+a c+a 2fd c+a 3fu
+1016: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+1018: bot c+a 2fu c+a 3fu c+a c+a c+a c+a
+1019: bot c+a c+a 3fd c+a c+a 3fu c+a c+a c+a
+1020: bot c+a c+a 3fu c+a c+a 2fd c+a c+a c+a c+a
+1021: bot c+a c+a c+a 3fd c+a c+a c+a 2fu c+a
+1024: 2fd
+1026: bot c+a 2fu c+a c+a c+a c+a 2fu
+1030: bot c+a c+a c+a 2fd c+a c+a 3fu c+a
+1032: bot c+a 3fu c+a c+a c+a c+a c+a c+a
+1033: bot c+a c+a 2fu c+a 2fd c+a c+a c+a c+a c+a
+1042: bot c+a c+a c+a 3fu c+a c+a 2fd c+a c+a c+a
+1043: bot c+a 2fu 3fd c+a c+a c+a c+a c+a c+a c+a
+1044: bot c+a c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a
+1048: bot c+a c+a c+a c+a c+a 3fd c+a 2fu c+a c+a
+1050: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+1053: bot c+a c+a 2fu c+a c+a 3fu
+1056: 2fd 3fd c+a c+a c+a
+1058: bot c+a 2fu c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1059: bot 2fu c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+1060: bot c+a c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+1061: bot c+a c+a c+a 2fd c+a c+a 2fu c+a c+a
+1064: bot c+a 2fd c+a c+a c+a 2fu c+a c+a c+a
+1071: bot 3fu c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+1072: bot c+a 3fu c+a 2fu c+a c+a c+a c+a
+1073: bot c+a c+a 2fu c+a c+a c+a c+a c+a
+1074: bot c+a c+a 2fu 3fd c+a c+a c+a c+a c+a c+a
+1077: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+1079: bot c+a 2fd c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+1080: bot c+a c+a c+a c+a c+a c+a 2fd c+a 2fu
+1081: bot c+a c+a 2fd c+a c+a c+a c+a 2fu
+1089: bot 2fu c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+1090: bot c+a 2fu c+a c+a 2fu c+a c+a c+a
+1092: bot 2fu c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1094: bot c+a c+a c+a c+a c+a 3fu c+a c+a 2fd
+1096: bot c+a c+a c+a c+a 2fu c+a 2fd c+a c+a c+a
+1098: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1099: top c+a c+a c+a c+a c+a c+a 3fd c+a 3fd
+1102: bot c+a c+a 3fd c+a c+a c+a 3fu c+a
+1104: bot c+a c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+1106: top c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+1107: bot 2fu c+a c+a c+a c+a c+a 2fu
+1108: bot c+a c+a c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+1109: bot c+a c+a c+a c+a 3fd c+a c+a 3fu
+1110: bot c+a 3fu c+a c+a c+a 2fd c+a c+a c+a c+a
+1113: bot c+a 3fd c+a c+a 3fu c+a c+a c+a c+a
+1114: bot c+a c+a c+a 2fu 3fd c+a c+a c+a c+a c+a
+1115: bot c+a c+a 3fd c+a c+a c+a 2fu c+a c+a
+1117: bot c+a c+a c+a c+a 2fu 2fu
+1121: bot c+a 3fd c+a c+a c+a c+a c+a 2fu
+1124: bot 3fu c+a c+a c+a c+a c+a c+a c+a
+1125: bot c+a c+a 2fd c+a c+a 2fd c+a c+a c+a c+a c+a
+1126: bot c+a c+a c+a 3fu c+a c+a c+a
+1128: 3fd c+a 3fd c+a c+a c+a
+1130: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a 2fu
+1134: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a
+1140: bot 2fu c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+1141: bot c+a c+a c+a c+a c+a 2fd c+a 2fu c+a
+1143: bot 3fu c+a c+a c+a c+a 3fu
+1145: bot c+a c+a 2fd c+a c+a 2fu c+a c+a c+a
+1147: bot c+a c+a c+a 3fu 3fu
+1149: bot c+a c+a 3fu c+a 2fu c+a c+a
+1152: 3fd c+a
+1154: bot c+a 2fu c+a c+a c+a c+a c+a c+a
+1160: bot c+a 2fd c+a c+a c+a 3fu c+a c+a
+1161: bot c+a c+a 3fu c+a c+a c+a 2fd c+a c+a c+a
+1162: bot c+a 2fd c+a c+a c+a c+a 3fu
+1164: bot c+a c+a c+a c+a 2fu 3fd c+a c+a c+a c+a
+1167: bot 2fu c+a c+a c+a 2fu c+a c+a c+a
+1173: bot c+a 2fu 3fu c+a c+a c+a c+a c+a
+1174: bot c+a c+a 2fu c+a c+a 2fu c+a
+1176: top c+a c+a c+a c+a c+a c+a c+a 2fd c+a 3fd
+1177: bot c+a 3fd c+a c+a c+a 2fu c+a c+a c+a
+1179: bot c+a 2fd c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+1180: bot c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a c+a
+1184: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1185: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a
+1186: bot c+a 2fu c+a c+a 3fu c+a c+a
+1189: bot c+a c+a c+a 2fd c+a c+a c+a 2fu
+1190: bot c+a 2fu c+a c+a c+a 2fd c+a c+a c+a c+a
+1191: bot c+a c+a c+a 2fu c+a c+a 2fd c+a c+a c+a
+1192: bot c+a c+a c+a c+a 2fd c+a 2fu c+a c+a
+1194: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1197: bot c+a 2fu c+a c+a c+a 3fu
+1200: bot 2fu c+a c+a c+a c+a c+a c+a c+a
+1204: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+1205: bot c+a c+a c+a c+a 2fu c+a c+a
+1207: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a
+1208: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1210: bot c+a c+a c+a 3fu c+a c+a c+a 2fd c+a c+a
+1212: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a
+1213: bot c+a c+a 2fd c+a c+a c+a 2fd c+a c+a c+a c+a
+1214: bot c+a 2fu c+a 2fu c+a c+a c+a c+a
+1215: bot c+a c+a 2fd 3fu c+a c+a c+a c+a c+a
+1216: bot c+a c+a c+a c+a 3fd c+a c+a 2fu c+a
+1218: bot c+a c+a c+a c+a c+a 2fu 3fd c+a c+a c+a
+1221: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+1222: bot c+a c+a c+a c+a 3fu c+a
+1224: 2fd c+a 3fd c+a c+a
+1226: bot c+a 2fu c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1228: bot c+a c+a c+a 2fd c+a 2fu c+a c+a c+a
+1229: bot c+a 3fu c+a c+a c+a c+a 2fd c+a c+a c+a
+1230: bot c+a 2fu c+a c+a 3fd c+a c+a c+a c+a c+a
+1234: top c+a c+a c+a c+a c+a c+a c+a c+a 2fd 3fd
+1238: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+1240: bot c+a 3fu c+a 3fu c+a c+a c+a
+1241: bot c+a c+a 2fd c+a c+a 3fu c+a c+a
+1242: bot 3fu c+a c+a c+a c+a 2fu c+a
+1243: bot c+a c+a 3fd c+a c+a c+a c+a 2fu
+1245: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a
+1246: bot c+a c+a c+a 3fd c+a c+a 2fu c+a c+a
+1248: 2fd c+a 2fd c+a
+1251: bot 2fu c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1252: bot c+a c+a 2fu c+a c+a c+a 2fd c+a c+a c+a
+1254: bot c+a c+a c+a c+a 2fu c+a c+a 2fd c+a c+a
+1255: bot c+a c+a 2fd c+a 2fu c+a c+a c+a c+a
+1256: bot c+a 2fd c+a c+a c+a c+a 2fu c+a
+1258: bot c+a c+a c+a 2fd c+a c+a 2fd c+a c+a c+a c+a
+1264: bot c+a c+a c+a c+a 3fu c+a 2fd c+a c+a
+1265: bot 3fu c+a 2fu c+a c+a c+a c+a c+a
+1267: bot 2fu c+a c+a c+a 3fu c+a c+a
+1268: bot 3fu 2fd c+a c+a c+a c+a c+a c+a c+a
+1269: bot c+a c+a c+a c+a c+a c+a 2fd 3fu
+1270: bot c+a c+a 2fd c+a c+a c+a 3fu
+1275: bot 2fu c+a c+a 2fu c+a c+a c+a c+a
+1276: bot c+a c+a 3fd c+a c+a c+a c+a c+a c+a
+1277: bot c+a c+a 3fu c+a c+a 2fu
+1280: 2fd c+a c+a 2fd
+1281: bot c+a 3fd c+a c+a c+a 3fu c+a c+a
+1282: bot c+a 2fu c+a c+a c+a 2fu c+a
+1285: bot c+a 3fd c+a c+a 2fu c+a c+a c+a c+a
+1287: bot c+a 2fd c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1290: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd c+a
+1294: bot c+a c+a 2fu 3fu c+a c+a c+a
+1295: bot c+a c+a 3fu c+a c+a c+a c+a
+1296: 3fd 3fd c+a c+a c+a
+1298: bot c+a 2fu c+a c+a c+a c+a 2fd c+a c+a c+a
+1304: top c+a c+a c+a c+a c+a c+a c+a 3fd 3fd
+1305: bot 2fu c+a c+a c+a c+a 3fu
+1306: bot c+a c+a 2fu c+a c+a 3fd c+a c+a c+a c+a
+1312: bot c+a 3fu c+a c+a 2fu c+a c+a
+1314: bot 3fu c+a 2fd c+a c+a c+a c+a c+a c+a
+1319: bot c+a c+a c+a c+a 2fd c+a 2fd c+a c+a c+a c+a
+1321: bot c+a 2fd c+a 2fd c+a c+a c+a c+a c+a c+a
+1324: bot c+a 3fd c+a c+a c+a c+a 3fu
+1325: bot c+a c+a c+a 3fu c+a c+a c+a c+a 2fd c+a
+1326: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a
+1328: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1329: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fd
+1332: bot 2fu c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1333: bot c+a c+a c+a c+a 2fd c+a c+a 2fu
+1335: bot c+a c+a c+a 2fu c+a c+a c+a 2fd c+a c+a
+1336: bot c+a c+a c+a c+a c+a c+a c+a
+1337: bot c+a c+a 2fd c+a c+a c+a 2fu c+a
+1344: 2fd c+a c+a 3fd c+a
+1346: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1349: bot c+a c+a c+a 2fu c+a c+a c+a
+1350: bot c+a c+a c+a c+a c+a 2fu
+1352: bot c+a 2fu c+a c+a c+a 3fd c+a c+a c+a c+a
+1356: bot 2fu c+a 2fu c+a c+a c+a c+a c+a
+1362: top c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+1363: bot 2fu c+a c+a c+a c+a 2fu c+a
+1365: bot c+a 3fu c+a c+a 3fu c+a
+1366: bot c+a c+a 2fu c+a 2fu c+a c+a
+1367: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a
+1373: bot c+a c+a c+a 2fu c+a 2fu
+1374: bot 3fu c+a c+a 2fd c+a c+a c+a c+a c+a
+1376: bot c+a 2fd c+a c+a 3fu c+a c+a c+a
+1377: bot c+a 3fd c+a c+a c+a c+a 2fu c+a
+1380: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1382: bot c+a c+a c+a 3fu c+a c+a c+a c+a c+a 2fd
+1384: bot c+a c+a c+a c+a 2fu c+a c+a c+a 2fd c+a
+1386: bot c+a 3fu c+a c+a 2fd c+a c+a c+a c+a
+1389: bot c+a 3fd c+a 2fd c+a c+a c+a c+a c+a c+a
+1390: bot c+a c+a c+a 3fd c+a 2fu c+a c+a c+a
+1396: bot c+a c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+1397: bot c+a c+a c+a c+a c+a c+a 2fu c+a 2fd
+1400: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a c+a
+1402: bot c+a 2fu c+a 3fu c+a c+a c+a
+1403: bot c+a c+a 3fd c+a c+a 3fu c+a c+a
+1404: bot c+a c+a 3fu c+a c+a 2fd c+a c+a c+a
+1405: bot c+a c+a c+a 3fd c+a c+a c+a 2fu
+1407: bot c+a c+a c+a 2fu c+a c+a 3fd c+a c+a c+a
+1408: 3fd c+a c+a c+a 2fd
+1410: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1413: bot c+a 2fd c+a 3fd c+a c+a c+a c+a c+a c+a
+1414: bot c+a c+a c+a 2fd c+a c+a 3fu
+1416: bot c+a 3fu c+a c+a c+a c+a c+a
+1417: bot c+a c+a 2fu c+a 2fd c+a c+a c+a c+a
+1425: bot 3fu c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1426: bot c+a c+a c+a 3fu c+a c+a 2fd c+a c+a
+1427: bot c+a 2fu 3fd c+a c+a c+a c+a c+a c+a
+1428: bot c+a c+a 2fd c+a 2fd c+a c+a c+a c+a c+a
+1431: bot c+a 2fd c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1432: bot c+a c+a c+a c+a c+a 3fd c+a 2fu c+a
+1434: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a
+1437: bot c+a c+a 2fu c+a 3fu c+a
+1440: 2fd 3fd c+a c+a
+1442: bot c+a 2fu c+a c+a c+a c+a c+a 2fd c+a c+a
+1443: bot 2fu c+a c+a 2fd c+a c+a c+a c+a c+a
+1444: bot c+a c+a c+a 2fu c+a 2fd c+a c+a c+a
+1445: bot c+a c+a c+a 2fd c+a c+a 2fu c+a
+1448: bot c+a 2fd c+a c+a c+a 2fu c+a c+a
+1450: bot c+a 3fd c+a c+a 2fd c+a c+a c+a c+a c+a
+1452: bot c+a c+a 3fu c+a c+a c+a c+a c+a 2fd c+a
+1455: bot 3fu c+a c+a c+a 2fd c+a c+a c+a c+a
+1456: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1457: bot c+a c+a 2fu c+a c+a c+a c+a
+1458: bot c+a c+a 2fu 3fd c+a c+a c+a c+a c+a
+1461: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a 2fd
+1463: bot c+a 2fd c+a c+a c+a 2fd c+a c+a c+a c+a
+1464: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fu 3fd
+1465: bot c+a c+a 2fd c+a c+a c+a c+a c+a 2fd c+a c+a
+1468: bot c+a c+a 2fu c+a c+a c+a 3fd c+a c+a c+a
+1473: bot 2fu c+a 3fd c+a c+a c+a c+a c+a c+a
+1474: bot c+a 2fu c+a c+a 2fu c+a c+a
+1476: bot 2fu c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1478: bot c+a c+a c+a c+a c+a 3fu c+a 2fd
+1480: bot c+a c+a c+a c+a 2fu c+a 2fd c+a c+a
+1482: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1483: bot 2fu c+a c+a 3fu c+a c+a c+a
+1486: bot c+a c+a 3fd c+a c+a c+a 3fu
+1488: bot c+a c+a c+a c+a 3fd c+a c+a c+a c+a
+1492: bot c+a c+a c+a 2fu c+a c+a c+a c+a 2fd c+a
+1493: bot c+a 3fu c+a c+a c+a 2fu
+1494: bot c+a 3fu c+a c+a c+a 2fd c+a c+a c+a
+1496: bot 3fu c+a c+a 3fd c+a c+a c+a c+a c+a
+1497: bot c+a 3fd c+a c+a 3fu c+a c+a c+a
+1498: bot c+a c+a c+a 2fu 3fd c+a c+a c+a c+a
+1499: bot c+a c+a 3fd c+a c+a c+a 2fu c+a
+1503: bot c+a 2fd c+a c+a 3fd c+a c+a c+a c+a c+a
+1508: bot 3fu c+a c+a c+a c+a c+a c+a
+1509: bot c+a c+a 2fd c+a c+a 2fd c+a c+a c+a c+a
+1510: bot c+a c+a c+a 3fu c+a c+a
+1512: 3fd c+a 3fd c+a c+a
+1514: bot c+a 2fu c+a c+a c+a c+a 3fd c+a c+a c+a
+1518: bot c+a 2fd c+a c+a c+a c+a c+a c+a
+1519: bot c+a c+a 3fd c+a 2fd c+a c+a c+a c+a c+a
+1524: bot 2fu c+a c+a c+a 2fd c+a c+a c+a c+a
+1525: bot c+a c+a c+a c+a c+a 2fd c+a 2fu
+1527: bot 3fu c+a c+a c+a 3fu c+a
+1529: bot c+a c+a 2fd c+a c+a 2fu c+a c+a
+1531: bot c+a c+a 3fu c+a 3fu
+1533: bot c+a c+a 3fu c+a 2fu c+a
+1536: 3fd
+1538: bot c+a 2fu c+a c+a c+a c+a c+a
+1542: bot c+a c+a c+a c+a 2fu c+a c+a 3fd c+a c+a
+1546: bot c+a 2fd c+a c+a c+a 3fu c+a
+1548: bot c+a c+a 3fu c+a c+a c+a 2fd c+a c+a
+1549: bot c+a c+a 2fd c+a 3fd c+a c+a c+a c+a c+a
+1551: bot c+a c+a 3fu c+a c+a c+a c+a c+a c+a 2fd
+1552: bot c+a c+a c+a c+a 2fu 3fd c+a c+a c+a
+1555: bot 2fu c+a c+a c+a 2fu c+a c+a
+1563: bot 3fu c+a c+a c+a c+a 2fd c+a c+a c+a
+1564: bot c+a 2fu 3fu c+a c+a c+a c+a
+1565: bot c+a c+a 2fu c+a c+a 2fu
+1569: bot c+a 3fd c+a c+a c+a 2fu c+a c+a
+1571: bot c+a 2fd c+a c+a c+a c+a 2fd c+a c+a c+a
+1573: bot c+a c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+1578: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a
+1579: bot c+a c+a 2fd c+a c+a c+a c+a c+a
+1581: bot c+a 2fu c+a c+a 3fu c+a
+1586: bot c+a 2fu c+a c+a c+a 2fd c+a c+a c+a
+1588: bot c+a c+a c+a 2fu c+a c+a 2fd c+a c+a
+1589: bot c+a c+a c+a c+a 2fd c+a 2fu c+a
+1592: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1599: bot 2fu c+a c+a c+a c+a c+a c+a
+1600: bot c+a c+a 3fd c+a c+a 2fd c+a c+a c+a c+a
+1605: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+1606: bot c+a c+a c+a c+a 2fu c+a
+1609: bot c+a 3fd c+a c+a c+a c+a c+a c+a
+1610: bot c+a c+a c+a 2fd 3fd c+a c+a c+a c+a c+a
+1611: bot 3fu c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1613: bot c+a c+a c+a 3fu c+a c+a c+a 2fd c+a
+1616: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a c+a
+1617: bot c+a c+a 2fd c+a c+a c+a 2fd c+a c+a c+a
+1618: bot c+a 2fu c+a 2fu c+a c+a c+a
+1619: bot c+a c+a 2fd 3fu c+a c+a c+a c+a
+1620: bot c+a c+a 3fu c+a c+a 3fd c+a c+a c+a
+1621: bot c+a c+a c+a c+a 3fd c+a c+a 2fu
+1623: bot c+a c+a c+a 2fu c+a c+a c+a 3fd c+a c+a
+1624: bot c+a c+a c+a c+a c+a 2fu 3fd c+a c+a
+1625: bot c+a 2fd c+a c+a c+a 3fd c+a c+a c+a c+a
+1629: bot c+a c+a c+a c+a 3fu
+1632: 2fd c+a 3fd c+a
+1634: bot c+a 2fu c+a c+a c+a c+a c+a c+a 2fd c+a
+1637: bot c+a c+a c+a 2fd c+a 2fu c+a c+a
+1638: bot c+a 3fu c+a c+a c+a c+a 2fd c+a c+a
+1639: bot c+a 3fd c+a c+a c+a c+a 2fd c+a c+a c+a
+1640: bot c+a 2fu c+a c+a 3fd c+a c+a c+a c+a
+1645: bot 2fu c+a 3fu c+a c+a c+a c+a
+1650: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a
+1652: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fd c+a c+a
+1653: bot c+a 3fu c+a 3fu c+a c+a
+1654: bot c+a c+a 2fd c+a c+a 3fu c+a
+1655: bot 3fu c+a c+a c+a c+a 2fu
+1657: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fd c+a
+1659: bot c+a c+a c+a 2fu 3fu
+1660: bot c+a c+a c+a 2fd c+a c+a c+a c+a
+1661: bot c+a c+a c+a 3fd c+a c+a 2fu c+a
+1664: 2fd c+a 2fd
+1668: bot 2fu c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1669: bot c+a c+a 2fu c+a c+a c+a 2fd c+a c+a
+1671: bot c+a c+a 2fd c+a c+a 3fd c+a c+a c+a c+a
+1672: bot c+a 3fu c+a c+a c+a c+a c+a c+a c+a 2fd
+1673: bot c+a c+a 2fd c+a 2fu c+a c+a c+a
+1674: bot c+a 2fd c+a c+a c+a c+a 2fu
+1677: bot c+a c+a c+a 2fd c+a c+a 2fd c+a c+a c+a
+1684: bot c+a c+a 2fu c+a c+a c+a c+a 3fd c+a c+a
+1685: bot c+a c+a c+a c+a 3fu c+a 2fd c+a
+1686: bot 3fu c+a 2fu c+a c+a c+a c+a
+1689: bot 2fu c+a c+a c+a 3fu c+a
+1690: bot 3fu 2fd c+a c+a c+a c+a c+a c+a
+1691: bot c+a c+a 3fd c+a c+a 2fu c+a c+a
+1699: bot 2fu c+a c+a 2fu c+a c+a c+a
+1700: bot c+a 2fd c+a 2fu c+a c+a c+a c+a
+1701: bot c+a c+a 3fd c+a c+a c+a c+a c+a
+1702: bot c+a c+a c+a 3fd c+a c+a 3fu
+1707: bot 3fu c+a c+a c+a c+a c+a 2fd c+a c+a
+1708: bot c+a 3fd c+a c+a c+a 3fu c+a
+1709: bot c+a 2fu c+a c+a c+a 2fu
+1710: bot c+a 3fu c+a c+a c+a 3fd c+a c+a c+a
+1713: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+1714: bot c+a c+a c+a 3fu c+a c+a 3fd c+a c+a
+1715: bot c+a 2fd c+a c+a c+a c+a c+a 2fd c+a c+a
+1720: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+1725: bot c+a c+a 2fu 3fu c+a c+a
+1726: bot c+a c+a 3fu c+a c+a c+a
+1727: bot c+a c+a 3fu c+a 2fd c+a c+a c+a
+1728: 3fd 3fd c+a c+a
+1730: bot c+a 2fu c+a c+a c+a c+a 2fd c+a c+a
+1731: bot c+a c+a c+a 2fd c+a 3fd c+a c+a c+a c+a
+1734: bot c+a c+a c+a c+a c+a 2fu c+a c+a c+a 3fd
+1740: bot c+a 3fu c+a 2fd c+a c+a c+a c+a
+1741: bot c+a c+a 2fu c+a c+a 3fd c+a c+a c+a
+1749: bot c+a 3fu c+a c+a 2fu c+a
+1751: bot 3fu c+a 2fd c+a c+a c+a c+a c+a
+1758: bot c+a c+a c+a c+a 2fd c+a 2fd c+a c+a c+a
+1760: bot c+a c+a c+a c+a c+a c+a 2fd c+a 2fd c+a c+a
+1761: bot c+a 2fd c+a 2fd c+a c+a c+a c+a c+a
+1763: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fd c+a
+1764: bot 3fu c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1766: bot c+a c+a c+a 3fu c+a c+a c+a c+a 2fd
+1767: bot 2fu 3fu c+a c+a c+a c+a c+a
+1768: bot c+a c+a c+a c+a 2fd c+a c+a c+a
+1770: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a
+1774: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1776: bot 2fu c+a c+a c+a c+a c+a 2fd c+a c+a
+1779: bot 3fu c+a c+a c+a c+a 3fd c+a c+a c+a
+1780: bot c+a c+a c+a 2fu c+a c+a c+a 2fd c+a
+1781: bot c+a c+a c+a c+a c+a c+a
+1782: bot c+a c+a 2fd c+a c+a c+a 2fu
+1783: bot c+a 3fd c+a c+a c+a c+a c+a 2fd c+a c+a
+1787: bot c+a 2fd c+a c+a c+a c+a 3fd c+a c+a c+a
+1792: 2fd c+a c+a 3fd
+1794: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a 2fd
+1798: bot c+a c+a c+a 2fu c+a c+a
+1799: bot c+a c+a c+a 3fd c+a c+a 2fd c+a c+a c+a
+1802: bot c+a 2fu c+a c+a c+a 3fd c+a c+a c+a
+1807: bot 2fu c+a 2fu c+a c+a c+a c+a
+1812: bot c+a c+a c+a c+a 2fd 3fd c+a c+a c+a c+a
+1815: bot 3fu c+a c+a 3fu c+a c+a
+1817: bot 2fu c+a c+a c+a c+a 2fu
+1819: bot c+a 3fu c+a c+a 3fu
+1821: bot c+a c+a 2fu c+a 2fu c+a
+1822: bot c+a c+a c+a 3fd c+a c+a c+a c+a
+1825: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fd
+1830: bot c+a 3fu c+a c+a c+a c+a c+a 2fd c+a
+1832: bot 3fu c+a c+a 2fd c+a c+a c+a c+a
+1833: bot c+a c+a 2fd c+a c+a c+a 3fd c+a c+a c+a
+1834: bot c+a 2fd c+a c+a 3fu c+a c+a
+1835: bot c+a c+a 3fd c+a 2fu c+a c+a c+a
+1836: bot c+a 3fd c+a c+a c+a c+a 2fu
+1840: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1842: bot 2fu c+a 2fd c+a c+a c+a c+a c+a
+1844: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fd c+a
+1845: bot c+a c+a c+a c+a 2fu c+a c+a c+a 2fd
+1848: bot c+a c+a c+a c+a c+a c+a c+a 2fu 3fd
+1852: bot c+a 3fd c+a 2fd c+a c+a c+a c+a c+a
+1853: bot c+a c+a c+a 3fd c+a 2fu c+a c+a
+1861: bot c+a c+a 2fu c+a c+a c+a c+a 2fd c+a
+1862: bot c+a c+a c+a c+a c+a 2fd 3fu
+1866: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a
+1869: bot c+a 2fu c+a 3fu c+a c+a
+1870: bot c+a c+a 3fd c+a c+a 3fu c+a
+1871: bot c+a c+a 3fu c+a c+a 2fd c+a c+a
+1872: bot 3fu c+a 3fd c+a c+a c+a c+a c+a
+1876: bot c+a c+a c+a 2fu c+a c+a 3fd c+a c+a
+1877: bot c+a c+a c+a c+a 3fd c+a 2fu c+a
+1883: bot c+a 2fd c+a 3fd c+a c+a c+a c+a c+a
+1885: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+1888: bot c+a 3fu c+a c+a c+a c+a
+1889: bot c+a c+a 2fu c+a 2fd c+a c+a c+a
+1893: bot c+a c+a c+a 2fd c+a c+a 3fd c+a c+a c+a
+1899: bot 3fu c+a c+a c+a c+a c+a c+a 2fd c+a
+1901: bot c+a c+a c+a 3fu c+a c+a 2fd c+a
+1902: bot c+a 2fu 3fd c+a c+a c+a c+a c+a
+1903: bot c+a c+a 2fd c+a 2fd c+a c+a c+a c+a
+1904: bot c+a c+a c+a c+a c+a c+a c+a 2fd 2fd c+a c+a
+1907: bot c+a 2fd c+a c+a c+a c+a c+a c+a 2fd c+a
+1909: bot c+a c+a c+a c+a c+a c+a 2fu c+a 3fd
+1911: bot 3fu c+a c+a c+a 2fu c+a
+1912: bot c+a c+a c+a c+a c+a 2fd c+a c+a
+1915: bot c+a c+a 2fu c+a 3fu
+1920: 3fd c+a c+a c+a 3fd
+1922: bot c+a 2fu c+a c+a c+a c+a c+a 2fd c+a
+1923: bot 2fu c+a c+a 2fd c+a c+a c+a c+a
+1925: bot c+a c+a c+a 2fu c+a 2fd c+a c+a
+1926: bot c+a c+a c+a 2fd c+a c+a 2fu
+1930: bot c+a 2fd c+a c+a c+a 2fu c+a
+1933: bot c+a 3fd c+a c+a 2fd c+a c+a c+a c+a
+1935: bot c+a c+a 3fu c+a c+a c+a c+a c+a 2fd
+1940: bot 3fu c+a c+a c+a 2fd c+a c+a c+a
+1941: bot c+a 3fu c+a 2fu c+a c+a
+1942: bot c+a c+a 2fu c+a c+a c+a
+1943: bot c+a c+a 2fu 3fd c+a c+a c+a c+a
+1944: bot c+a c+a 2fd 3fd c+a c+a c+a c+a c+a
+1950: bot c+a 2fd c+a c+a c+a 2fd c+a c+a c+a
+1952: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fd c+a
+1953: bot c+a c+a 2fd c+a c+a c+a c+a c+a 2fd c+a
+1957: bot c+a c+a 2fu c+a c+a c+a 3fd c+a c+a
+1963: bot 2fu c+a 3fd c+a c+a c+a c+a c+a
+1965: bot c+a 2fu c+a c+a 2fu c+a
+1966: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+1968: bot 2fu c+a c+a c+a c+a c+a c+a 2fd c+a
+1970: bot c+a 2fu c+a c+a 2fd c+a c+a c+a
+1973: bot c+a c+a c+a c+a 2fu c+a c+a c+a c+a 3fd
+1974: bot c+a c+a c+a c+a 2fd c+a 3fd c+a c+a c+a
+1975: bot c+a 3fd c+a c+a c+a c+a c+a c+a 2fd c+a
+1976: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd
+1977: bot 2fu c+a c+a 3fu c+a c+a
+1984: bot c+a c+a c+a c+a 3fd c+a c+a c+a
+1989: bot c+a c+a c+a 2fu c+a c+a c+a c+a 2fd
+1990: bot c+a c+a c+a c+a c+a 2fu c+a 2fd
+1992: bot c+a 3fu c+a c+a c+a 2fd c+a c+a
+1994: bot 3fu c+a c+a 3fd c+a c+a c+a c+a
+1995: bot 3fu c+a c+a c+a c+a c+a 3fd c+a c+a
+1996: bot c+a 3fd c+a c+a 3fu c+a c+a
+1997: bot c+a c+a c+a 2fu 3fd c+a c+a c+a
+1998: bot c+a c+a 3fd c+a c+a c+a 2fu
+2003: bot c+a 2fd c+a c+a c+a c+a c+a 3fd c+a c+a
+2004: bot c+a 2fd c+a c+a 3fd c+a c+a c+a c+a
+2010: bot 3fu c+a c+a c+a c+a c+a
+2011: bot c+a c+a 2fd c+a c+a 2fd c+a c+a c+a
+2013: bot c+a c+a c+a 3fu c+a
+2016: 3fd c+a 3fd c+a
+2018: bot c+a 2fu c+a c+a c+a c+a 3fd c+a c+a
+2024: bot c+a 2fd c+a c+a c+a c+a c+a
+2025: bot c+a c+a 3fd c+a 2fd c+a c+a c+a c+a
+2031: bot 2fu c+a c+a c+a 2fd c+a c+a c+a
+2033: bot c+a c+a 2fu c+a c+a 2fd c+a c+a
+2035: bot 3fu c+a c+a c+a 3fu
+2038: bot c+a c+a 2fd c+a c+a 2fu c+a
+2041: bot c+a 3fd c+a c+a c+a 2fd c+a c+a c+a
+2043: bot c+a c+a 3fu c+a 2fu
+2044: bot c+a c+a 3fd c+a c+a c+a c+a c+a 2fd c+a
+2048: 2fd 2fd
+2049: bot c+a c+a 2fd c+a c+a c+a c+a 3fd c+a c+a
+2050: bot c+a 2fu c+a c+a c+a c+a
+2052: bot 2fu c+a c+a c+a c+a c+a c+a c+a 3fd c+a
+2056: bot c+a 3fu c+a c+a c+a c+a c+a c+a 2fd
+2061: bot c+a 2fd c+a c+a c+a 3fu
+2063: bot c+a c+a 3fu c+a c+a c+a 2fd c+a
+2064: bot c+a 3fu c+a c+a 3fd c+a c+a c+a
+2065: bot c+a c+a 2fd c+a 3fd c+a c+a c+a c+a
+2069: bot c+a c+a c+a c+a 2fu 3fd c+a c+a
+2073: bot 2fu c+a c+a c+a 2fu c+a
+2074: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+2082: bot c+a c+a c+a c+a c+a 2fd 3fd c+a c+a c+a
+2084: bot 3fu c+a c+a c+a c+a 2fd c+a c+a
+2085: bot c+a 2fu 3fu c+a c+a c+a
+2086: bot c+a c+a c+a 2fd 3fu c+a c+a
+2092: bot c+a 3fd c+a c+a c+a 2fu c+a
+2094: bot c+a 2fd c+a c+a c+a c+a 2fd c+a c+a
+2095: bot c+a 3fd c+a c+a 3fd c+a c+a c+a c+a
+2096: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fd c+a
+2097: bot c+a c+a 2fu c+a c+a c+a c+a c+a 2fd
+2103: bot 3fu c+a c+a 2fu c+a c+a
+2104: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+2105: bot c+a c+a 2fd c+a c+a c+a c+a
+2107: bot c+a 2fu c+a c+a 3fu
+2109: bot c+a c+a c+a 2fd c+a c+a c+a 3fd c+a c+a
+2114: bot c+a 2fu c+a c+a c+a 2fd c+a c+a
+2117: bot c+a c+a c+a 2fu c+a c+a c+a c+a c+a 3fd
+2118: bot c+a c+a c+a c+a 2fd c+a 2fu
+2122: bot c+a 2fd c+a c+a 2fu c+a c+a
+2124: bot c+a c+a 3fu c+a c+a c+a c+a 3fd c+a
+2131: bot 2fu c+a c+a c+a c+a c+a
+2133: bot c+a c+a 3fd c+a c+a 2fd c+a c+a c+a
+2135: bot c+a c+a c+a 3fd c+a c+a c+a c+a 2fd c+a
+2141: bot c+a c+a c+a c+a 2fu
+2145: bot c+a 3fd c+a c+a c+a c+a c+a
+2146: bot c+a c+a c+a 2fd 3fd c+a c+a c+a c+a
+2148: bot 3fu c+a c+a c+a c+a c+a c+a c+a 2fd
+2150: bot c+a c+a c+a 3fu c+a c+a c+a 2fd
+2154: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a
+2155: bot c+a c+a 2fd c+a c+a c+a 2fd c+a c+a
+2156: bot 3fu c+a c+a c+a 3fd c+a c+a c+a
+2157: bot c+a 2fu c+a 2fu c+a c+a
+2158: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a 2fd
+2159: bot c+a c+a 3fu c+a c+a 3fd c+a c+a
+2164: bot c+a c+a c+a 2fu c+a c+a c+a 3fd c+a
+2165: bot c+a c+a c+a c+a c+a 2fu 3fd c+a
+2166: bot c+a 2fd c+a c+a c+a 3fd c+a c+a c+a
+2171: bot c+a c+a c+a 2fu 2fu
+2175: bot 2fu c+a c+a c+a c+a 2fd c+a c+a
+2176: 2fd c+a 3fd
+2178: bot c+a 2fu c+a c+a c+a c+a c+a c+a 2fd
+2182: bot c+a c+a c+a 2fd c+a 2fu c+a
+2184: bot c+a 3fu c+a c+a c+a c+a 2fd c+a
+2185: bot c+a 3fd c+a c+a c+a c+a 2fd c+a c+a
+2186: bot c+a 2fu c+a c+a 3fd c+a c+a c+a
+2187: bot c+a c+a 3fd c+a 3fd c+a c+a c+a c+a
+2190: bot c+a c+a c+a c+a 2fd c+a c+a 3fd c+a c+a
+2193: bot 2fu c+a 3fu c+a c+a c+a
+2200: bot c+a c+a c+a c+a c+a 3fd c+a c+a
+2202: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fd c+a
+2203: bot c+a 3fu c+a 3fu c+a
+2205: bot c+a c+a 2fd c+a c+a 3fu
+2208: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+2209: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+2212: bot c+a 2fd 3fu c+a c+a c+a c+a
+2213: bot c+a c+a c+a 2fd c+a c+a c+a
+2214: bot c+a c+a c+a 3fd c+a c+a 2fu
+2224: bot 2fu c+a c+a c+a c+a c+a c+a c+a 2fd
+2225: bot c+a c+a 2fu c+a c+a c+a c+a c+a c+a 3fd
+2226: bot c+a c+a c+a c+a c+a 3fd c+a 2fd c+a c+a
+2227: bot c+a c+a 2fd c+a c+a 3fd c+a c+a c+a
+2229: bot c+a c+a c+a c+a 2fu c+a c+a 2fd
+2230: bot c+a c+a 2fd c+a 2fu c+a c+a
+2231: bot c+a 3fd c+a c+a c+a c+a c+a c+a c+a 2fd
+2236: bot c+a c+a c+a 2fd c+a c+a 2fd c+a c+a
+2245: bot c+a c+a 2fu c+a c+a c+a c+a 3fd c+a
+2246: bot c+a c+a c+a c+a 3fu c+a 2fd
+2247: bot 3fu c+a 2fu c+a c+a c+a
+2250: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd c+a
+2251: bot 2fu c+a c+a c+a 3fu
+2253: bot 3fu 2fd c+a c+a c+a c+a c+a
+2254: bot c+a c+a 3fd c+a c+a 2fu c+a
+2256: bot c+a c+a c+a c+a 3fd c+a c+a c+a 2fd c+a
+2257: bot c+a 3fd c+a c+a c+a 3fd c+a c+a c+a
+2265: bot 2fu c+a c+a 2fu c+a c+a
+2266: bot c+a 2fd c+a 2fu c+a c+a c+a
+2267: bot c+a c+a 3fd c+a c+a c+a c+a
+2269: bot c+a c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+2276: bot 3fu c+a c+a c+a c+a c+a 2fd c+a
+2277: bot c+a 3fd c+a c+a c+a 3fu
+2278: bot c+a c+a c+a 3fu c+a c+a c+a c+a 3fd
+2280: bot c+a 3fu c+a c+a c+a 3fd c+a c+a
+2283: bot 3fu c+a c+a c+a c+a c+a c+a 3fd c+a
+2284: bot c+a 3fd c+a c+a 2fu c+a c+a
+2285: bot c+a c+a c+a 3fu c+a c+a 3fd c+a
+2286: bot c+a 2fd c+a c+a c+a c+a c+a 2fd c+a
+2291: bot c+a 2fd c+a c+a c+a c+a c+a c+a 3fd c+a
+2293: bot c+a c+a c+a c+a c+a c+a 2fu 3fd
+2298: bot c+a c+a c+a c+a c+a 2fd c+a 3fd c+a c+a
+2299: bot c+a c+a 2fu 3fu c+a
+2300: bot c+a c+a 3fd c+a c+a c+a c+a c+a c+a 2fd
+2301: bot c+a c+a 3fu c+a c+a
+2302: bot c+a c+a 3fu c+a 2fd c+a c+a
+2304: 3fd c+a c+a 3fd
+2306: bot c+a 2fu c+a c+a c+a c+a c+a c+a c+a 3fd
+2308: bot c+a c+a c+a 2fd c+a 3fd c+a c+a c+a
+2319: bot c+a c+a 3fu c+a c+a c+a c+a 2fd
+2320: bot c+a 3fu c+a 2fd c+a c+a c+a
+2321: bot c+a c+a 2fu c+a c+a 3fd c+a c+a
+2331: bot c+a 3fu c+a c+a 2fu
+2334: bot 3fu c+a 2fd c+a c+a c+a c+a
+2337: bot c+a c+a 2fd c+a c+a c+a c+a c+a 3fd c+a
+2344: bot c+a c+a c+a c+a 2fd c+a 2fd c+a c+a
+2346: bot c+a c+a c+a c+a c+a c+a 2fd c+a 2fd c+a
+2347: bot c+a c+a 2fd c+a c+a c+a c+a 2fd c+a
+2348: bot c+a 2fd c+a 2fd c+a c+a c+a c+a
+2349: bot c+a c+a 3fd c+a c+a 3fd c+a c+a c+a
+2350: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+2352: bot 2fu c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+2355: bot 2fu 3fu c+a c+a c+a c+a
+2357: bot c+a c+a c+a c+a 2fd c+a c+a
+2360: bot c+a c+a c+a c+a c+a c+a c+a 2fd
+2367: bot 2fu c+a c+a c+a c+a c+a 2fd c+a
+2372: bot 3fu c+a c+a c+a c+a 3fd c+a c+a
+2373: bot c+a c+a c+a 2fu c+a c+a c+a 2fd
+2374: bot c+a c+a c+a c+a c+a
+2377: bot c+a 3fd c+a c+a c+a c+a c+a 2fd c+a
+2382: bot c+a 2fd c+a c+a c+a c+a 3fd c+a c+a
+2391: bot c+a c+a c+a 3fd c+a c+a c+a c+a c+a 2fd
+2397: bot c+a c+a c+a 2fu c+a
+2398: bot c+a c+a c+a 3fd c+a c+a 2fd c+a c+a
+2402: bot c+a 2fu c+a c+a c+a 3fd c+a c+a
+2409: bot 2fu c+a 2fu c+a c+a c+a
+2416: bot c+a c+a c+a c+a 2fd 3fd c+a c+a c+a
+2418: bot c+a c+a c+a c+a c+a 3fd c+a c+a 2fd c+a
+2419: bot 3fu c+a c+a 3fu c+a
+2427: bot c+a c+a 2fu c+a 2fu
+2428: bot c+a 3fd c+a 2fu c+a c+a c+a
+2429: bot c+a c+a c+a 3fd c+a c+a c+a
+2440: bot c+a 3fu c+a c+a c+a c+a c+a 2fd
+2442: bot 3fu c+a c+a 2fd c+a c+a c+a
+2443: bot c+a c+a 2fd c+a c+a c+a 3fd c+a c+a
+2445: bot c+a 2fd c+a c+a 3fu c+a
+2446: bot c+a c+a 3fd c+a 2fu c+a c+a
+2447: bot c+a c+a 3fu c+a c+a c+a c+a c+a 3fd
+2455: bot 2fu c+a 2fd c+a c+a c+a c+a
+2456: bot c+a 2fd c+a c+a 2fd c+a c+a c+a
+2458: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+2463: bot 2fu c+a c+a c+a c+a 3fd c+a c+a
+2464: bot c+a 3fu c+a c+a 2fd c+a c+a
+2469: bot c+a 3fd c+a 2fd c+a c+a c+a c+a
+2470: bot c+a c+a c+a 3fd c+a 2fu c+a
+2473: bot c+a 3fd c+a c+a c+a c+a 3fd c+a c+a
+2478: bot c+a c+a c+a c+a 2fd c+a c+a c+a 3fd c+a
+2481: bot c+a c+a 2fu c+a c+a c+a c+a 2fd
+2482: bot c+a 2fu c+a 2fd c+a c+a c+a
+2488: bot c+a c+a c+a c+a c+a c+a c+a c+a 3fd
+2491: bot c+a 2fu c+a 3fu c+a
+2493: bot c+a c+a 3fd c+a c+a 3fu
+2494: bot c+a c+a 3fu c+a c+a 2fd c+a
+2496: bot 3fu c+a 3fd c+a c+a c+a c+a
+2501: bot c+a c+a c+a 2fu c+a c+a c+a c+a 3fd
+2502: bot c+a c+a c+a c+a c+a 2fu c+a 3fd
+2506: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fd
+2510: bot c+a 2fd c+a 3fd c+a c+a c+a c+a
+2512: bot c+a c+a c+a c+a 3fd c+a c+a c+a c+a 2fd
+2517: bot c+a 3fu c+a c+a c+a
+2518: bot c+a c+a 2fu c+a 2fd c+a c+a
+2524: bot c+a c+a c+a 2fd c+a c+a 3fd c+a c+a
+2532: bot 3fu c+a c+a c+a c+a c+a c+a 2fd
+2534: bot c+a c+a c+a 3fu c+a c+a 2fd
+2536: bot c+a 2fu 3fd c+a c+a c+a c+a
+2537: bot c+a c+a 2fd c+a 2fd c+a c+a c+a
+2538: bot c+a c+a c+a c+a c+a c+a c+a 2fd 2fd c+a
+2542: bot c+a 2fd c+a c+a c+a c+a c+a c+a 2fd
+2547: bot 3fu c+a c+a c+a 2fu
+2549: bot c+a c+a c+a c+a c+a 2fd c+a
+2553: bot c+a c+a 3fu 3fu
+2560: 2fd 3fd
+2562: bot c+a 2fu c+a c+a c+a c+a c+a 2fd
+2563: bot 2fu c+a c+a 2fd c+a c+a c+a
+2565: bot c+a c+a 3fd c+a c+a c+a 3fd c+a c+a
+2566: bot c+a c+a c+a 2fu c+a 2fd c+a
+2568: bot c+a 3fu c+a c+a c+a c+a c+a c+a 3fd
+2573: bot c+a 2fd c+a c+a c+a 2fu
+2577: bot c+a 3fd c+a c+a 2fd c+a c+a c+a
+2586: bot 3fu c+a c+a c+a 2fd c+a c+a
+2587: bot c+a 3fu c+a 2fu c+a
+2589: bot c+a c+a 2fu c+a c+a
+2590: bot c+a c+a 2fu 3fd c+a c+a c+a
+2591: bot c+a c+a 2fd 3fd c+a c+a c+a c+a
+2600: bot c+a 2fd c+a c+a c+a 2fd c+a c+a
+2602: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a 2fd
+2603: bot c+a c+a 2fd c+a c+a c+a c+a c+a 2fd
+2609: bot c+a c+a 2fu c+a c+a c+a c+a c+a 3fd
+2616: bot c+a c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+2617: bot 2fu c+a 3fd c+a c+a c+a c+a
+2619: bot c+a 2fu c+a c+a 2fu
+2623: bot 2fu c+a c+a c+a c+a c+a c+a 2fd
+2626: bot c+a 2fu c+a c+a 2fd c+a c+a
+2630: bot c+a c+a c+a c+a 2fu c+a 2fd
+2631: bot c+a 3fd c+a 3fd c+a c+a c+a c+a
+2632: bot c+a c+a c+a c+a 2fd c+a 3fd c+a c+a
+2633: bot c+a 3fd c+a c+a c+a c+a c+a c+a 2fd
+2634: bot c+a c+a c+a c+a c+a c+a 3fd c+a 2fd c+a
+2635: bot 2fu c+a c+a 3fu c+a
+2645: bot c+a c+a c+a c+a 3fd c+a c+a
+2653: bot c+a c+a c+a c+a 2fd 3fu
+2656: bot c+a 3fu c+a c+a c+a 2fd c+a
+2658: bot 3fu c+a c+a 3fd c+a c+a c+a
+2660: bot 3fu c+a c+a c+a c+a c+a c+a c+a 3fd
+2661: bot c+a 3fd c+a c+a 3fu c+a
+2662: bot c+a c+a c+a 3fu c+a c+a c+a 3fd
+2670: bot c+a 2fd c+a c+a c+a c+a c+a c+a c+a 3fd
+2672: bot c+a 2fd c+a c+a 3fd c+a c+a c+a
+2674: bot c+a c+a c+a c+a c+a 3fd c+a c+a c+a 2fd
+2679: bot 3fu c+a c+a c+a c+a
+2680: bot c+a c+a c+a c+a c+a 2fd c+a 2fd c+a
+2681: bot c+a c+a 2fd c+a c+a 2fd c+a c+a
+2683: bot c+a c+a c+a 3fu
+2684: bot c+a c+a c+a 2fd c+a c+a c+a c+a 2fd
+2686: bot c+a c+a c+a 3fd c+a c+a 3fd c+a c+a
+2688: 3fd c+a 3fd
+2690: bot c+a 2fu c+a c+a c+a c+a c+a c+a 3fd
+2698: bot c+a 2fd c+a c+a c+a c+a
+2699: bot c+a c+a 3fd c+a 2fd c+a c+a c+a
+2707: bot 2fu c+a c+a c+a 2fd c+a c+a
+2710: bot c+a c+a 2fu c+a c+a 2fd c+a
+2717: bot c+a c+a 2fd c+a c+a 2fu
+2721: bot c+a c+a 2fd c+a c+a c+a c+a c+a c+a 3fd
+2725: bot c+a c+a 3fd c+a c+a c+a c+a c+a 2fd
+2730: bot c+a c+a c+a c+a c+a c+a 2fd c+a 3fd c+a
+2731: bot c+a c+a 2fd c+a c+a c+a c+a 3fd c+a
+2733: bot c+a 2fu c+a c+a c+a
+2736: bot 2fu c+a c+a c+a c+a c+a c+a c+a 3fd
+2741: bot c+a c+a c+a c+a 2fu c+a c+a 3fd
+2750: bot c+a c+a 3fu c+a c+a c+a 2fd
+2751: bot 2fu c+a c+a c+a c+a c+a 3fd c+a
+2752: bot c+a 3fu c+a c+a 3fd c+a c+a
+2753: bot c+a c+a 2fd c+a 3fd c+a c+a c+a
+2758: bot c+a c+a c+a c+a 3fu c+a 3fd
+2761: bot c+a 3fd c+a c+a c+a c+a c+a 3fd c+a
+2763: bot 2fu c+a c+a c+a 2fu
+2776: bot c+a c+a c+a c+a c+a 2fd 3fd c+a c+a
+2778: bot 3fu c+a c+a c+a c+a 2fd c+a
+2779: bot c+a 2fu 3fu c+a c+a
+2781: bot c+a c+a c+a 3fd c+a 3fu
+2789: bot c+a 3fd c+a c+a c+a 2fu
+2792: bot c+a c+a c+a c+a 2fd c+a c+a c+a 2fd
+2793: bot c+a 3fd c+a c+a 3fd c+a c+a c+a
+2794: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 2fd
+2803: bot 3fu c+a c+a 2fu c+a
+2805: bot c+a c+a c+a c+a c+a c+a 2fd
+2806: bot c+a c+a 2fd c+a c+a c+a
+2812: bot c+a c+a c+a 2fd c+a c+a c+a 3fd c+a
+2818: bot c+a 2fu c+a c+a c+a 2fd c+a
+2822: bot c+a c+a c+a 2fu c+a c+a 2fd
+2829: bot c+a 2fd c+a c+a 2fu c+a
+2831: bot c+a c+a 3fu c+a c+a c+a c+a 3fd
+2841: bot 2fu c+a c+a c+a c+a
+2843: bot c+a c+a 3fd c+a c+a 2fd c+a c+a
+2846: bot c+a c+a c+a 3fd c+a c+a c+a c+a 2fd
+2848: bot c+a c+a c+a c+a 3fd c+a 3fd c+a c+a
+2853: bot c+a c+a 3fd c+a c+a c+a c+a 3fd c+a
+2860: bot c+a 3fd c+a c+a c+a c+a
+2861: bot c+a c+a c+a 2fd 3fd c+a c+a c+a
+2862: bot c+a c+a c+a c+a 2fd c+a c+a c+a c+a 3fd
+2872: bot c+a c+a c+a c+a c+a c+a c+a 3fd
+2873: bot c+a c+a 2fd c+a c+a c+a 2fd c+a
+2874: bot 3fu c+a c+a c+a 3fd c+a c+a
+2875: bot c+a 2fu c+a 2fu c+a
+2877: bot c+a c+a 2fd 3fu c+a c+a
+2878: bot c+a c+a 3fu c+a c+a 3fd c+a
+2885: bot c+a c+a c+a 2fu c+a c+a c+a 3fd
+2886: bot c+a c+a c+a c+a c+a 2fu 3fd
+2888: bot c+a 2fd c+a c+a c+a 3fd c+a c+a
+2890: bot c+a c+a c+a c+a c+a c+a 3fd c+a c+a 2fd
+2899: bot 2fu c+a c+a c+a c+a 2fd c+a
+2909: bot c+a c+a c+a 2fd c+a 2fu
+2912: bot c+a 3fu c+a c+a c+a c+a 2fd
+2913: bot c+a 3fd c+a c+a c+a c+a 2fd c+a
+2914: bot c+a 2fu c+a c+a 3fd c+a c+a
+2915: bot c+a c+a 3fd c+a 3fd c+a c+a c+a
+2920: bot c+a c+a c+a c+a 2fd c+a c+a 3fd c+a
+2922: bot c+a c+a c+a c+a c+a c+a c+a 2fd 3fd c+a
+2923: bot 2fu c+a 3fu c+a c+a
+2933: bot c+a c+a c+a c+a c+a 3fd c+a
+2936: bot c+a c+a c+a c+a c+a 2fd c+a c+a 2fd
+2937: bot c+a 3fu c+a 3fu
+2949: bot c+a 2fd 3fu c+a c+a c+a
+2950: bot c+a c+a c+a 2fd c+a c+a
+2952: bot c+a 3fu c+a c+a c+a c+a c+a 3fd
+2966: bot c+a c+a 2fu c+a c+a c+a 2fd
+2968: bot c+a c+a c+a c+a c+a 3fd c+a 2fd c+a
+2969: bot c+a c+a 2fd c+a c+a 3fd c+a c+a
+2970: bot c+a c+a c+a c+a c+a 2fd c+a c+a c+a 3fd
+2973: bot c+a c+a 2fd c+a 2fu c+a
+2974: bot c+a c+a c+a 3fd c+a c+a c+a 3fd c+a
+2981: bot c+a c+a c+a 2fd c+a c+a 2fd c+a
+2993: bot c+a c+a 2fu c+a c+a c+a c+a 3fd
+2995: bot 3fu c+a 2fu c+a c+a
+3000: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+3003: bot 3fu 2fd c+a c+a c+a c+a
+3005: bot c+a c+a 3fd c+a c+a 2fu
+3008: bot c+a c+a c+a c+a 3fd c+a c+a c+a 2fd
+3009: bot c+a 3fd c+a c+a c+a 3fd c+a c+a
+3019: bot 2fu c+a c+a 2fu c+a
+3021: bot c+a 2fd c+a 2fu c+a c+a
+3022: bot c+a c+a 3fd c+a c+a c+a
+3034: bot 3fu c+a c+a c+a c+a c+a 2fd
+3035: bot c+a c+a 3fd c+a c+a c+a 2fd c+a
+3037: bot c+a c+a c+a 3fu c+a 2fd
+3040: bot c+a 3fu c+a c+a c+a 3fd c+a
+3044: bot 3fu c+a c+a c+a c+a c+a c+a 3fd
+3045: bot c+a 3fd c+a c+a 2fu c+a
+3046: bot c+a c+a c+a 3fu c+a c+a 3fd
+3048: bot c+a 2fd c+a c+a c+a c+a c+a 2fd
+3054: bot c+a 2fd c+a c+a c+a c+a c+a c+a 3fd
+3064: bot c+a c+a c+a c+a c+a 2fd c+a 3fd c+a
+3065: bot c+a c+a 2fu 3fu
+3067: bot c+a c+a 3fu c+a
+3069: bot c+a c+a 3fu c+a 2fd c+a
+3072: 3fd 3fd
+3074: bot c+a 2fu c+a c+a c+a c+a 2fd
+3077: bot c+a c+a c+a 2fd c+a 3fd c+a c+a
+3093: bot c+a 3fu c+a 2fd c+a c+a
+3094: bot c+a c+a 2fu c+a c+a 3fd c+a
+3111: bot 3fu c+a 2fd c+a c+a c+a
+3114: bot c+a c+a c+a c+a c+a c+a 2fd c+a c+a 3fd
+3115: bot c+a c+a 2fd c+a c+a c+a c+a c+a 3fd
+3125: bot c+a c+a c+a c+a 2fd c+a 2fd c+a
+3128: bot c+a c+a c+a c+a c+a c+a 2fd c+a 2fd
+3129: bot c+a c+a 2fd c+a c+a c+a c+a 2fd
+3130: bot c+a 2fd c+a 2fd c+a c+a c+a
+3131: bot c+a c+a 3fd c+a c+a 3fd c+a c+a
+3135: bot 2fu c+a c+a c+a c+a c+a c+a 3fd
+3136: bot c+a c+a c+a c+a 3fd c+a c+a 3fd c+a
+3139: bot 2fu 3fu c+a c+a c+a
+3142: bot c+a c+a c+a c+a 2fd c+a
+3145: bot c+a 3fd c+a c+a c+a c+a c+a c+a 3fd
+3155: bot 2fu c+a c+a c+a c+a c+a 2fd
+3162: bot 3fu c+a c+a c+a c+a 3fd c+a
+3165: bot c+a c+a c+a c+a
+3169: bot c+a 3fd c+a c+a c+a c+a c+a 2fd
+3176: bot c+a 2fd c+a c+a c+a c+a 3fd c+a
+3178: bot c+a c+a c+a c+a c+a c+a c+a 3fd c+a 2fd
+3195: bot c+a c+a c+a 2fu
+3196: bot c+a c+a c+a 2fd c+a c+a c+a c+a 3fd
+3197: bot c+a c+a c+a 3fd c+a c+a 2fd c+a
+3202: bot c+a 2fu c+a c+a c+a 3fd c+a
+3211: bot 2fu c+a 2fu c+a c+a
+3221: bot c+a c+a c+a c+a 2fd 3fd c+a c+a
+3224: bot c+a c+a c+a c+a c+a 3fd c+a c+a 2fd
+3225: bot 3fu c+a c+a 3fu
+3237: bot c+a c+a c+a 2fd c+a c+a c+a 2fd
+3238: bot c+a c+a c+a 3fd c+a c+a
+3255: bot 3fu c+a c+a 2fd c+a c+a
+3256: bot c+a c+a c+a c+a c+a c+a 2fd 3fd c+a
+3257: bot c+a c+a 2fd c+a c+a c+a 3fd c+a
+3259: bot c+a 2fd c+a c+a 3fu
+3261: bot c+a c+a 3fd c+a 2fu c+a
+3262: bot c+a c+a 3fu c+a c+a c+a 3fd
+3273: bot 2fu c+a 2fd c+a c+a c+a
+3274: bot c+a 2fd c+a c+a 2fd c+a c+a
+3283: bot 2fu c+a c+a c+a c+a 3fd c+a
+3285: bot c+a 3fu c+a c+a 2fd c+a
+3291: bot c+a c+a 3fd c+a c+a c+a c+a 2fd
+3292: bot c+a 3fd c+a 2fd c+a c+a c+a
+3293: bot c+a c+a c+a 3fd c+a 2fu
+3297: bot c+a 3fd c+a c+a c+a c+a 3fd c+a
+3304: bot c+a c+a c+a c+a 2fd c+a c+a c+a 3fd
+3306: bot c+a c+a c+a c+a c+a c+a c+a 2fd c+a 3fd
+3309: bot c+a 2fu c+a 2fd c+a c+a
+3317: bot c+a c+a c+a c+a c+a c+a 3fd
+3321: bot c+a 2fu c+a 3fu
+3325: bot c+a c+a 3fu c+a c+a 2fd
+3327: bot 3fu c+a 3fd c+a c+a c+a
+3334: bot c+a c+a c+a 2fu c+a c+a 3fd
+3346: bot c+a 2fd c+a 3fd c+a c+a c+a
+3352: bot c+a c+a c+a c+a c+a 3fd c+a 3fd c+a
+3355: bot c+a 3fu c+a c+a
+3357: bot c+a c+a 2fu c+a 2fd c+a
+3358: bot c+a c+a c+a 3fd c+a c+a c+a c+a 3fd
+3365: bot c+a c+a c+a 2fd c+a c+a 3fd c+a
+3381: bot c+a c+a c+a c+a 2fd c+a c+a 2fd
+3382: bot c+a c+a 2fd c+a 2fd c+a c+a
+3384: bot c+a c+a c+a c+a c+a c+a c+a 2fd 2fd
+3398: bot c+a c+a c+a c+a c+a 2fd
+3413: bot c+a c+a c+a c+a 3fd c+a 2fd c+a
+3417: bot 2fu c+a c+a 2fd c+a c+a
+3419: bot c+a c+a 3fd c+a c+a c+a 3fd c+a
+3421: bot c+a c+a c+a 2fu c+a 2fd
+3424: bot c+a 3fu c+a c+a c+a c+a 3fd
+3436: bot c+a 3fd c+a c+a 2fd c+a c+a
+3447: bot 3fu c+a c+a c+a 2fd c+a
+3448: bot c+a c+a c+a c+a c+a 2fd c+a c+a 3fd
+3449: bot c+a 3fu c+a 2fu
+3451: bot c+a c+a 2fu c+a
+3453: bot c+a c+a c+a 3fd c+a c+a c+a 2fd
+3454: bot c+a c+a 2fd 3fd c+a c+a c+a
+3466: bot c+a 2fd c+a c+a c+a 2fd c+a
+3478: bot c+a c+a 2fu c+a c+a c+a 3fd
+3489: bot 2fu c+a 3fd c+a c+a c+a
+3501: bot c+a 2fu c+a c+a 2fd c+a
+3508: bot c+a 3fd c+a 3fd c+a c+a c+a
+3509: bot c+a c+a c+a c+a 2fd c+a 3fd c+a
+3512: bot c+a c+a c+a c+a c+a c+a c+a c+a 2fd 3fd
+3513: bot 2fu c+a c+a 3fu
+3520: bot c+a c+a c+a c+a 3fd c+a c+a c+a 3fd
+3526: bot c+a c+a c+a c+a 3fd c+a
+3541: bot c+a 3fu c+a c+a c+a 2fd
+3543: bot 3fu c+a c+a 3fd c+a c+a
+3546: bot 3fu c+a c+a c+a c+a c+a 3fd
+3547: bot c+a 3fd c+a c+a 3fu
+3549: bot c+a c+a c+a 3fu c+a 3fd
+3560: bot c+a 2fd c+a c+a c+a c+a c+a 3fd
+3562: bot c+a 2fd c+a c+a 3fd c+a c+a
+3571: bot 3fu c+a c+a c+a
+3573: bot c+a c+a c+a c+a c+a 2fd c+a 2fd
+3574: bot c+a c+a 2fd c+a c+a 2fd c+a
+3577: bot c+a c+a 2fu 2fu
+3581: bot c+a c+a c+a 3fd c+a c+a 3fd c+a
+3586: bot c+a 2fu c+a c+a c+a c+a 3fd
+3597: bot c+a 2fd c+a c+a c+a
+3598: bot c+a c+a 3fd c+a 2fd c+a c+a
+3609: bot 2fu c+a c+a c+a 2fd c+a
+3613: bot c+a c+a 2fu c+a c+a 2fd
+3628: bot c+a 3fd c+a c+a c+a 2fd c+a
+3640: bot c+a c+a c+a c+a c+a c+a 2fd c+a 3fd
+3641: bot c+a c+a 2fd c+a c+a c+a c+a 3fd
+3643: bot c+a 2fu c+a c+a
+3667: bot 2fu c+a c+a c+a c+a c+a 3fd
+3669: bot c+a c+a c+a c+a 3fd c+a c+a 2fd
+3670: bot c+a c+a 2fd c+a 3fd c+a c+a
+3677: bot c+a c+a c+a c+a 2fu 3fd
+3681: bot c+a 3fd c+a c+a c+a c+a c+a 3fd
+3701: bot c+a c+a c+a c+a c+a 2fd 3fd c+a
+3703: bot 3fu c+a c+a c+a c+a 2fd
+3705: bot c+a 2fu 3fu c+a
+3707: bot c+a c+a c+a 2fd 3fu
+3718: bot c+a c+a c+a 2fd c+a 2fd c+a
+3722: bot c+a 2fd c+a c+a c+a c+a 2fd
+3724: bot c+a 3fd c+a c+a 3fd c+a c+a
+3736: bot c+a c+a c+a c+a c+a 3fd c+a c+a 3fd
+3737: bot 3fu c+a c+a 2fu
+3741: bot c+a c+a 2fd c+a c+a
+3749: bot c+a c+a c+a 2fd c+a c+a c+a 3fd
+3757: bot c+a 2fu c+a c+a c+a 2fd
+3771: bot c+a 2fd c+a c+a 2fu
+3787: bot 2fu c+a c+a c+a
+3790: bot c+a c+a 3fd c+a c+a 2fd c+a
+3797: bot c+a c+a c+a c+a 3fd c+a 3fd c+a
+3803: bot c+a c+a 3fd c+a c+a c+a c+a 3fd
+3813: bot c+a 3fd c+a c+a c+a
+3814: bot c+a c+a c+a 2fd 3fd c+a c+a
+3829: bot c+a c+a c+a c+a c+a c+a 2fd 2fd
+3830: bot c+a c+a 2fd c+a c+a c+a 2fd
+3831: bot 3fu c+a c+a c+a 3fd c+a
+3833: bot c+a 2fu c+a 2fu
+3835: bot c+a c+a 3fd c+a 3fu
+3837: bot c+a c+a 3fu c+a c+a 3fd
+3850: bot c+a 2fd c+a c+a c+a 3fd c+a
+3865: bot 2fu c+a c+a c+a c+a 2fd
+3884: bot c+a 3fd c+a c+a c+a c+a 2fd
+3885: bot c+a 2fu c+a c+a 3fd c+a
+3886: bot c+a c+a 3fd c+a 3fd c+a c+a
+3893: bot c+a c+a c+a c+a 2fd c+a c+a 3fd
+3896: bot c+a c+a c+a c+a c+a c+a c+a 2fd 3fd
+3897: bot 2fu c+a 3fu c+a
+3910: bot c+a c+a c+a c+a c+a 3fd
+3931: bot c+a 2fd 3fu c+a c+a
+3933: bot c+a c+a c+a 2fd c+a
+3957: bot c+a c+a c+a c+a c+a 3fd c+a 2fd
+3958: bot c+a c+a 2fd c+a c+a 3fd c+a
+3963: bot c+a c+a 2fd c+a 2fu
+3965: bot c+a c+a c+a 3fd c+a c+a c+a 3fd
+3974: bot c+a c+a c+a 2fd c+a c+a 2fd
+3993: bot 3fu c+a 2fu c+a
+4003: bot 3fu 2fd c+a c+a c+a
+4006: bot c+a c+a c+a 3fd c+a 2fd c+a
+4012: bot c+a 3fd c+a c+a c+a 3fd c+a
+4024: bot c+a c+a c+a c+a c+a c+a 3fd c+a 3fd
+4025: bot 2fu c+a c+a 2fu
+4027: bot c+a 2fd c+a 2fu c+a
+4029: bot c+a c+a 3fd c+a c+a
+4046: bot c+a c+a 3fd c+a c+a c+a 2fd
+4053: bot c+a 3fu c+a c+a c+a 3fd
+4059: bot c+a 3fd c+a c+a 2fu
+4085: bot c+a c+a c+a c+a c+a 2fd c+a 3fd
+4089: bot c+a c+a 3fu
+4091: bot c+a c+a 3fu c+a 2fd
+4102: bot c+a c+a c+a 2fd c+a 3fd c+a
+4123: bot c+a 3fu c+a 2fd c+a
+4125: bot c+a c+a 2fu c+a c+a 3fd
+4147: bot 3fu c+a 2fd c+a c+a
+4166: bot c+a c+a c+a c+a 2fd c+a 2fd
+4173: bot c+a 2fd c+a 2fd c+a c+a
+4174: bot c+a c+a 3fd c+a c+a 3fd c+a
+4181: bot c+a c+a c+a c+a 3fd c+a c+a 3fd
+4185: bot 2fu 3fu c+a c+a
+4189: bot c+a c+a c+a c+a 2fd
+4215: bot 3fu c+a c+a c+a c+a 3fd
+4219: bot c+a c+a c+a
+4234: bot c+a 2fd c+a c+a c+a c+a 3fd
+4262: bot c+a c+a c+a 3fd c+a c+a 2fd
+4269: bot c+a 2fu c+a c+a c+a 3fd
+4281: bot 2fu c+a 2fu c+a
+4294: bot c+a c+a c+a c+a 2fd 3fd c+a
+4315: bot c+a 3fd c+a 2fu c+a
+4317: bot c+a c+a c+a 3fd c+a
+4339: bot 3fu c+a c+a 2fd c+a
+4341: bot c+a c+a c+a c+a c+a c+a 2fd 3fd
+4342: bot c+a c+a 2fd c+a c+a c+a 3fd
+4347: bot c+a c+a 3fd c+a 2fu
+4363: bot 2fu c+a 2fd c+a c+a
+4365: bot c+a 2fd c+a c+a 2fd c+a
+4377: bot 2fu c+a c+a c+a c+a 3fd
+4379: bot c+a 3fu c+a c+a 2fd
+4389: bot c+a 3fd c+a 2fd c+a c+a
+4390: bot c+a c+a c+a 3fd c+a 3fd c+a
+4396: bot c+a 3fd c+a c+a c+a c+a 3fd
+4408: bot c+a c+a c+a c+a c+a c+a c+a 3fd 3fd
+4411: bot c+a 2fu c+a 2fd c+a
+4422: bot c+a c+a c+a c+a c+a 2fd 2fd
+4428: bot c+a 3fu 3fu
+4435: bot 3fu c+a 3fd c+a c+a
+4461: bot c+a 2fd c+a 3fd c+a c+a
+4469: bot c+a c+a c+a c+a c+a 3fd c+a 3fd
+4473: bot c+a 3fu c+a
+4475: bot c+a c+a 2fu c+a 2fd
+4486: bot c+a c+a c+a 2fd c+a c+a 3fd
+4507: bot c+a 2fu 3fd c+a c+a
+4509: bot c+a c+a 2fd c+a 2fd c+a
+4550: bot c+a c+a c+a c+a 3fd c+a 2fd
+4555: bot 2fu c+a c+a 2fd c+a
+4558: bot c+a c+a 3fd c+a c+a c+a 3fd
+4581: bot c+a 3fd c+a c+a 2fd c+a
+4595: bot 3fu c+a c+a c+a 2fd
+4601: bot c+a c+a 2fu
+4603: bot c+a c+a 3fu c+a 3fd
+4605: bot c+a c+a 2fd 3fd c+a c+a
+4621: bot c+a 2fd c+a c+a c+a 2fd
+4651: bot 2fu c+a 3fd c+a c+a
+4667: bot c+a 2fu c+a c+a 2fd
+4677: bot c+a 3fd c+a 3fd c+a c+a
+4678: bot c+a c+a c+a c+a 2fd c+a 3fd
+4701: bot c+a c+a c+a c+a 3fd
+4723: bot 3fu c+a c+a 3fd c+a
+4731: bot c+a c+a c+a 2fu 3fd
+4749: bot c+a 2fd c+a c+a 3fd c+a
+4761: bot 3fu c+a c+a
+4765: bot c+a c+a 2fd c+a c+a 2fd
+4774: bot c+a c+a c+a 3fd c+a c+a 3fd
+4795: bot c+a 2fd c+a c+a
+4797: bot c+a c+a 3fd c+a 2fd c+a
+4811: bot 2fu c+a c+a c+a 2fd
+4812: bot 3fu c+a 3fu
+4837: bot c+a 3fd c+a c+a c+a 2fd
+4853: bot c+a c+a c+a c+a c+a c+a 3fd 3fd
+4857: bot c+a 2fu c+a
+4891: bot c+a 3fu c+a c+a 3fd
+4893: bot c+a c+a 2fd c+a 3fd c+a
+4934: bot c+a c+a c+a c+a c+a 2fd 3fd
+4939: bot 2fu c+a c+a 3fd c+a
+4940: bot c+a 2fu 3fu
+4957: bot c+a c+a c+a 2fd c+a 2fd
+4965: bot c+a 3fd c+a c+a 3fd c+a
+4987: bot c+a c+a 2fd c+a
+5049: bot 2fu c+a c+a
+5053: bot c+a c+a 3fd c+a c+a 2fd
+5062: bot c+a c+a c+a c+a 3fd c+a 3fd
+5083: bot c+a 3fd c+a c+a
+5085: bot c+a c+a c+a 2fd 3fd c+a
+5107: bot 3fu c+a c+a c+a 3fd
+5113: bot c+a c+a 2fd 3fu
+5133: bot c+a 2fd c+a c+a c+a 3fd
+5179: bot c+a 2fu c+a c+a 3fd
+5181: bot c+a c+a 3fd c+a 3fd c+a
+5196: bot 2fu c+a 3fu
+5213: bot c+a c+a c+a c+a 2fd 2fd
+5241: bot c+a 3fd c+a 3fu
+5243: bot c+a c+a c+a 2fd
+5277: bot c+a c+a 2fd c+a c+a 3fd
+5323: bot 2fu c+a c+a c+a 3fd
+5324: bot 3fu c+a 2fu
+5337: bot 3fu 2fd c+a c+a
+5341: bot c+a c+a c+a 3fd c+a 2fd
+5349: bot c+a 3fd c+a c+a c+a 3fd
+5369: bot c+a 2fd c+a 2fu
+5371: bot c+a c+a 3fd c+a
+5446: bot c+a c+a c+a c+a c+a 3fd 3fd
+5452: bot c+a 2fu 2fu
+5469: bot c+a c+a c+a 2fd c+a 3fd
+5497: bot c+a 3fu c+a 2fd
+5529: bot 3fu c+a 2fd c+a
+5563: bot c+a 2fd c+a 2fd c+a
+5565: bot c+a c+a 3fd c+a c+a 3fd
+5580: bot 2fu 3fu c+a
+5625: bot c+a c+a
+5708: bot 2fu c+a 2fu
+5725: bot c+a c+a c+a c+a 2fd 3fd
+5753: bot c+a 3fd c+a 2fu
+5755: bot c+a c+a c+a 3fd
+5785: bot 3fu c+a c+a 2fd
+5817: bot 2fu c+a 2fd c+a
+5819: bot c+a 2fd c+a c+a 2fd
+5851: bot c+a 3fd c+a 2fd c+a
+5853: bot c+a c+a c+a 3fd c+a 3fd
+5881: bot c+a 2fu c+a 2fd
+5913: bot 3fu c+a 3fd c+a
+5947: bot c+a 2fd c+a 3fd c+a
+5964: bot c+a 3fu
+6009: bot c+a 3fu c+a 3fd
+6011: bot c+a c+a 2fd c+a 2fd
+6073: bot 2fu c+a c+a 2fd
+6107: bot c+a 3fd c+a c+a 2fd
+6137: bot c+a c+a 2fu 3fd
+6139: bot c+a c+a 2fd 3fd c+a
+6201: bot 2fu c+a 3fd c+a
+6235: bot c+a 3fd c+a 3fd c+a
+6237: bot c+a c+a c+a c+a 3fd 3fd
+6267: bot c+a c+a c+a 2fd 2fd
+6297: bot 3fu c+a c+a 3fd
+6331: bot c+a 2fd c+a c+a 3fd
+6348: bot 3fu c+a
+6393: bot c+a 2fd c+a
+6395: bot c+a c+a 3fd c+a 2fd
+6476: bot c+a 2fu
+6523: bot c+a c+a 2fd c+a 3fd
+6585: bot 2fu c+a c+a 3fd
+6619: bot c+a 3fd c+a c+a 3fd
+6649: bot c+a c+a 2fd
+6732: bot 2fu c+a
+6777: bot c+a 3fd c+a
+6779: bot c+a c+a c+a 2fd 3fd
+6907: bot c+a c+a 3fd c+a 3fd
+6928: bot 3fu 3fu
+6988: bot c+a 2fd 3fu
+7116: bot 3fu 2fd c+a
+7161: bot c+a c+a 3fd
+7291: bot c+a c+a c+a 3fd 3fd
+7372: bot 3fu c+a 2fd
+7417: bot c+a 2fd c+a 2fd
+7440: bot 2fu 3fu
+7500: bot c+a
+7673: bot c+a c+a 2fd 2fd
+7756: bot 2fu c+a 2fd
+7801: bot c+a 3fd c+a 2fd
+7884: bot 3fu c+a 3fd
+7929: bot c+a 2fd c+a 3fd
+7952: bot 2fu 2fu
+8012: bot c+a 2fu 3fd
+8185: bot c+a c+a 2fd 3fd
+8268: bot 2fu c+a 3fd
+8313: bot c+a 3fd c+a 3fd
+8464: bot 3fu
+8524: bot c+a 2fd
+8697: bot c+a c+a 3fd 3fd
+8976: bot 2fu
+9036: bot c+a 3fd
+9488: bot 3fu 2fd
+9548: bot c+a 2fd 2fd
+10000: bot
