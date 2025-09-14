@@ -60,6 +60,8 @@ int daAlink_c::procCutJumpInit(int i_airCut) {
 
 #### Frame Data
 
+The greatest Y displacement you can get with a jump attack moon boots is `136.8` units with frame 1 MB or `105.45` with frame 2 MB on GCN without jump strike
+
 | Frame | No MB Y  | MB Frame 1 Y | MB Frame 2 Y |
 | :---- | :------: | :----------: | :----------: |
 | 1     |    0     |      0       |      0       |
