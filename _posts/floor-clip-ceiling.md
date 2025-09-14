@@ -4,14 +4,20 @@ title: Floor Clips with Ceilings
 description: Explanation when and why floorclips happen
 author: spicyjuice04
 categories: [Glitches]
-tags: [glitch, collision, minor]
+tags: [glitch, clip, collision, minor]
 pin: true
 math: true
 mermaid: true
 date: 2025-09-14 00:00:00
 ---
 
-Sometimes in this game you may encounter clipping through the floor when falling onto it at seemingly random places and then only when performing specific actions. There are two known ways a floorclip can happen, this post goes over floorclipping with a ceiling below the floor. But before we go over this we need to understand how the game actually checks if Link hits ground collision. For this we go into the relevant sections of `d_bg_s_acch.cpp`, the Background Actor Check that pretty much all actors use and see how the game specifically checks for collision. We are looking for how this collision gets handled while Link is in the air.
+Sometimes in this game you may encounter a clip through the floor when falling onto it in seemingly random places and only when performing specific actions. There are two known ways a floorclip can happen, this post goes over floorclipping with a ceiling below the floor.
+
+> *Example of a ceiling below a floor in Snowpeak Ruins*
+
+![Example of a ceiling below a floor in Snowpeak Ruins](/assets/glitches/floor-clip-ceiling/snowpeak-floor-clip-area.webp){: .w-50 .normal }
+
+Before we go over this we need to understand how the game actually checks if Link hits ground collision. For this we can read the relevant sections of `d_bg_s_acch.cpp`, the Background Actor Check which pretty much every actor uses, and see how the game specifically checks for collision. We are looking for how collision gets handled while Link is in the air:
 
 ```c++
 void dBgS_Acch::CrrPos(dBgS& i_bgs) {
@@ -110,9 +116,9 @@ if (!ChkLineCheckNone() && !cM3d_IsZero(tmp) &&
 }
 ```
 
-One of the following conditions has to be met in order to trigger `LineCheck`. Most of these conditions go over conditions with walls but `dvar11 > m_gnd_chk_offset` is a condition that means `LineCheck` will trigger if our vertical displacement is higher than the ground check offset (which is for Link 45 units).
+One of the conditions in `(dvar10 > (tmp * tmp) || fvar12 > fvar1 || dvar11 > m_gnd_chk_offset || ChkLineCheck()))` has to be met in order to trigger `LineCheck`. Most of these conditions go over conditions with walls but `dvar11 > m_gnd_chk_offset` is a condition that makes `LineCheck` trigger if our vertical displacement (`dvar11`) is higher than the ground check offset (which is 45 units for Link).
 
-This all pretty much makes sense so this doesn't have to run unnecessarily when all the groundchecks are running anyways to prevent the basic passing though the floor.
+This all makes sense as this doesn't have to run unnecessarily when all the groundchecks are running anyways that prevent the basic passing though the floor.
 
 ### Why Line Check is such an issue
 
@@ -129,11 +135,11 @@ if (i_bgs.LineCross(&lin_chk)) {
 }
 ```
 
-Inside the `ChkLineDown` part of `LineCheck` we can find this part of the code. The problem is that the highest point the Line Check hits a floor our y position will be set to that floor -= 1.0f. This makes it impossible to clip past a floor even if there is a ceiling under it since we are then never under a ceiling unless it is inside the floor itself which is only the case on structures like rocks or doors that overlap with background collision.
+Inside the `ChkLineDown` part of `LineCheck` we can find this part of the code. The problem is that at the highest point the Line Check hits a floor, our y position will be set to that floor - 1.0f. This makes it impossible to clip past a floor even if there is a ceiling under it since we are then never under a ceiling unless it is inside the floor itself (which is only the case in structures like rocks or doors that overlap with background collision.)
 
 ### Order of Operations outside of LineCheck
 
-If we are falling slower than 45 units, then we will never trigger `LineCheck`. So what happens now?
+If we are falling slower than 45 units per frame, we will never trigger `LineCheck`. So what happens now?
 
 ```c++
 ...
@@ -171,12 +177,18 @@ If we are falling slower than 45 units, then we will never trigger `LineCheck`. 
         ...
 ```
 
-The game looks for Roof collision _first_ and looks for ground collision _after_. This is very important because this means as long as we don't trigger the LineChecks, are still in the air and are below a ceiling collision with our current position, the game updates our position to the ceiling first, snapping Link's entire model below the floor, the floor is not even seen after since the ceiling is below the floor. 
+The game looks for Roof collision _first_ and looks for ground collision _after_. This is very important because this means as long as we don't trigger the LineChecks and we are still in the air below a ceiling collision with our current position, the game updates our position to the ceiling first, snapping Link's entire model below the floor. The floor is not even seen after since the ceiling is below the floor. 
 
 ### Last specific notes
 
-Since we would trigger `LineCheck` if we are falling more than 45 units, we can't trigger this type of floorclip while falling that fast. 
+Since we would trigger `LineCheck` if we are falling more than 45 units in a frame, we can't trigger this type of floorclip while falling that fast.
 
-Additionally, this behavior triggers only if we were not standing on the ground before because on ground you got 0 vertical speed and can't fall to the ceiling. 
+Additionally, this behavior triggers only if we were not standing on the ground before because on ground you got 0 vertical speed and can't fall to the ceiling.
 
-Lastly the floor clip has to be quite specific. In order for this to work you need to be not in the air (not touching ground) the frame before and then immediately touch the ceiling the next frame so you don't loose all your vertical speed from hitting the floor and not clipping. This sometimes requires specific setups in order to hit the ceiling without hitting floor before and also not triggering `LineCheck`.
+Lastly, the floor clip has to be quite specific. In order for it to work you need to be not in the air (not touching ground) the frame before and then immediately touch the ceiling the next frame so you don't loose all your vertical speed from hitting the floor. This often requires specific setups in order to hit the ceiling without hitting floor beforehand and also not triggering `LineCheck`.
+
+### Video Example
+
+Here is an example of a floor clip in Snowpeak Ruins:
+
+<iframe width="500" height="300" src="https://www.youtube.com/embed/YHQSjTwygYA" frameborder="0" allowfullscreen></iframe>
