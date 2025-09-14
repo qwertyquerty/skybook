@@ -8,7 +8,7 @@ tags: [glitch, collision, minor]
 pin: true
 math: true
 mermaid: true
-date: 2025-09-13 00:00:00
+date: 2025-09-14 00:00:00
 ---
 
 Sometimes in this game you may encounter clipping through the floor when falling onto it at seemingly random places and then only when performing specific actions. There are two known ways a floorclip can happen, this post goes over floorclipping with a ceiling below the floor. But before we go over this we need to understand how the game actually checks if Link hits ground collision. For this we go into the relevant sections of `d_bg_s_acch.cpp`, the Background Actor Check that pretty much all actors use and see how the game specifically checks for collision. We are looking for how this collision gets handled while Link is in the air.
@@ -180,10 +180,3 @@ Since we would trigger `LineCheck` if we are falling more than 45 units, we can'
 Additionally, this behavior triggers only if we were not standing on the ground before because on ground you got 0 vertical speed and can't fall to the ceiling. 
 
 Lastly the floor clip has to be quite specific. In order for this to work you need to be not in the air (not touching ground) the frame before and then immediately touch the ceiling the next frame so you don't loose all your vertical speed from hitting the floor and not clipping. This sometimes requires specific setups in order to hit the ceiling without hitting floor before and also not triggering `LineCheck`.
-
-
-
-
-
-
-
