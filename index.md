@@ -40,7 +40,7 @@ A simple guide showing how to use it can be found [here](https://github.com/zsrt
 
 ### Decompilation Repository
 
-**[https://github.com/zeldaret/tp](Here)** is a link to the active *Twilight Princess* reverse engineering project
+**[Here](https://github.com/zeldaret/tp)** is a link to the active *Twilight Princess* reverse engineering project
 
 ### Useful Software
 
