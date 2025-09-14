@@ -23,6 +23,8 @@ Normally it's only possible to do moon boots with jump attack and ending blow on
 
 ## Jump Attack
 
+> Note: it is also possible to perform moon boots on a mid-air jump slash, gaining just 0.9 units of height for frame 1 MB on the Wii version only
+
 #### Code
 
 According to the following code, jump attacks get a 35% vertical speed boost when in a heavy state:
