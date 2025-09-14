@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You can't unload the barrier
+title: You Can't Unload Obj_Board or V_CTGWall
 description: A technical dive into what we can and cannot archive corrupt
 author: wolfegarden
 categories: [Theory]
