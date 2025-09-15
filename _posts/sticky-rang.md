@@ -2,7 +2,7 @@
 layout: post
 title: Sticky Rang
 description: Explanation of how Sticky Rang works
-author: Chris is Awesome
+author: chrisisawesome
 categories: [Glitches]
 tags: [glitch, collision, minor]
 pin: true
