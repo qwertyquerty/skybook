@@ -114,7 +114,7 @@ To achieve this, I wrote several Python scripts that:
 
 1) decompress the archives from the Yaz0 format
 
-2) scan the PPC code between 0x80000300 and 0x80000800 (corresponding to the different exception handlers)
+2) scan the PPC instructions between 0x80000300 and 0x80000800 (corresponding to the different exception handlers)
 
 3) verify that no instruction causes a crash or trap before execution reaches 0x80000300 (the first exception handler)
 
@@ -126,7 +126,7 @@ To achieve this, I wrote several Python scripts that:
 0x80000304: bl 0x81020398
 ```
 
-Fortunately, the game provides a large number of archives containing valid PPC code that does not cause crashes or traps. The most useful ones are typically the `st*` instructions or `branch` instructions, such as the one shown above.
+Fortunately, the game provides a large number of archives containing valid PPC instructions that does not cause crashes or traps. The most useful ones are typically the `st*` instructions or `branch` instructions, such as the one shown above.
 
 ## The Problems
 
