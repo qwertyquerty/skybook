@@ -29,9 +29,8 @@ _jump_, sending program execution off the rails entirely.
 
 So I started investigating. Thankfully, this one is pretty easy to reproduce:
 
-* perform [The Amazing Fly Glitch](https://www.youtube.com/watch?v=8Ypd93WGGvk)
-* as soon as the `FISH ON!` text appears, soft-reset the console
-* load a save
+* perform fishing rod dupe (to overload `GameHeap`)
+* Catch a fish and display the text “Fish On”, it's also work with Yeti Minigame
 * view an area banner, pick up an item, talk to an NPC, or a variety of other things to trigger the glitch
 
 Sure enough, a breakpoint I'd set at `0x0000800` tripped. But how did we get here? Well, the answer was a lot weirder than I expected.
@@ -101,11 +100,33 @@ This code is a little unclear because of the use of some global variables, but `
 of a DMA copy operation. The problem is that `JKRDecompressFromAramToMainRam` doesn't check whether the `JKRAllocFromSysHeap` allocation succeeds; if
 the allocation fails, `szpBuf` will become `0`, and the DMA operation will target the start of main memory. Since the DMA engine (apparently) can't
 segfault, this just works and the copy result is aliased to `0x80000000`. This ends up copying up to `0x2000` bytes of the archive that's intended to
-be decompressed, usually some kind of font, sound or animation file.
+be decompressed, usually some kind of font, sound or animation file. Some archives may exceed the 0x2000 limit.
 
 When the next thread yields, the OS tries to read the thread structure pointer from `0x800000E4`, which the DMA copy overwrote with an invalid pointer.
 This traps, and execution is transferred to the out-of-bounds read handler at `0x80000300`. The trick is that since we copied up to `0x2000` bytes into RAM
-here, also overwrote the exception handler! That means that we're now executing the contents of that compressed archive file as code!
+here (some archives may exceed the 0x2000 limit), also overwrote the exception handler! That means that we're now executing the contents of that compressed archive file as code!
+
+## Observe the PPC instructions in the archives
+
+The first step is to identify valid PPC instructions present in all of the game’s archives.
+
+To achieve this, I wrote several Python scripts that:
+
+1) decompress the archives from the Yaz0 format
+
+2) scan the PPC code between 0x80000300 and 0x80000800 (corresponding to the different exception handlers)
+
+3) verify that no instruction causes a crash or trap before execution reaches 0x80000300 (the first exception handler)
+
+4) and log everything into a .txt file in the following format:
+
+```
+--- msgres03.arc --- <-- Archive name
+0x80000300: sth r20, 0x2000(r11) <-- PPC instruction
+0x80000304: bl 0x81020398
+```
+
+Fortunately, the game provides a large number of archives containing valid PPC code that does not cause crashes or traps. The most useful ones are typically the `st*` instructions or `branch` instructions, such as the one shown above.
 
 ## The Problems
 
