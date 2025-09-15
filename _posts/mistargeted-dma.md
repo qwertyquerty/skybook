@@ -30,7 +30,7 @@ _jump_, sending program execution off the rails entirely.
 So I started investigating. Thankfully, this one is pretty easy to reproduce:
 
 * perform fishing rod dupe (to overload `GameHeap`)
-* Catch a fish and display the text “Fish On”, it's also work with Yeti Minigame
+* Catch a fish and display the text “Fish On”, it also works with the Yeti minigame
 * view an area banner, pick up an item, talk to an NPC, or a variety of other things to trigger the glitch
 
 Sure enough, a breakpoint I'd set at `0x0000800` tripped. But how did we get here? Well, the answer was a lot weirder than I expected.
