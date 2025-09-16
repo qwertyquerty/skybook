@@ -18,7 +18,7 @@ By doing Early Master Sword, we are able to learn Ending Blow from a wolf other 
 This is the initial discovery video. This uses mods to warp around, but to clarify the events, the player:
 - Gets storage from the Ordon Springs wolf by learning Ending Blow from it (or rather exiting before learning, the effect is teh same).
 - Visits the wolf outside of Castle Town, but is returned to Ordon Springs upon leaving!
-https://www.youtube.com/watch?v=lIqrX_CR75I
+{% youtube lIqrX_CR75I %}
 
 ## Mechanics
 
