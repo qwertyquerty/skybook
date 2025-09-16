@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Golden Wolf Storage
-description: A potential
+description: A wrong warp glitch to travel to the location of a golden wolf
 author: zcanann
 categories: [Glitches]
 tags: [gws, glitches, EHC]
