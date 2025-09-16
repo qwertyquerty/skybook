@@ -23,6 +23,7 @@ This is the initial discovery video. This uses mods to warp around, but to clari
 ## Mechanics
 
 When you enter Hero's Shade Realm, the game sets a flag indicating which wolf you arrived from. This flag is checked when leaving to decide the location to which Link returns. However, the game checks these flags in a specific order, notably:
+```
 80406FA2:
 4 = Ordon Springs
 2 = Castle Town (West exterior)
@@ -33,6 +34,7 @@ When you enter Hero's Shade Realm, the game sets a flag indicating which wolf yo
 32 = Hyrule Castle
 If none are set:
 0 = North Faron Woods
+```
 
 In other words, Ordon Springs is the highest priority warp location (checked first), and Hyrule Castle is the lowest priority warp location (checked last). Note that these are bit flags, so if the value was hacked to be 36 (from 32 + 4), the player would warp to Ordon Springs, even though the flag for HC is set, due to priority. If no flags are set, the player always returns to North Faron Woods.
 
@@ -46,4 +48,4 @@ If we could somehow set our Golden Wolf Storage without having visited that part
 There is currently no conceivable way to accomplish this. While the golden wolf storage address is shared by some flags related to the early game Goats mini-game, the bits do not overlap.
 
 Here is hacked proof that would show how EHC would be possible if we could set the right Golden Wolf Storage bit:
-https://youtu.be/T8zV6u5nx6w
+{% youtube T8zV6u5nx6w %}
