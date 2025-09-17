@@ -4,7 +4,7 @@ title: Golden Wolf Storage
 description: A wrong warp glitch to travel to the location of a golden wolf
 author: zcanann
 categories: [Glitches]
-tags: [gws, glitches, EHC]
+tags: [glitches, gws, EHC, wrong-warp, unsolved]
 pin: true
 math: true
 mermaid: true
@@ -16,7 +16,7 @@ Golden Wolf Storage is a glitch discovered by Zachary Canann (zcanann) on March 
 By doing Early Master Sword, we are able to learn Ending Blow from a wolf other than the North Faron Woods wolf. For some reason, this causes a bug where the "return location" is not cleared after encountering the golden wolf. Then, by accessing another wolf, there are circumstances where the player is warped back to the original location.
 
 This is the initial discovery video. This uses mods to warp around, but to clarify the events, the player:
-- Gets storage from the Ordon Springs wolf by learning Ending Blow from it (or rather exiting before learning, the effect is teh same).
+- Gets storage from the Ordon Springs wolf by learning Ending Blow from it (or rather by exiting before learning, the effect is the same).
 - Visits the wolf outside of Castle Town, but is returned to Ordon Springs upon leaving!
 {% youtube lIqrX_CR75I %}
 
