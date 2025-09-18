@@ -87,7 +87,7 @@ After all that is done, the game does its standard state checking for areas that
  
 ### Lake Hylia
 
-#### Outside Area:
+#### Outside Area
 - Beating Lakebed sets state 2
 - Warping the Cannon to Lake Hylia sets state 1
 - Fixing the Cannon sets state 3
@@ -96,22 +96,22 @@ After all that is done, the game does its standard state checking for areas that
 - Beating Lakebed sets state 9
 - Starting MDH sets state 2
 
-### Castle Town:
+### Castle Town
 
-#### West Road/Central Square:
+#### West Road/Central Square
 - Beating Lakebed sets state 2
 - MDH Clear sets state 0 again
  
-#### South Road:
+#### South Road
 - Finishing Zora Escort sets state 1
 - Beating Lakebed sets state 2
 - MDH Clear sets state to 1 again
  
-#### East Road/North Road:
+#### East Road/North Road
 - Beating Lakebed sets state 2
 - MDH Clear sets state 1
  
-#### Telma's Bar:
+#### Telma's Bar
 - Beating Lakebed sets state 2
 - Master Sword Cutscene sets state 4
 
@@ -123,17 +123,18 @@ After all that is done, the game does its standard state checking for areas that
 ### Upper Zora's River
 - Unlocking Iza 1 sets state 1 (by Unlocking Iza 1 I mean beating the shadow beasts and following her inside normally)
  
-### Gerudo Desert:
+### Gerudo Desert
 - Starts off at state 8
 - Watching the enter desert cs sets state 0 again
  
-### Zora's River:
+### Zora's River
 - Starting the Iza 1 Minigame sets state 2 (this flag can be unset if you fail and then say no to trying again)
 - Beating the Iza 1 Minigame sets state 1
  
-### Ordon Village:
+### Ordon Village
 
-#### Main Area:
+#### Main Area
+
 - Starts off at state 6
 - Finishing Goats 1 sets state 0
 - Saving Talo sets state 7
@@ -141,33 +142,39 @@ After all that is done, the game does its standard state checking for areas that
 - Clearing Faron Twilight sets state 2 (changes to state 4 at night)
 - Taming Epona sets state 4 (changes to state 5 at night)
 
-#### Outside Link's House:
+#### Outside Link's House
+
 - Starts off at state 3
 - Finishing Goats 1 sets state 4
 - Saving Talo sets state 0
 - Finishing Sewers sets state 1
 - Clearing Faron Twilight sets state 2
  
-#### Sera's Shop:
+#### Sera's Shop
+
 - Clearing Faron Twilight sets state 2
  
-#### Talo/Malo's House:
+#### Talo/Malo's House
+
 - Finishing Sewers sets state 1
 - Clearing Faron Twilight sets state 2
 - Watching the Colin CS after beating KB1 sets state 3
  
-#### Rusl's House:
+#### Rusl's House
+
 - Clearing Faron Twilight sets state 2
 - Taming Epona sets state 4
  
-### Ordon Spring:
+### Ordon Spring
+
 - Starts off at state 1
 - Finishing the Slingshot and Sword Tutorials sets state 3
 - Saving Talo sets state 0
 - Finishing Sewers sets state 4
 - Clearing Faron Twilight sets state 2
  
-### Ordon Ranch:
+### Ordon Ranch
+
 - Starts off at state C
 - Finishing Goats 1 sets state B
 - Saving Talo sets state 9
@@ -175,59 +182,71 @@ After all that is done, the game does its standard state checking for areas that
 - Finishing Sewers sets state 1
 - Clearing Faron Twilight sets state 2 (State 2 changes to state 3 at night)
  
-### Hyrule Field:
+### Hyrule Field
+
 - Some stuff gets checked in RAM to see if state should be escort and if so, what part of escort
 - Finishing Zora Escort sets state 0 again
 - Starting MDH sets state 4
 - MDH Clear sets state 6
  
-### Castle Town Fields:
+### Castle Town Fields
 
-#### West Field:
+#### West Field
+
 - Starting MDH sets state 4
 - MDH Clear sets state 6
  
-#### South Field:
+#### South Field
+
 - Starting MDH sets state 4
 - MDH Clear sets state 6
 - Talking to Louise before getting the Wooden Statue sets state 1
 - Getting the Wooden Statue sets state 6 (does not require proper source to set this flag)
  
-#### East Field:
+#### East Field
+
 - Starting MDH sets state 4
 - MDH Clear sets state to 0 again
  
-### Hidden Village:
+### Hidden Village
+
 - Watching the Ilia Horse Call cutscene sets state 1
  
-### Castle Town Shops:
+### Castle Town Shops
 
-#### Jovani's House:
+#### Jovani's House
+
 - Starts off at state 1
 - MDH Clear sets state 0
  
-#### All Other areas in Castle Town Interiors not explicitly mentioned:
+#### All Other areas in Castle Town Interiors not explicitly mentioned
+
 - Finishing the Malo Mart Quest to open the Castle Town Malo Mart sets state 1
  
-### Sacred Grove:
+### Sacred Grove
+
 - Beating SPR sets state 2
  
-### Bulblin Camp:
+### Bulblin Camp
+
 - Escaping the Burning Tent after beating KB3 sets state 1
 - Beating Stallord sets state 2
 - Watching the cutscene for fixing the Mirror sets state 3
  
-### Faron Woods Cave:
+### Faron Woods Cave
+
 - Saving Talo sets state 1
  
-### Sewers:
+### Sewers
+
 - Midna on Back sets state D
  
-### Hyrule Castle:
+### Hyrule Castle
+
 - Inside areas are all state 1
 - outside areas are all state 0
  
-### Fishing Pond/Hena's Cabin:
+### Fishing Pond/Hena's Cabin
 
 State starts off at 0 and increments every time you leave the fishing pond, looping after 3 (0 -> 1 -> 2 -> 3 -> 0 -> ...)
 
