@@ -11,8 +11,5 @@ mermaid: true
 date: 2025-09-16 00:00:00
 ---
 
-Early Master Sword is...
+> This page is TODO
 
-## TODO
-
-Finish me :^)
