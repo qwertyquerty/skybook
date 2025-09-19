@@ -116,7 +116,7 @@ if (!ChkLineCheckNone() && !cM3d_IsZero(tmp) &&
 }
 ```
 
-One of the conditions in `(dvar10 > (tmp * tmp) || fvar12 > fvar1 || dvar11 > m_gnd_chk_offset || ChkLineCheck()))` has to be met in order to trigger `LineCheck`. Most of these conditions go over conditions with walls but `dvar11 > m_gnd_chk_offset` is a condition that makes `LineCheck` trigger if our vertical displacement (`dvar11`) is higher than the ground check offset (which is 45 units for Link).
+One of the conditions in `(dvar10 > (tmp * tmp) || fvar12 > fvar1 || dvar11 > m_gnd_chk_offset || ChkLineCheck()))` has to be met in order to trigger `LineCheck`. Most of these conditions go over conditions with walls but `dvar11 > m_gnd_chk_offset` is a condition that makes `LineCheck` trigger if our vertical displacement (`dvar11`) is higher than the ground check offset (which is 48 units for Link).
 
 This all makes sense as this doesn't have to run unnecessarily when all the groundchecks are running anyways that prevent the basic passing though the floor.
 
@@ -139,7 +139,7 @@ Inside the `ChkLineDown` part of `LineCheck` we can find this part of the code. 
 
 ### Order of Operations outside of LineCheck
 
-If we are falling slower than 45 units per frame, we will never trigger `LineCheck`. So what happens now?
+If we are falling slower than 48 units per frame, we will never trigger `LineCheck`. So what happens now?
 
 ```c++
 ...
@@ -181,7 +181,7 @@ The game looks for Roof collision _first_ and looks for ground collision _after_
 
 ### Last specific notes
 
-Since we would trigger `LineCheck` if we are falling more than 45 units in a frame, we can't trigger this type of floorclip while falling that fast.
+Since we would trigger `LineCheck` if we are falling more than 48 units in a frame, we can't trigger this type of floorclip while falling that fast.
 
 Additionally, this behavior triggers only if we were not standing on the ground before because on ground you got 0 vertical speed and can't fall to the ceiling.
 
