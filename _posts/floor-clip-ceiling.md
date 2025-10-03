@@ -104,88 +104,41 @@ void dBgS_Acch::CrrPos(dBgS& i_bgs) {
 
 This code block is usually bigger but because of the specific scenario, we can ignore functions that involve walls aswell as functions that assume you were already on the ground the previous frame, so functions using `ChkGroundHit` can be ignored. 
 
-`pm_old_pos` is the position used at the beginning of the frame and `pm_pos` is the current position, that other variables, especially `GetPos()` constantly update for the next frame. First this game goes over the conditions to run the LineCheck 
+`pm_old_pos` is the position used at the beginning of the frame and `pm_pos` is the current position, that other variables, especially `GetPos()` constantly update for the next frame. 
 
 ```c++
-OffLineCheckHit();
-if (!ChkLineCheckNone() && !cM3d_IsZero(tmp) &&
-    (dvar10 > (tmp * tmp) || fvar12 > fvar1 || dvar11 > m_gnd_chk_offset || ChkLineCheck()))
-{
-    bvar2 = true;
-    LineCheck(i_bgs);
+void dBgS_Acch::GroundCheck(dBgS& i_bgs) {
+    if (!(m_flags & GRND_NONE)) {
+        cXyz grnd_pos;
+        grnd_pos = *pm_pos;
+        grnd_pos.y += field_0x94 + (m_gnd_chk_offset - field_0x90);
+
+        if (!ChkGndThinCellingOff()) {
+            static dBgS_RoofChk tmpRoofChk;
+            tmpRoofChk.SetActorPid(m_gnd.GetActorPid());
+            tmpRoofChk.SetPos(*pm_pos);
+
+            f32 roof_chk = i_bgs.RoofChk(&tmpRoofChk);
+            if (grnd_pos.y > roof_chk) {
+                grnd_pos.y = roof_chk;
+            }
+        }
+    ...
+    }
 }
 ```
 
-One of the conditions in `(dvar10 > (tmp * tmp) || fvar12 > fvar1 || dvar11 > m_gnd_chk_offset || ChkLineCheck()))` has to be met in order to trigger `LineCheck`. Most of these conditions go over conditions with walls but `dvar11 > m_gnd_chk_offset` is a condition that makes `LineCheck` trigger if our vertical displacement (`dvar11`) is higher than the ground check offset (which is 48 units for Link).
+The `GroundCheck` get's checked inside `CrrPos`. The code pasted above is really interesting because it checks for a very interesting function. `ChkGndThinCellingOff` is the relevant function here and actually what is causing us to clip through a floor when there is a ceiling below us. This function doesn't get called if the `ChkGndThinCellingOff` flag is active but for the Link actor it is always inactive so that line of code runs. This check basically allows us in the air, that hitting a ceiling collision let's us phase through the ground.
 
-This all makes sense as this doesn't have to run unnecessarily when all the groundchecks are running anyways that prevent the basic passing though the floor.
-
-### Why Line Check is such an issue
-
-```c++
-if (i_bgs.LineCross(&lin_chk)) {
-    *GetPos() = lin_chk.GetCross();
-    OnLineCheckHit();
-
-    if (pm_out_poly_info != NULL)
-        *pm_out_poly_info = lin_chk;
-
-    GetPos()->y -= 1.0f;
-    GroundCheck(i_bgs);
-}
-```
-
-Inside the `ChkLineDown` part of `LineCheck` we can find this part of the code. The problem is that at the highest point the Line Check hits a floor, our y position will be set to that floor - 1.0f. This makes it impossible to clip past a floor even if there is a ceiling under it since we are then never under a ceiling unless it is inside the floor itself (which is only the case in structures like rocks or doors that overlap with background collision.)
-
-### Order of Operations outside of LineCheck
-
-If we are falling slower than 48 units per frame, we will never trigger `LineCheck`. So what happens now?
-
-```c++
-...
-
-        if (!(m_flags & ROOF_NONE)) {
-            m_roof.SetExtChk(*this);
-            ClrRoofHit();
-            cXyz roof_pos;
-            roof_pos.x = pm_pos->x;
-            roof_pos.y = pm_pos->y;
-            roof_pos.z = pm_pos->z;
-
-            m_roof.SetPos(roof_pos);
-            m_roof_height = i_bgs.RoofChk(&m_roof);
-
-            if (m_roof_height != 1000000000.0f) {
-                f32 y = GetPos()->y;
-
-                if (y + m_roof_crr_height > m_roof_height) {
-                    field_0xcc = m_roof_height - m_roof_crr_height;
-                    SetRoofHit();
-                }
-            }
-        }
-
-        if (!(m_flags & GRND_NONE)) {
-            ClrGroundFind();
-            GroundCheck(i_bgs);
-            GroundRoofProc(i_bgs);
-        } else {
-            if (field_0xcc < GetPos()->y) {
-                GetPos()->y = field_0xcc;
-            }
-        }
-        ...
-```
-
-The game looks for Roof collision _first_ and looks for ground collision _after_. This is very important because this means as long as we don't trigger the LineChecks and we are still in the air below a ceiling collision with our current position, the game updates our position to the ceiling first, snapping Link's entire model below the floor. The floor is not even seen after since the ceiling is below the floor. 
+It is actually unknown why this part of code exists because it doesn't seem to prevent crush voiding or general movement through a ceiling. So this seems to be unnecessary code that we can thankfully abuse to make this possible.
 
 ### Last specific notes
 
-Since we would trigger `LineCheck` if we are falling more than 48 units in a frame, we can't trigger this type of floorclip while falling that fast.
+Since we would trigger `LineCheck` if we are falling more than 48 units in a frame, we can't trigger this type of floorclip while falling that fast. The `LineCheck` code runs before the other codeblocks and would already clamp our position to the floor above and kill all vertical and horizontal speed since that is also something that code does.
 
-Additionally, this behavior triggers only if we were not standing on the ground before because on ground you got 0 vertical speed and can't fall to the ceiling.
+Additionally, this behavior triggers only if we were not standing on the ground before because of the `!(m_flag...)` requirement to run that line of code.
 
-Lastly, the floor clip has to be quite specific. In order for it to work you need to be not in the air (not touching ground) the frame before and then immediately touch the ceiling the next frame so you don't loose all your vertical speed from hitting the floor. This often requires specific setups in order to hit the ceiling without hitting floor beforehand and also not triggering `LineCheck`.
+Lastly, the floor clip has to be quite specific. In order for it to work you need to be not in the air (not touching ground) the frame before and then immediately touch the ceiling the next frame so you don't hit the floor. This often requires specific setups in order to hit the ceiling without hitting floor beforehand and also not triggering `LineCheck`.
 
 ### Video Example
 

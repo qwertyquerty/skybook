@@ -186,7 +186,7 @@ With this in mind, Link now can scale up walls up to a maximum of 48 units per f
 
 ![Image of clippable wall with Storage](/assets/glitches/door-storage/door-storage-clip.png){: .w-50 .normal }
 
-<iframe width="500" height="300" src="https://www.youtube.com/watch?v=yXUzVuS2Uro" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="300" src="https://www.youtube.com/embed/yXUzVuS2Uro" frameborder="0" allowfullscreen></iframe>
 
 ### Sliding Effect
 
