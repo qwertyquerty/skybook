@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Door Storage
-description: Explanation when and why floorclips happen
+title: Mystery Teleport
+description: Theories on why Mystery Teleports can happen
 author: spicyjuice04
 categories: [Theory]
 tags: [glitch, collision, unsolved]
