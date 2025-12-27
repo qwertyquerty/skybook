@@ -39,6 +39,28 @@ The title screen itself is an overworld map. While it looks like the Eldin Field
 
 Most importantly, this map does not have anything interesting to interact with. There are no loading zones to go through. The only things you can really do here is go to the file selection screen like intended or unintendedly save the game on the title screen or void and die for another map reload.
 
+### Dying on the Title Screen
+
+After dying, you respawn on the Bridge of Eldin on layer 0. Previously we were on layer 10 where the title screen should play out, however layer 0 is used for a different sequence. The game suddenly starts the cutscene of the first King Bulblin encounter. This fight actually takes place on the title screen map on layer 0.
+
+If you do not skip the cutscene, you may see that it is quite weird. Epona gallops in but Link is nowhere to be seen. Furthermore the screen shakes but there are none of the bulblins there who are supposed to spawn. Well that is because our spawn is still our previous spawn point where we voided out on the bridge so Link is now over there, far away from where he was supposed to. From here though we can't do anything
+
+### Defeating King Bulblin
+
+If you die again or on the first time skipped the cutscene, you start the fight properly. Because you have the Ordon Sword, you can fully complete the next sequence and defeat King Bulblin in the first phase and also the second phase. There are no notable differences aside from having no equipment that you are supposed to have at this point but the fight plays out the same way.
+
+### Twilight Kakariko
+
+After defeating King Bulblin and watching or skipping the cutscene of Collin's rescue in covered in Twilight, you now find yourself inside Kakariko Village in layer 2, even though it is covered in twilight.
+
+This version of Kakariko is basically the state you are supposed to have currently after defeating King Bulblin. Even though it looks like we are in the twilight, the game did not actually care to update the layer to a twilight one after the cutscene though it does set the time of day to midnight. 
+
+Epona is part of this state for the time being so with her we can go to the North Eldin Field if we want. Though if we enter another area while we are on Epona the game will crash, since she is not part of the twilight state's actor list. In North Eldin we can't do anything though. The Rocks blocking the way to Lanayru are gone but even if we reach the Twilight Wall, since we are already in a twilight state, we can't become wolf and enter Lanayru that way, instead it starts a cutscene trying to walk us back, though stopping at the invisible wall of the Lanayru Twilight Wall resulting in a softlock.
+
+### The unfortunate ending
+
+After reloading Kakariko Village, we end up back in the correct twilight layer 14. It is possible to obtain the Kakariko Portal and the Eldin Vessel early now since we can defeat Shadow Beasts with a spin attack of our Ordon Sword, however since we can't transform, it all becomes useless. Since we never had any early progression, we can't transform into wolf in this area and we never unlocked Midna or the senses either so we can't collect the tears of light and can't clear the Eldin Twilight. Furthermore we can't leave Eldin in itself so we are softlocked in this area, unable to progress.
+
 ## Saving on the Title Screen
 
 When resetting the game, most properties get reset to some default value. Mostly zero. But there are some properties part of the title screen that you do not have at the start of the game, but can still get carried over when saving the game. Those include
