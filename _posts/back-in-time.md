@@ -4,7 +4,7 @@ title: Back in Time
 description: Explanation and consequences of why we can move and save on the title screen
 author: spicyjuice04
 categories: [Glitches]
-tags: [glitch, major]
+tags: [glitch, major, back-in-time]
 pin: true
 math: true
 mermaid: true
@@ -43,7 +43,7 @@ Most importantly, this map does not have anything interesting to interact with. 
 
 After dying, you respawn on the Bridge of Eldin on layer 0. Previously we were on layer 10 where the title screen should play out, however layer 0 is used for a different sequence. The game suddenly starts the cutscene of the first King Bulblin encounter. This fight actually takes place on the title screen map on layer 0.
 
-If you do not skip the cutscene, you may see that it is quite weird. Epona gallops in but Link is nowhere to be seen. Furthermore the screen shakes but there are none of the bulblins there who are supposed to spawn. Well that is because our spawn is still our previous spawn point where we voided out on the bridge so Link is now over there, far away from where he was supposed to. From here though we can't do anything
+If you do not skip the cutscene, you may see that it is quite weird. Epona gallops in but Link is nowhere to be seen. Furthermore the screen shakes but there are none of the bulblins there who are supposed to spawn. Well that is because our spawn is still our previous spawn point where we voided out on the bridge so Link is now over there, far away from where he was supposed to. From here though we can't do anything.
 
 ### Defeating King Bulblin
 
@@ -63,7 +63,7 @@ After reloading Kakariko Village, we end up back in the correct twilight layer 1
 
 ## Saving on the Title Screen
 
-When resetting the game, most properties get reset to some default value. Mostly zero. But there are some properties part of the title screen that you do not have at the start of the game, but can still get carried over when saving the game. Those include
+When resetting the game, most properties get reset to some default value. Mostly zero. But there are some properties part of the title screen that you do not have at the start of the game, but can still get carried over when saving the game. Those include:
 
  - Ordon Sword 
  - Hylian Shield 
