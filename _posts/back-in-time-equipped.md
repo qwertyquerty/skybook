@@ -13,7 +13,7 @@ date: 2025-12-30 00:00:00
 
 Aka *BiTE*
 
-This page is a continuation of the [Back in Time](/posts/back-in-time.md) page.
+This page is a continuation of the [Back in Time](/posts/back-in-time) page.
 
 ## Initialization
 
