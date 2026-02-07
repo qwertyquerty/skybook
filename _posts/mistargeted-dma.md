@@ -131,12 +131,12 @@ I then looked at the ASM instructions related to this part:
 802ce8c0 7c 1e 00 40     cmplw      r30,r0
 802ce8c4 40 80 00 5c     bge        LAB_802ce920
 ```
-This instruction sequence tells us that start is located at heapObj(0x80457CC0) + 0x30 = 0x80457CF0 -> 0x80457D50, and that end is located at heapObj(0x80457CC0) + 0x34 = 0x80457CF4 -> 0x80A34F20. I also wanted to make sure of the SystemHeap size: it is indicated at heapObj(0x80457CC0) + 0x38 = 0x80457CF8 -> 0x005DD1D0.
-To confirm, I still computed end - start: 0x80A34F20 - 0x80457D50 = 0x005DD1D0, so this is consistent with the size indicated at heapObj(0x80457CC0) + 0x38.
-We can therefore finally define a memory range and a size for SystemHeap: [0x80457D50-0x80A34F20)
-0x005DD1D0 bytes = ~5.86 MiB (base 1024)
+This instruction sequence tells us that start is located at `heapObj(0x80457CC0) + 0x30 = 0x80457CF0 -> 0x80457D50`, and that end is located at `heapObj(0x80457CC0) + 0x34 = 0x80457CF4 -> 0x80A34F20`. I also wanted to make sure of the `SystemHeap` size: it is indicated at `heapObj(0x80457CC0) + 0x38 = 0x80457CF8 -> 0x005DD1D0`.
+To confirm, I still computed end - start: `0x80A34F20 - 0x80457D50 = 0x005DD1D0`, so this is consistent with the size indicated at `heapObj(0x80457CC0) + 0x38`.
+We can therefore finally define a memory range and a size for `SystemHeap`: `[0x80457D50-0x80A34F20)`
+`0x005DD1D0 bytes = ~5.86 MiB (base 1024)`
 
-I then compared the memory range of SystemHeap with the other memory ranges obtained by Zac, and I realized that ZeldaHeap was entirely contained within SystemHeap. So I wanted to see how ZeldaHeap was instantiated in memory. Here is the corresponding code found in `m_Do_machine::mDoMch_Create()`:
+I then compared the memory range of `SystemHeap` with the other memory ranges obtained by Zac, and I realized that `ZeldaHeap` was entirely contained within `SystemHeap`. So I wanted to see how `ZeldaHeap` was instantiated in memory. Here is the corresponding code found in `m_Do_machine::mDoMch_Create()`:
 
 ```c++
 pJVar4 = JKRHeap::sSystemHeap;
