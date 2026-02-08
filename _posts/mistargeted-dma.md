@@ -219,7 +219,8 @@ my_SysPrintHeap("Ｊ２Ｄ用ヒープ", heap, j2dHeapSize);
 heap = mDoExt_createGameHeap(gameHeapSize, rootHeap);
 my_SysPrintHeap("ゲームヒープ", heap, gameHeapSize);
  
-[...]```
+[...]
+```
 
 Then:
  
@@ -235,7 +236,8 @@ JKRSetCurrentHeap(zeldaHeap);
 
 The breakpoint set on `JKRExpHeap::create()` shows these creations with known sizes and a constant parent. All of these heaps are created with parent `0x80457C20` (`RootHeap`), EXCEPT `ZeldaHeap`, whose parent is `0x80457CC0` (`SystemHeap`). The value of `r3` (step-out) after the breakpoint gives us the pointers to the heaps:
 
-`DbPrintHeap:
+```
+DbPrintHeap:
 -> entry:
     r3 = 0x00001800
     LR = 0x8000ED00
@@ -275,18 +277,19 @@ ZeldaHeap:
     r3 = 0x00522B2C
     LR = 0x8000ED6C
 -> exit:
-    r3 = 0x80502400`
+    r3 = 0x80502400
+  ```
 
 Knowing all these values, we now have a structured and correct hierarchy of the different heaps:
 
-`RootHeap  (0x80457C20)   [return value of `createRoot`]
-├─ SystemHeap  (0x80457CC0)  requested size: 0x005DD268  [return value of `create(..., RootHeap)`]
-│  └─ ZeldaHeap (0x80502400) requested size: 0x00522B2C  [return value of `create(..., SystemHeap)`]
-├─ DbPrintHeap  (0x80A34F30) size: 0x00001800
-├─ CommandHeap  (0x80A367C0) size: 0x00001000
-├─ ArchiveHeap  (0x80A377D0) size: 0x008DF400
-├─ J2DHeap      (0x81316BE0) size: 0x0007D000
-└─ GameHeap     (0x81393BF0) size: 0x0044E000`
+* RootHeap  (0x80457C20)   [return value of createRoot]
+** SystemHeap  (0x80457CC0)  requested size: 0x005DD268  [return value of create(..., RootHeap)]
+*** ZeldaHeap (0x80502400) requested size: 0x00522B2C  [return value of create(..., SystemHeap)]
+** DbPrintHeap  (0x80A34F30) size: 0x00001800
+** CommandHeap  (0x80A367C0) size: 0x00001000
+** ArchiveHeap  (0x80A377D0) size: 0x008DF400
+** J2DHeap      (0x81316BE0) size: 0x0007D000
+** GameHeap     (0x81393BF0) size: 0x0044E000
 
 Alright, now that we know all of this, we can answer the question: “Why does `JKRAllocFromSysHeap` fail and return `0`?”
 
