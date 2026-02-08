@@ -297,7 +297,7 @@ Alright, now that we know all of this, we can answer the question: “Why does `
 ## Why does `JKRAllocFromSysHeap` fail and return `0`?
 
 ```c++
-szpBuf = JKRHeap::alloc(JKRHeap::sSystemHeap, JKRAram::sSZSBufferSize, 0x20);`
+szpBuf = JKRHeap::alloc(JKRHeap::sSystemHeap, JKRAram::sSZSBufferSize, 0x20);
 ```
 
 I started by looking, inside the function `JKRDecompressFromAramToMainRam()`, at how `szpBuf` was instantiated. We can see that the game calls `JKRHeap::alloc()`, so I set a breakpoint on it. I performed the glitch up to the DMA copy, and I was able to observe some registers when the breakpoint hit:
@@ -360,7 +360,8 @@ bool fopAcM_entrySolidHeap(fopAc_ac_c* i_actor, heapCallbackFunc i_heapCallback,
     fopAcM::HeapAdjustUnk = var_r31;
     fopAcM::HeapAdjustEntry = var_r30;
     return result;
-}```
+}
+```
 
 This piece of code proves that `fopAcM_entrySolidHeap()` is a wrapper that calls `fopAcM_entrySolidHeap_()`, so let’s look at the decompilation of `fopAcM_entrySolidHeap_()`:
 
