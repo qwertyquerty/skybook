@@ -282,15 +282,16 @@ ZeldaHeap:
 
 Knowing all these values, we now have a structured and correct hierarchy of the different heaps:
 
-* RootHeap  (0x80457C20)   [return value of createRoot]
-** SystemHeap  (0x80457CC0)  requested size: 0x005DD268  [return value of create(..., RootHeap)]
-*** ZeldaHeap (0x80502400) requested size: 0x00522B2C  [return value of create(..., SystemHeap)]
+```
+* RootHeap  (0x80457C20)
+** SystemHeap  (0x80457CC0)  requested size: 0x005DD268
+*** ZeldaHeap (0x80502400) requested size: 0x00522B2C
 ** DbPrintHeap  (0x80A34F30) size: 0x00001800
 ** CommandHeap  (0x80A367C0) size: 0x00001000
 ** ArchiveHeap  (0x80A377D0) size: 0x008DF400
 ** J2DHeap      (0x81316BE0) size: 0x0007D000
 ** GameHeap     (0x81393BF0) size: 0x0044E000
-
+```
 Alright, now that we know all of this, we can answer the question: “Why does `JKRAllocFromSysHeap` fail and return `0`?”
 
 ## Why does `JKRAllocFromSysHeap` fail and return `0`?
