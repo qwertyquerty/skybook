@@ -505,6 +505,183 @@ Alright: we now know how the game allocates and frees its memory during duplicat
 ### What does the SolidHeap contain, given that it is itself a sub-heap of the GameHeap?
 
 I started with the `SolidHeap` contained in `GameHeap`. To understand what was in the `SolidHeap`, I ran my tests without duplication. I retrieved the address of my `SolidHeap` (at that time, because actors are loaded dynamically): `0x81702A50`.
+After retrieving it, I set a breakpoint on `JKRSolidHeap::do_alloc()` (`0x802D0CB0`) with the condition `r3 (heap) == 0x81702A50`. That allowed me to identify all allocations performed on that SolidHeap `(r3 == heap, r4 == size, r5 == alignment)`:
+
+-> A lot of small allocations aligned to 0x04:
+
+```
+(r3=81702a50 r4=00000030 r5=00000004 00000030 ...)
+(r3=81702a50 r4=000000dc r5=00000004 000000dc ...)
+...
+```
+-> A few large allocations aligned to 0x20:
+
+```
+(81702a50 00000300 00000020 00000300 ...)
+(81702a50 00000300 00000020 00000300 ...)
+...
+```
+-> And one very large allocation aligned to 0x04:
+```
+(81702a50 00000970 00000004 00000970 ...)
+```
+
+All of these allocations originate from the same `LR = 0x802CE4F0` (`JKRHeap::alloc(u32 size, int alignment)`) → `0x802CE474` (`JKRHeap::alloc(u32 size, int alignment, JKRHeap* heap)`) → `0x802D0A84` (`JKRSolidHeap::create(u32 size, JKRHeap* heap, bool useErrorHandler)`) → `0x8000EEA8` (`mDoExt_createSolidHeap(u32 i_size, JKRHeap* i_parent, u32 i_alignment)`) → `0x8000EF08` (`mDoExt_createSolidHeapFromGame(u32 i_size, u32 i_alignment)`) → `0x8001A240` (`fopAcM_entrySolidHeap_(fopAc_ac_c* i_actor, heapCallbackFunc i_heapCallback, u32 i_size)`) → `0x8001A508` (`fopAcM_entrySolidHeap(fopAc_ac_c* i_actor, heapCallbackFunc i_heapCallback, u32 i_size)`) → ...
+
+So we are dealing with a loader/constructor that: loads a resource, instantiates structures, and allocates multiple blocks (small + medium + large) within the same heap.
+The `0x300` bytes aligned to `0x20` could very likely be J3D-related. In J3D (BMD/BDL), this fits very well with creating “renderable” structures (packets, tables, buffers, etc.) for a J3D model.
+The small allocations aligned to `0x04` would therefore be small CPU-side structs (objects, lists, nodes, matrices/MTX, wrappers, handles, ...)
+And the very large `0x970`-byte allocation aligned to `0x4`: the most plausible interpretation here is the main resource block or large sub-sets (model chunk, consolidated table, decompressed resources, ...)
+
+Therefore, the `SolidHeap` contained in `GameHeap` serves as a resource sub-heap: it groups a resource block + runtime objects (instances/structures aligned to `0x04`) and 3D buffers aligned to `0x20` (consistent with 32-byte cacheline alignment) needed for rendering/animation.
+
+### What do the processes created within the ZeldaHeap contain?
+
+Now let’s look at what the `pprocess` in `ZeldaHeap` contains. First, we need to locate the process name or at least its identifier. Fortunately, it is written plainly in the function:
+
+```c++
+void __thiscall daAlink_c::setGroundFishingRodActor(daAlink_c *this)
+ 
+{
+  u32 uVar1;
+ 
+  uVar1 = 0x2e4;
+  f_op_actor_mng::fopAcM_create
+            (0x2e4,0xffff011d,&(this->base).mLeftHandPos,0xffffffff,0,0,0xffffffff);
+  (this->mItemAcKeep).m_id = uVar1;
+  initFishingRodHand(this);
+  return;
+}
+```
+Then I started by locating the function `f_op_actor_mng::fopAcM_create()`:
+
+```c++
+fpc_ProcID fopAcM_create(s16 i_procName, u16 i_setId, u32 i_parameters, const cXyz* i_pos,
+                         int i_roomNo, const csXyz* i_angle, const cXyz* i_scale, s8 i_argument,
+                         createFunc i_createFunc) {
+    fopAcM_prm_class* append = createAppend(i_setId, i_parameters, i_pos, i_roomNo, i_angle,
+                                            i_scale, i_argument, fpcM_ERROR_PROCESS_ID_e);
+    if (append == NULL) {
+        return fpcM_ERROR_PROCESS_ID_e;
+    }
+ 
+    return fpcM_Create(i_procName, i_createFunc, append);
+}
+```
+So the identifier of our process is `0x2E4`, with parameters `0xFFFF011D`.
+We can see that the function calls `createAppend()`:
+
+```c++
+fopAcM_prm_class* createAppend(u16 i_setId, u32 i_parameters, const cXyz* i_pos, int i_roomNo,
+                               const csXyz* i_angle, const cXyz* i_scale, s8 i_argument,
+                               fpc_ProcID i_parentId) {
+    fopAcM_prm_class* append = fopAcM_CreateAppend();
+    if (append == NULL) {
+        return NULL;
+    }
+ 
+    append->base.setID = i_setId;
+ 
+    if (i_pos != NULL) {
+        append->base.position = *i_pos;
+    } else {
+        append->base.position = cXyz::Zero;
+    }
+ 
+    append->room_no = i_roomNo;
+ 
+    if (i_angle != NULL) {
+        append->base.angle = *i_angle;
+    } else {
+        append->base.angle = csXyz::Zero;
+    }
+ 
+    if (i_scale != NULL) {
+        append->scale.x = 10.0f * i_scale->x;
+        append->scale.y = 10.0f * i_scale->y;
+        append->scale.z = 10.0f * i_scale->z;
+    } else {
+        append->scale.x = 10;
+        append->scale.y = 10;
+        append->scale.z = 10;
+    }
+ 
+    append->base.parameters = i_parameters;
+    append->parent_id = i_parentId;
+    append->argument = i_argument;
+ 
+    return append;
+}
+```
+So I set a breakpoint at the entry of the function and on the instruction that calls `createAppend()`. Here are the captured registers:
+
+```
+-> fopAcM_create(...):
+ 
+r3 == 0x000002E4 | procName (Fishing Rod)
+r4 == 0x0000FFFF | setId
+r5 == 0xFFFF011D | parameters
+r6 == 0x80A1D8F4 | &mLeftHandPos
+r7 == 0xFFFFFFFF | roomNo
+r8 == 0x00000000 | angle
+r9 == 0x00000000 | scale
+r10 == 0xFFFFFFFF | argument
+r3 (step over) = 0x80A24EFC | pointer to append (the block passed as parameter to `fpcM_Create(...)`)
+
+-> createAppend(...):
+ 
+r3 == 0x0000FFFF | setId
+r4 == 0xFFFF011D | parameters
+r5 == 0x80A1D8F4 | pos
+r6 == 0xFFFFFFFF | room
+r7 == 0x00000000 | angle
+r8 == 0x00000000 | scale
+r9 == 0xFFFFFFFF | argument
+r10 == 0xFFFFFFFF | errorId
+```
+Now that we have located the address of the append pointer, we can inspect it in hex to see what it contains:
+
+```hex
+FF FF 01 1D 45 66 57 34 43 4F 73 2B 3F 8F 69 A8
+00 00 00 00 00 00 FF FF 0A 0A 0A 00 FF FF FF FF
+FF FF 00 00 48 4D 00 FF 00 00 04 00 80 45 8E DC
+80 A2 53 58 00 00 00 00 00 00 00 00 00 00 FF DC
+80 A2 4F 20 00 00 00 00 00 00 00 00 00 00 00 00
+```
+We can immediately see that the very first word is `FFFF011D`, which corresponds exactly to the parameters passed to `createAppend(...)`. `append+0x04`, `append+0x08`, and `append+0x0C` look very much like three floats (possibly coordinates):
+
+```
+append+0x04 = pos.x
+append+0x08 = pos.y
+append+0x0C = pos.z
+```
+Other information such as roomNo, flags, argument (s8), etc. are visible in the hex dump, but they are not really useful for our current research.
+
+Now let’s see who reads and writes to our append (`pprocess`). So I set a READ/WRITE breakpoint on `0x80A24EFC` (append):
+
+```
+11:54:386 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 800034e4 ( --- ) Write32 0 at 80a24efc ( --- )
+11:56:873 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 80019c54 ( --- ) Write32 ffff011d at 80a24efc ( --- )
+11:57:645 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 800190cc ( --- ) Read32 ffff011d at 80a24efc ( --- )
+```
+
+So when pulling out the fishing rod, the game overwrites the first 4 bytes with zeros, then writes the parameters at the time of the call to `createAppend()`, and finally an address `0x800190CC` consumes what was written. This is the function `fopAc_Create()`, which then handles creating the actor inside the `SolidHeap` (see above). During this process, `append` is passed as a parameter to build the `SolidHeap`. Here is the pipeline:
+
+```
+→ daAlink_c::setGroundFishingRodActor()
+  → fopAcM_create(procName=0x2E4, params=0xFFFF011D, pos=...)
+    → createAppend(...)   // allocate + fill append (ZeldaHeap)
+     → fpcM_Create(procName, createFunc, append)
+       → fopAc_Create(actor)
+         → fopAcM_GetAppend(actor) → copy append → actor->home/params/etc
+          → fopAcM_entrySolidHeap_(actor, callback, size)
+            → mDoExt_createSolidHeapFromGame(...) (GameHeap)
+              → actor->solidHeapPtr = heap
+```
+
+### What actually happens in memory when a fish is caught?
+
+Currently W.I.P
 
 ## Observe the PPC instructions in the archives
 
