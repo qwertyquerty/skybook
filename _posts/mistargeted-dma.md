@@ -415,7 +415,95 @@ However, that still doesn’t explain why ZeldaHeap also gets overloaded, so let
 
 ### How does the fishing rod dupe affect ZeldaHeap?
 
-Currently W.I.P
+I started by setting a breakpoint on `JKRHeap::alloc()` with the condition: `r3 == 0x80502400 (ZeldaHeap)`.
+That allowed me to see that it hits three times per dupe, always with the same sizes:
+
+```
+1st hit: 0x24
+2nd hit: 0x60
+3rd hit: 0x1690
+```
+The small structures `(0x24 and 0x60)` are “infrastructure” objects (append, request, ...). The big one `(0x1690)` is the actual process/actor instance on the f_pc side.
+I then followed the call stack to find the caller code. Here is how those hits unfold:
+
+1st hit: `fopAcM_CreateAppend()` → `cMl::memalignB(-4, 0x24)`
+2nd hit: `fpcCtRq_Create(...)` → `cMl::memalignB(-4, 0x60)`
+3rd hit: `fpcBs_Create(profname, procID, append)` → `cMl::memalignB(-4, 0x1690)`
+But what does the code for `cMl::memalignB()` correspond to?
+
+```c++
+/* __stdcall cMl::memalignB(int, unsigned long) */
+ 
+void* cMl::memalignB(int alignment, size_t size)
+{
+    void* pvVar1;
+ 
+    if (size == 0) {
+        pvVar1 = (void*)0x0;
+    } else {
+        pvVar1 = JKRHeap::alloc(Heap, size, alignment);
+    }
+    return pvVar1;
+}
+```
+It’s simply a piece of code that handles allocation for the different processes by calling `JKRHeap::alloc()`.
+So the decrease in `ZeldaHeap` is tied to the process created by `f_pc_base::fpcBs_Create()`, not to the 3D models in the `SolidHeap` contained in `GameHeap`.
+Next, I wanted to determine with certainty which process leaks.
+
+So I started looking at the code of `f_pc_base::fpcBs_Create()` and set a breakpoint on it:
+
+```c++
+base_process_class* fpcBs_Create(s16 i_profname, fpc_ProcID i_procID, void* i_append) {
+    process_profile_definition* pprofile;
+    base_process_class* pprocess;
+    u32 size;
+ 
+    pprofile = (process_profile_definition*)fpcPf_Get(i_profname);
+    size = pprofile->process_size + pprofile->unk_size;
+ 
+    pprocess = (base_process_class*)cMl::memalignB(-4, size);
+    if (pprocess == NULL) {
+        return NULL;
+    }
+    [...]
+}
+```
+At the moment of the breakpoint, on entry, `r3 == 0x2E4`. So I then set a breakpoint on `fpcPf_Get()` to retrieve `pprofile`, and another breakpoint on `fopAcM_getProcNameString()` to retrieve the string associated with this `procID`.
+I was then able to see that the string read was: "740-1", which matches the logs returned by Dolphin when `GameHeap` is full:
+
+`06:28:585 Core\HW\EXI\EXI_DeviceIPL.cpp:307 N[OSREPORT]: [m[41;37m[ERROR]最大空きヒープサイズで登録失敗。000001e0[740-1]`
+
+We know that `cMl::memalignB()` is responsible for allocations, so I looked at its return values to see if they changed depending on the dupes. I observed that the return values for `0x24` and `0x60` remain identical on every dupe -> the game keeps using the exact same address every time. However, the return value for `0x1690 (pprocess)` changes on every dupe, going “downward” -> it ends up stacking up.
+
+Conclusion: it’s not just fragmentation; there is an accumulation of `pprocess` instances.
+
+Here is an example of pprocess addresses used:
+
+```
+809fa154
+809f8ab4
+809f7414
+809f5d74
+809f46d4
+809f3034
+809f1994
+809f02f4
+[...]
+```
+We can also see that the delta is `0x16A0`, i.e. `0x1690 + 0x10`, which matches perfectly with `0x10` alignment or a header.
+I still wanted to make sure that the `pprocess` instances were not being freed. To do that, I set a breakpoint on `JKRHeap::free()` with the condition:
+
+`r3 == 0x80502400 (ZeldaHeap) && (r4 == 0x809F8AB4 || r4 == 0x809F7414 || r4 == 0x809F5D74 || r4 == 0x809F46D4 ...)`
+where the r4 values correspond to the `pprocess` pointers.
+
+-> Without duplication, the `free()` breakpoint hits when we put the fishing rod away.
+-> With duplication: no hits -> therefore the `pprocess` created in `ZeldaHeap` is never destroyed (except on zone change, where global cleanup eventually happens).
+
+Alright: we now know how the game allocates and frees its memory during duplication and in the normal state, and we know why `GameHeap` and `ZeldaHeap` get overloaded. However, we still do not know what is contained inside the `SolidHeap` within `GameHeap`, nor what the `pprocess` within `ZeldaHeap` contains, so we’re going to look into that now.
+
+### What does the SolidHeap contain, given that it is itself a sub-heap of the GameHeap?
+
+I started with the `SolidHeap` contained in `GameHeap`. To understand what was in the `SolidHeap`, I ran my tests without duplication. I retrieved the address of my `SolidHeap` (at that time, because actors are loaded dynamically): `0x81702A50`.
 
 ## Observe the PPC instructions in the archives
 
