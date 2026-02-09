@@ -681,6 +681,266 @@ So when pulling out the fishing rod, the game overwrites the first 4 bytes with 
 
 ### What actually happens in memory when a fish is caught?
 
+Now let’s look at what the game loads when catching a fish. In the Dolphin logs, we can see the loading of two archives: `Timer.arc` and `Z2Sound....arc`. So I started by setting a breakpoint on `JKRHeap::alloc()` in order to see the differences between when the game is stable and when the `gameheap` was overloaded. Here are the logs:
+
+--> With dupe:
+
+```
+[...]
+11:05:413 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81393bf0 00003710 00000010 00003710 00000000 00000000 0011c664 0011c66c 803db190 802cfba4) LR=802ce4a0
+11:09:719 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (817de4e0 0000005c 00000004 0000005c 00000000 00000000 00000000 0011c66c 803db1f0 802cf128) LR=802ce4bc
+11:10:434 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81393bf0 00011000 00000010 00011000 00000000 00000000 817de5c0 0011c66c 803db260 8002ceb4) LR=802ce4a0
+11:11:157 Core\HW\EXI\EXI_DeviceIPL.cpp:307 N[OSREPORT]: [m[41;37m[ERROR]エラー: メモリを確保できません 69632(0x11000)バイト、 16 バイトアライメント from 81393bf0
+11:11:159 Core\HW\EXI\EXI_DeviceIPL.cpp:307 N[OSREPORT]: [m[41;37m[ERROR]FreeSize=00003620 TotalFreeSize=00008250 HeapType=45585048(EXPH) HeapSize=0044df70 GameHeap
+11:11:171 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81507cd0 00000118 00000004 00000118 fffffffd 00000000 4565d0be a2b2e860 803db260 8020ee70) LR=802ce4bc
+11:13:104 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81507cd0 00000010 00000004 00000010 80c63190 726f6f74 803db210 a2b2e860 803db1a0 802dc5ac) LR=802ce4bc
+11:16:535 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81507cd0 00000030 00000004 00000030 00000000 00000000 81507ef8 a2b2e860 803db1a0 802dc5ac) LR=802ce4bc
+[...]
+```
+--> Vanilla:
+
+```
+[...]
+13:53:667 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81507cd0 00000040 00000004 00000040 fffffffc 00000000 d5ed27c6 eaf693e4 803db260 8002483c) LR=802ce4bc
+14:00:362 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80502400 00000038 fffffffc 00000000 ffffffff 00000000 81507db0 eaf693e4 803db180 8020ee70) LR=80263250
+14:00:818 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80502400 00000060 fffffffc 00000000 80a24ee8 00000000 00000048 80a24ed8 803db1a0 802cf128) LR=80263250
+14:01:141 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80502400 00000170 fffffffc 001499df 00293d6c 00000008 0011c664 0011c66c 803db320 80023bc4) LR=80263250
+14:01:493 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80a367c0 00000024 fffffffc 00000024 00000004 00000004 00000001 00000000 803db180 80366964) LR=802ce4a0
+14:01:853 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80a377d0 00000070 00000000 00000070 00000003 803debb4 806861a8 80a3775c 8069bcd8 80015edc) LR=802ce4a0
+14:02:381 Core\HW\DVD\DVDInterface.cpp:802 I[DVD]: Read: DVDOffset=33ef8600, DMABuffer = 0069bac0, SrcLength = 00000020, DMALength = 00000020
+14:02:384 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80a377d0 0000c720 00000020 0000c720 00000003 803db1a8 6de31bc4 36f18de2 803db070 00000000) LR=802ce4a0
+14:03:867 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (80457cc0 00004000 ffffffe0 0000c720 00000000 00000000 8069bc7c 36f18de2 8069ba78 802cf128) LR=802da264
+14:04:233 Core\HW\DVD\DVDInterface.cpp:802 I[DVD]: Read: DVDOffset=33ef8600, DMABuffer = 00a30f20, SrcLength = 00004000, DMALength = 00004000
+14:04:236 Core\HW\DVD\DVDInterface.cpp:802 I[DVD]: Read: DVDOffset=33efc600, DMABuffer = 00a30f40, SrcLength = 00001140, DMALength = 00001140
+14:04:248 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81393bf0 000d2760 00000010 000d2760 00000000 00000000 0011c664 0011c66c 803db190 802cfba4) LR=802ce4a0
+14:05:084 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (8170f490 0000005c 00000004 0000005c 00000000 00000000 00000000 0011c66c 803db1f0 802cf128) LR=802ce4bc
+14:16:355 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (81393bf0 00011000 00000010 00011000 00000000 00000000 8170f570 0011c66c 803db260 8002ceb4) LR=802ce4a0
+14:17:140 Core\PowerPC\PowerPC.cpp:646 N[MI]: BP 802ce4d4  --- (8170f580 000003e4 00000004 000003e4 00000000 00000000 81720580 0011c66c 803db260 802cfc84) LR=802ce4bc
+[...]
+```
+We can see that the only notable difference is the failure to allocate a block of size `0x11000` bytes in `GameHeap`. But what could this huge size correspond to?
+Since this happens while loading two archives, I started by looking at the code of the Timer actor. Luckily, I found it immediately:
+
+```c++
+int dTimer_c::_create() {
+    int phase_state = dComIfG_resLoad(&m_phase, "Timer");
+ 
+    fopMsg_prm_timer* appen;
+    if (phase_state == cPhs_COMPLEATE_e) {
+        appen = (fopMsg_prm_timer*)fopMsgM_GetAppend(this);
+        if (appen == NULL) {
+            return cPhs_ERROR_e;
+        }
+ 
+        dRes_info_c* resInfo = dComIfG_getObjectResInfo("Timer");
+        JUT_ASSERT(0, resInfo != NULL);
+        dComIfGp_setAllMapArchive(resInfo->getArchive());
+ 
+        mp_heap = fopMsgM_createExpHeap(0x11000, NULL);
+        JKRHeap* prev_heap = mDoExt_setCurrentHeap(mp_heap);
+        if (mp_heap != NULL) {
+            mp_heap->getTotalFreeSize();
+ 
+            mp_tm_scrn = new dDlst_TimerScrnDraw_c();
+            JUT_ASSERT(0, mp_tm_scrn != NULL);
+ 
+            if (appen->timer_mode == 10) {
+                mp_tm_scrn->setScreen(dComIfG_getTimerMode(), resInfo->getArchive());
+            } else {
+                mp_tm_scrn->setScreen(appen->timer_mode, resInfo->getArchive());
+            }
+ 
+            mDoExt_setCurrentHeap(prev_heap);
+        } else {
+            return cPhs_ERROR_e;
+        }
+    } else {
+        return phase_state;
+    }
+```
+
+This code starts by loading the Timer archive and retrieving its append (probably stored in `ZeldaHeap`, like the fishing rod’s). The game then tries to create a heap of size `0x11000` in the current heap (parent = NULL), which matches exactly our allocation failure. Since the current heap is an overloaded `GameHeap`, the game has no room to create that heap, so Timer ends up without a dedicated heap.
+It then performs a check to ensure the heap exists (in our case heap == NULL), which has the effect of setting the current heap back to the previous heap—`ZeldaHeap` in this case.
+
+To identify which heap was used as the fallback/previous heap, I set a breakpoint on `f_op_msg_mng::fopMsgM_createExpHeap()`, and once that breakpoint was hit, another one on `m_Do_ext::mDoExt_setCurrentHeap()`. At the hit, `r3 == 0x00000000` and `r3 (step-out) == 0x80502400`, so the game indeed supplies an invalid pointer after the allocation failure and retrieves `ZeldaHeap` as the current heap because before calling the function the current heap was `ZeldaHeap` (which is supposed to always be the case: when the game changes the current heap for a moment, it later restores `ZeldaHeap` as the current heap).
+
+But let’s look more closely at how the game retrieves the previous heap. Here is the complete pipeline:
+
+```
+dTimer_c::_create
+→ fopMsgM_createExpHeap(0x11000, NULL) == NULL
+→ mDoExt_setCurrentHeap(NULL)
+→ JKRHeap::becomeCurrentHeap(NULL)
+→ return 0x80502400 (ZeldaHeap)
+```
+
+Let’s observe the PowerPC instructions of `becomeCurrentHeap()`:
+
+```asm
+802ce43c 90 6d 8d f4     stw        this,-0x720c(r13)=>JKRHeap::sCurrentHeap = NaP
+802ce440 7c 03 03 78     or         this,r0,r0
+802ce444 4e 80 00 20     blr
+```
+So sCurrentHeap is computed from `r13 - 0x720C`. Knowing `r13 == 0x80458580`, the absolute address is:
+
+`0x80458580 - 0x0000720C = 0x80451374`
+
+Knowing this address, we can now observe who reads/writes to this address when loading `Timer.arc`:
+
+```
+12:48:006 Core\HW\EXI\EXI_DeviceIPL.cpp:307 N[OSREPORT]: [m[41;37m[ERROR]エラー: メモリを確保できません 69632(0x11000)バイト、 16 バイトアライメント from 81393bf0
+12:48:007 Core\HW\EXI\EXI_DeviceIPL.cpp:307 N[OSREPORT]: [m[41;37m[ERROR]FreeSize=00003620 TotalFreeSize=00008250 HeapType=45585048(EXPH) HeapSize=0044df70 GameHeap
+12:48:008 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce438 ( --- ) Read32 80502400 at 80451374 ( --- )
+12:52:094 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce43c ( --- ) Write32 0 at 80451374 ( --- )
+13:09:084 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802d1b40 ( --- ) Read32 0 at 80451374 ( --- )
+13:09:627 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802d1b40 ( --- ) Read32 0 at 80451374 ( --- )
+13:10:076 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce438 ( --- ) Read32 0 at 80451374 ( --- )
+13:11:123 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce43c ( --- ) Write32 80457cc0 at 80451374 ( --- )
+13:11:587 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802d1bbc ( --- ) Read32 80457cc0 at 80451374 ( --- )
+13:12:036 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802d1bbc ( --- ) Read32 80457cc0 at 80451374 ( --- )
+13:12:674 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802d1b40 ( --- ) Read32 80457cc0 at 80451374 ( --- )
+13:14:097 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce438 ( --- ) Read32 80457cc0 at 80451374 ( --- )
+13:18:996 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce43c ( --- ) Write32 80457cc0 at 80451374 ( --- )
+13:19:374 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce438 ( --- ) Read32 80457cc0 at 80451374 ( --- )
+13:19:850 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce43c ( --- ) Write32 8149f870 at 80451374 ( --- )
+13:20:702 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce438 ( --- ) Read32 8149f870 at 80451374 ( --- )
+13:21:451 Core\PowerPC\BreakPoints.cpp:395 N[MI]: MBP 802ce43c ( --- ) Write32 80457cc0 at 80451374 ( --- )
+```
+We can see that for one instruction the game writes `0x00000000`, and a function (`0x802D1B40: JKRThreadSwitch::callback`) reads the value `0x00000000` twice. However, we also notice that after this read, `JKRThreadSwitch::callback()` sets `SystemHeap` as the current heap.
+So let’s take a closer look at its code:
+
+```c++
+void JKRThreadSwitch::callback(OSThread* current, OSThread* next) {
+    if (mUserPreCallback) {
+        (*mUserPreCallback)(current, next);
+    }
+ 
+    sTotalCount = sTotalCount + 1;
+ 
+    JKRHeap* next_heap = NULL;
+    for (JSUListIterator<JKRThread> iterator = JKRThread::getList().getFirst(); iterator != JKRThread::getList().getEnd(); ++iterator) {
+        JKRThread* thread = iterator.getObject();
+ 
+        if (thread->getThreadRecord() == current) {
+            thread->setCurrentHeap(JKRHeap::getCurrentHeap());
+            if (thread->getLoadInfo()->isValid()) {
+                thread->getLoadInfo()->addCurrentCost();
+            }
+        }
+ 
+        if (thread->getThreadRecord() == next) {
+            if (thread->getLoadInfo()->isValid()) {
+                thread->getLoadInfo()->setCurrentTime();
+                thread->getLoadInfo()->incCount();
+            }
+ 
+            if (sManager->mSetNextHeap) {
+                next_heap = thread->getCurrentHeap();
+                if (!next_heap) {
+                    next_heap = JKRHeap::getCurrentHeap();
+                } else if (JKRHeap::getRootHeap()->isSubHeap(next_heap)) {
+                    continue;
+#if PLATFORM_WII || PLATFORM_SHIELD
+                } else if (JKRHeap::getRootHeap2()->isSubHeap(next_heap)) {
+                    continue;
+#endif
+                } else {
+                    switch (thread->getCurrentHeapError()) {
+                    case 0:
+                        JUT_PANIC(508, "JKRThreadSwitch: currentHeap destroyed.");
+                        break;
+                    case 1:
+                        JUTWarningConsole("JKRThreadSwitch: currentHeap destroyed.\n");
+                        next_heap = JKRHeap::getCurrentHeap();
+                        break;
+                    case 2:
+                        next_heap = JKRHeap::getCurrentHeap();
+                        break;
+                    case 3:
+                        next_heap = JKRHeap::getSystemHeap();
+                        break;
+                    }
+                }
+            }
+        }
+    }
+ 
+    if (next_heap) {
+        next_heap->becomeCurrentHeap();
+    }
+ 
+    if (mUserPostCallback) {
+        (*mUserPostCallback)(current, next);
+    }
+}
+```
+At first, I thought the game was switching to `SystemHeap` by explicitly going through `case 3` of the `switch(thread->getCurrentHeapError())` in `JKRThreadSwitch::callback`. In theory, that path forces `next_heap` to point to `JKRHeap::getSystemHeap()`, then calls `JKRHeap::becomeCurrentHeap(next_heap)`. In that scenario, `SystemHeap` becomes the current heap, and all allocations that depend on the current heap end up being performed in `SystemHeap`, even when it is not the expected heap (`ZeldaHeap` / `GameHeap` / temporary heap).
+This hypothesis seemed consistent with the symptoms observed. However, runtime analysis shows that this is not what actually happens.
+
+To verify this, I instrumented `JKRThreadSwitch::callback` with several breakpoints:
+
+--> On the final call:
+
+`0x802D1C3C : bl JKRHeap::becomeCurrentHeap`
+
+--> As well as on the instruction that corresponds explicitly to `case 3`:
+
+`0x802D1C20 : lwz nextHeap, -0x7210(r13) ; sSystemHeap`
+
+The results are unambiguous:
+The breakpoint at `0x802D1C3C` does hit, with `r3 == 0x80457CC0`, which proves that `SystemHeap` indeed becomes the current heap at that moment. However, the breakpoint at `0x802D1C20` never hits, which demonstrates that the explicit load of `sSystemHeap` associated with `case 3` is never executed. Additionally, breakpoints placed on the branches leading to `switch(thread->getCurrentHeapError())`, notably around `0x802D1BFC`, show that this block is simply never reached: execution is short-circuited before entering the `switch`.
+
+These observations therefore clearly prove that the game does not go through `case 3` to retrieve `SystemHeap`. So how does it get there then? In fact, it goes through a much more “mundane” path: it reuses the heap already stored inside the `JKRThread` object of the thread that becomes `next`, and then reapplies it as the current heap via `becomeCurrentHeap()`.
+
+
+By backtracking execution, I found that `nextHeap` is actually initialized much earlier from `thread->currentHeap` (`lwz next, 0x74(thread)` then `or nextHeap, next, next`). With dupe, that value is already `SystemHeap`, whereas in vanilla it is `ZeldaHeap`. The thread switch therefore only restores a heap that is already corrupted, then calls `JKRHeap::becomeCurrentHeap(nextHeap)` without ever going through the fallback logic. The real cause is upstream: calls to `mDoExt_setCurrentHeap` (notably from `dTimer_c::_create` and `dMsgObject_c::changeGroupLocal`) temporarily modify `sCurrentHeap`, and if a thread is saved at that moment, its `currentHeap` gets polluted. The bug therefore comes from blindly restoring an invalid state, not from `case 3`. Here is the complete pipeline:
+
+```
+JKRThreadSwitch::callback(current, next) @ 0x802D1AE4
+→ (thread == current) r0 = JKRHeap::sCurrentHeap @ 0x802D1B40
+    → stw r0, 0x74(thread) (thread->currentHeap = sCurrentHeap) @ 0x802D1B48
+        → (thread == next) lwz next, 0x74(thread) (next = thread->currentHeap) @ 0x802D1BAC
+            → or nextHeap, next, next (nextHeap = next) @ 0x802D1BB0
+                → bl JKRHeap::isSubHeap(...) @ 0x802D1BC4
+                    → bl JKRHeap::becomeCurrentHeap(nextHeap) @ 0x802D1C3C
+                        → JKRHeap::sCurrentHeap = nextHeap @ 0x802CE43C
+```
+
+Continuing the analysis, I tried to identify who actually writes `SystemHeap` into the `JKRThread` object, since the audio thread only restores a value that is already present in `thread->currentHeap`. For that, I set a watchpoint on `0x800000E4` (`OSCurrentThread`):
+
+```
+MBP Write32 8069d6c0 at 800000e4
+PC == 803411f0
+```
+
+The disassembly at `0x803411f0` shows:
+
+```asm
+803411f0  stw r30, OSCurrentThread(r31)
+```
+
+This write is located in the OS scheduling path, more specifically during a context switch triggered by an interrupt. By walking back the stack via `r1`, I identified the caller as `__OSReschedule`, itself called from `__OSDispatchInterrupt`.
+
+This establishes that the thread switch is initiated by OS scheduling in an interrupt context (in the capture, via the VI handler retrace), and that it occurs temporally after the allocation failure. The failure is not the direct cause of the interrupt; it lengthens the execution path and increases the probability that an interrupt tick will fall inside that window.
+
+Then, by placing a breakpoint on `JKRThreadSwitch::callback (0x802D1AE4)`, I confirmed the exact sequence:
+
+--> On the outgoing switch, `JKRHeap::sCurrentHeap` is saved into `currentThread->currentHeap` via `stw r0, 0x74(thread)`
+ 
+--> On the incoming switch, `nextThread->currentHeap` is reloaded without validation
+ 
+--> That value is immediately passed to `JKRHeap::becomeCurrentHeap`
+
+Watchpoints on `thread->currentHeap` show that, in all savestates at different points (vanilla and dupe), the audio thread `(OSThread @ 0x8069C238)` already has:
+
+`thread->currentHeap = 0x80457CC0 (SystemHeap)`
+
+And this is true even before the audio thread is selected by the scheduler. Thus, the audio thread is not polluting anything: its `thread->currentHeap = SystemHeap` is a normal value initialized at creation. The problem is that when it is chosen as next, `JKR` blindly restores that value as the global current heap `(JKRHeap::sCurrentHeap)`, which can break the game code’s expectations about the active heap.
+
+The question then becomes: why, with dupe, does the OS land precisely on a reschedule where `next = audioThread`, at the moment when the global heap state is critical for what happens next?
+
+### Why does the game trigger the restoration of the AudioThread?
+
 Currently W.I.P
 
 ## Observe the PPC instructions in the archives
