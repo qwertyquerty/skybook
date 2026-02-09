@@ -1,6 +1,6 @@
 # Skybook Wiki
 
-Twilight Princess glitch hunting technical reference
+Twilight Princess glitch hunting guide and technical reference
 
 ## Serving Locally
 
