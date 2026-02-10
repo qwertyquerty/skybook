@@ -2,7 +2,7 @@
 layout: post
 title: Mistargeted DMA
 description: Executing archive files as program code
-author: wolfegarden
+author: wolfegarden & Blizzard Blanc
 categories: [Glitches]
 tags: [glitch, ACE, unsolved, major]
 pin: true
@@ -106,7 +106,9 @@ When the next thread yields, the OS tries to read the thread structure pointer f
 This traps, and execution is transferred to the out-of-bounds read handler at `0x80000300`. The trick is that since we copied up to `0x2000` bytes into RAM
 here (some archives may exceed the 0x2000 limit), also overwrote the exception handler! That means that we're now executing the contents of that compressed archive file as code!
 
-## Where is the SystemHeap located, and what is its allocated size?
+## Understanding the Different Heaps and Identifying the SystemHeap
+
+### Where is the SystemHeap located, and what is its allocated size?
 
 The first issue I ran into is that we didn’t know the memory range of `SystemHeap`, so I had to start by locating it. To do that, I located the `SystemHeap` pointer in Ghidra. In Ghidra I locate `JKRHeap::sSystemHeap`, which is a global in SDA read via `lwz ..., -0x7210(r13)`. Knowing the SDA base (`r13 = 0x80458580`), we can compute the absolute address of the global:
 
@@ -294,8 +296,6 @@ Knowing all these values, we now have a structured and correct hierarchy of the 
 ```
 Alright, now that we know all of this, we can answer the question: “Why does `JKRAllocFromSysHeap` fail and return `0`?”
 
-## Why does `JKRAllocFromSysHeap` fail and return `0`?
-
 ```c++
 szpBuf = JKRHeap::alloc(JKRHeap::sSystemHeap, JKRAram::sSZSBufferSize, 0x20);
 ```
@@ -316,6 +316,8 @@ And when returning from `JKRHeap::alloc` (breakpoint at `0x802D28AC`), I observe
 So the game requests `0x2000` (8192 bytes) from `SystemHeap`, but `SystemHeap` only has `0xCCC` (3276 bytes) of free memory, therefore the allocation returns `0`.
 
 Now, the question I want an answer to is: how does the fishing rod dupe affect memory, and how does it become “stressed”?
+
+## How does duplicating the fishing rod affect memory allocation?
 
 ### How does the fishing rod dupe affect GameHeap?
 
@@ -678,6 +680,7 @@ So when pulling out the fishing rod, the game overwrites the first 4 bytes with 
             → mDoExt_createSolidHeapFromGame(...) (GameHeap)
               → actor->solidHeapPtr = heap
 ```
+## Why does `JKRAllocFromSysHeap` fail and return `0`?
 
 ### What actually happens in memory when a fish is caught?
 
@@ -941,7 +944,55 @@ The question then becomes: why, with dupe, does the OS land precisely on a resch
 
 ### Why does the game trigger the restoration of the AudioThread?
 
-Currently W.I.P
+Analysis of the write paths to `JKRHeap::sCurrentHeap` shows several temporary calls to `mDoExt_setCurrentHeap`, notably from `dTimer_c::_create` and `dMsgObject_c::changeGroupLocal`. These functions modify `sCurrentHeap` transiently, without protection against interrupts.
+In vanilla, these critical sections are short enough that the scheduler does not preempt the thread at that exact moment. With dupe, the failure to allocate `0x11000` bytes causes a longer execution path (`OSReport, error handling`), which increases the time window during which an interrupt can occur.
+
+When the interrupt arrives at that moment, `__OSDispatchInterrupt` triggers `__OSReschedule`, which selects the audio thread because it is ready, high priority, and woken up by DSP/VI. Before switching, `JKRThreadSwitch::callback` saves the current heap state into the outgoing thread, then blindly restores that of the incoming thread.
+So the bug does not come from an explicit fallback, nor a rescue logic, nor the audio thread itself, but from a blind restoration of a transient heap state captured during an asynchronous preemption.
+
+The real pipeline is therefore the following:
+
+```
+vi::__VIRetraceHandler @ 0x8034BF6C
+→ os::OSWakeupThread @ (call from 0x8034C1B8)
+→ os::__OSDispatchInterrupt @ 0x8033DBCC
+→ os::__OSReschedule @ 0x80341220
+→ os::SelectThread @ 0x80340FFC (call from 0x8034123C)
+→ os::OSCurrentThread store (stw r30, 0xE4(r31)) @ 0x803411F0
+→ JKRThreadSwitch::callback @ 0x802D1AE4
+→ (save) stw r0, 0x74(thread) @ 0x802D1B48
+→ (load) lwz r?, 0x74(thread) @ 0x802D1BAC
+→ JKRHeap::becomeCurrentHeap(nextHeap) @ 0x802D1C3C
+→ (write) JKRHeap::sCurrentHeap = nextHeap @ 0x802CE43C
+```
+
+I then wanted to check whether allocations that are not supposed to be done on `SystemHeap` were occurring just before the MDMA. I started by setting a breakpoint on `JKRHeap::alloc()` with the condition `r3 == 0x80457CC0 (SystemHeap)`. I collected the logs to observe my registers, notably `r4` (size) and `r5` (alignment). I did the same thing without duplication, but this time with no condition on the breakpoint.
+
+Result: allocations that are normally expected on `ZeldaHeap` (probably pprocess / append) end up happening on `SystemHeap`. However, its small free space of `64 KiB` means it fills up entirely. I also looked at `LR` at the time of the hits and landed on `0x802CE4B8`, corresponding to the function:
+
+```c++
+void* JKRHeap::alloc(u32 size, int alignment, JKRHeap* heap) {
+    if (heap != NULL) {
+        return heap->alloc(size, alignment);
+    }
+ 
+    if (sCurrentHeap != NULL) {
+        return sCurrentHeap->alloc(size, alignment); // 0x802ce4b8
+    }
+ 
+    return NULL;
+}
+```
+
+So we found the “culprit” function responsible for overloading `SystemHeap`. Now what is the connection with MDMA? Well, if the game calls `JKRAllocFromSysHeap()` from `JKRDecompressFromAramToMainRam()`, it forces the allocation to come from `SystemHeap` for the buffers (which is normal). However, since `SystemHeap` no longer has any free space, the game can no longer allocate the buffer: it becomes `0x00000000`, and the DMA copy is therefore performed to that address.
+
+## Conclusion and Remaining Questions
+
+What is extremely interesting after these discoveries is that `SystemHeap` is never supposed to remain the current heap. So in theory we can “leak” the desired code path into `SystemHeap` (at least everything that is supposed to go through `ZeldaHeap` normally via `JKRHeap::alloc()`, which retrieves the current heap).
+
+Also, catching a fish and loading `Timer.arc` might not be the only trigger for `SystemHeap` -> currentHeap. In practice, we need to identify all heap creations larger than the remaining capacity of `GameHeap` once saturated; that should yield the same result. But also, in theory, we could force certain allocations in `SystemHeap` (that are supposed to be mandatory) to fail.
+
+The fact that we can write `00 00 00 00` into `sCurrentHeap` for a short time window could also be interesting.
 
 ## Observe the PPC instructions in the archives
 
@@ -953,9 +1004,7 @@ To achieve this, I wrote several Python scripts that:
 
 2) scan the PPC instructions between 0x80000300 and 0x80000800 (corresponding to the different exception handlers)
 
-3) verify that no instruction causes a crash or trap before execution reaches 0x80000300 (the first exception handler)
-
-4) and log everything into a .txt file in the following format:
+3) and log everything into a .txt file in the following format:
 
 ```
 --- msgres03.arc --- <-- Archive name
@@ -963,7 +1012,7 @@ To achieve this, I wrote several Python scripts that:
 0x80000304: bl 0x81020398
 ```
 
-Fortunately, the game provides a large number of archives containing valid PPC instructions that does not cause crashes or traps. The most useful ones are typically the `st*` instructions or `branch` instructions, such as the one shown above.
+Fortunately, the game provides a large number of archives containing valid PPC instructions. The most useful ones are typically the `st*` instructions or `branch` instructions, such as the one shown above.
 
 ## The Problems
 
@@ -972,7 +1021,6 @@ overwriting important system data and exception handlers, and usually causing ex
 
 In my opinion, this is the closest _Twilight Princess_ has ever come to arbitrary code execution. However, there are still several problems:
 
-* The underlying mechanism that causes the `JKRAllocFromSysHeap` call to fail is not particularly well understood.
 * Most pieces of data we can copy from ARAM don't do anything particularly interesting when executed, in part because:
 * The FPU is disabled during this context-switch state, so any attempt to execute a floating-point instruction jumps to `0x80000800`.
 * Even if we did get a jump to a player-controlled memory location, the amount of work that needs to be done to restore normal
