@@ -4,7 +4,7 @@ title: Golden Wolf Storage
 description: A wrong warp glitch to travel to the location of a golden wolf
 author: zcanann
 categories: [Glitches]
-tags: [glitches, gws, EHC, wrong-warp, unsolved]
+tags: [glitch, gws, golden-wolf-storage, EHC, early-hyrule-castle, wrong-warp, unsolved]
 pin: true
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ title: Early Hyrule Castle
 description: The holy grail of Twilight Princess glitch hunting
 author: bdamja
 categories: [Theory]
-tags: [theory, EHC, unsolved]
+tags: [theory, EHC, early-hyrule-castle, unsolved]
 pin: true
 math: true
 mermaid: true

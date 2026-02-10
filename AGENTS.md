@@ -18,8 +18,8 @@ The goal is to keep the architecture in mind and not drift into minefields.
   - attach normalized tags.
 - Build one import pass for location CSVs and attach `map-*` tags from section headers.
 - Add source-quality tags during import:
-  - `needs-source` for blank / `<Need video>` sources,
-  - `has-notes` when extra notes column is populated.
+  - `meta-needs-source` for blank / `<Need video>` sources,
+  - `meta-has-notes` when extra notes column is populated.
 - Run spot QA after each batch (10 entries): frontmatter validity, tag consistency, generated tag/category pages.
 - Decide whether to expose additional navigation pages (optional) only after at least ~100 imported entries.
 - If making a hard decision, or blocked, add to ## Notes for Owner
@@ -27,19 +27,117 @@ The goal is to keep the architecture in mind and not drift into minefields.
 ## Current Tasklist (ordered)
 (Remove as completed, add remaining concrete tasks. If the list is empty, audit the codebase to come up with a plan for the next concrete steps.)
 
-Come up with a list of tasks based on the plan. As tasks come up, add/remove them here. If done, audit the compendium csv files and project structures.
+- [x] Import next location batch from `Kak _ Eldin Fields _ HV _ GM.csv` (starting at `Warp Into Void`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for the next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Kak _ Eldin Fields _ HV _ GM.csv` (starting at `[Wii?] Goron Limbo (3rd person C-Up)`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Kak _ Eldin Fields _ HV _ GM.csv` (starting at `Pipe Jump`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Kak _ Eldin Fields _ HV _ GM.csv` (starting at `Dangoro EBF Pause Manip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Bridge Fire Bypass (Shield)`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `[PAL / NSTC French Wii] Free Cannon`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Bug Boss Flying Platforms`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Double Poe Grotto Warp`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Steal Lent Bomb Bag / Black Rupee`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `HD Lake Hylia NaN Wolf`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Stalactite Drifting`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Snowpeak Ruins Early (No Warp, UMD)`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (starting at `Early Void Room Heart Piece (LJA)`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `S. Field _ CT _ HC _ Sewers.csv` (starting at `Postman skip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `S. Field _ CT _ HC _ Sewers.csv` (starting at `Camera Zoom Glitch`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `S. Field _ CT _ HC _ Sewers.csv` (starting at `Castle Town Wrong Warp`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `S. Field _ CT _ HC _ Sewers.csv` (starting at `Stair Ledge Clip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Caves & Grottos.csv` (starting at `Puzzle Skips`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `Fan Unloading`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `Small Key Skip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `Lake Hylia Wrong Warp`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `King Bulbin Early via Map Glitch`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `[HD/Wii] Poe Gate Wall Clip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `Stallord Skip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `CitS _ Desert _ AG _ PoT.csv` (starting at `Midna Text Skip`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Vine Man Skip and Softlock`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Approach Uli as Wolf Link`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Sword Mini-game Escape`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Faron Spirit Double Map`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [x] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Skip Digging Bugs`) with duplicate-title merge behavior.
+- [x] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
+- [ ] Import next location batch from `Faron _ FT _ Grove _ ToT.csv` (starting at `Destroyed Wolf (Monkey Swing)`) with duplicate-title merge behavior.
+- [ ] Re-run spot QA for that next location batch (frontmatter, duplicate detection, map-tag consistency).
 
 ## Notes for Owner
 
-- 
+- Full render QA (`bundle exec jekyll build`) is currently blocked in this environment because `ruby`, `gem`, and `bundle` are not installed on PATH. Frontmatter/tag spot checks passed at file level.
 
 ## Important Information
 Append important discoveries. Compact regularly.
 
-- Repository currently has 20 posts in `_posts` and uses category tabs:
+- Repository currently has 150 posts in `_posts` and uses category tabs:
   - `_tabs/glitches.md` -> `/categories/glitches/`
   - `_tabs/theory.md` -> `/categories/theory/`
   - `_tabs/reference.md` -> `/categories/reference/`
+- After batch-14 `General.csv` import correction, repository post count is now 161.
+- After batch-15 `General.csv` import, repository post count is now 171.
+- After batch-16 `General.csv` final-tail import, repository post count is now 180.
+- Locked non-General section -> `map-*` canonical slug mapping table (v1), including typo normalization (`Lanaryu` -> `lanayru`, `Garudo` -> `gerudo`).
+- After location batch-1 import (8 new + 2 duplicate merges), repository post count is now 188.
+- After location batch-2 import (10 new + 0 duplicate merges), repository post count is now 198.
+- After location batch-3 import (10 new + 0 duplicate merges), repository post count is now 208.
+- After location batch-4 import (10 new + 0 duplicate merges), repository post count is now 218.
+- After location batch-5 import (6 new + 0 duplicate merges), repository post count is now 224.
+- After location batch-6 import (10 new + 0 duplicate merges), repository post count is now 234.
+- After location batch-7 import (10 new + 0 duplicate merges), repository post count is now 244.
+- After location batch-8 import (9 new + 1 duplicate merge), repository post count is now 253.
+- After location batch-9 import (9 new + 1 duplicate merge), repository post count is now 262.
+- After location batch-10 import (10 new + 0 duplicate merges), repository post count is now 272.
+- After location batch-11 import (10 new + 0 duplicate merges), repository post count is now 282.
+- After location batch-12 import (10 new + 0 duplicate merges), repository post count is now 292.
+- After location batch-13 import (10 new + 0 duplicate merges), repository post count is now 302.
+- After location batch-14 import (5 new + 0 duplicate merges), repository post count is now 307.
+- After location batch-15 import (9 new + 1 duplicate merge), repository post count is now 316.
+- After location batch-16 import (10 new + 0 duplicate merges), repository post count is now 326.
+- After location batch-17 import (10 new + 0 duplicate merges), repository post count is now 336.
+- After location batch-18 import (10 new + 0 duplicate merges), repository post count is now 346.
+- After location batch-19 import (1 new + 0 duplicate merges), repository post count is now 347.
+- After location batch-20 import (9 new + 1 duplicate merge), repository post count is now 356.
+- After location batch-21 import (9 new + 1 duplicate merge), repository post count is now 365.
+- After location batch-22 import (10 new + 0 duplicate merges), repository post count is now 375.
+- After location batch-23 import (10 new + 0 duplicate merges), repository post count is now 385.
+- After location batch-24 import (10 new + 0 duplicate merges), repository post count is now 395.
+- After location batch-25 import (9 new + 1 duplicate merge), repository post count is now 404.
+- After location batch-26 import (3 new + 1 duplicate merge), repository post count is now 407.
+- After location batch-27 import (10 new + 0 duplicate merges), repository post count is now 417.
+- After location batch-28 import (10 new + 0 duplicate merges), repository post count is now 427.
+- After location batch-29 import (10 new + 0 duplicate merges), repository post count is now 437.
+- After location batch-30 import (10 new + 0 duplicate merges), repository post count is now 447.
+- After location batch-31 import (9 new + 1 duplicate merge), repository post count is now 456.
+- Navigation evaluation at 188 posts: defer exposing additional nav pages for now (`map-*` coverage is only 10 posts across 2 map tags, too sparse for useful top-level navigation).
+- `General.csv` is now exhausted under locked triage rules (last imported entry: `[Hacks, Theoretical] Credit Warp`).
 - Existing tags are inconsistent today (`glitch` and `glitches`, uppercase `RNG`, mixed acronyms such as `EHC`, `PGS`, `EMS`).
 - Compendium CSV audit:
   - 7 CSV files, ~520 entry rows total.
@@ -64,6 +162,50 @@ Append important discoveries. Compact regularly.
 
 Note from owner: There is no reason to ever specify "cross-post" like the compendium has (tags implicitly solve this).
 
+### Locked Location Section -> Map Tag Mapping (v1)
+- `Lanaryu Ice Cave` -> `map-lanayru-ice-cave`
+- `City in the Sky` -> `map-city-in-the-sky`
+- `Garudo Desert` -> `map-gerudo-desert`
+- `Cave of Ordeals` -> `map-cave-of-ordeals`
+- `Bulbin Camp` -> `map-bulbin-camp`
+- `Arbiter's Grounds` -> `map-arbiters-grounds`
+- `Mirror Area` -> `map-mirror-area`
+- `Palace of Twilight` -> `map-palace-of-twilight`
+- `Ordon Village` -> `map-ordon-village`
+- `Link's House Area` -> `map-links-house-area`
+- `Goats` -> `map-goats`
+- `Ordon Springs` -> `map-ordon-springs`
+- `South Faron` -> `map-south-faron`
+- `Mist Area` -> `map-mist-area`
+- `Grotto (Mist -> North)` -> `map-grotto-mist-north`
+- `North Faron` -> `map-north-faron`
+- `Forest Temple` -> `map-forest-temple`
+- `Sacred Grove` -> `map-sacred-grove`
+- `Temple of Time` -> `map-temple-of-time`
+- `Kakariko Village` -> `map-kakariko-village`
+- `Upper Eldin Field (Hyrule Bridge)` -> `map-upper-eldin-field-hyrule-bridge`
+- `Lower Eldin Field (Gorge)` -> `map-lower-eldin-field-gorge`
+- `Kakariko Graveyard` -> `map-kakariko-graveyard`
+- `Death Mountain` -> `map-death-mountain`
+- `Goron Shuffle` -> `map-goron-shuffle`
+- `Goron Mines` -> `map-goron-mines`
+- `Hidden Village` -> `map-hidden-village`
+- `Lake Hylia` -> `map-lake-hylia`
+- `Hyrule Field: Upper Lanaryu` -> `map-upper-lanayru-field`
+- `Grottos` -> `map-grottos`
+- `Hylia Bridge` -> `map-hylia-bridge`
+- `Zora's Domain` -> `map-zoras-domain`
+- `Zora's River` -> `map-zoras-river`
+- `LakeBed Temple` -> `map-lakebed-temple`
+- `Snowpeak Mountains` -> `map-snowpeak-mountains`
+- `Snowpeak Ruins` -> `map-snowpeak-ruins`
+- `South Hyrule Field` -> `map-south-hyrule-field`
+- `Sewers` -> `map-sewers`
+- `Rooftops` -> `map-rooftops`
+- `Zelda's Tower` -> `map-zeldas-tower`
+- `Castle Town` -> `map-castle-town`
+- `Hyrule Castle` -> `map-hyrule-castle`
+
 ### Normalization Rules
 - Map legacy aliases:
   - `glitches` -> `glitch`
@@ -73,12 +215,68 @@ Note from owner: There is no reason to ever specify "cross-post" like the compen
 - If an entry appears in multiple CSV sections, keep one post and attach multiple `map-*` tags.
 - If category assignment is unclear, default to `Glitches` + `status-unsolved` and add a short review note.
 
+### `General.csv` Triage Rules (Locked)
+- Treat a row as `section header` and skip import when `Name` is populated but both `Primary Source` and `Description` are empty.
+- Treat a row as `blank` and skip import when `Name`, `Primary Source`, and `Description` are all empty.
+- Treat a row as `malformed note row` and skip import when `Name` is empty and any non-empty cell appears in source/description/notes columns.
+- Treat a row as `valid entry` only when `Name` and `Description` are both non-empty.
+- For `valid entry`, keep `<Need video>` / empty source rows and tag `meta-needs-source` instead of dropping.
+- For `valid entry`, add `meta-has-notes` whenever `External Links / Additional Notes` is non-empty.
+- Parse bracket prefixes in `Name` (for example `[Wii/HD]`, `[Theoretical]`, `[TAS]`) into schema tags and strip prefix text from the final page title.
+
 ## Agent Scratchpad and Notes
 (Append below and compact regularly to relevant recent notes, keep under ~20 trap parts).
 
 - `General.csv` includes true sections (`Movement Tech`, `Combat Tech`, etc.) and noisy rows that are actually notes; import filter must be strict.
 - Location CSVs are cleanly sectioned and suitable for `map-*` tag generation.
 - Even though these are CSVs, the owner has requested manual import at an agent LLM level, not script based. These need thining to route.
+- Batch-2 note: `Door Storage` row in `General.csv` matched an existing authored page; skipped duplicate creation to avoid clobbering existing content.
+- Batch-3 note: Imported the next 10 valid `General.csv` rows (`Item/Pickup Slide` through `Brake Sliding`); next row to process is `[TAS-ish] Inverted Brake Sliding`.
+- Batch-4 note: Imported the next 10 valid non-duplicate `General.csv` rows (`[TAS-ish] Inverted Brake Sliding` through `Back in Time via Ooccoo Jr/Sr`), skipping duplicate-title rows (`Horse Call OOB`, `Back in Time`, `Back in Time Equipped`); next row to process is `Back in Time Wrong Ooccoo Coordinates`.
+- Batch-5 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Back in Time Wrong Ooccoo Coordinates` through `Fake Wolf Link`), including one `Reference`-categorized technique entry (`Long Jump Attack (LJA)`); next row to process is `[TAS-ish] Universal Map Delay (UMD)`.
+- Batch-6 note: Imported the next 10 valid non-duplicate `General.csv` rows (`[TAS-ish] Universal Map Delay (UMD)` through `Item Dialogue Storage in Water`), skipping duplicate-title row (`Golden Wolf Storage`); next row to process is `Death Through Load Zones`.
+- Batch-7 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Death Through Load Zones` through `Shield Arrow Accumulation`); next row to process is `[Wii] Invisible B Button Item Hotkey`.
+- Batch-8 note: Imported the next 10 valid non-duplicate `General.csv` rows (`[Wii] Invisible B Button Item Hotkey` through `Fanadi Save locking`); next row to process is `Cutscene Boomerang Item Dropping`.
+- Batch-9 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Cutscene Boomerang Item Dropping` through `Headless Link During Aiming`); next row to process is `[Wii 1.0] Stacked Rupee Dialogues`.
+- Batch-10 note: Imported the next 10 valid non-duplicate `General.csv` rows (`[Wii 1.0] Stacked Rupee Dialogues` through `Squidna Cutsene Skip`); next row to process is `Boss Death CS Skip`.
+- Batch-11 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Boss Death CS Skip` through `BiT Crash`), skipping invalid row (`Pause During Skippable Cutscene`) and section/header rows; next row to process is `Changeroom Crash`.
+- Batch-12 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Changeroom Crash` through `Ooccoo Text-Displacement Corruption`); next row to process is `File Name Cursor Breakout`.
+- Batch-13 note: Imported the next 10 valid non-duplicate `General.csv` rows (`File Name Cursor Breakout` through `Sled Race Ball & Chain Crash`); next row to process is `Observation Deck Actor Slot Exhaustion`.
+- Batch-14 note: Imported 11 valid non-duplicate `General.csv` rows during correction (`Observation Deck Actor Slot Exhaustion` through `[Wii?] Arbiters Grounds E_bug Alloc Warning`) with schema-aligned bracket normalization and source-quality tags; next row to process is `Pot Crash`.
+- Batch-15 note: Imported the next 10 valid non-duplicate `General.csv` rows (`Pot Crash` through `[Wii] Audio Glitches`), skipping duplicate-title row (`[Cross-Post] White Midna Glitch (Actor Corruption)`); next row to process is `Rod Dupe in Grotto 5`.
+- Batch-16 note: Imported final tail batch of 9 valid non-duplicate `General.csv` rows (`Rod Dupe in Grotto 5` through `[Hacks, Theoretical] Credit Warp`), skipping section/header rows and one duplicate-title row (`[SD on Wii] Full run` duplicate source variant); next row to process is `N/A (General.csv exhausted)`.
+- Location batch-1 note: Imported 10 valid `Kak _ Eldin Fields _ HV _ GM.csv` rows (`Melted Postman` through `Rupee Roll`) with locked `map-*` tags; merged duplicate-title rows (`Back in Time Wrong Ooccoo Coordinates`, `Back in Time Stick Link`) by adding `map-upper-eldin-field-hyrule-bridge` to existing posts; next row to process is `Warp Into Void`.
+- Location batch-2 note: Imported 10 valid `Kak _ Eldin Fields _ HV _ GM.csv` rows (`Warp Into Void` through `Goron Wrestle Camera Soft-Lock`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `[Wii?] Goron Limbo (3rd person C-Up)`.
+- Location batch-3 note: Imported 10 valid `Kak _ Eldin Fields _ HV _ GM.csv` rows (`[Wii?] Goron Limbo (3rd person C-Up)` through `Magnet Skip`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `Pipe Jump`.
+- Location batch-4 note: Imported 10 valid `Kak _ Eldin Fields _ HV _ GM.csv` rows (`Pipe Jump` through `[HD] Dangoro Softlock`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `Dangoro EBF Pause Manip`.
+- Location batch-5 note: Imported final 6 valid `Kak _ Eldin Fields _ HV _ GM.csv` rows (`Dangoro EBF Pause Manip` through `Early Hidden Village (Epona Seam Clip)`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `N/A (Kak _ Eldin Fields _ HV _ GM.csv exhausted)`.
+- Location batch-6 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Bridge Fire Bypass (Shield)` through `Swim Softlock / Animation Glitch`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `[PAL / NSTC French Wii] Free Cannon`.
+- Location batch-7 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`[PAL / NSTC French Wii] Free Cannon` through `Bug Boss Underwater Manip`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `Bug Boss Flying Platforms`.
+- Location batch-8 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Bug Boss Flying Platforms` through `Epona Clip`) with locked `map-*` tags; merged duplicate-title row (`Epona Clip`) by adding `map-upper-lanayru-field` and `meta-has-notes` to the existing post; next row to process is `Double Poe Grotto Warp`.
+- Location batch-9 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Double Poe Grotto Warp` through `Normal Bomb Goron Rescue (Norgor)`) with locked `map-*` tags; merged duplicate-title row (`Unwarpable Meteor (Devil/Ben Glitch)`) by adding `map-zoras-domain` to the existing post; next row to process is `Steal Lent Bomb Bag / Black Rupee`.
+- Location batch-10 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Steal Lent Bomb Bag / Black Rupee` through `Kargorak First Bug Ignore`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `HD Lake Hylia NaN Wolf`.
+- Location batch-11 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`HD Lake Hylia NaN Wolf` through `Morpheel Without Zora Armor`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `Stalactite Drifting`.
+- Location batch-12 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Stalactite Drifting` through `Snowpeak Ruins Early (Superjump)`) with locked `map-*` tags, skipping malformed note row (`TODO: All vine clip OOBs. Worth including any that are possible.`); no duplicate-title merges were needed in this slice; next row to process is `Snowpeak Ruins Early (No Warp, UMD)`.
+- Location batch-13 note: Imported 10 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Snowpeak Ruins Early (No Warp, UMD)` through `Infinite Yeta Death`) with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `Early Void Room Heart Piece (LJA)`.
+- Location batch-14 note: Imported final 5 valid `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` rows (`Early Void Room Heart Piece (LJA)` through `Hallway Ledge Void`) with locked `map-*` tags and bracket normalization (`[Wii]` -> `platform-wii`); no duplicate-title merges were needed in this slice; next row to process is `N/A (Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv exhausted)`.
+- Location batch-15 note: Imported 10 valid `S. Field _ CT _ HC _ Sewers.csv` rows (`Postman skip` through `Rupee Bridge Clip`) with locked `map-*` tags; merged duplicate-title row (`Epona Clip`) by adding `map-south-hyrule-field` and `meta-needs-source` to the existing post; next row to process is `Camera Zoom Glitch`.
+- Location batch-16 note: Imported 10 valid `S. Field _ CT _ HC _ Sewers.csv` rows (`Camera Zoom Glitch` through `Wind Cycle Reset`) with locked `map-*` tags and source-quality tagging (`meta-needs-source` on `Midna Dialogue Text Displacement`, `Glitchy Crawlspace (Carrying skull as Wolf)`, and `Midna Rooftops Dialogue Trigger Escape`); no duplicate-title merges were needed in this slice; next row to process is `Castle Town Wrong Warp`.
+- Location batch-17 note: Imported 10 valid `S. Field _ CT _ HC _ Sewers.csv` rows (`Castle Town Wrong Warp` through `South Castle Town Rupee Chest Superjump`) with locked `map-*` tags, bracket normalization (`[TAS]` -> `meta-tas`), and source-quality tagging (`meta-has-notes` on `Louise Camera-Lock`); no duplicate-title merges were needed in this slice; next row to process is `Stair Ledge Clip`.
+- Location batch-18 note: Imported final 10 valid `S. Field _ CT _ HC _ Sewers.csv` rows (`Stair Ledge Clip` through `Boar Step Clip`) with locked `map-*` tags, bracket normalization (`[HD?]` -> `platform-hd`), and source-quality tagging (`meta-needs-source` on `Torch Puzzle Out of Order`); no duplicate-title merges were needed in this slice; next row to process is `N/A (S. Field _ CT _ HC _ Sewers.csv exhausted)`.
+- Location batch-19 note: Imported final 1 valid `Caves & Grottos.csv` row (`Puzzle Skips`) under `Lanaryu Ice Cave` with locked `map-*` tags; no duplicate-title merges were needed in this slice; next row to process is `N/A (Caves & Grottos.csv exhausted)`.
+- Location batch-20 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`Fan Unloading` through `[TAS] Small Key Skip`) with locked `map-*` tags; merged duplicate-title row (`Ledge Hanging Clip`) by adding `map-city-in-the-sky` to the existing post; next row to process is `Small Key Skip`.
+- Location batch-21 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`Small Key Skip` through `Peahat Escape`) with locked `map-*` tags; merged duplicate-title row (`Small Key Skip`) with no metadata delta required on the existing post; next row to process is `Lake Hylia Wrong Warp`.
+- Location batch-22 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`Lake Hylia Wrong Warp` through `Bulbin Camp Skip (Softlock)`) with locked `map-*` tags, bracket normalization (`[Wii 1.0]` -> `platform-wii`), and source-quality tagging (`meta-has-notes` on `Vanishing Items at Mesa`, `Floor 22 Glitch`, and `Bulbin Camp Skip (Softlock)`); no duplicate-title merges were needed in this slice; next row to process is `King Bulbin Early via Map Glitch`.
+- Location batch-23 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`King Bulbin Early via Map Glitch` through `Poe 2 First`) with locked `map-*` tags and source-quality tagging (`meta-needs-source` on `King Bulbin Early via Map Glitch`); skipped two empty-description rows (`Poe 1 Skip (Main Variant)`, `Poe 1 Skip (Jump Strike Variant)`) and no duplicate-title merges were needed in this slice; next row to process is `[HD/Wii] Poe Gate Wall Clip`.
+- Location batch-24 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`[HD/Wii] Poe Gate Wall Clip` through `Death Sword Cycle Delay`) with locked `map-*` tags, bracket normalization (`[HD/Wii]` -> `platform-hd`, `platform-wii`), and source-quality tagging (`meta-needs-source` on `Poe Gate Wall Clip` and `Door Cutscene Queueing`); no duplicate-title merges were needed in this slice; next row to process is `Stallord Skip`.
+- Location batch-25 note: Imported 10 valid `CitS _ Desert _ AG _ PoT.csv` rows (`Stallord Boss Room Reset Glitch` through `[HD] Fake Early Zant`) with locked `map-*` tags, bracket normalization (`[HD]` -> `platform-hd`), and source-quality tagging (`meta-has-notes` on `Stallord Boss Room Reset Glitch`); skipped two empty-description rows (`Stallord Skip`, `Stallord Quick Cycle Softlock`) and merged duplicate-title row (`LJA Out of Bounds`) by adding `map-mirror-area` to the existing post; next row to process is `Midna Text Skip`.
+- Location batch-26 note: Imported final 4 valid `CitS _ Desert _ AG _ PoT.csv` rows (`Midna Text Skip` through `Zant Iron Boots 1 Cycle`) with locked `map-*` tags; merged duplicate-title row (`Midna Text Skip`) by adding `map-palace-of-twilight` to the existing post; next row to process is `N/A (CitS _ Desert _ AG _ PoT.csv exhausted)`.
+- Location batch-27 note: Imported 10 valid `Faron _ FT _ Grove _ ToT.csv` rows (`Vine Man Skip and Softlock` through `Slingshot Recoil Glitch`) under `Ordon Village` with locked `map-*` tags and bracket normalization (`[Theoretical]` -> `status-theoretical`, `type-theory`); no duplicate-title merges were needed in this slice; next row to process is `Approach Uli as Wolf Link`.
+- Location batch-28 note: Imported 10 valid `Faron _ FT _ Grove _ ToT.csv` rows (`Approach Uli as Wolf Link` through `Slingshot Mini-game Partial Completion`) with locked `map-*` tags and source-quality tagging (`meta-needs-source` on `Shield Obtained Dialogue Skip/Softlock` and `Vine Clip`, `meta-has-notes` on `Slingshot Mini-game Reaction Skip`); no duplicate-title merges were needed in this slice; next row to process is `Sword Mini-game Escape`.
+- Location batch-29 note: Imported 10 valid `Faron _ FT _ Grove _ ToT.csv` rows (`Sword Mini-game Escape` through `Faron Spirit Text Skip`) across `Link's House Area`, `Goats`, `Ordon Springs`, and `South Faron` with locked `map-*` tags and source-quality tagging (`meta-needs-source` on `Squirrel Text Displacement Softlock`); no duplicate-title merges were needed in this slice; next row to process is `Faron Spirit Double Map`.
+- Location batch-30 note: Imported 10 valid `Faron _ FT _ Grove _ ToT.csv` rows (`Faron Spirit Double Map` through `Early Midna Jump`) across `South Faron` and `Mist Area` with locked `map-*` tags and source-quality tagging (`meta-needs-source` on `Coro Text Displacement` and `Monkey Pushing`); no duplicate-title merges were needed in this slice; next row to process is `Skip Digging Bugs`.
+- Location batch-31 note: Imported 10 valid `Faron _ FT _ Grove _ ToT.csv` rows (`Skip Digging Bugs` through `Early Monkeys`) across `Mist Area`, `Grotto (Mist -> North)`, `North Faron`, and `Forest Temple` with locked `map-*` tags; merged duplicate-title row (`Early Master Sword`) by adding `map-north-faron` to the existing post and tagged missing-source rows (`Bulbin Aggro Manipulation`, `Talo Cutscene Storage`) with `meta-needs-source`; next row to process is `Destroyed Wolf (Monkey Swing)`.
+- Navigation note: evaluated additional nav exposure after passing ~100 imported entries; decision is to keep current top-level nav unchanged until substantially broader `map-*` coverage exists.
 
 ### Concise Session Log
 Append logs for each session here. Compact redundancy.
@@ -86,3 +284,97 @@ Append logs for each session here. Compact redundancy.
 - Audited repo content and compendium CSV layout.
 - Confirmed current nav depends on category pages; tags are the right place for multi-classification.
 - Added concrete migration plan, tag schema, normalization rules, and ordered tasklist for next import sessions.
+- Replaced placeholder tasklist text with ordered, concrete migration tasks tied to current schema and batch QA workflow.
+- Normalized existing `_posts` alias tags (`glitches` -> `glitch`, `RNG` -> `rng`) and added canonical companions for acronym tags (`EHC`, `PGS`, `EMS`, `ACE`, `gws`).
+- Imported first manual `General.csv` batch of 10 valid rows into `_posts` with migration warning text and schema tags.
+- Spot QA completed for batch-1 frontmatter/tag checks; category/tag render verification is pending a Ruby/Jekyll-capable environment.
+- Imported second manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (movement-tech continuation), preserving the existing authored `Door Storage` page.
+- Spot QA completed for batch-2 frontmatter/tag checks and migration warning presence; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported third manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Item/Pickup Slide` through `Brake Sliding`), including one `Theory`-categorized theoretical entry and schema-aligned bracket tag normalization.
+- Spot QA completed for batch-3 frontmatter/tag checks, migration warning presence, and duplicate-title scan; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fourth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Inverted Brake Sliding` through `Back in Time via Ooccoo Jr/Sr`), including duplicate-row skips and schema-aligned bracket normalization.
+- Spot QA completed for batch-4 frontmatter/tag checks, migration warning presence, and duplicate-title scan; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fifth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Back in Time Wrong Ooccoo Coordinates` through `Fake Wolf Link`) with schema-aligned tagging and migration warning text.
+- Spot QA completed for batch-5 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported sixth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Universal Map Delay (UMD)` through `Item Dialogue Storage in Water`), including one `Theory`-categorized theoretical entry and one duplicate-row skip (`Golden Wolf Storage`).
+- Spot QA completed for batch-6 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported seventh manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Death Through Load Zones` through `Shield Arrow Accumulation`) with schema-aligned tags and migration warning text.
+- Spot QA completed for batch-7 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported eighth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Invisible B Button Item Hotkey` through `Fanadi Save locking`) with schema-aligned bracket normalization and source-quality tags.
+- Spot QA completed for batch-8 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported ninth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Cutscene Boomerang Item Dropping` through `Headless Link During Aiming`) with schema-aligned tagging, bracket normalization, and source-quality tags.
+- Spot QA completed for batch-9 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported tenth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Stacked Rupee Dialogues` through `Squidna Cutsene Skip`) with schema-aligned tagging, bracket normalization, and source-quality tags.
+- Spot QA completed for batch-10 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported eleventh manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Boss Death CS Skip` through `BiT Crash`) with schema-aligned tagging, bracket normalization, and source-quality tags.
+- Spot QA completed for batch-11 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twelfth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Changeroom Crash` through `Ooccoo Text-Displacement Corruption`) with schema-aligned tagging and source-quality tags.
+- Spot QA completed for batch-12 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported thirteenth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`File Name Cursor Breakout` through `Sled Race Ball & Chain Crash`) with schema-aligned tagging and source-quality tags.
+- Spot QA completed for batch-13 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fourteenth manual `General.csv` correction batch of 11 valid non-duplicate rows into `_posts` (`Observation Deck Actor Slot Exhaustion` through `Arbiters Grounds E_bug Alloc Warning`) with schema-aligned bracket normalization and source-quality tags.
+- Spot QA completed for batch-14 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fifteenth manual `General.csv` batch of 10 valid non-duplicate rows into `_posts` (`Pot Crash` through `Audio Glitches`) with schema-aligned bracket normalization, section-derived status tagging, and source-quality tags.
+- Spot QA completed for batch-15 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported sixteenth manual `General.csv` tail batch of 9 valid non-duplicate rows into `_posts` (`Rod Dupe in Grotto 5` through `Credit Warp`), including one `Theory` entry and one duplicate-title skip (`[SD on Wii] Full run` source variant).
+- Spot QA completed for batch-16 frontmatter/tag checks, migration warning presence, duplicate-title scan, and lowercase-kebab tag format validation; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Locked canonical section -> `map-*` mapping table for all non-General CSV headers, including typo normalization for canonical slug stability.
+- Imported first location batch of 10 rows from `Kak _ Eldin Fields _ HV _ GM.csv` with duplicate merge behavior (2 rows merged into existing posts via added `map-*` tags, 8 new posts created).
+- Spot QA completed for location batch-1 frontmatter/tag checks, migration warning presence, duplicate-title scan, and multi-map tag merge correctness; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported second location batch of 10 rows from `Kak _ Eldin Fields _ HV _ GM.csv` (`Warp Into Void` through `Goron Wrestle Camera Soft-Lock`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on blank/placeholder sources).
+- Spot QA completed for location batch-2 frontmatter/tag checks, migration warning presence, duplicate-title scan, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported third location batch of 10 rows from `Kak _ Eldin Fields _ HV _ GM.csv` (`Goron Limbo (3rd person C-Up)` through `Magnet Skip`) with locked section-to-map tags and source-quality tagging (`meta-needs-source`/`meta-has-notes` when applicable).
+- Spot QA completed for location batch-3 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fourth location batch of 10 rows from `Kak _ Eldin Fields _ HV _ GM.csv` (`Pipe Jump` through `Dangoro Softlock`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` for placeholder source rows).
+- Spot QA completed for location batch-4 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fifth location batch of 6 rows from `Kak _ Eldin Fields _ HV _ GM.csv` (`Dangoro EBF Pause Manip` through `Early Hidden Village (Epona Seam Clip)`) with locked section-to-map tags and source-quality tagging (`meta-needs-source`/`meta-has-notes` on `Transform in Hidden Village`).
+- Spot QA completed for location batch-5 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported sixth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Bridge Fire Bypass (Shield)` through `Swim Softlock / Animation Glitch`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Bridge Fire Bypass (Epona Slide)`).
+- Spot QA completed for location batch-6 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported seventh location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Free Cannon` through `Bug Boss Underwater Manip`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Bug Boss Underwater Manip`, `meta-has-notes` on `Flight-By-Fowl for Free / Lake Hylia OOB`).
+- Spot QA completed for location batch-7 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported eighth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Bug Boss Flying Platforms` through `Epona Clip`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Bug Boss Early Cycle`, `meta-has-notes` on `King Bulbin 2 Skip (Wagon Void Abuse)`); one duplicate-title merge was applied to `Epona Clip`.
+- Spot QA completed for location batch-8 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported ninth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Double Poe Grotto Warp` through `Normal Bomb Goron Rescue (Norgor)`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on both `Bridge Fire` rows, `meta-has-notes` on `Normal Bomb Goron Rescue (Norgor)`); one duplicate-title merge was applied to `Unwarpable Meteor (Devil/Ben Glitch)`.
+- Spot QA completed for location batch-9 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported tenth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Steal Lent Bomb Bag / Black Rupee` through `Kargorak First Bug Ignore`) with locked section-to-map tags and source-quality tagging (`meta-has-notes` on `Steal Lent Bomb Bag / Black Rupee` and `Infinite Bomb Arrows`).
+- Spot QA completed for location batch-10 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported eleventh location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`HD Lake Hylia NaN Wolf` through `Morpheel Without Zora Armor`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Boss Key Door Skip` and `Morpheel Without Zora Armor`).
+- Spot QA completed for location batch-11 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twelfth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Stalactite Drifting` through `Snowpeak Ruins Early (Superjump)`) with locked section-to-map tags, including a malformed-note skip for `TODO: All vine clip OOBs. Worth including any that are possible.`.
+- Spot QA completed for location batch-12 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported thirteenth location batch of 10 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Snowpeak Ruins Early (No Warp, UMD)` through `Infinite Yeta Death`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Clawshot Floor Clip` and `Transform Ice Wall Clip`, `meta-has-notes` on `Freezard 1 Skip`).
+- Spot QA completed for location batch-13 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fourteenth location batch of 5 rows from `Lanaryu _ Hylia _ Zora _ LBT _ SPR.csv` (`Early Void Room Heart Piece (LJA)` through `Hallway Ledge Void`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Freezard 2 Skip` and `Iron Boots softlock`).
+- Spot QA completed for location batch-14 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported fifteenth location batch of 10 rows from `S. Field _ CT _ HC _ Sewers.csv` (`Postman skip` through `Rupee Bridge Clip`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` merged onto `Epona Clip`).
+- Spot QA completed for location batch-15 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported sixteenth location batch of 10 rows from `S. Field _ CT _ HC _ Sewers.csv` (`Camera Zoom Glitch` through `Wind Cycle Reset`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Midna Dialogue Text Displacement`, `Glitchy Crawlspace (Carrying skull as Wolf)`, and `Midna Rooftops Dialogue Trigger Escape`).
+- Spot QA completed for location batch-16 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported seventeenth location batch of 10 rows from `S. Field _ CT _ HC _ Sewers.csv` (`Castle Town Wrong Warp` through `South Castle Town Rupee Chest Superjump`) with locked section-to-map tags, bracket normalization (`[TAS]` -> `meta-tas`), and source-quality tagging (`meta-has-notes` on `Louise Camera-Lock`).
+- Spot QA completed for location batch-17 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported eighteenth location batch of 10 rows from `S. Field _ CT _ HC _ Sewers.csv` (`Stair Ledge Clip` through `Boar Step Clip`) with locked section-to-map tags, bracket normalization (`[HD?]` -> `platform-hd`), and source-quality tagging (`meta-needs-source` on `Torch Puzzle Out of Order`).
+- Spot QA completed for location batch-18 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported nineteenth location batch of 1 row from `Caves & Grottos.csv` (`Puzzle Skips`) with locked section-to-map tag `map-lanayru-ice-cave`.
+- Spot QA completed for location batch-19 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twentieth location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`Fan Unloading` through `Small Key Skip`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `Save Warp Malfunction [Adam Glitch]`, `meta-has-notes` on `Pot Warping`); one duplicate-title merge was applied to `Ledge Hanging Clip`.
+- Spot QA completed for location batch-20 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-first location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`Small Key Skip` through `Peahat Escape`) with locked section-to-map tags and source-quality tagging (`meta-has-notes` on `Argorok Softlock` and `Kai Clip (Boss Key Early)`); one duplicate-title merge was applied to `Small Key Skip`.
+- Spot QA completed for location batch-21 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-second location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`Lake Hylia Wrong Warp` through `Bulbin Camp Skip (Softlock)`) with locked section-to-map tags, bracket normalization (`[Wii 1.0]` -> `platform-wii`), and source-quality tagging (`meta-has-notes` on `Vanishing Items at Mesa`, `Floor 22 Glitch`, and `Bulbin Camp Skip (Softlock)`).
+- Spot QA completed for location batch-22 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-third location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`King Bulbin Early via Map Glitch` through `Poe 2 First`) with locked section-to-map tags and source-quality tagging (`meta-needs-source` on `King Bulbin Early via Map Glitch`), while skipping two empty-description rows (`Poe 1 Skip (Main Variant)`, `Poe 1 Skip (Jump Strike Variant)`).
+- Spot QA completed for location batch-23 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-fourth location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`Poe Gate Wall Clip` through `Death Sword Cycle Delay`) with locked section-to-map tags, bracket normalization (`[HD/Wii]` -> `platform-hd` + `platform-wii`), and source-quality tagging (`meta-needs-source` on `Poe Gate Wall Clip` and `Door Cutscene Queueing`).
+- Spot QA completed for location batch-24 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-fifth location batch of 10 rows from `CitS _ Desert _ AG _ PoT.csv` (`Stallord Boss Room Reset Glitch` through `Fake Early Zant`) with locked section-to-map tags, bracket normalization (`[HD]` -> `platform-hd`), one duplicate-title merge (`LJA Out of Bounds`), and two empty-description skips (`Stallord Skip`, `Stallord Quick Cycle Softlock`).
+- Spot QA completed for location batch-25 frontmatter/tag checks, migration warning presence, duplicate-title scan, lowercase-kebab tag format validation, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-sixth location batch of 4 rows from `CitS _ Desert _ AG _ PoT.csv` (`Midna Text Skip` through `Zant Iron Boots 1 Cycle`) with locked section-to-map tags; one duplicate-title merge was applied to `Midna Text Skip`.
+- Spot QA completed for location batch-26 frontmatter/tag checks, migration warning presence, duplicate-title scan, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Evaluated optional additional navigation pages after surpassing ~100 imported entries and decided to defer due to low current map-tag density.
+- Imported twenty-seventh location batch of 10 rows from `Faron _ FT _ Grove _ ToT.csv` (`Vine Man Skip and Softlock` through `Slingshot Recoil Glitch`) under `Ordon Village` with locked section-to-map tag `map-ordon-village`, source-quality tagging (`meta-needs-source` on `Uli Cradle Turn-In Interrupt`, `meta-has-notes` on `Vine Man Skip and Softlock` and `Hawk Skip`), and bracket normalization (`[Theoretical]`).
+- Spot QA completed for location batch-27 frontmatter/tag checks, migration warning presence, duplicate-title scan, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-eighth location batch of 10 rows from `Faron _ FT _ Grove _ ToT.csv` (`Approach Uli as Wolf Link` through `Slingshot Mini-game Partial Completion`) across `Ordon Village` and `Link's House Area` with locked section-to-map tags and source-quality tagging (`meta-needs-source` and `meta-has-notes` where applicable).
+- Spot QA completed for location batch-28 frontmatter/tag checks, migration warning presence, duplicate-title scan, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.
+- Imported twenty-ninth location batch of 10 rows from `Faron _ FT _ Grove _ ToT.csv` (`Sword Mini-game Escape` through `Faron Spirit Text Skip`) across `Link's House Area`, `Goats`, `Ordon Springs`, and `South Faron` with locked section-to-map tags and source-quality tagging (`meta-needs-source` where applicable).
+- Spot QA completed for location batch-29 frontmatter/tag checks, migration warning presence, duplicate-title scan, and map-tag consistency; render-level verification remains blocked without Ruby/Bundler on PATH.

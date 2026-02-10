@@ -4,7 +4,7 @@ title: You Can't Unload Obj_Board or V_CTGWall
 description: A technical dive into what we can and cannot archive corrupt
 author: wolfegarden
 categories: [Theory]
-tags: [theory, EHC, actor-corruption]
+tags: [theory, EHC, early-hyrule-castle, actor-corruption]
 pin: true
 math: true
 mermaid: true

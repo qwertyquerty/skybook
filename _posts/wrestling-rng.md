@@ -4,7 +4,7 @@ title: Wrestling RNG
 description: How moves are chosen during the wrestling minigame
 author: qwertyquerty
 categories: [Reference]
-tags: [reference, RNG]
+tags: [reference, rng]
 pin: true
 math: true
 mermaid: true

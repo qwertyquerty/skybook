@@ -4,7 +4,7 @@ title: Step Clip
 description: The animation that disables Link's wall collision
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch, major, PGS]
+tags: [glitch, major, PGS, poe-gate-skip]
 pin: true
 math: true
 mermaid: true

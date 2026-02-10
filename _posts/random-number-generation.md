@@ -4,7 +4,7 @@ title: Random Number Generation
 description: A complete guide to how random number generation works
 author: qwertyquerty
 categories: [Reference]
-tags: [reference, RNG]
+tags: [reference, rng]
 pin: true
 math: true
 mermaid: true
