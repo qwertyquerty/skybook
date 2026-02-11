@@ -4,7 +4,7 @@ title: Rupee / Cutscene / Midna Dive
 description: Fall to water bottom by ledge drop with dialog open
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, mechanic-cutscene]
+tags: [type-glitch, mechanic-movement, mechanic-cutscene, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

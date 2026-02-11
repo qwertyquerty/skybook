@@ -4,7 +4,7 @@ title: Clawshot Actor Displacement
 description: Move actors by interrupting a clawshot with a fall
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement]
+tags: [type-glitch, mechanic-movement, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

@@ -4,7 +4,7 @@ title: Door Storage
 description: Explanation when and why floorclips happen
 author: spicyjuice04
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision]
+tags: [type-glitch, mechanic-collision, meta-major-glitch]
 pin: true
 math: true
 mermaid: true

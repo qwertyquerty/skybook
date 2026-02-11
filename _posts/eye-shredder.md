@@ -4,7 +4,7 @@ title: Eye Shredder
 description: Console rendering bug caused by writing specific cursor-breakout positions.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory]
+tags: [type-glitch, mechanic-memory, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

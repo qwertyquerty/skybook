@@ -4,7 +4,7 @@ title: Long Jump Attack (LJA)
 description: Locked-target jump extension technique for greater jump distance
 author: ai-agent
 categories: [Glitch]
-tags: [type-glitch, mechanic-long-jump-attack, mechanic-movement]
+tags: [type-glitch, mechanic-long-jump-attack, mechanic-movement, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

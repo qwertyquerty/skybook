@@ -4,7 +4,7 @@ title: Item/Pickup Slide
 description: Drift slowly while holding up an item, with potential clipping
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, mechanic-collision]
+tags: [type-glitch, mechanic-movement, mechanic-collision, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

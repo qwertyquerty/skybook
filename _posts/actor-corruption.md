@@ -4,7 +4,7 @@ title: Actor Corruption
 description: Memory leak state from Rod Duping or Save Leak setups that enables further corruption-driven glitches.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, mechanic-actor-corruption]
+tags: [type-glitch, mechanic-memory, mechanic-actor-corruption, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 

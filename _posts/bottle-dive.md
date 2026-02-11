@@ -12,7 +12,7 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-This is a controllable variant of cutscene diving.
+This is a controllable variant of [Cutscene Diving](/posts/rupee-cutscene-midna-dive) diving.
 
 ## Primary Source
 

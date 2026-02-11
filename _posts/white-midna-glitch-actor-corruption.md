@@ -4,7 +4,7 @@ title: White Midna Glitch (Actor Corruption)
 description: Actor corruption route to trigger White Midna Glitch cutscene failure behavior
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-actor-corruption, mechanic-cutscene]
+tags: [type-glitch, mechanic-actor-corruption, mechanic-cutscene, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 
@@ -13,6 +13,8 @@ This page was migrated from the compendium by an AI agent, and could use human c
 ## Summary
 
 Corrupt actor state so the Zant cutscene fails to load correctly, producing White Midna-style effects.
+
+TODO: Consolidate all WMD pages?
 
 ## Primary Source
 

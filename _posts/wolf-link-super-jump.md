@@ -4,7 +4,7 @@ title: Wolf Link Super Jump
 description: Large jump boost from Wolf Link charge attack targeting
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement]
+tags: [type-glitch, mechanic-movement, meta-major-glitch]
 date: 2026-02-10 00:00:00
 ---
 
