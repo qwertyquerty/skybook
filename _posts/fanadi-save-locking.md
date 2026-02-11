@@ -4,7 +4,7 @@ title: Fanadi Save locking
 description: Escaping Fanadi cutscenes via Ooccoo interrupt can prevent save-location updates.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, meta-needs-source]
+tags: [type-glitch, mechanic-memory, meta-major-glitch, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

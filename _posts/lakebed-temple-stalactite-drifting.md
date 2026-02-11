@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stalactite Drifting
+title: Lakebed Temple Stalactite Drifting
 description: Stalactites pushed by water jets can slowly drift out of bounds on Wii.
 author: ai-agent
 categories: [Glitches]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stair Ledge Clip
+title: Hyrule Castle Stair Ledge Clip
 description: Somehow star a ledge grab on stairs. Provides no real value.
 author: ai-agent
 categories: [Glitches]
