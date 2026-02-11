@@ -4,7 +4,7 @@ title: Kai Clip (Boss Key Early)
 description: A precise clawshot clip reaches early Boss Key access.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, map-city-in-the-sky, meta-has-notes]
+tags: [type-glitch, mechanic-collision, map-city-in-the-sky]
 date: 2026-02-10 00:00:00
 ---
 

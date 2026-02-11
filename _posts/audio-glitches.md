@@ -4,7 +4,7 @@ title: Audio Glitches
 description: Probable actor corruption causes widespread audio failures in multiple areas.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, status-partially-solved, platform-wii, mechanic-actor-corruption, meta-has-notes]
+tags: [type-glitch, status-partially-solved, platform-wii, mechanic-actor-corruption]
 date: 2026-02-10 00:00:00
 ---
 

@@ -4,7 +4,7 @@ title: Infinite Bomb Arrows
 description: Glitch the Plumm or Iza mini-games to get infinite bombs and arrows.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-storage, map-zoras-river, meta-has-notes]
+tags: [type-glitch, mechanic-storage, map-zoras-river]
 date: 2026-02-10 00:00:00
 ---
 

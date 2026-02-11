@@ -4,7 +4,7 @@ title: Epona Void Crash
 description: Reset during an Epona void to cause a crash when reopening the file.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-crash, meta-has-notes]
+tags: [type-glitch, mechanic-crash]
 date: 2026-02-10 00:00:00
 ---
 

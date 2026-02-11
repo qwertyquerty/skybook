@@ -4,7 +4,7 @@ title: Sticky Rang (Item Stuck to Link)
 description: Use boomerang pickup behavior after Door Storage to keep an item stuck to Link.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-actor-corruption, meta-has-notes]
+tags: [type-glitch, mechanic-actor-corruption]
 date: 2026-02-10 00:00:00
 ---
 

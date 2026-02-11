@@ -4,7 +4,7 @@ title: Stallord Boss Room Reset Glitch
 description: Voiding in the Stallord arena can reset the boss state while leaving parts of the room state unchanged.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, map-arbiters-grounds, meta-has-notes]
+tags: [type-glitch, mechanic-memory, map-arbiters-grounds]
 date: 2026-02-10 00:00:00
 ---
 

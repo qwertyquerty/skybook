@@ -4,7 +4,7 @@ title: Steal Lent Bomb Bag / Black Rupee
 description: Use Ooccoo or Wolf Link to escape the Iza mini-game with the lent bomb bag.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-storage, map-zoras-river, meta-has-notes]
+tags: [type-glitch, mechanic-storage, map-zoras-river]
 date: 2026-02-10 00:00:00
 ---
 

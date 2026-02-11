@@ -4,7 +4,7 @@ title: Poe Sliding
 description: A Poe can enter a drifting movement state while its soul remains exposed.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, meta-has-notes]
+tags: [type-glitch, mechanic-movement]
 date: 2026-02-10 00:00:00
 ---
 

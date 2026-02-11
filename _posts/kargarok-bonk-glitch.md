@@ -4,7 +4,7 @@ title: Kargarok Bonk Glitch
 description: A stunned Kargarok can enter a prolonged bonk-like backward drift before falling.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, meta-has-notes]
+tags: [type-glitch, mechanic-collision]
 date: 2026-02-10 00:00:00
 ---
 

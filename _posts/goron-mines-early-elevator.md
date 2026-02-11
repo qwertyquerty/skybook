@@ -4,7 +4,7 @@ title: Goron Mines Early Elevator
 description: OOB routing to the elevator plus a Spinner bypass can access Goron Mines without the intended gate.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-oob, mechanic-collision, map-death-mountain, meta-has-notes]
+tags: [type-glitch, mechanic-oob, mechanic-collision, map-death-mountain]
 date: 2026-02-10 00:00:00
 ---
 

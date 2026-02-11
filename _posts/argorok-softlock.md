@@ -4,7 +4,7 @@ title: Argorok Softlock
 description: Drop from Argorok on the first possible frame to force a softlock state.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-softlock, map-city-in-the-sky, meta-has-notes]
+tags: [type-glitch, mechanic-softlock, map-city-in-the-sky]
 date: 2026-02-10 00:00:00
 ---
 

@@ -4,7 +4,7 @@ title: Unwarpable Meteor (Devil/Ben Glitch)
 description: Run footage where a meteor could not be warped for unknown reasons.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, status-unsolved, mechanic-warp, map-zoras-domain, meta-has-notes]
+tags: [type-glitch, status-unsolved, mechanic-warp, map-zoras-domain]
 date: 2026-02-10 00:00:00
 ---
 

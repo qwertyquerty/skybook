@@ -4,7 +4,7 @@ title: Floor 22 Glitch
 description: Rat deletion behavior on Cave of Ordeals Floor 22 can produce unusual progression outcomes.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, map-cave-of-ordeals, meta-has-notes]
+tags: [type-glitch, mechanic-memory, map-cave-of-ordeals]
 date: 2026-02-10 00:00:00
 ---
 

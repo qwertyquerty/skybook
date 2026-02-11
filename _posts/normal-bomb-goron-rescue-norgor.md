@@ -4,7 +4,7 @@ title: Normal Bomb Goron Rescue (Norgor)
 description: Rescue the Goron using normal bombs instead of water bombs.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-combat, map-zoras-domain, meta-has-notes]
+tags: [type-glitch, mechanic-combat, map-zoras-domain]
 date: 2026-02-10 00:00:00
 ---
 

@@ -4,7 +4,7 @@ title: Rope Skip
 description: TAS version of the rope skip trick that uses a pot collision to push the player in a favorable direction.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, mechanic-movement, map-castle-town, meta-tas]
+tags: [type-glitch, mechanic-collision, mechanic-movement, map-castle-town, meta-tas-only]
 date: 2026-02-10 00:00:00
 ---
 

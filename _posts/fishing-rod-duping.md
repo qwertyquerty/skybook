@@ -4,7 +4,7 @@ title: Fishing Rod Duping
 description: Cancel fishing-rod animations to duplicate rods and fill memory.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, meta-has-notes]
+tags: [type-glitch, mechanic-memory]
 date: 2026-02-10 00:00:00
 ---
 

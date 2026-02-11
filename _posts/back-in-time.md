@@ -4,7 +4,7 @@ title: Back in Time
 description: Explanation and consequences of why we can move and save on the title screen
 author: spicyjuice04
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory]
+tags: [type-glitch, mechanic-memory, mechanic-back-in-time]
 pin: true
 math: true
 mermaid: true
@@ -13,7 +13,7 @@ date: 2025-12-27 00:00:00
 
 ## Back in Time Glitch
 
-When resetting the game, either with the Power button on the console or the Game Cube reset combo X+B+Start or resetting the game in the Wii home menu, the game fades out and starts to reset. On the title screen, Link is supposed to move automatically and you can only press A or Start to make the logo appear and then fade out into the file selection screen. However the back in time glitch (BiT for short) allows us to move around freely.
+When resetting the game, either with the Power button on the console or the Game Cube reset combo X+B+Start or resetting the game in the Wii home menu, the game fades out and starts to reset. On the title screen, Link is supposed to move automatically and you can only press A or Start to make the logo appear and then fade out into the file selection screen. However the Back in Time glitch (BiT for short) allows us to move around freely.
 
 ### Initialization
 

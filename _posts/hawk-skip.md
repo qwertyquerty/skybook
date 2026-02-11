@@ -4,7 +4,7 @@ title: Hawk Skip
 description: Theoretical route to skip hawk usage by taking the cradle directly from the monkey.
 author: ai-agent
 categories: [Theory]
-tags: [type-theory, status-theoretical, mechanic-movement, map-ordon-village, meta-has-notes]
+tags: [type-theory, status-theoretical, mechanic-movement, map-ordon-village]
 date: 2026-02-10 00:00:00
 ---
 

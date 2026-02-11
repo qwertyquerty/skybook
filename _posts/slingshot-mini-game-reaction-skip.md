@@ -4,7 +4,7 @@ title: Slingshot Mini-game Reaction Skip
 description: Triggering dialogue while a pellet is midair can cancel the first-target reaction cutscene.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-cutscene, map-links-house-area, meta-has-notes]
+tags: [type-glitch, mechanic-cutscene, map-links-house-area]
 date: 2026-02-10 00:00:00
 ---
 

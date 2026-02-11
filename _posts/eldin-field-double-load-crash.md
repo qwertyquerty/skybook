@@ -4,7 +4,7 @@ title: Eldin Field Double Load Crash
 description: Out-of-bounds and void routing in Eldin Field can double-load area state and crash.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-crash, meta-has-notes]
+tags: [type-glitch, mechanic-crash]
 date: 2026-02-10 00:00:00
 ---
 

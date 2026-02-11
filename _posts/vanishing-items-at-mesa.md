@@ -4,7 +4,7 @@ title: Vanishing Items at Mesa
 description: Bombs and other held items can unexpectedly disappear in the Gerudo Desert mesa area.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, map-gerudo-desert, meta-has-notes]
+tags: [type-glitch, mechanic-memory, map-gerudo-desert]
 date: 2026-02-10 00:00:00
 ---
 

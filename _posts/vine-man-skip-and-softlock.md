@@ -4,7 +4,7 @@ title: Vine Man Skip and Softlock
 description: Skip the vine man by using a cucco and precise movement to reach a rooftop early; approaching him from behind can softlock.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, mechanic-collision, mechanic-softlock, map-ordon-village, meta-has-notes]
+tags: [type-glitch, mechanic-movement, mechanic-collision, mechanic-softlock, map-ordon-village]
 date: 2026-02-10 00:00:00
 ---
 

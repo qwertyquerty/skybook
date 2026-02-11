@@ -4,7 +4,7 @@ title: File Name Cursor Breakout
 description: Filename cursor overflow that can write data outside the intended 256-byte filename range.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, meta-has-notes]
+tags: [type-glitch, mechanic-memory]
 date: 2026-02-10 00:00:00
 ---
 

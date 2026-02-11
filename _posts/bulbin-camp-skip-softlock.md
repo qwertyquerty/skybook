@@ -4,7 +4,7 @@ title: Bulbin Camp Skip (Softlock)
 description: Bulbin Camp can be skipped entirely, but this route can softlock by bypassing required King Bulbin completion.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-softlock, map-bulbin-camp, meta-has-notes]
+tags: [type-glitch, mechanic-softlock, map-bulbin-camp]
 date: 2026-02-10 00:00:00
 ---
 

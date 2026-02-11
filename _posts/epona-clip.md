@@ -4,7 +4,7 @@ title: Epona Clip
 description: Epona clipping into terrain ramps
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, map-upper-lanayru-field, map-south-hyrule-field, meta-needs-source, meta-has-notes]
+tags: [type-glitch, mechanic-collision, map-upper-lanayru-field, map-south-hyrule-field, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

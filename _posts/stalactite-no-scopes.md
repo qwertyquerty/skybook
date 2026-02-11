@@ -4,7 +4,7 @@ title: Stalactite No-Scopes
 description: TAS-oriented setups for hitting stalactites without aiming.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-combat, map-lakebed-temple, meta-tas]
+tags: [type-glitch, mechanic-combat, map-lakebed-temple, meta-tas-only]
 date: 2026-02-10 00:00:00
 ---
 

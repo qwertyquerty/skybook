@@ -4,7 +4,7 @@ title: Brake Sliding
 description: TAS-oriented movement technique to maintain speed
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, meta-tas, meta-has-notes]
+tags: [type-glitch, mechanic-movement, meta-tas-only]
 date: 2026-02-10 00:00:00
 ---
 

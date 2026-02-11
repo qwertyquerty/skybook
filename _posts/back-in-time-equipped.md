@@ -4,7 +4,7 @@ title: Back in Time Equipped
 description: Explanation of the wrongwarp into the King Bulblin Fight
 author: spicyjuice04
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory]
+tags: [type-glitch, mechanic-memory, mechanic-back-in-time]
 pin: true
 math: true
 mermaid: true

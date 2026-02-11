@@ -4,7 +4,7 @@ title: Transform in Hidden Village
 description: A precise Hidden Village position can allow transforming back to Human Link.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-hidden-village, meta-needs-source, meta-has-notes]
+tags: [type-glitch, mechanic-movement, map-hidden-village, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

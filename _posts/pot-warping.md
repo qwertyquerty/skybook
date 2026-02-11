@@ -4,7 +4,7 @@ title: Pot Warping
 description: Helmasaur hitboxes can push pots in such a way that they appear to warp to another nearby location.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, map-city-in-the-sky, meta-has-notes]
+tags: [type-glitch, mechanic-collision, map-city-in-the-sky]
 date: 2026-02-10 00:00:00
 ---
 

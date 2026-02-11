@@ -4,7 +4,7 @@ title: Cutscene Boomerang Item Dropping
 description: Use dialog boxes to manipulate boomerang-carried object positions, including bottle-drink interrupts.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-cutscene, mechanic-storage, meta-has-notes]
+tags: [type-glitch, mechanic-cutscene, mechanic-storage]
 date: 2026-02-10 00:00:00
 ---
 

@@ -4,7 +4,7 @@ title: Rupee Roll
 description: Cross the Eldin Gorge without the bridge using movement setups documented alongside Gorge Skip.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-lower-eldin-field-gorge, meta-has-notes]
+tags: [type-glitch, mechanic-movement, map-lower-eldin-field-gorge]
 date: 2026-02-10 00:00:00
 ---
 

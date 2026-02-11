@@ -4,7 +4,7 @@ title: Water Super Slide
 description: High-speed slide from a swim-to-walk transition on HD
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, platform-hd, meta-has-notes]
+tags: [type-glitch, mechanic-movement, platform-hd]
 date: 2026-02-10 00:00:00
 ---
 

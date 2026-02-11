@@ -12,7 +12,7 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-Use Ooccoo after Back in Time without watching the cutscene to make Link respawn at wrong coordinates.
+Use Ooccoo after [Back in Time](/posts/back-in-time) without watching the cutscene to make Link respawn at wrong coordinates.
 
 ## Primary Source
 

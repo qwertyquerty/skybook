@@ -4,7 +4,7 @@ title: Bomb House Skip
 description: Delay the cutscene trigger and kill a bug early to despawn the bomb house sequence.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-cutscene, map-kakariko-village, meta-has-notes]
+tags: [type-glitch, mechanic-cutscene, map-kakariko-village]
 date: 2026-02-11 00:00:00
 ---
 

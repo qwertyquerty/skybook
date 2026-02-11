@@ -4,7 +4,7 @@ title: King Bulbin 2 Skip (Wagon Void Abuse)
 description: Clip and void during the wagon escort to trigger failsafes that skip King Bulbin 2 and grant the small key.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-warp, mechanic-oob, map-lake-hylia, meta-has-notes]
+tags: [type-glitch, mechanic-warp, mechanic-oob, map-lake-hylia]
 date: 2026-02-10 00:00:00
 ---
 
