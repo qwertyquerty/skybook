@@ -16,5 +16,5 @@ Keep the camera away from the swimming boss to manipulate it lower underwater ov
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

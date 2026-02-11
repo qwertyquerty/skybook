@@ -16,4 +16,4 @@ Pushing the monkey each cycle can speed mist escort movement, but overpushing ca
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

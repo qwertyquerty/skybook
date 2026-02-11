@@ -16,5 +16,5 @@ At Arbiter's Grounds entrance on Wii, logs can show a heap-related `E_bug` alloc
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

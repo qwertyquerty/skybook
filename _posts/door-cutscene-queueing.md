@@ -16,4 +16,4 @@ A same-frame save/quit can defer a door cutscene trigger and cause it to play on
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

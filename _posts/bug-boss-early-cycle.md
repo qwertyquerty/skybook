@@ -16,5 +16,5 @@ Manipulate boss behavior to land two hits in a single cycle.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

@@ -16,4 +16,4 @@ In Temple of Time, shooting a Lizalfos from the small-key chest area with a bomb
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

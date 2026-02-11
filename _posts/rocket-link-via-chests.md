@@ -16,4 +16,4 @@ Force unequip iron boots while opening an underwater chest to warp to the top of
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

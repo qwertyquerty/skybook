@@ -16,4 +16,4 @@ With vine clipping, Link can breach collision and enter out-of-bounds space bene
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

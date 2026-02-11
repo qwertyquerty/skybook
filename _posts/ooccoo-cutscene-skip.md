@@ -16,4 +16,4 @@ Use a Gale Boomerang Long Jump Attack route to bypass the cutscene trigger.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,4 +16,4 @@ Shield Attack can briefly enable A-button actions while sinking in sand or snow.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

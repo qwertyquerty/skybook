@@ -16,4 +16,4 @@ Side hop onto the rising platform after placing the first statue to skip needing
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

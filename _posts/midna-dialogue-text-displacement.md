@@ -16,4 +16,4 @@ Trigger Midna dialogue early from distance to displace cutscene text and save a 
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

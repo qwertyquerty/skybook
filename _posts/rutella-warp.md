@@ -16,4 +16,4 @@ Moving away during Rutella's guidance interaction causes a warp behavior. This i
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

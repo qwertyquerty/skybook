@@ -16,5 +16,5 @@ Perform a frame-perfect armor equip during soft reset; choosing the right frame 
 
 ## Primary Source
 
-<need video>
+This Entry is Missing a Primary Media Source!
 

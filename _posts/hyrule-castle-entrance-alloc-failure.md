@@ -16,5 +16,5 @@ On Wii, entering Hyrule Castle can produce a `bonbori` allocation failure in log
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

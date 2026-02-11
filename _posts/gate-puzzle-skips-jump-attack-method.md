@@ -16,4 +16,4 @@ Jump attack after clawshotting above the gate to skip the puzzle that normally o
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

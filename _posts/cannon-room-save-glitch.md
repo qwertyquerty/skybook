@@ -16,4 +16,4 @@ On Wii 1.0, saving under Kakariko Sanctuary before cannon warp progression can c
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

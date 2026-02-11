@@ -16,4 +16,4 @@ Use a Gale Boomerang Long Jump Attack to bypass the electric gate requirement.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,5 +16,5 @@ Using precise movement, leave the wrestle setup before the event begins.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

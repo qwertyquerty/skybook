@@ -16,4 +16,4 @@ Escaping the Midna dialogue trigger after shield pickup is possible with tight t
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

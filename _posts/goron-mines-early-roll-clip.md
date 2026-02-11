@@ -16,5 +16,5 @@ Roll into the left-side guard at a specific angle to clip past and gain early Go
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

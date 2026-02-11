@@ -16,5 +16,5 @@ Ride Epona into a loading zone for an area that does not support mounted loading
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

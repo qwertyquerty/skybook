@@ -16,4 +16,4 @@ If the final Bulbin is defeated and Link dies or voids on the same trigger frame
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

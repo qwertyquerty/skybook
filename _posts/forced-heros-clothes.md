@@ -20,5 +20,5 @@ Multiple transitions can force Hero's Clothes:
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

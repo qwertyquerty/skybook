@@ -16,4 +16,4 @@ When specific text displacement bits are set, interacting with squirrel dialogue
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,4 +16,4 @@ There is a tight 1-frame window after the cutscene skip to jump attack and escap
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

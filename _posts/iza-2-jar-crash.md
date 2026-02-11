@@ -16,5 +16,5 @@ At the start of Iza 2, hitting the jar next to Link can cause a crash.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

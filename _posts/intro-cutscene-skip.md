@@ -16,4 +16,4 @@ A casual playthrough report claims the intro cutscene failed to play. The compen
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

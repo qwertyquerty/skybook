@@ -16,4 +16,4 @@ High-speed movement appears to allow completing the four-torch sequence out of i
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

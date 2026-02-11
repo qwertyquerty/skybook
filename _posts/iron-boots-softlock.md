@@ -16,4 +16,4 @@ On Wii, equipping Iron Boots while opening the second-floor locked door can trig
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

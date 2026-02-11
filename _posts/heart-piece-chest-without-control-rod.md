@@ -16,4 +16,4 @@ Throw statues at precise angles to place them on switches without using the Domi
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

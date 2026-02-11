@@ -16,4 +16,4 @@ Reported setup: climb to the yellow crystal window area, move along the right si
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

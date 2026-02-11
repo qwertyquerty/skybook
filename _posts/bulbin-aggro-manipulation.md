@@ -16,4 +16,4 @@ Hitting the first two Bulbins after Twilight can cause a later Bulbin to begin r
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

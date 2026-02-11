@@ -16,4 +16,4 @@ Using bomb boosts and LJAs, the second Freezard by the upper-floor ladder can be
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

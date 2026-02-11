@@ -16,4 +16,4 @@ After early access setup (not fully documented), entering the bridge fire area c
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,4 +16,4 @@ Morpheel can be cleared without Zora Armor by relying on Iron Boots, Clawshot, a
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

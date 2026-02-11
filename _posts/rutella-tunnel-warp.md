@@ -16,5 +16,5 @@ Backpedal while Rutella's spirit guides Link toward the Zora Armor route to trig
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

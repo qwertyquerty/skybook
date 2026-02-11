@@ -16,5 +16,5 @@ Coro dialogue can store a text displacement state that can be carried into later
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

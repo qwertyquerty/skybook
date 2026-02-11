@@ -16,5 +16,5 @@ Spamming A after howling at the puzzle causes another howl, deferring the puzzle
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 

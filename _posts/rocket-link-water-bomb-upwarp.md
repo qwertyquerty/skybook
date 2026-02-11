@@ -16,4 +16,4 @@ Force unequip iron boots while pulling a water bomb, then pull another water bom
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

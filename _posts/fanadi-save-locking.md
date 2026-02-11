@@ -16,7 +16,7 @@ Interrupt Fanadi cutscenes with an Ooccoo cutscene escape so a temporary flag re
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
 
 ## Additional Notes
 

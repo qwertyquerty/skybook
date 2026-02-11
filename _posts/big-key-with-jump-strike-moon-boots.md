@@ -16,4 +16,4 @@ Use Jump Strike + Moon Boots to get onto a railing, then clawshot above the boss
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

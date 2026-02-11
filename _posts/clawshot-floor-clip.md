@@ -16,4 +16,4 @@ In Snowpeak Ruins, the Clawshot can clip through breakable floor geometry in spe
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

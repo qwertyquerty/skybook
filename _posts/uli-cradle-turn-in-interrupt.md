@@ -16,4 +16,4 @@ Throwing the cradle on the trigger edge can break the expected turn-in cutscene 
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

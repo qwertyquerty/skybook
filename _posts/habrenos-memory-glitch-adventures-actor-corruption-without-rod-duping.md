@@ -16,4 +16,4 @@ This run is believed to involve accidental Wii save leaking that triggered escal
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,4 +16,4 @@ Carry a skull into the tunnel as Wolf Link with sharp turns to trap it and induc
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

@@ -16,4 +16,4 @@ Map glitch movement can be used to reach and trigger the King Bulbin encounter e
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

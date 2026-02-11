@@ -20,4 +20,4 @@ Delay Agatha's bug menu by alternating A/B inputs in a similar style to Item Whe
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

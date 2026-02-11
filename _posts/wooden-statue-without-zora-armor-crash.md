@@ -16,4 +16,4 @@ Submitting the wooden statue without Zora Armor can create conflicting Renado ac
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

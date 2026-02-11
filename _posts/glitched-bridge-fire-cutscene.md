@@ -16,4 +16,4 @@ After [Early Master Sword](/posts/early-master-sword), triggering this bridge fi
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

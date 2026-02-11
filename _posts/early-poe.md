@@ -16,4 +16,4 @@ Use Helm Splitter on a boomerang-stunned Lizalfos to gain enough speed to bypass
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

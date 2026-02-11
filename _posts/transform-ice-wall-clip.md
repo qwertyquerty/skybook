@@ -16,4 +16,4 @@ A transformation setup can clip Link through the Snowpeak ice wall.
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!

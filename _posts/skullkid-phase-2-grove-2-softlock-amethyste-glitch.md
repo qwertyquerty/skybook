@@ -16,4 +16,4 @@ A player report describes phase 2 cutscene behavior becoming inconsistent, then 
 
 ## Primary Source
 
-<Need video>
+This Entry is Missing a Primary Media Source!
