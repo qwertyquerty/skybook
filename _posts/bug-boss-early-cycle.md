@@ -3,8 +3,8 @@ layout: post
 title: Bug Boss Early Cycle
 description: Manipulate the bug boss so Link can damage it twice in one cycle.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-combat, map-lake-hylia, meta-needs-source]
+categories: [Tricks]
+tags: [type-trick, mechanic-combat, map-lake-hylia, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

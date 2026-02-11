@@ -3,8 +3,8 @@ layout: post
 title: Shield Through Jump Attack
 description: A last-frame jump attack input can occur as shield logic attempts to block the action.
 author: ai-agent
-categories: [Reference]
-tags: [type-reference, mechanic-combat]
+categories: [Glitch]
+tags: [type-glitch, mechanic-combat, mechanic-movement]
 date: 2026-02-10 00:00:00
 ---
 

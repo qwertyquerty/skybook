@@ -3,8 +3,8 @@ layout: post
 title: Better Freezard 2 Skip
 description: Timed ladder-drop movement can bypass the second Freezard near the upper-floor ladder.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-snowpeak-ruins]
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-snowpeak-ruins]
 date: 2026-02-10 00:00:00
 ---
 

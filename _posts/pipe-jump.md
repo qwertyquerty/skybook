@@ -3,8 +3,8 @@ layout: post
 title: Pipe Jump
 description: A movement shortcut in Goron Mines uses a precise jump from a pipe to bypass the intended route.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-goron-mines]
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-goron-mines]
 date: 2026-02-10 00:00:00
 ---
 

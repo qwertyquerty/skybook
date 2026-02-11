@@ -3,8 +3,8 @@ layout: post
 title: Malo Mart Bug Manip
 description: A bonk manipulates the bug to move toward Link.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-kakariko-village]
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-kakariko-village]
 date: 2026-02-11 00:00:00
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Double Poe Grotto Warp
 description: Grabbing a second Poe in this grotto can warp Link off-screen and softlock.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, status-unsolved, mechanic-warp, mechanic-softlock, map-grottos]
+categories: [Theory]
+tags: [type-theory, type-glitch, status-unsolved, mechanic-warp, mechanic-softlock, map-grottos]
 date: 2026-02-10 00:00:00
 ---
 

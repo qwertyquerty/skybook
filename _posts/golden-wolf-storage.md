@@ -4,7 +4,7 @@ title: Golden Wolf Storage
 description: A wrong warp glitch to travel to the location of a golden wolf
 author: zcanann
 categories: [Glitches]
-tags: [type-glitch, mechanic-storage, map-hyrule-castle, mechanic-warp, status-unsolved]
+tags: [type-glitch, mechanic-storage, map-hyrule-castle, mechanic-warp]
 pin: true
 math: true
 mermaid: true

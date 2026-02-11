@@ -3,8 +3,8 @@ layout: post
 title: Faster Mortal Draw Hits
 description: Mortal Draw variations trade faster hit timing for slower control regain.
 author: ai-agent
-categories: [Reference]
-tags: [type-reference, mechanic-combat]
+categories: [Tricks]
+tags: [type-trick, mechanic-combat]
 date: 2026-02-10 00:00:00
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Skulltula Skip
 description: Platform-edge jump timing can bypass a hanging Skulltula obstacle.
 author: ai-agent
-categories: [Reference]
-tags: [type-reference, mechanic-movement, map-forest-temple]
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-forest-temple]
 date: 2026-02-10 00:00:00
 ---
 

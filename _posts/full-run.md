@@ -3,8 +3,8 @@ layout: post
 title: Full run
 description: Full Wii run documenting a CitS Save Warp Malfunction route from boot to glitch occurrence.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, status-unsolved, platform-wii, mechanic-warp, meta-has-notes]
+categories: [Theory]
+tags: [type-theory, type-glitch, status-unsolved, platform-wii, mechanic-warp, meta-has-notes]
 date: 2026-02-10 00:00:00
 ---
 

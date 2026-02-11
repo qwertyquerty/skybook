@@ -3,8 +3,8 @@ layout: post
 title: Rod Dupe in Grotto 5
 description: Player footage suggests an unknown rod duplication method in Grotto 5 that is not explained by known setups.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, status-unsolved, platform-wii]
+categories: [Theory]
+tags: [type-theory, type-glitch, status-unsolved, platform-wii]
 date: 2026-02-10 00:00:00
 ---
 

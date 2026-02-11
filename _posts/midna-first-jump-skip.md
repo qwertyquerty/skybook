@@ -3,8 +3,8 @@ layout: post
 title: Midna First Jump Skip
 description: Perform a standard wolf jump instead of the intended first Midna jump prompt.
 author: ai-agent
-categories: [Reference]
-tags: [type-reference, mechanic-movement, map-ordon-village]
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-ordon-village]
 date: 2026-02-10 00:00:00
 ---
 

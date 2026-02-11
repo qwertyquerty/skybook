@@ -3,8 +3,8 @@ layout: post
 title: Habreno's Memory Glitch Adventures (Actor Corruption without Rod Duping)
 description: Likely Wii save leaking caused chain actor corruption and progressive actor disappearance.
 author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, status-partially-solved, mechanic-actor-corruption, meta-needs-source]
+categories: [Theory]
+tags: [type-theory, status-partially-solved, mechanic-actor-corruption, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

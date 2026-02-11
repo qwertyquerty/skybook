@@ -2,6 +2,6 @@
 layout: category
 title: Theory
 icon: fas fa-file
-order: 2
+order: 3
 override_url: /categories/theory/
 ---
