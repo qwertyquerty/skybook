@@ -4,7 +4,7 @@ title: Door Storage
 description: Explanation when and why floorclips happen
 author: spicyjuice04
 categories: [Glitches]
-tags: [glitch, collision, minor]
+tags: [type-glitch, mechanic-collision, meta-major-glitch]
 pin: true
 math: true
 mermaid: true
@@ -186,8 +186,9 @@ With this in mind, Link now can scale up walls up to a maximum of 48 units per f
 
 ![Image of clippable wall with Storage](/assets/glitches/door-storage/door-storage-clip.png){: .w-50 .normal }
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/yXUzVuS2Uro" frameborder="0" allowfullscreen></iframe>
+{% youtube yXUzVuS2Uro %}
 
 ### Sliding Effect
 
 > TODO
+

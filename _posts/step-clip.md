@@ -4,7 +4,7 @@ title: Step Clip
 description: The animation that disables Link's wall collision
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch, major, PGS]
+tags: [type-glitch, mechanic-collision, mechanic-movement, mechanic-step-clip]
 pin: true
 math: true
 mermaid: true
@@ -17,7 +17,7 @@ When Link steps up onto a short ledge thats tall enough to enter a stepping anim
 
 > Example video of using a skull to step clip out of bounds in triple stalfos room
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/z1FwzSQpg1s" frameborder="0" allowfullscreen></iframe>
+{% youtube z1FwzSQpg1s %}
 
 ## How it works
 
@@ -85,3 +85,4 @@ Additionally, `bvar2` will remain false in these cases so the second opportunity
 `LineCheck` is a function responsible for checking if Link's movement in a frame intersects a background collision polygon.
 
 > TODO: It's not clear yet why skipping `LineCheck` causes WallCorrect to not have effect, and this should be researched further
+

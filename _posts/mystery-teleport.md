@@ -4,7 +4,7 @@ title: Mystery Teleport
 description: Theories on why Mystery Teleports can happen
 author: spicyjuice04
 categories: [Theory]
-tags: [glitch, collision, unsolved]
+tags: [type-theory, mechanic-collision, status-unsolved]
 pin: true
 math: true
 mermaid: true
@@ -15,7 +15,7 @@ There fastest way to travel in this game from one place to another is usually Ep
 
 We know about one instance that can happen consistently. In the Inside West Corridor 1 there are Crystal Switches inside small chambers. However if Link goes up to one of those using a Backslice Moon Boots we can for some reason teleport accross the room into one specific place.
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/37avmtiTkQI" frameborder="0" allowfullscreen></iframe>
+{% youtube 37avmtiTkQI %}
 
 This specific instance works when going up the ledge after a ledge grab and hold in a direction at the right corner (usually up or upright). This does not work for the other crystal switch chambers.
 
@@ -29,6 +29,7 @@ Though we know the requirements, it is still unknkown why this behavior could cr
 
 In the video it might not look like a big teleport but that is because there is a wall which triggers the `LineCheck` code, meaning you will stop moving past the wall. If we remove this wall we would have moved 30000 units, way further into out of bounds. If we remove the walls of the chamber itself we can get even bigger teleports with up to 240000 units!
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/V2QeZEEFlW8" frameborder="0" allowfullscreen></iframe>
+{% youtube V2QeZEEFlW8 %}
 
 This is the only other instance a kind of similar teleport happened. There are no ceilings in this area so it is unknown why this happened. No one has been able to replicate this teleport and it stays a mystery.
+

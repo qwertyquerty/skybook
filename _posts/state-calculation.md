@@ -4,7 +4,7 @@ title: Area State Calculatuon
 description: How the game calculates what the state the next area should be in
 authors: [jacquaid, qwertyquerty]
 categories: [Reference]
-tags: [reference, layer]
+tags: [type-reference, mechanic-memory]
 pin: true
 math: true
 mermaid: true

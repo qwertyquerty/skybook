@@ -4,7 +4,7 @@ title: Mistargeted DMA
 description: Executing archive files as program code
 author: wolfegarden, blizzard blanc
 categories: [Glitches]
-tags: [glitch, ACE, unsolved, major]
+tags: [type-glitch, mechanic-memory, status-unsolved]
 pin: true
 math: true
 mermaid: true

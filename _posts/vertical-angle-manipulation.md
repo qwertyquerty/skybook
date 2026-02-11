@@ -4,7 +4,7 @@ title: Vertical Angle Manipulation
 description: How to manipulate Link's vertical first-person angle
 author: qwertyquerty
 categories: [Reference]
-tags: [reference, setups]
+tags: [type-reference, mechanic-movement]
 pin: true
 math: true
 mermaid: true

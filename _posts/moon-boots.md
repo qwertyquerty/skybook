@@ -4,7 +4,7 @@ title: Moon Boots
 description: Getting a little extra height out of attacks
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch]
+tags: [type-glitch, mechanic-movement, meta-major-glitch]
 pin: true
 math: true
 mermaid: true
