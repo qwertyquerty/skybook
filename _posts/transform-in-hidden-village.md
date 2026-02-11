@@ -20,4 +20,5 @@ Standing in a precise Hidden Village location can allow transforming back into H
 
 ## Additional Notes
 
-Alternate spot: https://www.youtube.com/watch?v=ZNFG9w2VH8E
+Alternate spot: {% youtube ZNFG9w2VH8E %}
+

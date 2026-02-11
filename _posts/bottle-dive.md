@@ -16,5 +16,6 @@ This is a controllable variant of cutscene diving.
 
 ## Primary Source
 
-https://youtu.be/tlRalkXSuT0?si=a5dMp86VQ-ntie4k
+{% youtube tlRalkXSuT0 %}
+
 

@@ -16,5 +16,6 @@ Launch the boomerang, side hop, then spam boomerang input to slide.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=FbwGJvoxTas
+{% youtube FbwGJvoxTas %}
+
 

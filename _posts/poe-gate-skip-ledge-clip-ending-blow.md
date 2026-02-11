@@ -16,4 +16,5 @@ A multi-step clip route can bypass the Poe gate by chaining ledge clip and high-
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=79kvY1jLhow
+{% youtube 79kvY1jLhow %}
+

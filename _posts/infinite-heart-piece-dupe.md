@@ -16,4 +16,5 @@ By side-hopping after the reward dialog and reloading midair, the race heart pie
 
 ## Primary Source
 
-https://youtu.be/jHZA803p9vo
+{% youtube jHZA803p9vo %}
+

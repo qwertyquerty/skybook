@@ -16,4 +16,5 @@ Jump-attacking a dying rat as Wolf Link provides extra height to reach the ramp 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ej3bq7ezrUk
+{% youtube ej3bq7ezrUk %}
+

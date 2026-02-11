@@ -16,4 +16,5 @@ Use a peahat drop setup to reach the ledge on a flying island.
 
 ## Primary Source
 
-https://youtu.be/u2uFOZTCck8
+{% youtube u2uFOZTCck8 %}
+

@@ -16,4 +16,4 @@ A precise save/quit timing appears to bypass a dungeon flag write, but its usefu
 
 ## Primary Source
 
-https://youtu.be/qQTPy7r_co0
+{% youtube qQTPy7r_co0 %}

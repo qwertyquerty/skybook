@@ -16,4 +16,5 @@ Flicking the stick can produce very high moonwalking speed.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=fP9yM4FuERM
+{% youtube fP9yM4FuERM %}
+

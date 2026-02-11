@@ -16,5 +16,6 @@ Long Jump Attacks can bypass the normal route and trigger the wagon event win co
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=_f-_gceKm24
+{% youtube _f-_gceKm24 %}
+
 

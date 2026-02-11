@@ -16,4 +16,5 @@ A pre-run Wii test appears to include the likely glitch trigger; around 10:56 it
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=nheMQIZkiiA
+{% youtube nheMQIZkiiA %}
+

@@ -16,4 +16,5 @@ Stalactites moved by water jets can drift out of bounds over time, on Wii.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=2_h9DtEo9ak
+{% youtube 2_h9DtEo9ak %}
+

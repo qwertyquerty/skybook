@@ -16,5 +16,6 @@ A fast damage setup can defeat Kargorak much faster than normal.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=UJ2sRZPQljU
+{% youtube UJ2sRZPQljU %}
+
 

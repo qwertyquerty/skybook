@@ -16,8 +16,9 @@ Voiding out can desynchronize Stallord's reset behavior from the room's state.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=53_z_4V9HYI
+{% youtube 53_z_4V9HYI %}
 
 ## Additional Notes
 
-Is this the same? https://youtu.be/MsC9S6f8Fg0
+Is this the same? {% youtube MsC9S6f8Fg0 %}
+

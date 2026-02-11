@@ -16,5 +16,6 @@ Drop a fence piece while forcing the game to lose track of the object state (for
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=VyEL0ItOtEE
+{% youtube VyEL0ItOtEE %}
+
 

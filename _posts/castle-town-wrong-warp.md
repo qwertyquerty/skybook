@@ -16,4 +16,5 @@ Use actor corruption to preserve a Castle Town save-warp position from Zelda's T
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=8SjZ--barD0
+{% youtube 8SjZ--barD0 %}
+

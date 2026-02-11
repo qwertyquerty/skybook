@@ -16,4 +16,5 @@ Traversal setup that bypasses Hyrule Castle requirements for Double Clawshot and
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=F51095exSEM&t=1s
+{% youtube F51095exSEM %}
+

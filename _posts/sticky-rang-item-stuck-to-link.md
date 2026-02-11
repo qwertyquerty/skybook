@@ -16,8 +16,9 @@ After establishing Door Storage, grab an item with boomerang so the item remains
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=QdQJC76LdIo
+{% youtube QdQJC76LdIo %}
 
 ## Additional Notes
 
-This may be possible without Door Storage: https://www.youtube.com/watch?v=mXN2E-bquTg
+This may be possible without Door Storage: {% youtube mXN2E-bquTg %}
+

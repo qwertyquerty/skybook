@@ -16,4 +16,5 @@ This state allows normally restricted cutscene dialogue options to appear when L
 
 ## Primary Source
 
-https://youtu.be/guuJ1yfH2eE
+{% youtube guuJ1yfH2eE %}
+

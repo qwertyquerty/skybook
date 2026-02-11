@@ -16,5 +16,6 @@ Using Epona in the spirit spring water setup can force an out-of-bounds state.
 
 ## Primary Source
 
-https://youtu.be/W2EzZmaEC0M
+{% youtube W2EzZmaEC0M %}
+
 

@@ -16,4 +16,5 @@ If a cutscene begins within a small timing window after bomb pull, the timer beh
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=n1hKWT5DNHk
+{% youtube n1hKWT5DNHk %}
+

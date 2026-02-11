@@ -4,7 +4,7 @@ title: Back in Time
 description: Explanation and consequences of why we can move and save on the title screen
 author: spicyjuice04
 categories: [Glitches]
-tags: [glitch, major, back-in-time]
+tags: [type-glitch, mechanic-memory]
 pin: true
 math: true
 mermaid: true

@@ -16,5 +16,6 @@ Perform a Long Jump Attack route to skip the third flame jet section.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=WB3z53lVitQ
+{% youtube WB3z53lVitQ %}
+
 

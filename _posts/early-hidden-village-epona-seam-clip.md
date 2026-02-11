@@ -16,4 +16,5 @@ Use an Epona seam clip route to enter Hidden Village earlier than intended.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=q24IYehpVjo
+{% youtube q24IYehpVjo %}
+

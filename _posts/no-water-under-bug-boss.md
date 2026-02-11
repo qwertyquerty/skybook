@@ -16,5 +16,6 @@ During the bug boss back-flip state, missing water collision below can let Link 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=Aid1T4QDJ4A
+{% youtube Aid1T4QDJ4A %}
+
 

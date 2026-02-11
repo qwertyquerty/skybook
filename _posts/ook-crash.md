@@ -4,7 +4,7 @@ title: Ook Crash
 description: A frame-perfect gale interruption knockdown setup can crash.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-crash]
+tags: [type-glitch, mechanic-crash, map-forest-temple]
 date: 2026-02-10 00:00:00
 ---
 
@@ -16,5 +16,5 @@ Interrupting the gale with a frame-perfect knockdown can trigger a crash.
 
 ## Primary Source
 
-https://youtu.be/UeNyuCuOQUA
+{% youtube UeNyuCuOQUA %}
 

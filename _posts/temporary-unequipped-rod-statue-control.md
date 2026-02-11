@@ -16,4 +16,5 @@ Force-unequip the Dominion Rod while maintaining statue linkage to keep temporar
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=1uURGraL2Qk
+{% youtube 1uURGraL2Qk %}
+

@@ -16,4 +16,5 @@ Certain setup actions can stop the area music entirely and leave the room silent
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=UMhFr3yPxPg
+{% youtube UMhFr3yPxPg %}
+

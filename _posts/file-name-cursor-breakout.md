@@ -16,9 +16,10 @@ By pushing cursor state outside normal bounds in the file name screen, you can w
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=kSMeK8R7JHQ
+{% youtube kSMeK8R7JHQ %}
 
 ## Additional Notes
 
 Flag documentation: https://docs.google.com/spreadsheets/d/1T_f2LXGN4YINsxMIMZ0O0zuYlJRCToV68hh1pD0X1kU/edit#gid=0
+
 

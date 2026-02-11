@@ -16,4 +16,5 @@ Map glitch can disable normal loading/progression behavior and allow early Snowp
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=v1bJbWay-mQ
+{% youtube v1bJbWay-mQ %}
+

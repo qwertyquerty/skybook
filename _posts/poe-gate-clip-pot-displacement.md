@@ -16,4 +16,5 @@ Pot displacement plus rupee clawshot positioning can push Link through the Poe g
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=oAXPFh4RlEU
+{% youtube oAXPFh4RlEU %}
+

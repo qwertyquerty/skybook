@@ -12,9 +12,10 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-Using Early Master Sword to access Observation Deck early can lead to actor slot exhaustion where actors stop loading correctly.
+Using [Early Master Sword](/posts/early-master-sword) to access Observation Deck early can lead to actor slot exhaustion where actors stop loading correctly.
 
 ## Primary Source
 
-https://youtu.be/EQu92nefUd4
+{% youtube EQu92nefUd4 %}
+
 

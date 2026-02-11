@@ -16,4 +16,4 @@ This variant of the knee-high ledge clip route regains in-bounds position withou
 
 ## Primary Source
 
-https://youtu.be/7xdjf42bPxo?si=aDHIKcCpFI2jlwMy
+{% youtube 7xdjf42bPxo %}

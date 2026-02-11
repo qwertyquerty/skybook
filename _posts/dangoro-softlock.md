@@ -16,5 +16,6 @@ After landing, quick transform with Iron Boots timing can freeze normal fight be
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=CW5Hho_G9bE
+{% youtube CW5Hho_G9bE %}
+
 

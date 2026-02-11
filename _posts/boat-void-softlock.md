@@ -16,5 +16,6 @@ After entering via the boat event, voiding from out of bounds as Wolf Link can l
 
 ## Primary Source
 
-https://youtu.be/To6e8mOt2PI
+{% youtube To6e8mOt2PI %}
+
 

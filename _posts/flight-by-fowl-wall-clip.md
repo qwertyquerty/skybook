@@ -16,5 +16,6 @@ At a precise wall position, a slash can clip Link through the wall.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=3_KePH26yDw
+{% youtube 3_KePH26yDw %}
+
 

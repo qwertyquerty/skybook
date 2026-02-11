@@ -16,4 +16,5 @@ TAS-focused setups can hit stalactites without entering aiming mode.
 
 ## Primary Source
 
-https://youtu.be/5OreDlTeyFw
+{% youtube 5OreDlTeyFw %}
+

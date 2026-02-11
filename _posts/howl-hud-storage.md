@@ -16,4 +16,5 @@ Perform a precise late-song A re-press and do not skip the howl cutscene so the 
 
 ## Primary Source
 
-https://youtu.be/EVYuScRqamY
+{% youtube EVYuScRqamY %}
+

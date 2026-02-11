@@ -16,4 +16,5 @@ Use the Ooccoo Stuck to Links Arm setup, then pick up a pot to slide.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=4FugODLw9iQ
+{% youtube 4FugODLw9iQ %}
+

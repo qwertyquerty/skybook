@@ -16,4 +16,5 @@ A superjump route can clear the blocked trigger path and enable early Snowpeak R
 
 ## Primary Source
 
-https://youtu.be/TWhYvyE-1EY
+{% youtube TWhYvyE-1EY %}
+

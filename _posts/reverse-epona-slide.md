@@ -16,4 +16,5 @@ Reported opposite behavior of Epona Slide where Link stays still and Epona keeps
 
 ## Primary Source
 
-https://youtu.be/QFr8apYTWTI
+{% youtube QFr8apYTWTI %}
+

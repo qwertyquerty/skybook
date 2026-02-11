@@ -16,4 +16,5 @@ Collecting multiple rupees of the same type at the same time on Wii 1.0 can trig
 
 ## Primary Source
 
-https://youtu.be/ZCShvfwIXWs
+{% youtube ZCShvfwIXWs %}
+

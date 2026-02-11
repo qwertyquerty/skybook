@@ -16,4 +16,5 @@ Lure an enemy to enable a superjump route to the tree Piece of Heart.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=6_5VjE7NtuE
+{% youtube 6_5VjE7NtuE %}
+

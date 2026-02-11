@@ -16,5 +16,6 @@ A Kargorak pickup interaction can place Link in a softlocked state.
 
 ## Primary Source
 
-https://youtu.be/8ETUe9N9DF8?t=124
+{% youtube 8ETUe9N9DF8 %}
+
 

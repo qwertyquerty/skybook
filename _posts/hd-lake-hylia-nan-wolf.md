@@ -16,4 +16,5 @@ Repeated infinite bomb arrows setups can destabilize position values and produce
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=8LejYYFHOE4
+{% youtube 8LejYYFHOE4 %}
+

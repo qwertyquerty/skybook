@@ -16,8 +16,9 @@ Perform a 180-degree direction change while transitioning from swimming to walki
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=3ErdVJkqsbg
+{% youtube 3ErdVJkqsbg %}
 
 ## Additional Notes
 
-https://www.youtube.com/watch?v=ZMkMmHhe5vk
+{% youtube ZMkMmHhe5vk %}
+

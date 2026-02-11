@@ -16,4 +16,5 @@ Collect a Poe soul and fall out of bounds during the sequence to lock progressio
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=nAMWG5GYjxg
+{% youtube nAMWG5GYjxg %}
+

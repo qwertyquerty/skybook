@@ -16,8 +16,9 @@ This entry documents item disappearance behavior around the mesa area in Gerudo 
 
 ## Primary Source
 
-https://youtu.be/-gcgIs57Q9U
+{% youtube -gcgIs57Q9U %}
 
 ## Additional Notes
 
-See also: https://youtu.be/ChOsB5-3UbI
+See also: {% youtube ChOsB5-3UbI %}
+

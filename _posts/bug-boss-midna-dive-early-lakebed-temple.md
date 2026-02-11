@@ -16,5 +16,6 @@ Use boss bug push plus Midna dive behavior to reach an early Lakebed Temple entr
 
 ## Primary Source
 
-https://youtu.be/2Q4rUAgYm4I
+{% youtube 2Q4rUAgYm4I %}
+
 

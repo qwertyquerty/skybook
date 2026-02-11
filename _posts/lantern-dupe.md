@@ -16,4 +16,5 @@ A 1-frame jump timing into save-quit during dialog can duplicate Lantern obtain 
 
 ## Primary Source
 
-https://youtu.be/U0mLMy0k_OM
+{% youtube U0mLMy0k_OM %}
+

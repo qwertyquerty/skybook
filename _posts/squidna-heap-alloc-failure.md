@@ -16,5 +16,6 @@ Load any file before the Squidna cutscene and monitor Dolphin logs; as the cutsc
 
 ## Primary Source
 
-https://youtu.be/lKe3qDPTybs
+{% youtube lKe3qDPTybs %}
+
 

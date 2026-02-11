@@ -16,4 +16,5 @@ Use Poe soul collection behavior in Arbiter's Grounds to claim multiple souls fr
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=NiiiPLzf3O4
+{% youtube NiiiPLzf3O4 %}
+

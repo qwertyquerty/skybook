@@ -16,9 +16,10 @@ After being stunned, a Kargarok can appear to bonk and drift backward for an ext
 
 ## Primary Source
 
-https://youtu.be/zyOvQAKhqX8
+{% youtube zyOvQAKhqX8 %}
 
 ## Additional Notes
 
-Alternate: https://youtu.be/riK51zjEExY
+Alternate: {% youtube riK51zjEExY %}
+
 

@@ -16,5 +16,6 @@ Use UMD to preserve map glitch across the Hidden Skill fight loading zone.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=Hjt9NZ-Ph7I
+{% youtube Hjt9NZ-Ph7I %}
+
 

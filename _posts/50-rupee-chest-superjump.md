@@ -16,4 +16,5 @@ Manipulate an enemy with a bomb lure so it crosses the void, then superjump to t
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=o2YnCDXOXlo
+{% youtube o2YnCDXOXlo %}
+

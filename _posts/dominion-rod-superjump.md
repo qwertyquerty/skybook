@@ -16,5 +16,6 @@ Perform a superjump to access the high 100-rupee ledge chest while in wolf form.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=OZ7z2IfnhIE
+{% youtube OZ7z2IfnhIE %}
+
 

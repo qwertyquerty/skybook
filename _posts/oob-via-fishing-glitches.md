@@ -16,4 +16,5 @@ By duping rods and catching fish underwater, Link can clip beneath the map and s
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=BZYdSEo_Vik
+{% youtube BZYdSEo_Vik %}
+

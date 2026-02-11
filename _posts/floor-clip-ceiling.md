@@ -4,7 +4,7 @@ title: Floor Clips with Ceilings
 description: Explanation when and why floorclips happen
 author: spicyjuice04
 categories: [Glitches]
-tags: [glitch, clip, collision, minor]
+tags: [type-glitch, mechanic-collision]
 pin: true
 math: true
 mermaid: true
@@ -144,4 +144,5 @@ Lastly, the floor clip has to be quite specific. In order for it to work you nee
 
 Here is an example of a floor clip in Snowpeak Ruins:
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/YHQSjTwygYA" frameborder="0" allowfullscreen></iframe>
+{% youtube YHQSjTwygYA %}
+

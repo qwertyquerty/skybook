@@ -16,8 +16,9 @@ Using a cucco and precise movement can bypass the intended vine man sequence, bu
 
 ## Primary Source
 
-https://youtu.be/nXyZl-FOiM8
+{% youtube nXyZl-FOiM8 %}
 
 ## Additional Notes
 
-Easier setup: https://youtu.be/2-5n3EGBTgU
+Easier setup: {% youtube 2-5n3EGBTgU %}
+

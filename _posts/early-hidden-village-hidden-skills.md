@@ -16,4 +16,5 @@ Use Hidden Skills on terrain in specific ways to access Hidden Village early.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=7cNSbp5bS1A
+{% youtube 7cNSbp5bS1A %}
+

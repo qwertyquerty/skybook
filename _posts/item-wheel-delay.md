@@ -16,5 +16,6 @@ Alternating A+B every frame during the forced Iza item wheel can delay it, enabl
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=_0sVEB1m0nE
+{% youtube _0sVEB1m0nE %}
+
 

@@ -16,5 +16,6 @@ If King Bulbin 2 dies on the same frame Link is hit, the small-key text can soft
 
 ## Primary Source
 
-https://youtu.be/xbfNzAgZ7Ew?t=7m15s
+{% youtube xbfNzAgZ7Ew %}
+
 

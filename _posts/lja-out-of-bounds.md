@@ -16,4 +16,5 @@ An LJA at the mountain top can route Link out of bounds.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=66FmzxzvI7c
+{% youtube 66FmzxzvI7c %}
+

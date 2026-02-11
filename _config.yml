@@ -104,10 +104,12 @@ pwa:
 
 disable_disk_cache: true
 
-paginate: 10
-
 # The base URL of your site
 baseurl:
+
+# Disable pagination plugin behavior; site uses a custom static index page.
+pagination:
+  enabled: false
 
 # ------------ The following options are not recommended to be modified ------------------
 

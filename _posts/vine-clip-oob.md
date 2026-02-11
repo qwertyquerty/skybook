@@ -16,4 +16,5 @@ Use vine clipping in the stalactite room to force an out-of-bounds state.
 
 ## Primary Source
 
-https://youtu.be/c0bM0ahx4kk
+{% youtube c0bM0ahx4kk %}
+

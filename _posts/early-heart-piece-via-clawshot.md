@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Early Heart Piece via Clawshot
 description: A very precise clawshot setup can reach an early Upper Eldin heart piece without bomb arrows.
@@ -16,4 +16,5 @@ Use a highly precise clawshot to reach the Upper Eldin heart piece area early wi
 
 ## Primary Source
 
-https://youtu.be/S3k_Ctc_IIM
+{% youtube S3k_Ctc_IIM %}
+

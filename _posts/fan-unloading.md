@@ -16,4 +16,5 @@ Opening the central-room door from maximum distance can unload the fan room duri
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=xfNY767iawY
+{% youtube xfNY767iawY %}
+

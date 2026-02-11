@@ -16,5 +16,6 @@ A trigger jump and precise climb route let you interact with howl grass early an
 
 ## Primary Source
 
-https://youtu.be/Qxa-d2bH_A8
+{% youtube Qxa-d2bH_A8 %}
+
 

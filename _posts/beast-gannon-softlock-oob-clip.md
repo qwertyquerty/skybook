@@ -16,4 +16,5 @@ Releasing Midna's A grab can trap Beast Gannon in geometry, enabling an out-of-b
 
 ## Primary Source
 
-https://youtu.be/OT3gCYuSCLg
+{% youtube OT3gCYuSCLg %}
+

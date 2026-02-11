@@ -16,4 +16,4 @@ Helmsplitter movement combined with a bomb boost can access higher ground early 
 
 ## Primary Source
 
-https://youtu.be/mJvzyF7Bn2M
+{% youtube mJvzyF7Bn2M %}

@@ -16,5 +16,6 @@ Perform Item Wheel Delay and save warp after learning a hidden skill to keep the
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=clxyoBY1T6A
+{% youtube clxyoBY1T6A %}
+
 

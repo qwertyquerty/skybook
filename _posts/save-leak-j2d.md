@@ -16,9 +16,10 @@ Reset while hovering over Save, wait 17 frames with no input, then press A on fr
 
 ## Primary Source
 
-https://youtu.be/0yehcH0CGxs
+{% youtube 0yehcH0CGxs %}
 
 ## Additional Notes
 
-Using this to alloc J2D objects into Zelda heap https://youtu.be/sUazCj0PbiM
+Using this to alloc J2D objects into Zelda heap {% youtube sUazCj0PbiM %}
+
 

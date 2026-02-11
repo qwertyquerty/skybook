@@ -16,4 +16,5 @@ A precise corner ledge grab can clip Link onto unintended underground ledge geom
 
 ## Primary Source
 
-https://youtu.be/npRBM9hcNZM
+{% youtube npRBM9hcNZM %}
+

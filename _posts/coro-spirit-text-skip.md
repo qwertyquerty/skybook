@@ -16,5 +16,6 @@ Disabling senses at the right moment can bypass Coro's spirit dialogue.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=eJF3UJVyCSQ
+{% youtube eJF3UJVyCSQ %}
+
 

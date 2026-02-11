@@ -16,9 +16,10 @@ Use cursor breakout and write to specific cursor positions to trigger a console-
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=6BB251TuVwI
+{% youtube 6BB251TuVwI %}
 
 ## Additional Notes
 
 TODO: Original video?
+
 

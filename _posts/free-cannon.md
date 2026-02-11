@@ -16,5 +16,6 @@ Declining the cannon repair on specific French Wii versions can still result in 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=3qVasPAI5O8
+{% youtube 3qVasPAI5O8 %}
+
 

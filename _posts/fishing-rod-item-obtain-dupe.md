@@ -16,4 +16,5 @@ A frame-tight jump to save-quit during dialogue can grant repeated Fishing Rod o
 
 ## Primary Source
 
-https://youtu.be/XJLOyIb4LqM
+{% youtube XJLOyIb4LqM %}
+

@@ -16,4 +16,5 @@ This setup uses Sol collision behavior to generate fast unintended movement.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=bNvpOd1OPuM
+{% youtube bNvpOd1OPuM %}
+

@@ -16,4 +16,5 @@ Under specific timing, the Faron map and Midna text sequence can display twice.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=w5ZLS-pGtN8
+{% youtube w5ZLS-pGtN8 %}
+

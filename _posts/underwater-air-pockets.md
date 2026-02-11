@@ -16,4 +16,5 @@ Certain submerged spaces are treated as non-underwater zones, so Link can use it
 
 ## Primary Source
 
-https://youtu.be/7NQlsLZ2Bt0
+{% youtube 7NQlsLZ2Bt0 %}
+

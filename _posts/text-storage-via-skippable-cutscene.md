@@ -16,4 +16,5 @@ Trigger text immediately before a skippable cutscene to preserve dialogue state 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=erKVaI_G9pU
+{% youtube erKVaI_G9pU %}
+

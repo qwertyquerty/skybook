@@ -16,5 +16,6 @@ With precise boomerang use and positioning, a bomb can be guided into the rock w
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=An8A8hmWTpk
+{% youtube An8A8hmWTpk %}
+
 

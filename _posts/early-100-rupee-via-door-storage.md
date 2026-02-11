@@ -16,4 +16,5 @@ Using Map Glitch with Door Storage can reduce Link's hitbox enough to clip throu
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ugSicn44gEQ
+{% youtube ugSicn44gEQ %}
+

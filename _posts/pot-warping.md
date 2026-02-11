@@ -20,4 +20,5 @@ https://clips.twitch.tv/ClearInnocentTardigradeDoubleRainbow
 
 ## Additional Notes
 
-https://www.youtube.com/watch?v=twpE98KREdc
+{% youtube twpE98KREdc %}
+

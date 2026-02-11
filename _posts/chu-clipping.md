@@ -16,4 +16,5 @@ Enemy positioning and baiting can cause Chus to clip into wall geometry.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=2Da9Y2QSuJo
+{% youtube 2Da9Y2QSuJo %}
+

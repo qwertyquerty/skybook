@@ -16,4 +16,5 @@ Glitched cutscene state from actor corruption can block save-location updates, a
 
 ## Primary Source
 
-https://youtu.be/LIw0SI0iK0g
+{% youtube LIw0SI0iK0g %}
+

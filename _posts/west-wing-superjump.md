@@ -16,4 +16,5 @@ Enemy positioning enables a superjump route into the west wing.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=o7RzxtRIIgo
+{% youtube o7RzxtRIIgo %}
+

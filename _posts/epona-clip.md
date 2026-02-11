@@ -20,4 +20,5 @@ https://clips.twitch.tv/ApatheticPerfectMelonShadyLulu
 
 ## Additional Notes
 
-https://www.youtube.com/watch?v=iodJA6YBLug
+{% youtube iodJA6YBLug %}
+

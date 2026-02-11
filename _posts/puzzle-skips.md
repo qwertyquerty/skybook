@@ -16,4 +16,5 @@ Precise long jump attack setups can skip Lanaryu Ice Cave puzzle segments; one k
 
 ## Primary Source
 
-https://youtu.be/cLLkxwult8k?si=0xepUWlxZ6N96WWS
+{% youtube cLLkxwult8k %}
+

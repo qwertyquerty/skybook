@@ -16,8 +16,9 @@ This is a theoretical skip that proposes obtaining the cradle directly from the 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=R2pF-B8BXhs
+{% youtube R2pF-B8BXhs %}
 
 ## Additional Notes
 
-https://youtu.be/V_fcQwIg5PE
+{% youtube V_fcQwIg5PE %}
+

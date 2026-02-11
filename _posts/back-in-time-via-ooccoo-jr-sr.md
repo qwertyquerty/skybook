@@ -16,8 +16,9 @@ Perform a soft reset on the final possible frame of an Ooccoo warp to trigger Ba
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=3axGxqJxVN0
+{% youtube 3axGxqJxVN0 %}
 
 ## Additional Notes
 
-https://www.youtube.com/watch?v=XEDXVfLvB0Y
+{% youtube XEDXVfLvB0Y %}
+

@@ -16,4 +16,5 @@ If Link is fast-walking toward certain ledges, he can bounce and loop between bo
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=rQcEKoH5OMM
+{% youtube rQcEKoH5OMM %}
+

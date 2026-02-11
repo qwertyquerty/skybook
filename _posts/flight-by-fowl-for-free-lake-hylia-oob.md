@@ -16,9 +16,10 @@ Use a specific ledge-grab setup to go out of bounds and access Flight-By-Fowl wi
 
 ## Primary Source
 
-https://youtu.be/ntkCaUeOJao
+{% youtube ntkCaUeOJao %}
 
 ## Additional Notes
 
-https://youtu.be/XMUS8VcBZSI
+{% youtube XMUS8VcBZSI %}
+
 

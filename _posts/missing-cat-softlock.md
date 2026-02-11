@@ -16,4 +16,5 @@ After vine-man skip and cat feeding, talking to the vine man can produce a softl
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=-G_HY8PGrWI
+{% youtube -G_HY8PGrWI %}
+

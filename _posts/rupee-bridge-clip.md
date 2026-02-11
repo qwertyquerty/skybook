@@ -16,5 +16,6 @@ Use Double Clawshots to clip upward from underneath the bridge.
 
 ## Primary Source
 
-https://youtu.be/UJSpjsPyiXI
+{% youtube UJSpjsPyiXI %}
+
 

@@ -16,4 +16,5 @@ A precise entrance ledge-grab setup at Arbiter's Grounds can lead directly to a 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=i-izKDa8igs
+{% youtube i-izKDa8igs %}
+

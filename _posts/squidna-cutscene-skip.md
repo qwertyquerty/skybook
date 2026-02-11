@@ -16,4 +16,5 @@ Actor corruption can exhaust memory so Squidna cutscene assets fail to load, ski
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=LjVlufLlXHw
+{% youtube LjVlufLlXHw %}
+

@@ -16,4 +16,4 @@ A repeated Yeta death behavior has been observed, but reliable setup details are
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ax6sc_SWvoY
+{% youtube ax6sc_SWvoY %}

@@ -16,4 +16,5 @@ Use Ooccoo after Back in Time without watching the cutscene, then respawn in wat
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=neU2FLZtoZQ
+{% youtube neU2FLZtoZQ %}
+

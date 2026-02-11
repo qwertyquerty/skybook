@@ -16,4 +16,5 @@ By falling from a sliding clawshot platform, Link can hold up a shield while sti
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=CwcdqiyMoaM
+{% youtube CwcdqiyMoaM %}
+

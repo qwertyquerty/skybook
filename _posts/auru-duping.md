@@ -16,5 +16,6 @@ Use text displacement with Auru's long HD dialogue range to duplicate the latest
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=-N8nJm79G3c
+{% youtube -N8nJm79G3c %}
+
 

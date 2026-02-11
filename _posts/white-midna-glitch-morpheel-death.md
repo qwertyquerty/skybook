@@ -16,4 +16,5 @@ Unconfirmed theory: dying on the same frame Morpheel dies from a bomb may trigge
 
 ## Primary Source
 
-[Hacks] https://www.youtube.com/watch?v=gZ2KJn7hdzQ
+[Hacks] {% youtube gZ2KJn7hdzQ %}
+

@@ -16,4 +16,5 @@ An LJA path can carry Link across the void to collect the heart piece early.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=i_rx5EkPYtQ
+{% youtube i_rx5EkPYtQ %}
+

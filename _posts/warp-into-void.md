@@ -16,4 +16,5 @@ A partially documented setup appears to enable gorge warp behavior while leaving
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ByGiPlCSdh8
+{% youtube ByGiPlCSdh8 %}
+

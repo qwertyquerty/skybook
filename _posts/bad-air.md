@@ -4,7 +4,7 @@ title: Bad Air
 description: Why Link gets bad air
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch, minor]
+tags: [type-glitch]
 pin: true
 math: true
 mermaid: true

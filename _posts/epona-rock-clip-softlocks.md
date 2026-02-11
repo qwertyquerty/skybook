@@ -16,4 +16,5 @@ Use Epona collision on rocks to clip through terrain, with potential softlock ou
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ji13fs6agE0
+{% youtube ji13fs6agE0 %}
+

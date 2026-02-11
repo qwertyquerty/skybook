@@ -16,4 +16,5 @@ Trigger interactions can alter active MIDI/music track behavior.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=eYtXer3cLhI
+{% youtube eYtXer3cLhI %}
+

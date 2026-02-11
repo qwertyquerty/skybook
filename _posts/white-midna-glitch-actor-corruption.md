@@ -16,4 +16,5 @@ Corrupt actor state so the Zant cutscene fails to load correctly, producing Whit
 
 ## Primary Source
 
-https://youtu.be/EBf8B8snKok
+{% youtube EBf8B8snKok %}
+

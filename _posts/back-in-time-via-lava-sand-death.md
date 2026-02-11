@@ -16,4 +16,5 @@ Triggers Back in Time by soft resetting on a frame-perfect timing while dying in
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=oeNIPxQS4lw
+{% youtube oeNIPxQS4lw %}
+

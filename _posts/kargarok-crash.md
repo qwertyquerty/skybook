@@ -16,5 +16,6 @@ Lure Kargarok into water and get grabbed as it dies to trigger a crash.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=UJ2sRZPQljU
+{% youtube UJ2sRZPQljU %}
+
 

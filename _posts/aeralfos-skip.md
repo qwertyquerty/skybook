@@ -16,4 +16,5 @@ A pixel-precise clawshot can pass the gate trigger and skip the intended Aeralfo
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=RTMtZoct6cw
+{% youtube RTMtZoct6cw %}
+

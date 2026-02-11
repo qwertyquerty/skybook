@@ -16,4 +16,5 @@ Specific speed and angle on grate movement in the Deku Toad room can clip Link t
 
 ## Primary Source
 
-https://youtu.be/fFiN1YnfiWY
+{% youtube fFiN1YnfiWY %}
+

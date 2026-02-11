@@ -16,4 +16,5 @@ Rolling the Sol into an LJA setup produces a quick distance gain route.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=1-oDM6_ZCXQ
+{% youtube 1-oDM6_ZCXQ %}
+

@@ -16,4 +16,5 @@ Force unequip iron boots while simultaneously walking into a rupee.
 
 ## Primary Source
 
-https://youtu.be/9BPz3EF-0-w
+{% youtube 9BPz3EF-0-w %}
+

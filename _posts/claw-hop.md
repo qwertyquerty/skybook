@@ -16,4 +16,5 @@ At close range clawshot targets, Link briefly rises before landing; a one-frame 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=DQiQsMBbjw4
+{% youtube DQiQsMBbjw4 %}
+

@@ -16,4 +16,5 @@ Fast map close timing can skip most of the Faron spirit text sequence.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=eDdbRxsYQ4I
+{% youtube eDdbRxsYQ4I %}
+

@@ -16,5 +16,6 @@ A specific sequence of events in the Goron Mines RTA route can lead to a sound-m
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=rQdUbEOKerc
+{% youtube rQdUbEOKerc %}
+
 

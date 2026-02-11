@@ -20,4 +20,5 @@ https://www.zeldaspeedruns.com/tp/tech/cutscene-dropping
 
 ## Additional Notes
 
-https://youtu.be/W5p6_aPyQJQ?si=CAn_2WPVBiRmCih8
+{% youtube W5p6_aPyQJQ %}
+

@@ -4,7 +4,7 @@ title: Bubble mDownPos Offset
 description: The glitch that causes ending blow to sometimes aim at the wrong spot when targeting bubbles
 author: qwertyquerty
 categories: [Glitches]
-tags: [glitch, poe-gate-skip, minor]
+tags: [type-glitch, mechanic-collision]
 pin: true
 math: true
 mermaid: true
@@ -74,4 +74,5 @@ Therefore, the down position always stores the non wall corrected bubble positio
 
 This behavior of the down position being offset from the bubble's wall corrected position can be visualized in the following video:
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/7U74obSt69o" frameborder="0" allowfullscreen></iframe>
+{% youtube 7U74obSt69o %}
+

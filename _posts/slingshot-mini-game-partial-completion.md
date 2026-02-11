@@ -16,4 +16,5 @@ Completing and exiting the slingshot mini-game on the same timing can produce a 
 
 ## Primary Source
 
-https://youtu.be/rZk_Xb_UgYc
+{% youtube rZk_Xb_UgYc %}
+

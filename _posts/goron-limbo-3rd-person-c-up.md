@@ -16,5 +16,6 @@ This setup can produce a limbo-like camera state where C-Up style control behavi
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=XMHSvjPAyUM
+{% youtube XMHSvjPAyUM %}
+
 

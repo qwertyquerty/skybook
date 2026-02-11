@@ -16,4 +16,5 @@ Pull out Ooccoo while dying, choose to warp, then revive with a fairy to keep Oo
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=iZQ8uMjbA2U
+{% youtube iZQ8uMjbA2U %}
+

@@ -16,4 +16,5 @@ A reported Amazing Fly Glitch setup can downclip Link when fish are caught at la
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=BZYdSEo_Vik
+{% youtube BZYdSEo_Vik %}
+

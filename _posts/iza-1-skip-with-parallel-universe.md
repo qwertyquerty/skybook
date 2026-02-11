@@ -16,5 +16,6 @@ On HD, use pause buffering around Iza's forced menu state and then warp to trigg
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=BNQlPhnRmTU
+{% youtube BNQlPhnRmTU %}
+
 

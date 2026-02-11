@@ -16,4 +16,5 @@ Although Link is usually teleported into this event, hacked positioning shows th
 
 ## Primary Source
 
-https://youtu.be/0oVwdP-EgK4
+{% youtube 0oVwdP-EgK4 %}
+

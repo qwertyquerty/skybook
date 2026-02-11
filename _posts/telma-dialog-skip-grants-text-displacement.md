@@ -16,4 +16,5 @@ Use a Louise interaction to disable a cutscene trigger and gain text displacemen
 
 ## Primary Source
 
-https://youtu.be/8ayyLn_9i98
+{% youtube 8ayyLn_9i98 %}
+

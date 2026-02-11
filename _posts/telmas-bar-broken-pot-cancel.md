@@ -16,4 +16,5 @@ Break a pot and talk to Midna at the right time to cancel the Goron noticing seq
 
 ## Primary Source
 
-https://youtu.be/ZwEcNDygKy8
+{% youtube ZwEcNDygKy8 %}
+

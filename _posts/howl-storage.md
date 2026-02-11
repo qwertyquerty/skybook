@@ -16,4 +16,5 @@ Play the howl song on the title screen after a soft reset to store howl-related 
 
 ## Primary Source
 
-https://youtu.be/BLzLV2B0bOQ
+{% youtube BLzLV2B0bOQ %}
+

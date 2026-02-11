@@ -16,4 +16,5 @@ Hold clawshot and L, sidejump, then quickly swap to boomerang to trigger a tempo
 
 ## Primary Source
 
-https://youtu.be/GyZ_FYj7bao
+{% youtube GyZ_FYj7bao %}
+

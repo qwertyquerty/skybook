@@ -16,5 +16,6 @@ Execute Item Wheel Delay at the correct timing to produce a corrupted-texture wo
 
 ## Primary Source
 
-https://youtu.be/mPUfbQY7rm8
+{% youtube mPUfbQY7rm8 %}
+
 

@@ -16,5 +16,6 @@ A swimming state transition can result in a softlock or broken animation state.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=fck6ek057bE
+{% youtube fck6ek057bE %}
+
 

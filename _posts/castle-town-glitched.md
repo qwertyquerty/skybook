@@ -16,4 +16,5 @@ Shows one visible effect in a later run after the earlier Wii glitch trigger seq
 
 ## Primary Source
 
-https://youtu.be/srLVEqoGvCg
+{% youtube srLVEqoGvCg %}
+

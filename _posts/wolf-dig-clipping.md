@@ -16,4 +16,5 @@ By frame-perfect digging as Wolf Link, you can bypass push and target colliders 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=9EWxv6XcUUI
+{% youtube 9EWxv6XcUUI %}
+

@@ -16,4 +16,5 @@ Use item cutscenes or damage timing to cancel the soul-rip animation while still
 
 ## Primary Source
 
-https://youtu.be/Bc21qsQEKig
+{% youtube Bc21qsQEKig %}
+

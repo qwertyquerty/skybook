@@ -16,5 +16,6 @@ Route and movement choices can bypass the standard monkey-guided mist pathing.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=LxOhc3cCHp0
+{% youtube LxOhc3cCHp0 %}
+
 

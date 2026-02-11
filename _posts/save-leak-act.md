@@ -16,5 +16,6 @@ On Wii, reset and press A one frame later to trigger this save leak variant.
 
 ## Primary Source
 
-https://youtu.be/43IlXCPBlbQ
+{% youtube 43IlXCPBlbQ %}
+
 

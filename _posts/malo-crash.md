@@ -16,5 +16,6 @@ Immediately after gaining sword, leave Link's house, perform the listed jump-att
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=6s3cEk2Qqho&t=32s
+{% youtube 6s3cEk2Qqho %}
+
 

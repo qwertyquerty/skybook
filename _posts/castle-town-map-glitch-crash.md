@@ -16,5 +16,6 @@ Perform map glitch, then attempt to enter Castle Town to trigger a crash/freeze.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=zDOZDdx8fJs
+{% youtube zDOZDdx8fJs %}
+
 

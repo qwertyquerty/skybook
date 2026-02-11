@@ -16,4 +16,5 @@ Complete Star Minigame #2 with a single clawshot setup instead of double clawsho
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=zqntMfeJpiM
+{% youtube zqntMfeJpiM %}
+

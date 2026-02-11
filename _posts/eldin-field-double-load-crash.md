@@ -16,9 +16,10 @@ Use jump-strike out-of-bounds movement and a void-out sequence in Eldin Field to
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=grbKJelZ32k
+{% youtube grbKJelZ32k %}
 
 ## Additional Notes
 
 Apparently this can also be done with CD streaming.
+
 

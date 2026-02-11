@@ -16,5 +16,6 @@ Shield hits can push Link onto the ledge and let the fire wall pass without deal
 
 ## Primary Source
 
-https://youtu.be/yMJPt0aEgKc
+{% youtube yMJPt0aEgKc %}
+
 

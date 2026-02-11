@@ -16,4 +16,5 @@ When Shadow Beasts become embedded in geometry, their animation behavior can ent
 
 ## Primary Source
 
-https://youtu.be/CbA35O96e24
+{% youtube CbA35O96e24 %}
+

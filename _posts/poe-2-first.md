@@ -16,4 +16,5 @@ This route uses an out-of-bounds setup to access Poe 2 first.
 
 ## Primary Source
 
-https://youtu.be/J-JrOFRId9Y
+{% youtube J-JrOFRId9Y %}
+

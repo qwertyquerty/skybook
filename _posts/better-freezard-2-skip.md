@@ -16,4 +16,5 @@ Well-timed ladder drops can skip the second Freezard by the upper-floor ladder.
 
 ## Primary Source
 
-https://youtu.be/lZ1kWQOMqSM
+{% youtube lZ1kWQOMqSM %}
+

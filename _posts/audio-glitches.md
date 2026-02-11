@@ -16,8 +16,9 @@ Likely actor corruption side effects causing audio issues across different locat
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=ukjTlZi2XDY
+{% youtube ukjTlZi2XDY %}
 
 ## Additional Notes
 
-See also: https://youtu.be/ScMV8ubf78w and https://youtu.be/IZtlmQ1IUV8
+See also: {% youtube ScMV8ubf78w %} and {% youtube IZtlmQ1IUV8 %}
+

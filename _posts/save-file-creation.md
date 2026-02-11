@@ -16,4 +16,5 @@ This video documents setup steps from Wii boot that prepared the save state used
 
 ## Primary Source
 
-https://youtu.be/VG-1jF41KZY
+{% youtube VG-1jF41KZY %}
+

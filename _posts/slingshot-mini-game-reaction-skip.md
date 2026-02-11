@@ -16,8 +16,9 @@ Speaking to kids during a midair pellet shot can suppress the normal first-targe
 
 ## Primary Source
 
-https://youtu.be/G_g8NfUVGew
+{% youtube G_g8NfUVGew %}
 
 ## Additional Notes
 
 If timed perfectly, this may save very small amounts of time, but that remains unconfirmed.
+

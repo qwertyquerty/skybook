@@ -16,4 +16,5 @@ Boomerang interactions can be used to manipulate pumpkin sprout behavior.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=_f-_gceKm24
+{% youtube _f-_gceKm24 %}
+

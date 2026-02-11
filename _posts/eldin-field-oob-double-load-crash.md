@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Eldin Field OOB / Double Load Crash
 description: Going out of bounds and voiding can trigger a double-load state that may crash the game.
@@ -16,4 +16,5 @@ Jump strike out of bounds in Eldin Field, then void. The area can double-load an
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=grbKJelZ32k
+{% youtube grbKJelZ32k %}
+

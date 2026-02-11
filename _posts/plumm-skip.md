@@ -16,5 +16,6 @@ Keep Fyer loaded with a precise transform setup, then trigger howl HUD before Pl
 
 ## Primary Source
 
-https://youtu.be/cxJsjh2w0ZI
+{% youtube cxJsjh2w0ZI %}
+
 

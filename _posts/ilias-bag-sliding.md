@@ -16,5 +16,6 @@ Picking up Ilia's bag as human Link can produce fast sliding movement.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=cC3zmPAywSQ
+{% youtube cC3zmPAywSQ %}
+
 

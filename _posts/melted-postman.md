@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Melted Postman
 description: Triggering the postman below the map can send Link to extreme negative coordinates and break rendering precision.
@@ -16,4 +16,5 @@ Trigger the postman below the map to force Link to extremely low coordinates, wh
 
 ## Primary Source
 
-https://youtu.be/53nS9iKJWyo
+{% youtube 53nS9iKJWyo %}
+

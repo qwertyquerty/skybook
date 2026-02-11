@@ -16,4 +16,5 @@ Clipping from a ledge hang can place Link into terrain, but the pull-up behavior
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=6vyCaJSKGUM
+{% youtube 6vyCaJSKGUM %}
+

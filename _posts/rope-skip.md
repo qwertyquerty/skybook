@@ -16,4 +16,5 @@ TAS route for rope skip using pot collision to push Link into a favorable line.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=B01WBn8z-qo
+{% youtube B01WBn8z-qo %}
+

@@ -16,5 +16,6 @@ This is a lower-speed variant of Epona clipping through terrain near a ramp.
 
 ## Primary Source
 
-https://youtu.be/XBNFC0zIPSw?si=Pjo0Ck7SsdUXN-NR
+{% youtube XBNFC0zIPSw %}
+
 

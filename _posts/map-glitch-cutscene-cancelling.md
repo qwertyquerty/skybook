@@ -16,4 +16,5 @@ Interrupt Midna object warp cutscenes (Meteor, Cannon, etc.) with an object pull
 
 ## Primary Source
 
-https://youtu.be/5bGlLAhyzvY
+{% youtube 5bGlLAhyzvY %}
+

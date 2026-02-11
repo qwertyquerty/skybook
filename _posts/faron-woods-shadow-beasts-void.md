@@ -16,4 +16,5 @@ Clearing South Faron shadow beasts first try, then failing North Faron shadow be
 
 ## Primary Source
 
-https://youtu.be/HCSXTl8KGBU
+{% youtube HCSXTl8KGBU %}
+

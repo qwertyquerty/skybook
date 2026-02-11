@@ -16,4 +16,5 @@ During Dangoro, unpausing at specific timings appears to change how EBF countdow
 
 ## Primary Source
 
-https://youtu.be/VLkKeg50HV0
+{% youtube VLkKeg50HV0 %}
+

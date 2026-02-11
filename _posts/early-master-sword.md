@@ -4,7 +4,7 @@ title: Early Master Sword
 description: Aodo
 author: todo
 categories: [Glitches]
-tags: [glitch, EMS, early-master-sword, major, map-north-faron]
+tags: [type-glitch, map-north-faron]
 pin: true
 math: true
 mermaid: true

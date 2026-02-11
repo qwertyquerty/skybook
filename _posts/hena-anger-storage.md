@@ -16,5 +16,6 @@ By storing Hena's "angry" global state, the related dialogue can appear across o
 
 ## Primary Source
 
-https://youtu.be/VOCORy78HjI
+{% youtube VOCORy78HjI %}
+
 

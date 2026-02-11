@@ -16,8 +16,9 @@ This method completes the Goron rescue sequence with regular bombs rather than w
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=3z7hUiPjagE
+{% youtube 3z7hUiPjagE %}
 
 ## Additional Notes
 
-Alt method: https://www.youtube.com/watch?v=59Whqpf_TzU
+Alt method: {% youtube 59Whqpf_TzU %}
+

@@ -16,4 +16,5 @@ Long jump attack collision can create a prolonged clipped slow-fall before landi
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=qKC3usa2hbM
+{% youtube qKC3usa2hbM %}
+

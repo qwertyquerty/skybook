@@ -16,4 +16,5 @@ A run clip shows rod duplication in Grotto 5 using an unknown method. Reproducin
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=-IssqP2GPOI
+{% youtube -IssqP2GPOI %}
+

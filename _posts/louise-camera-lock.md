@@ -16,8 +16,9 @@ Trigger the Louise cutscene during MDH with a specific setup to shorten the sequ
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=kTYRZSX8cH4
+{% youtube kTYRZSX8cH4 %}
 
 ## Additional Notes
 
-See also: https://youtu.be/3zY2i05TBgg
+See also: {% youtube 3zY2i05TBgg %}
+

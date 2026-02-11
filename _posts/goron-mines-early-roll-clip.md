@@ -4,7 +4,7 @@ title: Goron Mines Early (Roll Clip)
 description: A precise roll angle can clip past the left guard to enter Goron Mines early.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, map-goron-shuffle, meta-needs-source]
+tags: [type-glitch, mechanic-collision, map-death-mountain, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

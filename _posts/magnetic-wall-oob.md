@@ -16,5 +16,6 @@ Use Iron Boots and a jump attack into magnetic wall geometry to clip out of boun
 
 ## Primary Source
 
-https://youtu.be/3858GL0QFGs
+{% youtube 3858GL0QFGs %}
+
 

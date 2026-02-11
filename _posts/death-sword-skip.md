@@ -16,4 +16,4 @@ A superjump setup can route around the Death Sword fight requirement.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=VtHC4q5afzE
+{% youtube VtHC4q5afzE %}

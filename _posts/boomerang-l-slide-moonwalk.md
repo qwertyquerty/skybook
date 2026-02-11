@@ -16,5 +16,6 @@ Similar to Clawshot L-Slides, but with boomerang, allowing temporary moonwalking
 
 ## Primary Source
 
-https://youtu.be/u5Tv8VgyG_8
+{% youtube u5Tv8VgyG_8 %}
+
 

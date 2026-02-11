@@ -16,9 +16,10 @@ Void on Epona, reset during the void sequence, then reopen the file to trigger a
 
 ## Primary Source
 
-https://youtu.be/GEy1g5G7Z9E
+{% youtube GEy1g5G7Z9E %}
 
 ## Additional Notes
 
 https://pastebin.com/d7cF03EM
+
 

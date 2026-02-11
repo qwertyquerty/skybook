@@ -16,4 +16,5 @@ Knocking a bug down with Gale Boomerang and waiting can make it warp back up to 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=WKP2h-lhrqk
+{% youtube WKP2h-lhrqk %}
+

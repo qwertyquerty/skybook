@@ -16,4 +16,5 @@ By moving out of range and turning view away, Ordon night NPCs can respawn immed
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=2R9_ytIfuQc
+{% youtube 2R9_ytIfuQc %}
+

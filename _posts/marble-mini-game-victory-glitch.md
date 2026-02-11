@@ -16,5 +16,6 @@ The marble mini-game victory trigger can be activated from a slightly out-of-bou
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=408KBxwzMLg
+{% youtube 408KBxwzMLg %}
+
 

@@ -16,4 +16,5 @@ Use Ooccoo after Back in Time without watching the cutscene to make Link respawn
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=-4Z_LFVYUbQ
+{% youtube -4Z_LFVYUbQ %}
+

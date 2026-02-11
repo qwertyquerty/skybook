@@ -4,7 +4,7 @@ title: Goron Mines Early (Text Displacement)
 description: Text Displacement can bypass the wrestling requirement and grant early Goron Mines access.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, map-goron-shuffle]
+tags: [type-glitch, mechanic-memory, map-death-mountain]
 date: 2026-02-10 00:00:00
 ---
 
@@ -16,5 +16,6 @@ Use Text Displacement behavior to bypass the wrestling prerequisite and access G
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=4ANDpgF_8Vw
+{% youtube 4ANDpgF_8Vw %}
+
 

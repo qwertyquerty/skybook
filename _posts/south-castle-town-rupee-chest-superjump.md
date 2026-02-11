@@ -16,4 +16,5 @@ Set enemy position precisely to superjump toward the south Castle Town 50-rupee 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=42KaydtNQiU
+{% youtube 42KaydtNQiU %}
+

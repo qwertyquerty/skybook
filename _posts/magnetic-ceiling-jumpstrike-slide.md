@@ -16,5 +16,6 @@ At a magnetic floor-to-wall transition, a jumpstrike can produce continued forwa
 
 ## Primary Source
 
-https://youtu.be/jORCVzK4CUc
+{% youtube jORCVzK4CUc %}
+
 

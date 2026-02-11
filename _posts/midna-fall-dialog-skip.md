@@ -16,4 +16,5 @@ A precise jump angle on the spiral staircase can avoid Midna dialogue text.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=1-jSFyeCz40
+{% youtube 1-jSFyeCz40 %}
+

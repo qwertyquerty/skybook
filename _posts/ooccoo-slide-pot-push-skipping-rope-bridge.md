@@ -16,4 +16,5 @@ Use Ooccoo pot slide movement to gain enough jump distance to bypass the rope br
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=xIc6Owlh3dk
+{% youtube xIc6Owlh3dk %}
+

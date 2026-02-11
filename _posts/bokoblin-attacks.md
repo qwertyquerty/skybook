@@ -4,7 +4,7 @@ title: Bokoblin Attacks
 description: How does the Bokoblin decide to attack?
 author: spicyjuice04
 categories: [Reference]
-tags: [reference, rng]
+tags: [type-reference, mechanic-rng]
 pin: true
 math: true
 mermaid: true

@@ -16,5 +16,6 @@ Throw Dangoro at a precise platform edge angle to end the fight state early, the
 
 ## Primary Source
 
-https://youtu.be/au1CJ_AmhMI?t=6m16s
+{% youtube au1CJ_AmhMI %}
+
 

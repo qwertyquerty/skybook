@@ -16,4 +16,5 @@ Press R and A with tight timing to acquire a boomerang target and immediately ca
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=XAulAW8g7n8
+{% youtube XAulAW8g7n8 %}
+

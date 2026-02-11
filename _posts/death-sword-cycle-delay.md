@@ -16,4 +16,4 @@ Continuous attack inputs can hold Death Sword in an earlier phase and delay its 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=Sb8Dh5mt66Y
+{% youtube Sb8Dh5mt66Y %}

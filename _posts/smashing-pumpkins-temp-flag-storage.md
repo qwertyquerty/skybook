@@ -16,4 +16,5 @@ This stores the vine-man temporary flag from smashing pumpkins, but no practical
 
 ## Primary Source
 
-https://youtu.be/S_nob2Pq454
+{% youtube S_nob2Pq454 %}
+

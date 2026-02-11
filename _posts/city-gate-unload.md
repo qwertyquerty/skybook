@@ -16,4 +16,5 @@ Rod duping can unload a City in the Sky gate; the setup is highly timing-sensiti
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=1CCt1EB1S7E
+{% youtube 1CCt1EB1S7E %}
+

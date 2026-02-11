@@ -16,8 +16,9 @@ Manipulate Poe behavior so it slides away during the exposed-soul state.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=RP3HoOIp6Iw
+{% youtube RP3HoOIp6Iw %}
 
 ## Additional Notes
 
 Alternate video: https://clips.twitch.tv/AwkwardConsiderateLocustCoolStoryBob-2qonE1FCrbFMtitb
+

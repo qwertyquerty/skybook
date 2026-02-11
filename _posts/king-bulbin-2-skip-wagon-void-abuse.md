@@ -16,9 +16,10 @@ Void abuse during the wagon escort can trigger a failsafe that skips King Bulbin
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=cgKSXosF9jM
+{% youtube cgKSXosF9jM %}
 
 ## Additional Notes
 
-Faster setup: https://www.youtube.com/watch?v=LZd54qS_Ajk
+Faster setup: {% youtube LZd54qS_Ajk %}
+
 

@@ -16,4 +16,5 @@ A void-out at the Forest Temple entrance can be leveraged in Back in Time setup 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=kF4B5GV_5Wc
+{% youtube kF4B5GV_5Wc %}
+

@@ -16,5 +16,6 @@ By talking to Falbi and getting pushed off the ledge during dialogue, Link can k
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=gdTpzGuj8ws
+{% youtube gdTpzGuj8ws %}
+
 

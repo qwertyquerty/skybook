@@ -16,8 +16,9 @@ A full Bulbin Camp skip is possible, but can lock progression due to missing Kin
 
 ## Primary Source
 
-https://youtu.be/2HBtbNVLgpQ
+{% youtube 2HBtbNVLgpQ %}
 
 ## Additional Notes
 
-Part 2: https://youtu.be/-d3mq3J3ILQ
+Part 2: {% youtube -d3mq3J3ILQ %}
+

@@ -20,4 +20,5 @@ https://www.zeldaspeedruns.com/tp/tech/brakesliding
 
 ## Additional Notes
 
-In deep snow: https://youtu.be/xtmVrQKnXmM
+In deep snow: {% youtube xtmVrQKnXmM %}
+

@@ -16,4 +16,5 @@ This setup reaches the edge of the Zora's Domain map and is used in earliest Sno
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=lhil_fjWJhs
+{% youtube lhil_fjWJhs %}
+

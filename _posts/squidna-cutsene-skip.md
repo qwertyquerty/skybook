@@ -16,5 +16,6 @@ Use Item Wheel Delay timing to skip the Squidna cutscene trigger.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=_0sVEB1m0nE
+{% youtube _0sVEB1m0nE %}
+
 

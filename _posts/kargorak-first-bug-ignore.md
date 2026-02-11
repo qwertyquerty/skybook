@@ -16,4 +16,5 @@ With enough speed, the first Kargorak bug can be ignored and later caught up to 
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=yEZyKkE_c5Y
+{% youtube yEZyKkE_c5Y %}
+

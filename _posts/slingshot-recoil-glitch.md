@@ -12,8 +12,9 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-After warping to Ordon via early Master Sword progression, shooting Rusl with the slingshot causes knockback regardless of distance.
+After warping to Ordon via [Early Master Sword](/posts/early-master-sword) progression, shooting Rusl with the slingshot causes knockback regardless of distance.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=GypiTA8Mb8k
+{% youtube GypiTA8Mb8k %}
+

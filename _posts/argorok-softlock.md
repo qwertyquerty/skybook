@@ -16,8 +16,9 @@ Dropping from Argorok on the earliest possible frame can lock the fight state; t
 
 ## Primary Source
 
-https://youtu.be/nIKrboXKFPA
+{% youtube nIKrboXKFPA %}
 
 ## Additional Notes
 
-See also: https://www.youtube.com/watch?v=zKJJqQ4AZ-U
+See also: {% youtube zKJJqQ4AZ-U %}
+

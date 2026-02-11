@@ -16,5 +16,6 @@ Input a jump attack on the final frame before shield behavior prevents it to for
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=aGEOa8QjVqA
+{% youtube aGEOa8QjVqA %}
+
 

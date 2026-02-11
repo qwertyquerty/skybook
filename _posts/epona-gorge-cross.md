@@ -16,5 +16,6 @@ After BiTE setup, use Epona movement to cross Eldin Gorge.
 
 ## Primary Source
 
-https://youtu.be/DuAxew7kRAU?si=7YH_6Pa8vms78W_r&t=146
+{% youtube DuAxew7kRAU %}
+
 

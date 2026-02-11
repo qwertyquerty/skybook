@@ -16,4 +16,5 @@ Grab a ledge while simultaneously collecting a rupee to softlock the game.
 
 ## Primary Source
 
-https://youtu.be/TWzkfhYEy4o
+{% youtube TWzkfhYEy4o %}
+

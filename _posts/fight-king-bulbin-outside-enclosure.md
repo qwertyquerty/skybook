@@ -16,4 +16,5 @@ This setup starts the King Bulbin sequence outside the normal enclosure using LJ
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=QQTARONrx_8
+{% youtube QQTARONrx_8 %}
+

@@ -16,4 +16,4 @@ A precise Wolfos aggro setup enables a superjump that clears the Snowpeak courty
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=y__WJ_HlV5o
+{% youtube y__WJ_HlV5o %}

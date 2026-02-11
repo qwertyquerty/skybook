@@ -16,4 +16,5 @@ Manipulating moldorm position allows an early superjump entry to the desert grot
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=UfHfzvLzZM4
+{% youtube UfHfzvLzZM4 %}
+

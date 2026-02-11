@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Vanishing Pulled Items
 description: Pulled items can disappear in a way similar to Garudo Desert mesa behavior.
@@ -16,4 +16,5 @@ Item pull behavior can fail and make pulled objects disappear, similar to report
 
 ## Primary Source
 
-https://youtu.be/dCn2f-VI41A
+{% youtube dCn2f-VI41A %}
+

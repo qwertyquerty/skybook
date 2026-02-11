@@ -16,4 +16,5 @@ Actor displacement with the clawshot can reposition platforms and bypass the int
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=y8lELFmd0fs
+{% youtube y8lELFmd0fs %}
+

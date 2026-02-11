@@ -16,4 +16,5 @@ Trigger a console reset during the intro cutscene window where reset handling is
 
 ## Primary Source
 
-https://youtu.be/ERZk-Q7msAQ
+{% youtube ERZk-Q7msAQ %}
+

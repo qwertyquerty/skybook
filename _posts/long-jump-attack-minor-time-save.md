@@ -16,4 +16,5 @@ Uses a timed long jump attack to exit as magic barriers drop, saving a small amo
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=yA3AS5aM80k
+{% youtube yA3AS5aM80k %}
+

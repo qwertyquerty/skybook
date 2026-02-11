@@ -16,5 +16,6 @@ Ride Epona out of bounds in South Hyrule Field, then turn around at a specific s
 
 ## Primary Source
 
-https://youtu.be/0SHvfj2Wf0o
+{% youtube 0SHvfj2Wf0o %}
+
 

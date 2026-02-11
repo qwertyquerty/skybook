@@ -16,4 +16,5 @@ Pausing in a narrow timing window can delay the death fadeout and game over tran
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=kpxfXYaumZg
+{% youtube kpxfXYaumZg %}
+

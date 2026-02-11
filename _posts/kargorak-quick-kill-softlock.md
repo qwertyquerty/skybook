@@ -16,5 +16,6 @@ A quick-kill variant for Kargorak can trigger a softlock state.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=RuytNQNR77Y
+{% youtube RuytNQNR77Y %}
+
 

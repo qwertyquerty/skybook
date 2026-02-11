@@ -16,4 +16,5 @@ If a goat leaves the pen after being counted, the count logic can desync and con
 
 ## Primary Source
 
-https://youtu.be/J8Q50kn_hn8
+{% youtube J8Q50kn_hn8 %}
+

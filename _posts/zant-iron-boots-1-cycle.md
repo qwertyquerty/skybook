@@ -16,4 +16,5 @@ Using Iron Boots alters attack behavior to enable a one-cycle Zant strategy.
 
 ## Primary Source
 
-https://youtu.be/JT5QlrF7-74
+{% youtube JT5QlrF7-74 %}
+

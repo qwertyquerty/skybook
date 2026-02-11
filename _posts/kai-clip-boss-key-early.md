@@ -16,8 +16,9 @@ With a precise clawshot setup, Link can clip through geometry and access the Bos
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=aocAEulgnyQ
+{% youtube aocAEulgnyQ %}
 
 ## Additional Notes
 
-https://youtu.be/OB2Pk5dZu_4
+{% youtube OB2Pk5dZu_4 %}
+

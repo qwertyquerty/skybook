@@ -16,4 +16,5 @@ Taking a hit from Beast Gannon can lock Link into a persistent walking animation
 
 ## Primary Source
 
-https://youtu.be/ddy982Zvmzs
+{% youtube ddy982Zvmzs %}
+

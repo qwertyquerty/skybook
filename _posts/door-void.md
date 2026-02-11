@@ -16,4 +16,5 @@ A corner collision near a doorway can force a void-out state.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=LnMxl6uB16o
+{% youtube LnMxl6uB16o %}
+

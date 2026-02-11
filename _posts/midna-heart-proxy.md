@@ -16,5 +16,6 @@ Collecting a heart while Midna is standing at a dungeon exit can attach the hear
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=7yAQmY53CEY
+{% youtube 7yAQmY53CEY %}
+
 

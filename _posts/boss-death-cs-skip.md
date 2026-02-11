@@ -16,5 +16,6 @@ Use Item Wheel Delay timing to skip the death cutscene after a boss defeat.
 
 ## Primary Source
 
-https://youtu.be/5d77sIJVbv4
+{% youtube 5d77sIJVbv4 %}
+
 

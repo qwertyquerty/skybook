@@ -4,7 +4,7 @@ title: Sticky Rang
 description: Explanation of how Sticky Rang works
 author: chrisisawesome
 categories: [Glitches]
-tags: [glitch, collision, minor]
+tags: [type-glitch, mechanic-collision]
 pin: true
 math: true
 mermaid: true
@@ -36,4 +36,5 @@ Example of Heart Piece being attached to Link on Epona:
 ![Example of Heart Piece being attached to Link on Epona](/assets/glitches/sticky-rang/sticky-rang-on-epona.png)
 
 Video example:
-<iframe width="500" height="300" src="https://www.youtube.com/embed/QdQJC76LdIo" frameborder="0" allowfullscreen></iframe>
+{% youtube QdQJC76LdIo %}
+

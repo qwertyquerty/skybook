@@ -16,4 +16,5 @@ Interrupt Wolf Link while digging to desync dig-state behavior and block subsequ
 
 ## Primary Source
 
-https://youtu.be/fDLn8Dyo7hY?t=2m50s
+{% youtube fDLn8Dyo7hY %}
+

@@ -16,4 +16,5 @@ In early Forest Temple routing, a frame-perfect backflip into the loading zone b
 
 ## Primary Source
 
-https://youtu.be/WR2HE3TDAU0
+{% youtube WR2HE3TDAU0 %}
+

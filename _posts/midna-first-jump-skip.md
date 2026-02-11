@@ -16,4 +16,5 @@ With precise positioning, Wolf Link can perform a normal jump where the game exp
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=-OXkHt-3q2k
+{% youtube -OXkHt-3q2k %}
+

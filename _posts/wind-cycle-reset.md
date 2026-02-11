@@ -16,4 +16,5 @@ Calling Midna can reset the bridge wind cycle and recover time versus waiting fo
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=IIVbYmxcG9E
+{% youtube IIVbYmxcG9E %}
+

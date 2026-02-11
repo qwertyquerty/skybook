@@ -16,4 +16,5 @@ A jump slash can push Link out of the sword mini-game flow early, ending the eve
 
 ## Primary Source
 
-https://youtu.be/Y5cpShpWRTU
+{% youtube Y5cpShpWRTU %}
+

@@ -16,4 +16,4 @@ Entering from the wrong side or with out-of-order item/dialog state can softlock
 
 ## Primary Source
 
-https://youtu.be/aTsu0MXLdeI
+{% youtube aTsu0MXLdeI %}

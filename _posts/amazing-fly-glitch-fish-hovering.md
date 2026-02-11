@@ -16,4 +16,5 @@ Catch fish underwater with iron boots to put fish into a glitched state that can
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=8Ypd93WGGvk
+{% youtube 8Ypd93WGGvk %}
+

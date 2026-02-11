@@ -16,5 +16,6 @@ Use Item Wheel Delay to unequip a bottle while consuming it so the effect applie
 
 ## Primary Source
 
-https://youtu.be/jXwJgF8XmUY
+{% youtube jXwJgF8XmUY %}
+
 

@@ -21,4 +21,5 @@ https://www.twitch.tv/videos/497498235
 ## Additional Notes
 
 Pastebin: https://pastebin.com/jBwZqMjs
-Alternate recording: https://www.youtube.com/watch?v=1e3KypWUf_Q
+Alternate recording: {% youtube 1e3KypWUf_Q %}
+

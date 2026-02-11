@@ -16,4 +16,5 @@ If `Demo22_01` fails to load, the Master Sword cutscene breaks and future intera
 
 ## Primary Source
 
-https://youtu.be/6MeCIS5wN80
+{% youtube 6MeCIS5wN80 %}
+

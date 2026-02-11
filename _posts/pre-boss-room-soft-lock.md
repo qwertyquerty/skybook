@@ -16,4 +16,4 @@ A specific jump angle in the pre-boss room can trap Link against the wall and so
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=HHQ-j1dXD_8
+{% youtube HHQ-j1dXD_8 %}

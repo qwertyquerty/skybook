@@ -16,5 +16,6 @@ Reset while hovering any collectable submenu, wait 17 frames, then press A on fr
 
 ## Primary Source
 
-https://youtu.be/5vDsfSC9Fqg
+{% youtube 5vDsfSC9Fqg %}
+
 

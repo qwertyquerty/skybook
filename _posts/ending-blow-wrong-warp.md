@@ -16,4 +16,5 @@ Acquire Ending Blow from a nonstandard Golden Wolf before North Faron to force a
 
 ## Primary Source
 
-https://youtu.be/IEm5hI_j534?t=308
+{% youtube IEm5hI_j534 %}
+

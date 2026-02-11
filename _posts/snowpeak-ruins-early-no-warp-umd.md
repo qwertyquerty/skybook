@@ -16,4 +16,4 @@ Frame-perfect UMD inputs can carry map-glitch behavior and allow early access to
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=OmNbJPXh8xQ
+{% youtube OmNbJPXh8xQ %}

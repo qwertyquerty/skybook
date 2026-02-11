@@ -16,4 +16,5 @@ Using rod duping together with Epona clipping can route into Forest Temple early
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=6z8QzWX5Tfs
+{% youtube 6z8QzWX5Tfs %}
+

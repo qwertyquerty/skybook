@@ -12,8 +12,9 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-Ask Midna to warp an object while human (commonly with Early Master Sword conditions) to trigger fake wolf behavior.
+Ask Midna to warp an object while human (commonly with [Early Master Sword](/posts/early-master-sword) conditions) to trigger fake wolf behavior.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=feM0F_OQZFA
+{% youtube feM0F_OQZFA %}
+

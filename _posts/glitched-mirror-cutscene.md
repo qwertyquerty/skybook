@@ -16,4 +16,5 @@ Skipping an expected Mirror Area cutscene via actor corruption can break transfo
 
 ## Primary Source
 
-https://youtu.be/ItNJeP8rCZA
+{% youtube ItNJeP8rCZA %}
+

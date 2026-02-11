@@ -16,8 +16,8 @@ By transforming behind the first Freezard, the door can be accessed without kill
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=yfjApOI-rLE
+{% youtube yfjApOI-rLE %}
 
 ## Additional Notes
 
-https://www.youtube.com/watch?v=G6-VJekjX4M
+{% youtube G6-VJekjX4M %}

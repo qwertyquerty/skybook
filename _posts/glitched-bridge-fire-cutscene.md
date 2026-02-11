@@ -12,7 +12,7 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 ## Summary
 
-After Early Master Sword, triggering this bridge fire cutscene as human Link can severely distort animations.
+After [Early Master Sword](/posts/early-master-sword), triggering this bridge fire cutscene as human Link can severely distort animations.
 
 ## Primary Source
 

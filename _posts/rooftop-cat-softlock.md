@@ -16,4 +16,5 @@ This softlock occurs when speaking to the vine man after obtaining the bottle of
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=UZ-nn_-W_gU
+{% youtube UZ-nn_-W_gU %}
+

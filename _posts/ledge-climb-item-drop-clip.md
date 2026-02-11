@@ -16,4 +16,5 @@ Drop an item while climbing a ledge to be pushed out of bounds. Jump attacks can
 
 ## Primary Source
 
-https://youtu.be/1eh6BpT-RSU
+{% youtube 1eh6BpT-RSU %}
+

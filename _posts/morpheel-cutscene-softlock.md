@@ -16,4 +16,5 @@ A same-frame clawshot on intro startup can cancel Morpheel's cutscene and produc
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=fQvctA0s28A
+{% youtube fQvctA0s28A %}
+

@@ -16,4 +16,5 @@ If Aeralfos Skip is performed near the latest possible frame, an Aeralfos attack
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=RTMtZoct6cw
+{% youtube RTMtZoct6cw %}
+

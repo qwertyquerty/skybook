@@ -16,5 +16,6 @@ Clip into walls using pot push displacement and a clawshot rupee collect.
 
 ## Primary Source
 
-https://youtu.be/xjL-Wye3FAw
+{% youtube xjL-Wye3FAw %}
+
 

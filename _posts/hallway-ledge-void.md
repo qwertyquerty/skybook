@@ -16,4 +16,5 @@ Jumping actions into a hallway ledge can produce a crush void.
 
 ## Primary Source
 
-https://youtu.be/J0k06XqmwXQ
+{% youtube J0k06XqmwXQ %}
+

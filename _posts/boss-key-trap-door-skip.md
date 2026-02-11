@@ -16,4 +16,5 @@ A near-frame-perfect clawshot into immediate drop can bypass the usual trap-door
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=mcmsDDWZ2Tw
+{% youtube mcmsDDWZ2Tw %}
+

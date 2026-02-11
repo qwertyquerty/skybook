@@ -16,4 +16,5 @@ This Wii 1.0 behavior appears to clear Cave of Ordeals floors by extinguishing t
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=Y8Hgj8m6tWQ
+{% youtube Y8Hgj8m6tWQ %}
+

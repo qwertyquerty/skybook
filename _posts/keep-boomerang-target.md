@@ -16,4 +16,5 @@ Target with the boomerang, then press Z and A on consecutive frames to preserve 
 
 ## Primary Source
 
-https://youtu.be/0yV7Xrvzym4
+{% youtube 0yV7Xrvzym4 %}
+

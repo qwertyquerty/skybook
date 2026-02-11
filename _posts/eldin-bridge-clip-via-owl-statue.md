@@ -16,5 +16,6 @@ Use owl statue positioning to clip Link into Eldin Bridge geometry.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=xOHXA8MuwIc
+{% youtube xOHXA8MuwIc %}
+
 

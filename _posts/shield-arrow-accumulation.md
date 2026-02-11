@@ -16,4 +16,5 @@ Use shield blocks on fire arrows while wearing Magic Armor to store arrows on th
 
 ## Primary Source
 
-https://youtu.be/u-uhJMwYiNo
+{% youtube u-uhJMwYiNo %}
+

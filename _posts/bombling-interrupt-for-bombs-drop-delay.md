@@ -16,4 +16,5 @@ Queue a standard bomb, then place a Bombling to interrupt the normal sequence an
 
 ## Primary Source
 
-https://youtu.be/ZP2ElN5i7rc
+{% youtube ZP2ElN5i7rc %}
+

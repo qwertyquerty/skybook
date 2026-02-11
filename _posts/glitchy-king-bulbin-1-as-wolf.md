@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Glitchy King Bulbin 1 as Wolf
 description: Starting King Bulbin 1 as Wolf Link can cause severe cutscene glitches.
@@ -16,4 +16,5 @@ Start the first King Bulbin sequence as Wolf Link to produce major cutscene corr
 
 ## Primary Source
 
-https://youtu.be/TP_nlQIfW4A
+{% youtube TP_nlQIfW4A %}
+

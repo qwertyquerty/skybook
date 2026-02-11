@@ -16,4 +16,5 @@ An LJA route can jump around the trigger that normally forces Midna dialogue bef
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=7cqLZ4Ss9Oo
+{% youtube 7cqLZ4Ss9Oo %}
+

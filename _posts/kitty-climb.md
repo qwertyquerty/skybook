@@ -16,5 +16,6 @@ Enter defective beam collision and climb upward through it to access later room 
 
 ## Primary Source
 
-https://youtu.be/6545N3Kh8mQ
+{% youtube 6545N3Kh8mQ %}
+
 

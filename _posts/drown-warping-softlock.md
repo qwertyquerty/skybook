@@ -16,4 +16,5 @@ Initiate warp timing during drowning state to produce a repeating game-over loop
 
 ## Primary Source
 
-https://youtu.be/e7wxB2lFtAU
+{% youtube e7wxB2lFtAU %}
+

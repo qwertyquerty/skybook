@@ -16,4 +16,5 @@ Start sword-pull animation, open items, and force unequip Iron Boots to preserve
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=78kLFLcFJqU
+{% youtube 78kLFLcFJqU %}
+

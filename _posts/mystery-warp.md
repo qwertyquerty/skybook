@@ -16,4 +16,5 @@ A specific ledge climb position unexpectedly launches Link across the map.
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=37avmtiTkQI
+{% youtube 37avmtiTkQI %}
+

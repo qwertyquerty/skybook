@@ -16,4 +16,5 @@ Use a long map-glitch fall and water-bomb upwarp setup to break the camera behav
 
 ## Primary Source
 
-https://youtu.be/FTguAWfQB9Y
+{% youtube FTguAWfQB9Y %}
+

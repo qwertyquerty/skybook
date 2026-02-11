@@ -16,4 +16,5 @@ Grab the chain as it is blown away to retry Fyrus cycle timing much faster.
 
 ## Primary Source
 
-https://youtu.be/IU_cj90Ce7M
+{% youtube IU_cj90Ce7M %}
+

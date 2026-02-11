@@ -16,4 +16,5 @@ Corrupting an early cutscene can cause Ilia to groom an invisible Epona, then la
 
 ## Primary Source
 
-https://youtu.be/XcJhl4MUQGc
+{% youtube XcJhl4MUQGc %}
+

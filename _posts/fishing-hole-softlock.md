@@ -16,5 +16,6 @@ This documented case shows a softlock at Fishing Hole on Wii, but exact setup st
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=z-MZcrk09io
+{% youtube z-MZcrk09io %}
+
 

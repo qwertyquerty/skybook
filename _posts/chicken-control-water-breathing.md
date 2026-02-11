@@ -16,4 +16,5 @@ Taking control of a chicken prevents air loss while underwater, allowing additio
 
 ## Primary Source
 
-https://www.youtube.com/watch?v=DgMRvSwv8pY
+{% youtube DgMRvSwv8pY %}
+

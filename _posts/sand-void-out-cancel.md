@@ -16,4 +16,5 @@ Damage timing during a sand void can interrupt the normal void-out behavior.
 
 ## Primary Source
 
-https://youtu.be/Y9L8B40dIqI
+{% youtube Y9L8B40dIqI %}
+

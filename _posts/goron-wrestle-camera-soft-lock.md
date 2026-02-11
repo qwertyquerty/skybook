@@ -16,4 +16,5 @@ Roll into the entrance Goron, re-roll during a tight pre-event frame, equip Iron
 
 ## Primary Source
 
-https://youtu.be/AEVg2SiOkus
+{% youtube AEVg2SiOkus %}
+
