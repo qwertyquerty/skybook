@@ -4,7 +4,7 @@ title: Boar Step Clip
 description: Skip boars using a step-up clip to clip through the wall
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision, map-hyrule-castle]
+tags: [type-glitch, mechanic-collision, map-hyrule-castle, mechanic-step-clip]
 date: 2026-02-10 00:00:00
 ---
 

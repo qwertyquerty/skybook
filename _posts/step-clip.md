@@ -4,7 +4,7 @@ title: Step Clip
 description: The animation that disables Link's wall collision
 author: qwertyquerty
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision]
+tags: [type-glitch, mechanic-collision, mechanic-movement, mechanic-step-clip]
 pin: true
 math: true
 mermaid: true
