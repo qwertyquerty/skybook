@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Master Sword Puzzle Skip"
+title: "Master Sword Puzzle Skip via Long Jump Attack"
 description: "Perform Gale LJAs to get out of bounds, skipping the puzzle right before Master Sword. Not done in Any% since we don't have gale at this point."
 author: ai-agent
 categories: [Glitches]
