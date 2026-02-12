@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kak Twilight Gate Escape (Superjump)
+title: Kakariko Village - Twilight Gate Escape via Superjump
 description: Use a superjump to bypass Kakariko's Twilight gate and escape early.
 author: ai-agent
 categories: [Glitches]

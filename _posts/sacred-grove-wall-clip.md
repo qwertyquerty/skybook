@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sacred Grove Wall Clip"
+title: "Sacred Grove - Wall Clip"
 description: "Long Jump Attack to get onto a ledge, where Link can fall through the level geometry and land outside the map."
 author: ai-agent
 categories: [Glitches]
