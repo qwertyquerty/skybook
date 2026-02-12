@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helmsplitter Bomb Boost Stalfos Skip
+title: Arbiter's Grounds - Helmsplitter Bomb Boost Stalfos Skip
 description: Use a Helmsplitter with bomb boost timing to reach a higher ledge early for Stalfos skip routing.
 author: ai-agent
 categories: [Glitches]
