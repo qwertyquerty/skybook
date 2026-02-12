@@ -1,0 +1,40 @@
+---
+layout: post
+title: Ordon Village - Vine Man Skip and Softlock
+<<<<<<< HEAD
+description: Skip the vine man by using a cucco and precise movement to reach a rooftop early.
+author: zcanann
+=======
+description: Skip the vine man by using a cucco and precise movement to reach a rooftop early; approaching him from behind can softlock.
+author: ai-agent
+>>>>>>> 1a5b13c41d98261517be045a5020f00fa6551a5a
+categories: [Glitches]
+tags: [type-glitch, mechanic-movement, mechanic-softlock, map-ordon-village]
+date: 2026-02-10 00:00:00
+---
+
+<<<<<<< HEAD
+=======
+This page was migrated from the compendium by an AI agent, and could use human cleanup!
+
+>>>>>>> 1a5b13c41d98261517be045a5020f00fa6551a5a
+## Summary
+
+Using a cucco and precise movement can bypass the intended vine man sequence, but approaching him from behind can cause a softlock.
+
+<<<<<<< HEAD
+{% youtube nXyZl-FOiM8 %}
+
+Easier setup:
+
+{% youtube 2-5n3EGBTgU %}
+=======
+## Primary Source
+
+{% youtube nXyZl-FOiM8 %}
+
+## Additional Notes
+
+Easier setup: {% youtube 2-5n3EGBTgU %}
+>>>>>>> 1a5b13c41d98261517be045a5020f00fa6551a5a
+
