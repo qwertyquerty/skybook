@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnetic Ceiling Jumpstrike Slide
+title: Goron Mines - Magnetic Ceiling Jumpstrike Slide
 description: A likely Wii-only jumpstrike setup on magnetic floor-to-wall geometry can cause sustained glitchy sliding.
 author: ai-agent
 categories: [Glitches]

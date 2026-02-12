@@ -1,20 +1,16 @@
 ---
 layout: post
 title: Reverse Epona Slide
-description: Reported inverse behavior of Epona Slide where Link stays still
+description: Inverse behavior of Epona Slide where Link stays still and Epona keeps going.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-movement, status-unsolved]
 date: 2026-02-10 00:00:00
 ---
 
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
-
 ## Summary
 
-Reported opposite behavior of Epona Slide where Link stays still and Epona keeps running.
-
-## Primary Source
+Reported opposite behavior of Epona Slide (TODO: CITATION NEEDED) where Link stays still and Epona keeps running.
 
 {% youtube QFr8apYTWTI %}
 
