@@ -4,7 +4,7 @@ title: Inverted Brake Sliding
 description: TAS-oriented ledge bounce variant of brake sliding
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, meta-tas-only]
+tags: [type-glitch, mechanic-movement, meta-tas]
 date: 2026-02-10 00:00:00
 ---
 

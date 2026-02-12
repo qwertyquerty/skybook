@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Castle Town Map Glitch Crash
+title: Castle Town - Map Glitch Crash
 description: Entering Castle Town after map glitch can trigger a crash or freeze.
 author: ai-agent
 categories: [Glitches]

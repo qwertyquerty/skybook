@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Sacred Grove - OOB / Loading Zone Bypass"
-description: "Use jumpstrike to get OOB in the second Grove map."
+title: Sacred Grove - OOB / Loading Zone Bypass
+description: Use jumpstrike to get OOB in the second Grove map.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-oob, map-sacred-grove]

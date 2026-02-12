@@ -14,10 +14,11 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 Interrupt Fanadi cutscenes with an Ooccoo cutscene escape so a temporary flag remains set and blocks save-location updates.
 
-## Primary Source
+Pastebin with more notes: https://pastebin.com/zW17vvvt
 
-This Entry is Missing a Primary Media Source!
+## Epona Cutscene Crash Side Effect
 
-## Additional Notes
+Trigger an Epona-involving cutscene while Fanadi save locking is active to produce a crash from incompatible spawn-state flags.
 
-Pastebin: https://pastebin.com/zW17vvvt
+https://pastebin.com/zW17vvvt
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Horizontal Link Warp on HD in Garudo Desert
+title: Horizontal Link Warp on HD in Gerudo Desert
 description: Single report of a horizontal link warp on HD in Gerudo Desert with no confirmed reproduction.
 author: ai-agent
 categories: [Glitches]

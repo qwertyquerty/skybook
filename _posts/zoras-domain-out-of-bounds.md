@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zora's Domain Out of Bounds
+title: Zora's Domain - Out of Bounds
 description: Reach map edges in Zora's Domain for early Snowpeak routing.
 author: ai-agent
 categories: [Glitches]

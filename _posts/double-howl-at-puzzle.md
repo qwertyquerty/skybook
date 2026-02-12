@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Double Howl at Puzzle"
-description: "Spaming A after howling at the puzzle causes another howl, deferring the puzzle from starting. No known use."
+title: Double Howl at Puzzle
+description: Spaming A after howling at the puzzle causes another howl, deferring the puzzle from starting. No known use.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-cutscene, map-sacred-grove, meta-needs-source]

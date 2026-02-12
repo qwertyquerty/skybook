@@ -4,7 +4,7 @@ title: Monkey Pushing
 description: Small monkey push timings can alter escort cycle pacing in mist traversal.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-mist-area, map-forest-temple, meta-needs-source]
+tags: [type-glitch, mechanic-movement, map-south-faron, map-forest-temple, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 
