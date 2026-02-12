@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bonus: Agatha Bug Menu Delay
-description: A/B alternation can delay Agatha's bug menu similarly to Item Wheel Delay.
+description: Alternating A and B can delay Agatha's bug menu similarly to Item Wheel Delay.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-cutscene, meta-needs-source]
