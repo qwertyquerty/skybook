@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Door Frame Grove Skip"
-description: "Another method for Grove Skip that uses a door frame ledge grab to clip out of bounds and LJA to the Skull Kid boss area."
+title: Door Frame Grove Skip
+description: Another method for Grove Skip that uses a door frame ledge grab to clip out of bounds and LJA to the Skull Kid boss area.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-collision, mechanic-oob, map-sacred-grove]

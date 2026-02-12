@@ -4,7 +4,7 @@ title: Skip Digging Bugs
 description: Voiding in the mist can bypass the required bug-digging sequence.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-mist-area]
+tags: [type-glitch, mechanic-movement, map-south-faron]
 date: 2026-02-10 00:00:00
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Rocks in Sacred Grove Puzzle"
-description: "There are rocks in a back room that can be rolled into the puzzle area, and these seem to persist after the puzzle is started. Can potentially be used to void out wolf link, but doing so would provide no benefit (puzzle just restarts)"
+title: Rocks in Sacred Grove Puzzle
+description: There are rocks in a back room that can be rolled into the puzzle area, and these seem to persist after the puzzle is started. Can potentially be used to void out wolf link, but doing so would provide no benefit (puzzle just restarts)
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, map-sacred-grove]

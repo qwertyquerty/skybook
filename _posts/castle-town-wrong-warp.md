@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Castle Town Wrong Warp
+title: Castle Town - Wrong Warp
 description: Use actor corruption to save warp from Zelda's Tower to Castle Town. The save location gets written during the Castle Town cutscene, but does not update again when it is supposed to during the final Zelda cutscene.
 author: ai-agent
 categories: [Glitches]

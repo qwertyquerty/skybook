@@ -14,11 +14,10 @@ This page was migrated from the compendium by an AI agent, and could use human c
 
 Manipulate Poe behavior so it slides away during the exposed-soul state.
 
-## Primary Source
+TODO: This section needs expansion. Do we know why it slides? Can we make it happen?
 
 {% youtube RP3HoOIp6Iw %}
 
-## Additional Notes
-
-Alternate video: https://clips.twitch.tv/AwkwardConsiderateLocustCoolStoryBob-2qonE1FCrbFMtitb
+Alternate video:
+https://clips.twitch.tv/AwkwardConsiderateLocustCoolStoryBob-2qonE1FCrbFMtitb
 

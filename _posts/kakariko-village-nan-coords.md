@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Kakariko Village / Malo Mart NaN Coords
+title: Kakariko Village - NaN Coords Exiting Malo Mart as Wolf Link
 description: Leaving Malo Mart as Wolf Link can corrupt coordinates when the game expects a human door animation.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, map-kakariko-village]
+tags: [type-glitch, mechanic-memory, map-kakariko-village, room-malo-mart]
 date: 2026-02-11 00:00:00
 ---
 

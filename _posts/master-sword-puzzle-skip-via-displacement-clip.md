@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Master Sword Puzzle Skip via Displacement Clip"
-description: "Clip through the Master Sword doors using a roll stab displacement clip."
+title: Master Sword Puzzle Skip via Displacement Clip
+description: Clip through the Master Sword doors using a roll stab displacement clip.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-oob, map-sacred-grove]

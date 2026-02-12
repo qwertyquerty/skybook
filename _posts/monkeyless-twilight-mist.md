@@ -4,7 +4,7 @@ title: Monkeyless Twilight Mist
 description: Mist traversal can be completed without using monkey guidance.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-mist-area]
+tags: [type-glitch, mechanic-movement, map-south-faron]
 date: 2026-02-10 00:00:00
 ---
 

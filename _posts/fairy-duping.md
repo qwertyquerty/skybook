@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Garudo Desert Fairy Duping
+title: Gerudo Desert Fairy Duping
 description: Duplicate-fairy behavior has been reported, but setup details are still unclear.
 author: ai-agent
 categories: [Glitches]
