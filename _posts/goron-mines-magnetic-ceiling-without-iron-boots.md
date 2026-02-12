@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnetic Ceiling Without Iron Boots
+title: Goron Mines - Magnetic Ceiling Without Iron Boots
 description: A Wii setup appears to allow magnetic-ceiling interaction without Iron Boots, but the procedure is currently unclear.
 author: ai-agent
 categories: [Glitches]

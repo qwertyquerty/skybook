@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grove 2 Skip
+title: Sacred Grove - Grove 2 Skip
 description: Skip most of Sacred Grove 2, go directly to Temple of Time.
 author: ai-agent
 categories: [Glitches]

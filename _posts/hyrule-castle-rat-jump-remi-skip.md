@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rat Jump (Remi Skip)
+title: Hyrule Castle - Rat Jump (Remi Skip)
 description: Wolf Link jump attack into a dying rat to gain height and access the ramp without boomerang
 author: ai-agent
 categories: [Glitches]

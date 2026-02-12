@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ook Crash
+title: Forest Temple - Ook Crash
 description: A frame-perfect gale interruption knockdown setup can crash.
 author: ai-agent
 categories: [Glitches]

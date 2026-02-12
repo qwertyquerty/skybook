@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HD Lake Hylia NaN Wolf
+title: Lake Hylia - HD NaN Wolf
 description: Repeating infinite bomb arrows can produce invalid NaN-like wolf position behavior on HD.
 author: ai-agent
 categories: [Glitches]

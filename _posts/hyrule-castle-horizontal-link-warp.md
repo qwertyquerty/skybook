@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HC Horizontal Link Warp
+title: Hyrule Castle - Horizontal Link Warp
 description: Climbing setup in Hyrule Castle can reportedly trigger a wrong warp to the opposite side of the room.
 author: ai-agent
 categories: [Glitches]

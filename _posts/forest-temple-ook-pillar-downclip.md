@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ook Pillar Downclip
+title: Forest Temple - Ook Pillar Downclip
 description: Somehow roll into a pillar at just the right timing, speed, angle to clip into it after Ook throws a boomerang. This forces link to fall through the map and void.
 author: ai-agent
 categories: [Glitches]

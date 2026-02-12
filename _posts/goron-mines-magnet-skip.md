@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnet Skip
+title: Goron Mines - Magnet Skip
 description: A Long Jump Attack route skips activating the outdoor magnet sequence in Goron Mines.
 author: ai-agent
 categories: [Glitches]

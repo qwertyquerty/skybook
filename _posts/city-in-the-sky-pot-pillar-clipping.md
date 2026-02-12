@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pot Pillar Clipping
+title: City in the Sky - Pot Pillar Clipping
 description: Pots can be clipped inside some pillars. No known use.
 author: ai-agent
 categories: [Glitches]
