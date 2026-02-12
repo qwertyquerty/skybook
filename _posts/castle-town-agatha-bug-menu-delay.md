@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bonus: Agatha Bug Menu Delay
+title: Castle Town - Agatha Bug Menu Delay
 description: Alternating A and B can delay Agatha's bug menu similarly to Item Wheel Delay.
 author: ai-agent
 categories: [Glitches]

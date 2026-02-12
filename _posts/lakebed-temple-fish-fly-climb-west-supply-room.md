@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fish Fly Climb: West Supply Room
+title: Lakebed Temple - Fish Fly Climb in West Supply Room
 description: Use Amazing Fly Glitch to climb without Clawshot.
 author: ai-agent
 categories: [Glitches]
