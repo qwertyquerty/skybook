@@ -5,7 +5,7 @@ description: A precise Hidden Village position can allow transforming back to Hu
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-movement, map-hidden-village, meta-needs-source]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ Standing in a precise Hidden Village location can allow transforming back into H
 
 ## Additional Notes
 
-Alternate spot: {% youtube ZNFG9w2VH8E %}
+Alternate spot:
+{% youtube ZNFG9w2VH8E %}
 

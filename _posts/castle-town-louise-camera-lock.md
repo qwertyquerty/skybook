@@ -5,7 +5,7 @@ description: Start the Louise cutscene during MDH in a special way to shorten th
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-cutscene, map-castle-town]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ Trigger the Louise cutscene during MDH with a specific setup to shorten the sequ
 
 ## Additional Notes
 
-See also: {% youtube 3zY2i05TBgg %}
+See also:
+{% youtube 3zY2i05TBgg %}
 
