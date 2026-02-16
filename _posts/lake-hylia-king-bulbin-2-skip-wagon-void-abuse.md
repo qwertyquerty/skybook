@@ -5,7 +5,7 @@ description: Clip and void during the wagon escort to trigger failsafes that ski
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-warp, mechanic-oob, map-lake-hylia]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,6 +20,7 @@ Void abuse during the wagon escort can trigger a failsafe that skips King Bulbin
 
 ## Additional Notes
 
-Faster setup: {% youtube LZd54qS_Ajk %}
+Faster setup:
+{% youtube LZd54qS_Ajk %}
 
 

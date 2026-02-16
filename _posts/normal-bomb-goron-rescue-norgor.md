@@ -5,7 +5,7 @@ description: Rescue the Goron using normal bombs instead of water bombs.
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-combat, map-zoras-domain]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ This method completes the Goron rescue sequence with regular bombs rather than w
 
 ## Additional Notes
 
-Alt method: {% youtube 59Whqpf_TzU %}
+Alt method:
+{% youtube 59Whqpf_TzU %}
 

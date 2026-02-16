@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plumm Skip
+title: Lake Hylia - Plumm Skip
 description: A precise transform plus frame-perfect howl input can bring up the howl HUD before Plumm forces dialogue.
 author: ai-agent
 categories: [Glitches]

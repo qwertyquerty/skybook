@@ -5,7 +5,7 @@ description: GC save-screen reset timing that leaks J2D memory on Save and can c
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, platform-gcn, mechanic-memory, mechanic-crash]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,6 +20,7 @@ Reset while hovering over Save, wait 17 frames with no input, then press A on fr
 
 ## Additional Notes
 
-Using this to alloc J2D objects into Zelda heap {% youtube sUazCj0PbiM %}
+Using this to alloc J2D objects into Zelda heap:
+{% youtube sUazCj0PbiM %}
 
 

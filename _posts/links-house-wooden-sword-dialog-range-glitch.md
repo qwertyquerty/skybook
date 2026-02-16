@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wooden Sword Dialog Range Glitch
+title: Link's House - Wooden Sword Dialog Range Glitch
 description: Access cutscene dialogue options from outside their normal trigger range.
 author: ai-agent
 categories: [Glitches]

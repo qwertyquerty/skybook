@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twilight Fence Escape (Transform Clip)
+title: Kakariko Village - Twilight Fence Escape (Transform Clip)
 description: A transform clip can pass the Twilight fence enclosure.
 author: ai-agent
 categories: [Glitches]

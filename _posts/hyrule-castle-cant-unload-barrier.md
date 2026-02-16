@@ -391,7 +391,7 @@ to load `V_CTGWall` in the first place, and then whether we get the actor slot s
 Unfortunately, this _also_ doesn't work. I wrote a simple game modification to log each actor load in order and the relevant amount of
 game memory required to load it, and this is what we get while crossing over into North Castle Town:
 
-![TP Actor Load Order](/assets/theory/cant-unload-barrier/actor-load-order.jpg)
+![TP Actor Load Order](/assets/theory/hyrule-castle-cant-unload-barrier/actor-load-order.jpg)
 
 So, we just make sure that the 11072-byte allocation required for `V_CTGWall` fails, and then we're good, right?
 Well, causing that allocation to fail does in fact result in Early Hyrule Castle. There's a problem, though, which is that we can't

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick Transform Dangoro Clip
+title: Goron Mines - Quick Transform Dangoro Clip
 description: In HD, a quick transform can force Dangoro through the floor for immediate damage.
 author: ai-agent
 categories: [Glitches]

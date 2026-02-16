@@ -5,7 +5,7 @@ description: Voiding in the Stallord arena can reset the boss state while leavin
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory, map-arbiters-grounds]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ Voiding out can desynchronize Stallord's reset behavior from the room's state.
 
 ## Additional Notes
 
-Is this the same? {% youtube MsC9S6f8Fg0 %}
+Is this the same?
+{% youtube MsC9S6f8Fg0 %}
 

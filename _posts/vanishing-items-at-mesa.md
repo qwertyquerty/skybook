@@ -5,7 +5,7 @@ description: Bombs and other held items can unexpectedly disappear in the Gerudo
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory, map-gerudo-desert]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ This entry documents item disappearance behavior around the mesa area in Gerudo 
 
 ## Additional Notes
 
-See also: {% youtube ChOsB5-3UbI %}
+See also:
+{% youtube ChOsB5-3UbI %}
 

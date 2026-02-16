@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rupee Bed Clip
+title: Kakariko Village - Rupee Bed Clip
 description: Clip into the bed after collecting the yellow rupee.
 author: ai-agent
 categories: [Glitches]

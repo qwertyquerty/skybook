@@ -5,7 +5,7 @@ description: Drop from Argorok on the first possible frame to force a softlock s
 author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-softlock, map-city-in-the-sky]
-date: 2026-02-10 00:00:00
+date: 2026-02-16 00:00:00
 ---
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
@@ -20,5 +20,6 @@ Dropping from Argorok on the earliest possible frame can lock the fight state; t
 
 ## Additional Notes
 
-See also: {% youtube zKJJqQ4AZ-U %}
+See also:
+{% youtube zKJJqQ4AZ-U %}
 

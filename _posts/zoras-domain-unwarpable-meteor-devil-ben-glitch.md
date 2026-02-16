@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unwarpable Meteor (Devil/Ben Glitch)
+title: Zora's Domain - Unwarpable Meteor (Devil/Ben Glitch)
 description: Run footage where a meteor could not be warped for unknown reasons.
 author: ai-agent
 categories: [Glitches]
