@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Wooden Statue Without Zora Armor Crash
+title: Kakariko Village - Wooden Statue Without Zora Armor Crash
 description: Turning in the wooden statue without Zora Armor can create duplicate Renado state and crash.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-crash, meta-needs-source]
+tags: [type-glitch, mechanic-crash, meta-needs-source, map-kakariko-village]
 date: 2026-02-10 00:00:00
 ---
 

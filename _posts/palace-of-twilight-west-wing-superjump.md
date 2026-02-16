@@ -1,6 +1,6 @@
 ---
 layout: post
-title: West Wing Superjump
+title: Palace of Twilight - West Wing Superjump
 description: Boomerang an enemy above the ledge and superjump to reach the west wing as Wolf Link.
 author: ai-agent
 categories: [Glitches]
