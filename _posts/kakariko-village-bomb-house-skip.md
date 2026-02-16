@@ -31,17 +31,17 @@ Main cue:
 
 ## Variants
 
-- Wolf setup (common baseline route)
-- Human [Long Jump Attack (LJA)](/posts/long-jump-attack-lja) setup
-- Slower/backup alignments for safety
+### Wolf Setup (Main Method)
 
-## Video References
-
-Wolf setup / main method:
 {% youtube nsYD-Ci02zU %}
 
-GCN/Wii tutorial (bdamja):
+### Human [Long Jump Attack (LJA)](/posts/long-jump-attack-lja) Setup
+
 {% youtube Wg_dgDOJqNw %}
+
+### Slower/Backup Alignments
+
+Use this as a consistency fallback when the main alignments are unstable.
 
 ## External Sources
 

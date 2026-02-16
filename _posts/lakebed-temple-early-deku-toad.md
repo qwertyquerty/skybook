@@ -29,10 +29,6 @@ Early Deku Toad lets you enter the boss before the normal staircase progression 
 - [Diababa Soft Lock](/posts/diababa-soft-lock)
 - [Despawn Armor Enemies](/posts/despawn-armor-enemies)
 
-## Video References
-
-No dedicated Early Deku Toad video link is listed on the source page section.
-
 ## External Sources
 
 ZSR page: https://www.zeldaspeedruns.com/tp/tech/early-boss-fights
