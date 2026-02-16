@@ -32,7 +32,7 @@ Potential causes considered so far:
 - Unexpected save-room overwrite behavior during actor creation.
 - Temporary event-bit behavior interfering with normal save update flow.
 
-This appears closely related to behaviors seen in [Save Warp Malfunction (Adam Glitch)]({% post_url save-warp-malfunction-adam-glitch %}).
+This appears closely related to behaviors seen in [Save Warp Malfunction (Adam Glitch)](/posts/city-in-the-sky-save-warp-malfunction-adam-glitch).
 
 ## External Sources
 

@@ -23,7 +23,7 @@ Observed reset windows:
 - Reset shortly before void-out resolves: can cause immediate crash.
 - Reset earlier in the void sequence: can produce delayed crash after file load depending on save file/state.
 
-The behavior appears timing-sensitive and distinct from standard [Back in Time]({% post_url back-in-time %}) outcomes.
+The behavior appears timing-sensitive and distinct from standard [Back in Time](/posts/back-in-time) outcomes.
 
 ## Primary Source
 

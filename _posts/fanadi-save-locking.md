@@ -27,14 +27,14 @@ This temporary flag is not saved to file data, but it can persist until reset/cl
 Current notes indicate the lock state is associated with Fortune Teller event flow and can be carried into later gameplay if the state is not cleared first.
 
 Relevant related tech:
-- [Ooccoo Cutscene Skip]({% post_url ooccoo-cutscene-skip %})
-- [Save Warp Malfunction (Adam Glitch)]({% post_url save-warp-malfunction-adam-glitch %})
+- [Ooccoo Cutscene Skip](/posts/ooccoo-cutscene-skip)
+- [Save Warp Malfunction (Adam Glitch)](/posts/city-in-the-sky-save-warp-malfunction-adam-glitch)
 
 ## Epona Cutscene Crash Side Effect
 
 Trigger an Epona-involving cutscene while Fanadi save locking is active to produce a crash from incompatible spawn-state flags.
 
-See: [Fanadi Save Lock Epona Cutscene Crash]({% post_url fanadi-save-lock-epona-cutscene-crash %})
+See: [Fanadi Save Lock Epona Cutscene Crash](/posts/fanadi-save-lock-epona-cutscene-crash)
 
 ## External Sources
 
