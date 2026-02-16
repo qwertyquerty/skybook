@@ -38,7 +38,7 @@ This lets you reach Ook's outdoor monkey swing sequence early.
 - EBF behavior is also used for [Lakebed Temple - Early Deku Toad](/posts/lakebed-temple-early-deku-toad) when boss flag is nonzero.
 - The source page documents anti-uses including [Diababa Soft Lock](/posts/diababa-soft-lock) behavior at boss flag value `1` and armor despawns related to [Despawn Armor Enemies](/posts/despawn-armor-enemies).
 
-## Video References
+## EBF Setup Routes
 
 King Bulblin 1 EBF (faster):
 {% youtube GiXRJz1wfiY %}

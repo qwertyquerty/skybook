@@ -18,6 +18,27 @@ In this run, meteor warping unexpectedly failed. Root cause is unknown.
 
 https://www.twitch.tv/videos/41463963
 
-## Additional Notes
+## Event-System Notes
 
-Pastebin: https://pastebin.com/VT0iVk2B
+Research traces the failure path through event scene-change logic and cutscene progression checks. In short, event progression can repeatedly call scene-change transitions when finish checks resolve true or when cutscene playback aborts.
+
+Key points from current notes:
+- Cutscene sequencing advances through `dEvt_control_c::Step` and sequencer scene-change paths.
+- Skip/abort paths can force repeated scene-change calls before load starts.
+- Missing/invalid cutscene demo resources can trigger early cut end behavior.
+
+## Current Theory
+
+A likely cause is cutscene demo startup/parsing failure while in the meteor event chain, producing an abort-like progression path ("Devil/Ben glitch"-style behavior) rather than a normal transition.
+
+Potential failure sources include:
+- Required STB data not loading.
+- STB block parse failure.
+- Required actor references not resolving (for example, actor not spawned/available).
+- Memory/resource allocation issues during demo startup.
+
+This remains unsolved.
+
+## External Sources
+
+Pastebin page: https://pastebin.com/VT0iVk2B
