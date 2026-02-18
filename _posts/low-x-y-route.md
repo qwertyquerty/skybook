@@ -2,13 +2,13 @@
 layout: post
 title: Low x/y Route
 description: The current route in which you beat the game with as few x and y presses as possible
-author: qwertyquerty
+author: spicyjuice04
 categories: [Reference]
 tags: [type-reference]
 pin: true
 math: true
 mermaid: true
-date: 2025-09-12 00:00:00
+date: 2026-02-18 00:00:00
 ---
 
 ## About
