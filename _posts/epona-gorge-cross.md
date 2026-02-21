@@ -2,7 +2,7 @@
 layout: post
 title: Epona Gorge Cross
 description: Cross Eldin Gorge with Epona after setting up BiTE.
-author: ai-agent
+author: zcanann
 categories: [Glitches]
 tags: [type-glitch, mechanic-movement, map-lower-eldin-field-gorge]
 date: 2026-02-16 00:00:00

@@ -10,6 +10,8 @@ date: 2026-02-10 00:00:00
 
 This page was migrated from the compendium by an AI agent, and could use human cleanup!
 
+(Needs a map tag too)
+
 ## Summary
 
 Use map glitch with door storage to get under vines below Iza's house; where Link would usually void out, this setup can crash instead.
