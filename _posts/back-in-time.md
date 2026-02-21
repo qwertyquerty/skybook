@@ -4,7 +4,7 @@ title: Back in Time
 description: Explanation and consequences of why we can move and save on the title screen
 author: spicyjuice04
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, mechanic-back-in-time, meta-major-glitch]
+tags: [type-glitch, mechanic-memory, mechanic-crash, mechanic-back-in-time, meta-major-glitch]
 pin: true
 math: true
 mermaid: true
@@ -139,3 +139,8 @@ To beat the game with BiT, we need to find ways that make it possible to skip th
 
 The Fishing Rod *or actually the Coral Earring* is another item you are supposed to need later in the game to fish a Reekfish for its scent to climb up Snowpeak Summit. Fortunately with another glitch, that being Map Glitch, you can climb the Summit freely without the requirement of the scent. 
 
+## Back in Time J2D Crash
+
+Perform Back in Time and game over with title-screen UI state active to produce a likely J2D heap exhaustion crash.
+
+{% youtube 9_yOnMgyiA4 %}

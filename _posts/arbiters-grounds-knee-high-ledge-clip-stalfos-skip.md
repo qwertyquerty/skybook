@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Knee High Ledge Clip Stalfos Skip
+title: Arbiter's Grounds - Knee High Ledge Clip Stalfos Skip
 description: Use a knee-high ledge mantle clip to go out of bounds for a precise Stalfos skip variant.
 author: ai-agent
 categories: [Glitches]

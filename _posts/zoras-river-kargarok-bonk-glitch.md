@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Kargarok Bonk Glitch
+title: Zora's River - Kargarok Bonk Glitch
 description: A stunned Kargarok can enter a prolonged bonk-like backward drift before falling.
 author: zcanann
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision]
+tags: [type-glitch, mechanic-collision, map-zoras-river]
 date: 2026-02-10 00:00:00
 ---
 

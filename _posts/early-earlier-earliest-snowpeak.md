@@ -34,7 +34,7 @@ Set up [Map Glitch](/posts/map-glitch-warp-method) in outer Zora's Domain, reach
 {% youtube Qa2nxPz8tVY %}
 
 ### `Rupee Dive` method:
-Use a rupee dive setup (see [Rupee / Cutscene / Midna Dive](/posts/rupee-cutscene-midna-dive)) with Fixed EMS/Barnes bomb bag state to swim behind the ice wall and re-enter bounds near the Snowpeak exit.
+Use a rupee dive setup (see [Item / Rupee / Cutscene / Midna Dive](/posts/item-rupee-cutscene-midna-dive)) with Fixed EMS/Barnes bomb bag state to swim behind the ice wall and re-enter bounds near the Snowpeak exit.
 
 {% youtube jDqyB6quAGI %}
 

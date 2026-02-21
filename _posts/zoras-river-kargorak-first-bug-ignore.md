@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Kargorak First Bug Ignore
+title: Zora's River - Kargorak First Bug Ignore
 description: Skip the first Kargorak bug and let it catch up later for cleanup.
-author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-zoras-river]
+author: zcanann
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-zoras-river]
 date: 2026-02-10 00:00:00
 ---
-
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
 
 ## Summary
 

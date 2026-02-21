@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Shard Skip
+title: Goron Mines - Key Shard Skip
 description: A jump from the rotating platform can reach upper-room space early and bypass intended progression.
 author: ai-agent
 categories: [Glitches]

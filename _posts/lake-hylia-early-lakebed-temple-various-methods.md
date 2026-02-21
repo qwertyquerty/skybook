@@ -41,7 +41,7 @@ Related support tech: [Air Replenish (Swim with Water Bombs)](/posts/air-repleni
 - Uses rupee text timing and a pre-input sword action to trigger dive behavior.
 - Historically useful, but mostly replaced by stronger setups.
 
-Related trick: [Rupee Cutscene Midna Dive](/posts/rupee-cutscene-midna-dive)
+Related trick: [Item / Rupee / Cutscene / Midna Dive](/posts/item-rupee-cutscene-midna-dive)
 
 ### Midna Dive Variants (Wii-focused)
 

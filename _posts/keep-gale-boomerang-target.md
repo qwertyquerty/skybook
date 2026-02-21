@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Keep Boomerang Target
+title: Keep Gale Boomerang Target
 description: Preserve a boomerang target by chaining Z then A with tight frame timing.
-author: ai-agent
+author: zcanann
 categories: [Glitches]
 tags: [type-glitch, mechanic-storage]
 date: 2026-02-10 00:00:00
 ---
-
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
 
 ## Summary
 

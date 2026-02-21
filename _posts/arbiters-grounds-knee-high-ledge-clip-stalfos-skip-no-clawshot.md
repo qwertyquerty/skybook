@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Knee High Ledge Clip Stalfos Skip (No Clawshot)
+title: Arbiter's Grounds - Knee High Ledge Clip Stalfos Skip (No Clawshot)
 description: Perform a knee-high ledge mantle clip for Stalfos skip, then recover in bounds without Clawshot.
 author: ai-agent
 categories: [Glitches]
