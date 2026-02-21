@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Infinite Bomb Arrows
+title: Zora's River - Infinite Bomb Arrows
 description: Glitch the Plumm or Iza mini-games to get infinite bombs and arrows.
 author: ai-agent
 categories: [Glitches]
@@ -47,7 +47,7 @@ Fast Kargarok clip setup:
 
 ## Related
 
-- [Steal Lent Bomb Bag / Black Rupee](/posts/steal-lent-bomb-bag-black-rupee)
+- [Steal Lent Bomb Bag / Black Rupee](/posts/zoras-river-steal-lent-bomb-bag-black-rupee)
 - [Lake Hylia - Plumm Skip](/posts/lake-hylia-plumm-skip)
 
 ## External Sources

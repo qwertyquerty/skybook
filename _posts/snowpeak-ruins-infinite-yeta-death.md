@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infinite Yeta Death
+title: Snowpeak Ruins - Infinite Yeta Death
 description: Reported repeated Yeta death behavior with unknown setup details.
 author: ai-agent
 categories: [Glitches]

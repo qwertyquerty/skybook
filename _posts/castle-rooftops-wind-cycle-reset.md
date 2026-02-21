@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Rooftops - Wind Cycle Reset
+title: Castle Rooftops - Wind Cycle Reset
 description: Call Midna to reset the wind cycle on the bridge, which is faster than waiting if you miss the wind cycle.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-cutscene, map-rooftops]
+tags: [type-glitch, mechanic-cutscene, map-castle-rooftops]
 date: 2026-02-10 00:00:00
 ---
 

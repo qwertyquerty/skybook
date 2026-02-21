@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Infinite Bomb Arrows on New File
+title: Zora's River - Infinite Bomb Arrows on New File
 description: Escape Iza and carry the infinite bombs and arrows state into a new BiT file.
 author: ai-agent
 categories: [Glitches]
@@ -28,7 +28,7 @@ After setting up [Infinite Bomb Arrows](/posts/infinite-bomb-arrows), you can ro
 
 ## Setup Path Commonly Used
 
-- The Iza-side setup typically comes from [Steal Lent Bomb Bag / Black Rupee](/posts/steal-lent-bomb-bag-black-rupee), including the Wii-only Iza 1 escape variant.
+- The Iza-side setup typically comes from [Steal Lent Bomb Bag / Black Rupee](/posts/zoras-river-steal-lent-bomb-bag-black-rupee), including the Wii-only Iza 1 escape variant.
 
 ## Video References
 

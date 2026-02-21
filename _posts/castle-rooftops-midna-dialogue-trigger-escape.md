@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Midna Rooftops Dialogue Trigger Escape
+title: Castle Rooftops - Midna Dialogue Trigger Escape
 description: Upon entering the Castle Rooftops, there is a 1 frame window to skip the Midna text via a jump attack immediately after the cutscene is skipped.
 author: ai-agent
 categories: [Glitches]
-tags: [type-glitch, mechanic-cutscene, map-rooftops, meta-needs-source]
+tags: [type-glitch, mechanic-cutscene, map-castle-rooftops, meta-needs-source]
 date: 2026-02-10 00:00:00
 ---
 

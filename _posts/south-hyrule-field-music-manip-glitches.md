@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Music manip glitches
+title: South Hyrule Field - Music manip glitches
 description: Hitting triggers to alter which midi tracks play (?)
 author: ai-agent
 categories: [Glitches]

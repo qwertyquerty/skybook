@@ -25,7 +25,7 @@ This aligns with other Faron Twilight single-frame saves:
 - [Midna First Jump Skip](/posts/midna-first-jump-skip)
 - [Midna Text Skip](/posts/midna-text-skip)
 - [Skip Digging Bugs](/posts/skip-digging-bugs)
-- [Faron Spirit Text Skip](/posts/faron-spirit-text-skip)
+- [Faron Spirit Text Skip](/posts/south-faron-faron-spirit-text-skip)
 
 ## External Sources
 

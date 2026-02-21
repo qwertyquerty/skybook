@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Malo Mart - Bug Manip
+title: Kakariko Village - Malo Mart - Bug Manip
 description: A bonk manipulates the bug to move toward Link.
 author: ai-agent
 categories: [Tricks]

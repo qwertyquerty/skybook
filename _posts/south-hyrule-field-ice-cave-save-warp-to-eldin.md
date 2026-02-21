@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ice Cave Save Warp to Eldin
+title: South Hyrule Field - Ice Cave Save Warp to Eldin
 description: (Needs a description)
 author: ai-agent
 categories: [Glitches]

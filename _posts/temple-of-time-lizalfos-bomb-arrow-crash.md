@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToT Lizalfos Bomb Arrow Crash
+title: Temple of Time - Lizalfos Bomb Arrow Crash
 description: Bomb-arrowing a lightly loaded Lizalfos near the small-key chest area can crash.
 author: ai-agent
 categories: [Glitches]

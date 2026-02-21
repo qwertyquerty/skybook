@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transform Ice Wall / Regular Wall Clip
+title: Snowpeak Ruins - Transform Ice Wall / Regular Wall Clip
 description: Failed ice-wall clip attempts can convert into a regular wall clip route.
 author: ai-agent
 categories: [Glitches]

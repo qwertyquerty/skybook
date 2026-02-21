@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transform Ice Wall Clip
+title: Snowpeak Ruins - Transform Ice Wall Clip
 description: Transforming at specific alignment can clip Link through the Snowpeak ice wall.
 author: ai-agent
 categories: [Glitches]

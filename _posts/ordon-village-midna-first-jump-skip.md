@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Midna First Jump Skip
+title: Ordon Village - Midna First Jump Skip
 description: Perform a standard wolf jump instead of the intended first Midna jump prompt.
 author: ai-agent
 categories: [Tricks]

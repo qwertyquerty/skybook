@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Invisible Monkeys
+title: Forest Temple - Invisible Monkeys
 description: Forest Temple monkey actors can become invisible under currently undocumented conditions.
 author: ai-agent
 categories: [Glitches]

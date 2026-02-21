@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Melted Postman
+title: Upper Eldin Field Hyrule Bridge - Melted Postman
 description: Triggering the postman below the map can send Link to extreme negative coordinates and break rendering precision.
 author: ai-agent
 categories: [Glitches]

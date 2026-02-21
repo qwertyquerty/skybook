@@ -30,7 +30,7 @@ The valid input frame is height-dependent, so some drops have no possible frame 
 ## Practical Uses
 
 - Underwater bomb interactions without water bombs.
-- Route flexibility when bombs come from [Steal Lent Bomb Bag / Black Rupee](/posts/steal-lent-bomb-bag-black-rupee) or [Infinite Bomb Arrows](/posts/infinite-bomb-arrows).
+- Route flexibility when bombs come from [Steal Lent Bomb Bag / Black Rupee](/posts/zoras-river-steal-lent-bomb-bag-black-rupee) or [Infinite Bomb Arrows](/posts/infinite-bomb-arrows).
 
 ## Video Example
 
@@ -39,7 +39,7 @@ Normal Bombs Underwater demonstration:
 
 ## Related
 
-- [Steal Lent Bomb Bag / Black Rupee](/posts/steal-lent-bomb-bag-black-rupee)
+- [Steal Lent Bomb Bag / Black Rupee](/posts/zoras-river-steal-lent-bomb-bag-black-rupee)
 - [Infinite Bomb Arrows](/posts/infinite-bomb-arrows)
 
 ## External Sources

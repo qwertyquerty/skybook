@@ -71,7 +71,7 @@ Example:
 
 - [Map Glitch Warp Method](/posts/map-glitch-warp-method)
 - [Map Glitch Cutscene Cancelling](/posts/map-glitch-cutscene-cancelling)
-- [Steal Lent Bomb Bag / Black Rupee](/posts/steal-lent-bomb-bag-black-rupee)
+- [Steal Lent Bomb Bag / Black Rupee](/posts/zoras-river-steal-lent-bomb-bag-black-rupee)
 
 ## External Sources
 

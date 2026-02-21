@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swim Softlock / Animation Glitch
+title: Lake Hylia - Swim Softlock / Animation Glitch
 description: A swimming state transition can lock Link or produce broken animation behavior.
 author: ai-agent
 categories: [Glitches]

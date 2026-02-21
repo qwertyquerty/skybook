@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monkeyless Twilight Mist
+title: South Faron - Monkeyless Twilight Mist
 description: Mist traversal can be completed without using monkey guidance.
 author: ai-agent
 categories: [Glitches]

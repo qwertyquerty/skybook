@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Missing Cat Softlock
+title: Ordon Village - Missing Cat Softlock
 description: Talking to the vine man after skipping him and feeding the cat can softlock progression.
 author: ai-agent
 categories: [Glitches]

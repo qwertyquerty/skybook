@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transform in Hidden Village
+title: Hidden Village - Transform in Hidden Village
 description: A precise Hidden Village position can allow transforming back to Human Link.
 author: ai-agent
 categories: [Glitches]
@@ -16,7 +16,7 @@ Standing in a precise Hidden Village location can allow transforming back into H
 
 ## Primary Source
 
-<Need original video>
+TODO: Need original video!
 
 ## Additional Notes
 

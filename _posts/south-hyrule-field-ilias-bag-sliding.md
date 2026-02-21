@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ilia's Bag Sliding
+title: South Hyrule Field - Ilia's Bag Sliding
 description: Pick up Ilia's bag as human Link, pushing Link at fast speeds. This is a possibility due to Early Master Sword.
 author: ai-agent
 categories: [Glitches]

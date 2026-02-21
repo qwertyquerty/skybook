@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Morpheel Without Zora Armor
+title: Lakebed Temple - Morpheel Without Zora Armor
 description: Defeat Morpheel using only Iron Boots, Clawshot, and Water Bombs without Zora Armor.
 author: ai-agent
 categories: [Glitches]

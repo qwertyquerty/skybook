@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tile Bug Warping
+title: City in the Sky - Tile Bug Warping
 description: Boomeranging a bug to lower level can cause an upwarp back to original location.
 author: ai-agent
 categories: [Glitches]

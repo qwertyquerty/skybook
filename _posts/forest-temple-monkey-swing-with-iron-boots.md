@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monkey Swing with Iron Boots
+title: Forest Temple - Monkey Swing with Iron Boots
 description: Jump-slash timing can put Link on monkey swings while wearing Iron Boots.
 author: ai-agent
 categories: [Glitches]

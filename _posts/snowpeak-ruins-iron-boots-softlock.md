@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Iron Boots softlock
+title: Snowpeak Ruins - Iron Boots softlock
 description: On Wii, opening the second-floor locked door with Iron Boots equipped can cause a softlock.
 author: ai-agent
 categories: [Glitches]

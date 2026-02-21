@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title: Sword & Shield Skip
+title: Ordon Springs - Sword & Shield Skip
 description: Skip Ordon Sword/Shield collection by luring and LJAing off Hugo over Midna's return trigger.
-author: ai-agent
+author: zcanann
 categories: [Glitches]
 tags: [type-glitch, mechanic-movement, map-ordon-springs]
 date: 2026-02-16 00:00:00

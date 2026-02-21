@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sword Mini-game Escape
+title: Link's House - Sword Mini-game Escape
 description: Exit the sword mini-game early by jump slashing out of the event bounds.
 author: ai-agent
 categories: [Glitches]

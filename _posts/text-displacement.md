@@ -59,7 +59,7 @@ The source page lists the following as generally TD-safe:
 - [Telma Dialog Skip (Grants Text Displacement)](/posts/telma-dialog-skip-grants-text-displacement), Wii:
 {% youtube ZaBSlJxHDCw %}
 - [Ooccoo Text-Displacement Corruption](/posts/ooccoo-text-displacement-corruption)
-- [Squirrel Text Displacement Softlock](/posts/squirrel-text-displacement-softlock)
+- [Squirrel Text Displacement Softlock](/posts/links-house-squirrel-text-displacement-softlock)
 - Rusl TD context:
 {% youtube mE_HWKNDvtc %}
 - Yeta TD context:

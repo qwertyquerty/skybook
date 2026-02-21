@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hena Anger Storage
+title: Zora's River - Hena Anger Storage
 description: Store Hena's anger flag globally so the dialogue appears on other files.
 author: ai-agent
 categories: [Glitches]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Morpheel Cutscene Softlock
+title: Lakebed Temple - Morpheel Cutscene Softlock
 description: Clawshotting on the cutscene start frame can break Morpheel's intro and softlock behavior.
 author: ai-agent
 categories: [Glitches]

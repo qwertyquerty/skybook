@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jovani's House as Human Link
+title: Castle Town - Jovani's House as Human Link
 description: Transform into human Link in a precise spot, allowing Link to talk to Jovani as human, and perform a glitchy exit via the door.
 author: ai-agent
 categories: [Glitches]

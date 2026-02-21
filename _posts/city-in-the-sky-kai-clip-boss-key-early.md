@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kai Clip (Boss Key Early)
+title: City in the Sky - Kai Clip (Boss Key Early)
 description: A precise clawshot clip reaches early Boss Key access.
 author: ai-agent
 categories: [Glitches]
