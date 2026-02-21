@@ -19,3 +19,11 @@ This Entry is Missing a Media Source!
 Force unequip iron boots while opening an underwater chest to warp to the top of the water.
 
 This Entry is Missing a Media Source!
+
+## Cutscene Method
+
+Targeting while inputting a sideswim while shooting a clawshot and force unequipping iron boots can cause a Morpheel rocket link.
+
+TODO: Can this be done with other cutscenes?
+
+https://www.twitch.tv/bdamja/clip/StormyConsiderateJaguarNononoCat-CSiBF3sfrqjRpQix
