@@ -10,7 +10,7 @@ date: 2026-02-16 00:00:00
 
 ## Summary
 
-Empty Lake Hylia is a temporary out-of-progression state where Lake Hylia loads without water and without many state-dependent actors. In speedrun routing, this is used to enter [Lake Hylia - Early Lakebed Temple](/posts/lake-hylia-early-lakebed-temple-various-methods) without normal [Zora Armor](/posts/morpheel-without-zora-armor) requirements.
+Empty Lake Hylia is a temporary out-of-progression state where Lake Hylia loads without water and without many state-dependent actors. In speedrun routing, this is used to enter [Lake Hylia - Early Lakebed Temple](/posts/lake-hylia-early-lakebed-temple-various-methods) without normal [Zora Armor](/posts/lakebed-temple-morpheel-without-zora-armor) requirements.
 
 ## Requirements
 

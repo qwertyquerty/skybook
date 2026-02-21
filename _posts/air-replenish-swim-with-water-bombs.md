@@ -33,7 +33,7 @@ The main practical result is Air Replenish: dropping that bomb with `A` refills 
 
 ## Known Use Cases
 
-- Fighting Morpheel without normal underwater routing: [Morpheel without Zora Armor](/posts/morpheel-without-zora-armor).
+- Fighting Morpheel without normal underwater routing: [Morpheel without Zora Armor](/posts/lakebed-temple-morpheel-without-zora-armor).
 - Any route segment that wants extra underwater time without surfacing for air.
 
 ## Notes

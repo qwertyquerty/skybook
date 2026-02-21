@@ -10,7 +10,7 @@ date: 2026-02-16 00:00:00
 
 ## Summary
 
-After setting up [Infinite Bomb Arrows](/posts/infinite-bomb-arrows), you can route through [Back in Time](/posts/back-in-time) so a new file starts with functional bombs/arrows access far earlier than intended.
+After setting up [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows), you can route through [Back in Time](/posts/back-in-time) so a new file starts with functional bombs/arrows access far earlier than intended.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ After setting up [Infinite Bomb Arrows](/posts/infinite-bomb-arrows), you can ro
 
 ## Transfer Flow
 
-1. Perform [Infinite Bomb Arrows](/posts/infinite-bomb-arrows).
+1. Perform [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows).
 2. Perform [Back in Time](/posts/back-in-time).
 3. On Eldin Bridge title-screen state, die twice and choose `Retry` on Game Over.
 4. You load into King Bulblin with bow access and ammo state carried over.

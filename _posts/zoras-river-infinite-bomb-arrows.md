@@ -31,7 +31,7 @@ This setup is commonly documented together with Iza 1 Skip. The shared flow is:
 ## Practical Uses
 
 - Safe ammo routing for heavy bomb-arrow usage.
-- Transferring bombs/arrows into a new file with [Back in Time](/posts/back-in-time) flow (tracked separately at [Infinite Bomb Arrows on New File](/posts/infinite-bomb-arrows-on-new-file)).
+- Transferring bombs/arrows into a new file with [Back in Time](/posts/back-in-time) flow (tracked separately at [Infinite Bomb Arrows on New File](/posts/zoras-river-infinite-bomb-arrows-on-new-file)).
 - Enables early route options that leverage bomb arrows, including scenarios tied to [Forest Temple - Early Monkeys](/posts/forest-temple-early-monkeys).
 
 ## Video References

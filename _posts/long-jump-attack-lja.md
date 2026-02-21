@@ -64,7 +64,7 @@ JSLJA example video:
 
 - Gale Boomerang LJA is practically unavailable on Wii because sword pull breaks the needed lock behavior without hacks.
 - Some voids with underlying collision do not provide the expected LJA boost.
-- A common route application is [Sword & Shield Skip](/posts/sword-shield-skip), which uses enemy positioning to create an LJA window.
+- A common route application is [Sword & Shield Skip](/posts/ordon-springs-sword-shield-skip), which uses enemy positioning to create an LJA window.
 
 Speed/behavior explanation video:
 {% youtube FOzsLP0TUYc %}

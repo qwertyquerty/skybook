@@ -28,8 +28,8 @@ If Hugo takes damage during attempts, reload immediately. After enough hits, Hug
 
 Common alignment cues are a black ground line and white ground splotch.
 
-![Sword and Shield Skip cue circle](/assets/glitches/sword-shield-skip/visual-cue-circle.png)
-![Sword and Shield Skip actor alignment](/assets/glitches/sword-shield-skip/visual-cue-actors.png)
+![Sword and Shield Skip cue circle](/assets/glitches/ordon-springs-sword-shield-skip/visual-cue-circle.png)
+![Sword and Shield Skip actor alignment](/assets/glitches/ordon-springs-sword-shield-skip/visual-cue-actors.png)
 
 ## Method Variants
 
@@ -59,4 +59,4 @@ Original Nore 139 video:
 
 ## External Sources
 
-ZSR page: https://www.zeldaspeedruns.com/tp/msb/sword-shield-skip
+ZSR page: https://www.zeldaspeedruns.com/tp/msb/ordon-springs-sword-shield-skip

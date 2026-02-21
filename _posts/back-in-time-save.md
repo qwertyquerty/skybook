@@ -24,12 +24,12 @@ Twilight Princess loads a dummy file for the title-screen opening sequence. Duri
 - Starts with Hero's Clothes, Ordon Sword, and Hylian Shield equipped, but those items are not normally in inventory.
 - Sets Epona as already tamed, which changes early-state behavior.
 
-Because the equipped sword/shield are not normal inventory acquisitions, route logic can require [Sword and Shield Skip](/posts/sword-shield-skip) for full completion paths.
+Because the equipped sword/shield are not normal inventory acquisitions, route logic can require [Sword and Shield Skip](/posts/ordon-springs-sword-shield-skip) for full completion paths.
 
 ## Notes
 
 - If King Bulblin is defeated before a save is made, savewarp location can be overwritten to Kakariko Village.
-- Pairing this setup with [Infinite Bomb Arrows](/posts/infinite-bomb-arrows) can carry bombs/arrows into the resulting BiT save state.
+- Pairing this setup with [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows) can carry bombs/arrows into the resulting BiT save state.
 - Related setup page: [Back in Time Equipped](/posts/back-in-time-equipped).
 
 ## External Sources

@@ -22,7 +22,7 @@ This is a Faron Twilight 1-framer: after a dig resolves and before Midna's landi
 
 This aligns with other Faron Twilight single-frame saves:
 
-- [Midna First Jump Skip](/posts/midna-first-jump-skip)
+- [Midna First Jump Skip](/posts/ordon-village-midna-first-jump-skip)
 - [Midna Text Skip](/posts/midna-text-skip)
 - [Skip Digging Bugs](/posts/skip-digging-bugs)
 - [Faron Spirit Text Skip](/posts/south-faron-faron-spirit-text-skip)

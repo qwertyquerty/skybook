@@ -63,19 +63,19 @@ Black rupee / duplicated lent bag method:
 
 - Early bomb access after [Early Master Sword](/posts/early-master-sword) without buying Barnes bag.
 - Enables [Normal Bombs Underwater](/posts/normal-bombs-underwater) setups once bombs are available in water routes.
-- Supports [Infinite Bomb Arrows](/posts/infinite-bomb-arrows) and related Iza routing.
+- Supports [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows) and related Iza routing.
 - Interacts with [Back in Time - Save Corruption](/posts/back-in-time-save) inventory loading paths.
 
 ## Additional Notes
 
-- Includes a BiT inventory bow note tied to lent bag theft and [Infinite Bomb Arrows](/posts/infinite-bomb-arrows).
+- Includes a BiT inventory bow note tied to lent bag theft and [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows).
 - Discord context from original import: https://discord.com/channels/83003360625557504/354966434243280896/1038319174155513966
 
 ## Related
 
 - [Universal Map Delay (UMD)](/posts/universal-map-delay-umd)
 - [Normal Bombs Underwater](/posts/normal-bombs-underwater)
-- [Infinite Bomb Arrows](/posts/infinite-bomb-arrows)
+- [Infinite Bomb Arrows](/posts/zoras-river-infinite-bomb-arrows)
 
 ## External Sources
 
