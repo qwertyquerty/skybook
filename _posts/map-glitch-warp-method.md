@@ -57,7 +57,7 @@ Universal Map Delay setup:
 - The behavior is version-dependent and does not affect every trigger class (for example, many cutscene triggers still work).
 - Most practical setups are 1-frame timings.
 - Map Glitch is usually ended by area loads (including many warps/savewarps).
-- Related pages: [Map Glitch (Cutscene Cancelling)](/posts/map-glitch-cutscene-cancelling), [Post-Warp Map Glitch](/posts/post-warp-map-glitch), [Snowpeak Ruins Early (Map Glitch)](/posts/snowpeak-ruins-early-map-glitch).
+- Related pages: [Map Glitch (Cutscene Cancelling)](/posts/map-glitch-cutscene-cancelling), [Post-Warp Map Glitch](/posts/post-warp-map-glitch), [Snowpeak Ruins Early (Map Glitch)](/posts/snowpeak-mountains-snowpeak-ruins-early-map-glitch).
 
 ## External Sources
 
