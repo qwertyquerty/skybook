@@ -45,9 +45,15 @@ Usually in a speedrun, you go to Iza to obtain and even duplicate Bomb Bags from
 
 Additionally this state of the equips is only temporary. Once you die or reach a save promt, the game will revert back to the equips you had before getting Boomerang on X and Y. This is a way to preserve important equips like the Clawshot for example. So using the Boomerang where it is required and then dying does result in giving the equip of the Clawshot back which saves some X and Y presses.
 
+### Map Glitch
+
+By selecting a warp point and interupting the warping with another cutscene, most loading zones get disabled. With Universal Map Delay this can also be initialized in a TAS without map warping. Map Glitch is not only useful for disabling loading zones but also makes it impossible for the senses to go off in cutscenes, so you keep them on. This is especially useful for the Twilight Sections of the run.
+
 ## The Route
 
 *This route was mainly developed by spicyjuice04. Since this route is not yet perfect for general rupee routing and the description of tricks is not very detailed, for questions reach out to them in Discord either through DM's or the TP Speedrunning Discord.*
+
+### Ordon
 
 - Ordon Gate Clip 
 - Back in Time on Ordon Bridge 
@@ -72,6 +78,7 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Sword and Shield Skip 
 - Enter Faron Twilight 
 
+### Faron Twilight
 - South Faron Portal and Midna Charge																								
 - Faron Vessel 
 
@@ -101,6 +108,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Press Sense once for all the bugs in the Mist Area without Midna Jumping (5 X/Y) 
 - Faron Vessel Complete 
 
+### Eldin Twilight
+
 - Save on a free File and keep it for later
 - Back in Time Equipped to King Bulblin 1 
 - Defeat King Bulblin
@@ -123,6 +132,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Clipping to Early Elevator so we can move the rock
 - Sense for the Bug in the Spring Water first and traverse back to the other bugs (13 X/Y)	
 - Eldin Vessel Complete
+
+### Lanayru Twilight
 
 - If RNG Rupees were enough, donate to SVA 300 Rupees (R0) (Donated R300) (currently inaccurate/need to find more rupees)
 - Get Graveyard Golden Bug + Yellow (R10) (GB#1)
@@ -155,6 +166,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Defeat Boss Bug (because of Map Glitch the Sense does not get disabled)
 - Lanayru Vessel Completed
 
+### Magic Armor
+
 - Warp Kakariko
 - Donate 300 Rupees to SVA and buy a Wooden Shield (R0) (Donated R600)
 - Call Epona and leave her after Barnes' Shop
@@ -182,6 +195,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Give Agitha all remaining Bugs except one to Agitha (R600)
 - Buy Magic Armor (R2)
 
+### Boomerang
+
 - Warp North Faron
 - Obtain the Great Spin
 - Defeat a Bokoblin and Rupee Slide past the Web
@@ -197,6 +212,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Swing Across the Bridge and Enter Ook Miniboss
 - Defeat Ook and obtain the Boomerang
 
+### Zora Armor
+
 - Save Warp out and Warp to Iza to Dupe so that the Boomerang gets equipped to both X and Y without us pressing the button
 - Start Wagon Escort
 - Deflect Arrows with Sword, try not to block to stay on Full Health
@@ -206,6 +223,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Epona Slide over Gorge
 - Long Jump Attack to Skip the Midna Trigger (King Bulblin Trigger doesn't exist since I didn't obtain Iron Boots) (21 X/Y)
 - Obtain Zora Armor
+
+### Snowpeak Ruins
 
 - Warp Zora's Domain
 - Enter Snowpeak
@@ -226,6 +245,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Save Warp out of the Dungeon and Warp to Lake Hylia
 - Equip Zora Armor and Pillar Clip into Lakebed Temple
 
+### Lakebed Temple
+
 - Save and Reload
 - Displacement Clip through first Gate
 - Either Jake Long Jump Attack or Backslice MoonBoots for the first part (depends on what is faster)
@@ -242,6 +263,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Claw on Morpheel for the second hit (26 X/Y)
 - Claw on Morpheel for the third hit (27 X/Y)
 - Morpheel Defeated (get Heart Container)
+
+### Midna's Desperate Hour
 
 - In Midna's Desperate Hour go to Castle Town
 - Dash Cancel through Castle Town
@@ -269,6 +292,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Enter King Bulblin 3 Fight from above
 - Defeat King Bulblin 3
 - Enter Arbiter's Grounds
+
+### Arbiter's Grounds
 
 - Breakslide across Sand to the right Platform
 - Grab the Chain without Clawshot
@@ -298,6 +323,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Backslice MoonBoots Damage Boost Death Sword Skip
 - Obtain the Spinner and Save Warp, leave the Dungeon
 
+### Enter City in the Sky
+
 - Warp to Kakariko
 - Clip past the Statue for the Skycannon Early 
 - Warp away the Skycannon with Map Warping
@@ -306,6 +333,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Warp back to Lake Hylia
 - Talk to Fyer and Repair the Skycannon (R0)
 - Clawshot the Skycannon and enter City in the Sky (38 X/Y)
+
+### Double Clawshot
 
 - Defeat a Baba Serpent and Rupee Slide past the Gate with a Blue Rupee (If Displacement Clip is possible, use that instead)
 - Pick up an Ooccoo and Fly with it accross the next Room
@@ -326,6 +355,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Jump down the Tower
 - Do not disable the Fan and Displacement Clip through the Door, Diplacement Clip back again to Crush Void and start the fight that way
 - Displacement Clip through the Door again and obtain Dual Clawshot
+
+### Argorok
 
 - Save Warp to the Start
 - Perform Back in Time Equipped with the new save for Boss Flag (need to check if it gets cleared on the way)
@@ -367,6 +398,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Claw onto Argorok for the Ending Blow (74 X/Y)
 - Argorok Defeated (get Heart Container)
 
+### Light Sword
+
 - Save on the Save Prompt 
 - Do Back in Time in the Entrance Area and Do Back in Time Equipped to Escape not using Clawshot to get out
 - Do not Defeat King Bulblin and Warp Upper Zora's River
@@ -393,6 +426,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Place the first Sol in its place outside and activate the Platform to Right Wing
 - Place the second Sol in its place and obtain Light Sword
 
+### Zant
+
 - Go past the Fog and enter North Wing
 - Double Sol Room without Long Jump Attacks, obtain Small Key 5 and enter Outside
 - Kill the first Zant Head and Void
@@ -412,6 +447,8 @@ Additionally this state of the equips is only temporary. Once you die or reach a
 - Stun Zant's Foot in Blizzeta Phase two times and Defeat him there (89;90 X/Y)
 - Final Phase
 - Zant Defeated
+
+### Hyrule Castle
 
 - Warp Upper Zora's River and do Item Wheel Delay aswell as Boomerang on X and Y to preserve Spinner and Double Clawshots
 - Warp Ouside West Castle Town
