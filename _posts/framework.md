@@ -21,7 +21,7 @@ date: 2026-05-29 00:00:00
   - <a id="gl-node-process"></a>**Node process**: A process that owns a child [layer](#gl-layer), making it responsible for a set of child processes. The play scene and room scene processes are the node processes during normal gameplay
   - <a id="gl-leaf-process"></a>**Leaf process**: A process with no child [layer](#gl-layer) and no children. All [actors](#gl-actor) are leaves
 - <a id="gl-layer"></a>**Layer**: How the framework tracks process ownership and lifetime. Every process lives in exactly one layer. When a [node process](#gl-node-process) is deleted, its child layer and every process in it are deleted automatically. A new process joins whichever layer is current when it is created; node processes redirect that pointer to their own child layer during their create and execute, so actors spawned during scene setup land in the right layer. Layers are entirely separate from the [line queue](#gl-line-queue): layers are about ownership, the line queue is about execution order
-- <a id="gl-line-queue"></a>**Line queue**: A set of 16 execution groups (one per [list ID](#gl-list-id)). Within each group, processes run in [list priority](#gl-list-priority) order. Room processes run at [list ID](#gl-list-id) 0, the scene at 1, and actors at 2 and above, lower ID always runs first
+- <a id="gl-line-queue"></a>**Line queue**: A set of 16 execution groups (one per [list ID](#gl-list-id)). Within each group, processes run in [list priority](#gl-list-priority) order. Room processes run at [list ID](#gl-list-id) 0, the scene at 1, and actors at 2 and above; lower ID always runs first
   - <a id="gl-list-id"></a>**List ID**: A category number (0-15) stored in a process's [profile](#gl-profile) that determines which of 16 execution groups it belongs to. Many processes share the same [list ID](#gl-list-id); it is a grouping, not a unique identifier. Groups execute in ascending order: [list ID](#gl-list-id) 1 before [list ID](#gl-list-id) 2, and so on 
     - *Separate from the process's runtime unique ID `fpc_ProcID`, which identifies a specific instance*
   - <a id="gl-list-priority"></a>**List priority**: Controls where within its [list ID](#gl-list-id) group a process executes. Lower priority runs earlier. Processes sharing a [list ID](#gl-list-id) are ordered by priority at insertion time.
@@ -41,7 +41,7 @@ date: 2026-05-29 00:00:00
   - state transitions
   - etc.
 - <a id="gl-draw-method"></a>**Draw method**: Runs once per frame to render a process. For actors this is where geometry is submitted to the GPU; the scene's draw method also runs particle simulation and walks the [draw tag queue](#gl-draw-tag-queue)
-  - <a id="gl-draw-tag-queue"></a>**Draw tag queue** (`g_fopDwTg_Queue`): A persistent sorted list actors are added to once when they finish creating, ordered by draw priority. The scene walks it every draw phase to render actors in the correct order. Separate from the [line queue](#gl-line-queue), which only controls when logic runs
+  - <a id="gl-draw-tag-queue"></a>**Draw tag queue** (`g_fopDwTg_Queue`): A persistent sorted list actors are added to once on creation, ordered by draw priority. The scene walks it every draw phase to render actors in the correct order. Separate from the [line queue](#gl-line-queue), which only controls when logic runs
 - <a id="gl-delete-method"></a>**Delete method**: Called once when a process is removed. Tears down game state, removes the process from the [line queue](#gl-line-queue), and frees its memory
 - <a id="gl-pause-flag"></a>**Pause flag**: A per-process flag that can independently halt execute (flag 1) or draw (flag 2). The scene-wide pause flag (`dComIfGp_isPauseFlag()`) shuts down:
   - the event system
@@ -240,11 +240,11 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
     - When a process finishes creation, it gets marked ready and inserted into the [line queue](#gl-line-queue). If it's a [node](#gl-node-process), its children get inserted too
 
   - #### Run logic for every object ([f_pc/f_pc_executor.cpp](https://github.com/zeldaret/tp/blob/main/src/f_pc/f_pc_executor.cpp))
-    - Walks the global [line queue](#gl-line-queue) in order (lowest [list ID](#gl-list-id) first, then lowest [list priority](#gl-list-priority)). This is how the game guarantees the scene always ticks before its actors
+    - Walks the global [line queue](#gl-line-queue) in order (lowest [list ID](#gl-list-id) first, then lowest [list priority](#gl-list-priority)). the scene always runs before its actors
     - For each process:
       - Skips it if it isn't fully initialized yet
       - Skips it if it's [execution-paused](#gl-pause-flag)
-      - For actors specifically: checks whether its spawn position and current position are both inside a [suspension zone](#gl-suspend) and updates its suspend flag accordingly; if suspended, its execute is skipped for this frame
+      - For actors: checks whether the actor's spawn position and current position are both inside a [suspension zone](#gl-suspend); if so, skips the actor's execute this frame
       - Otherwise sets the current [layer](#gl-layer) pointer to this process's layer and calls its [execute method](#gl-execute-method)
 
     - ##### [0] Room Processes: `dScnRoom_c` ([d/d_s_room.cpp](https://github.com/zeldaret/tp/blob/main/src/d/d_s_room.cpp))
@@ -263,7 +263,7 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
             - `mDoAud_load2ndDynamicWave()`: starts loading the secondary audio wave bank
             - Clears the BGM-not-started flag
           - `calcPauseTimer()`: counts down the pause timer; if it's still nonzero, the function aborts early and skips everything else this frame
-        - `dKy_itudemo_se()`: plays the room's persistent ambient sound effect (also skipped during peek and when the pause timer causes an early return above)
+        - `dKy_itudemo_se()`: plays the room's persistent ambient sound effect (also skipped during peek and if the pause timer is counting down)
         - **Main logic** (skipped if the [pause flag](#gl-pause-flag) is set):
           - `dDemo_c::update()`: steps the [cutscene system](#gl-demo) one frame
             - Advances the [JStudio](#gl-jstudio) playhead one frame; JStudio pushes that frame's keyframe data to registered adapter objects for actors and cameras
@@ -323,8 +323,7 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
 
       - ###### camera_process_class (d_camera)
           Runs at [list ID](#gl-list-id) 11, after all actors. 
-          - Per-frame execute:
-            - Selects from 20 named camera engine implementations (chase, lock-on, talk, fixed, rail, hookshot, event, and others) based on the current camera mode, which is set by player action state, room-default camera data, or camera trigger actors placed by level designers
+          - Selects from 20 named camera engine implementations (chase, lock-on, talk, fixed, rail, hookshot, event, and others) based on the current camera mode, which is set by player action state, room-default camera data, or camera trigger actors placed by level designers
             - Runs the active engine to compute the camera's position, look-at target, and orientation, with bg collision correction to prevent clipping into geometry
             - Applies the resulting view matrix
 
@@ -369,14 +368,14 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
         - `dMdl_mng_c::reset()`: resets the shared model manager for this frame
         - **Simulation steps** (skipped if `dComIfGp_isPauseFlag()` OR `dScnPly_c::isPause()` is set):
           - `dComIfGp_getVibration().Run()` (PLAY_SCENE only): fires off controller rumble commands based on requests actors submitted
-          - `daSus_c::execute()`: updates the switch state of each active suspension zone (enabling or disabling the zone based on its associated game switch). The per-actor position check happens earlier during the execute phase, before each actor's own execute runs
+          - `daSus_c::execute()`: updates the switch state of each active suspension zone (enabling or disabling the zone based on its associated game switch). The per-actor position check happens during the execute phase, before each actor runs
           - `dComIfG_Bgsp().Move()`: steps all [moving collision objects](#gl-bgsp) one frame (moving platforms, rotating doors, etc.)
           - `dComIfGp_particle_calc3D()`: simulates all active 3D particle emitters
           - `dComIfGp_particle_calc2D()`: simulates all active 2D particle emitters
           - `cCt_execCounter()`: increments a global counter that only ticks on non-paused frames
         - **If either pause condition is true**:
           - `dPa_control_c::onStatus(1)`: sets the particle deletion-lock flag so particles won't be freed this frame
-          - If only the global pause flag is set (not `dScnPly_c::isPause()`): also sets a flag that causes `calc3D()` to skip 3D particle simulation next frame
+          - If only the global pause flag is set (not `dScnPly_c::isPause()`): also causes `calc3D()` to skip particle simulation next frame
           - `dComIfGp_getVibration().Pause()`: stops controller rumble (only called when `dScnPly_c::pauseTimer == 0`)
         - **Draw every actor** via the [draw tag queue](#gl-draw-tag-queue), walking from lowest to highest draw priority
           - Each entry's [draw method](#gl-draw-method) submits geometry to the GPU
@@ -385,7 +384,7 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
           - `attention->Draw()`: draws the [L-target cursor](#gl-attention) over the locked-on target
 
   - #### Scene transitions and wipes ([f_ap/f_ap_game.cpp](https://github.com/zeldaret/tp/blob/main/src/f_ap/f_ap_game.cpp))
-    `fapGm_After()` runs after both execute and draw are done. This is where scene change requests from the draw phase actually get processed.
+    `fapGm_After()` runs after both execute and draw are done. Scene change requests posted during draw get processed here.
 
     - `fopScnM_Management()` ([f_op/f_op_scene_mng.cpp](https://github.com/zeldaret/tp/blob/main/src/f_op/f_op_scene_mng.cpp))
       - Processes any scene creation, deletion, or change requests posted this frame
@@ -472,7 +471,7 @@ Blue phases complete in a single frame; orange phases wait each frame until thei
     - Starts loading "[Stg_00](#gl-stg00)" (the shared stage archive with geometry and textures)
 
   - #### Phase 1_0: Wait for Stage Data, Start Event and Camera Loads
-    - Waits for [Stg_00](#gl-stg00) to finish loading; repeatedly waits a frame if still in progress
+    - Stalls until [Stg_00](#gl-stg00) finishes loading
     - `dStage_infoCreate()`: parses stage info from the loaded archive
     - Initiates loading for the event data archive ("Event") and the camera parameter archive ("CamParam")
 
@@ -496,7 +495,7 @@ Blue phases complete in a single frame; orange phases wait each frame until thei
       - first dynamic audio wave bank
 
   - #### Phase 4: Initialize Everything and Spawn Actors
-    All data is in memory at this point. This phase builds all the game systems and spawns every actor for the stage.
+    Everything is loaded. This phase builds all the game systems and spawns every actor.
 
     - Finalizes the particle scene from the loaded archive
     - Mounts the stage message archive so dialog can be looked up
