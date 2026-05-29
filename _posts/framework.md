@@ -17,49 +17,49 @@ date: 2026-05-29 00:00:00
 
 ### Process Framework
 
-- <a id="gl-process"></a>**Process**: Anything managed by the process framework. Scenes, actors, cameras, and overlays are all processes with the same basic cycle: creation, execution every frame, drawing every frame, and deletion
-  - <a id="gl-node-process"></a>**Node process**: A process that owns a child [layer](#gl-layer), making it responsible for a set of child processes. The play scene and room scene processes are the node processes during normal gameplay
-  - <a id="gl-leaf-process"></a>**Leaf process**: A process with no child [layer](#gl-layer) and no children. All [actors](#gl-actor) are leaves
-- <a id="gl-layer"></a>**Layer**: How the framework tracks process ownership and lifetime. Every process lives in exactly one layer. When a [node process](#gl-node-process) is deleted, its child layer and every process in it are deleted automatically. A new process joins whichever layer is current when it is created; node processes redirect that pointer to their own child layer during their create and execute, so actors spawned during scene setup land in the right layer. Layers are entirely separate from the [line queue](#gl-line-queue): layers are about ownership, the line queue is about execution order
-- <a id="gl-line-queue"></a>**Line queue**: A set of 16 execution groups (one per [list ID](#gl-list-id)). Within each group, processes run in [list priority](#gl-list-priority) order. Room processes run at [list ID](#gl-list-id) 0, the scene at 1, and actors at 2 and above; lower ID always runs first
-  - <a id="gl-list-id"></a>**List ID**: A category number (0-15) stored in a process's [profile](#gl-profile) that determines which of 16 execution groups it belongs to. Many processes share the same [list ID](#gl-list-id); it is a grouping, not a unique identifier. Groups execute in ascending order: [list ID](#gl-list-id) 1 before [list ID](#gl-list-id) 2, and so on 
+- <span id="gl-process"></span>**Process**: Anything managed by the process framework. Scenes, actors, cameras, and overlays are all processes with the same basic cycle: creation, execution every frame, drawing every frame, and deletion
+  - <span id="gl-node-process"></span>**Node process**: A process that owns a child [layer](#gl-layer), making it responsible for a set of child processes. The play scene and room scene processes are the node processes during normal gameplay
+  - <span id="gl-leaf-process"></span>**Leaf process**: A process with no child [layer](#gl-layer) and no children. All [actors](#gl-actor) are leaves
+- <span id="gl-layer"></span>**Layer**: How the framework tracks process ownership and lifetime. Every process lives in exactly one layer. When a [node process](#gl-node-process) is deleted, its child layer and every process in it are deleted automatically. A new process joins whichever layer is current when it is created; node processes redirect that pointer to their own child layer during their create and execute, so actors spawned during scene setup land in the right layer. Layers are entirely separate from the [line queue](#gl-line-queue): layers are about ownership, the line queue is about execution order
+- <span id="gl-line-queue"></span>**Line queue**: A set of 16 execution groups (one per [list ID](#gl-list-id)). Within each group, processes run in [list priority](#gl-list-priority) order. Room processes run at [list ID](#gl-list-id) 0, the scene at 1, and actors at 2 and above; lower ID always runs first
+  - <span id="gl-list-id"></span>**List ID**: A category number (0-15) stored in a process's [profile](#gl-profile) that determines which of 16 execution groups it belongs to. Many processes share the same [list ID](#gl-list-id); it is a grouping, not a unique identifier. Groups execute in ascending order: [list ID](#gl-list-id) 1 before [list ID](#gl-list-id) 2, and so on 
     - *Separate from the process's runtime unique ID `fpc_ProcID`, which identifies a specific instance*
-  - <a id="gl-list-priority"></a>**List priority**: Controls where within its [list ID](#gl-list-id) group a process executes. Lower priority runs earlier. Processes sharing a [list ID](#gl-list-id) are ordered by priority at insertion time.
-- <a id="gl-profile"></a>**Profile** (`process_profile_definition`): A shared blueprint for all instances of the same process type. Stores the default [list ID](#gl-list-id), [list priority](#gl-list-priority), process size, and a pointer to a method table with create, execute, and delete functions. The [list ID](#gl-list-id) and priority are copied into the process at creation
-- <a id="gl-phase-handler"></a>**Phase handler**: A pattern for spreading work across multiple frames. Each step signals what to do next by returning one of:
+  - <span id="gl-list-priority"></span>**List priority**: Controls where within its [list ID](#gl-list-id) group a process executes. Lower priority runs earlier. Processes sharing a [list ID](#gl-list-id) are ordered by priority at insertion time.
+- <span id="gl-profile"></span>**Profile** (`process_profile_definition`): A shared blueprint for all instances of the same process type. Stores the default [list ID](#gl-list-id), [list priority](#gl-list-priority), process size, and a pointer to a method table with create, execute, and delete functions. The [list ID](#gl-list-id) and priority are copied into the process at creation
+- <span id="gl-phase-handler"></span>**Phase handler**: A pattern for spreading work across multiple frames. Each step signals what to do next by returning one of:
   - `cPhs_NEXT_e`: this step is done; immediately advance to and run the next step in the same frame
   - `cPhs_INIT_e`: not done yet, run this step again next frame
   - `cPhs_COMPLEATE_e`: the whole sequence is complete
     - > Yes, "COMPLEATE" is a typo, we must live with it. The debug symbol table knows best.
 
-- <a id="gl-create-method"></a>**Create method**: Runs [multiple phases](#gl-phase-handler) over one or more frames to set up a process and load its assets. When complete, the process joins the [line queue](#gl-line-queue) and begins executing
-- <a id="gl-execute-method"></a>**Execute method**: Runs once per frame to update a process's game logic. For the scene this is where the event and cutscene systems tick. For actors this can include:
+- <span id="gl-create-method"></span>**Create method**: Runs [multiple phases](#gl-phase-handler) over one or more frames to set up a process and load its assets. When complete, the process joins the [line queue](#gl-line-queue) and begins executing
+- <span id="gl-execute-method"></span>**Execute method**: Runs once per frame to update a process's game logic. For the scene this is where the event and cutscene systems tick. For actors this can include:
   - input reading
   - physics
   - collision
   - animation
   - state transitions
   - etc.
-- <a id="gl-draw-method"></a>**Draw method**: Runs once per frame to render a process. For actors this is where geometry is submitted to the GPU; the scene's draw method also runs particle simulation and walks the [draw tag queue](#gl-draw-tag-queue)
-  - <a id="gl-draw-tag-queue"></a>**Draw tag queue** (`g_fopDwTg_Queue`): A persistent sorted list actors are added to once on creation, ordered by draw priority. The scene walks it every draw phase to render actors in the correct order. Separate from the [line queue](#gl-line-queue), which only controls when logic runs
-- <a id="gl-delete-method"></a>**Delete method**: Called once when a process is removed. Tears down game state, removes the process from the [line queue](#gl-line-queue), and frees its memory
-- <a id="gl-pause-flag"></a>**Pause flag**: A per-process flag that can independently halt execute (flag 1) or draw (flag 2). The scene-wide pause flag (`dComIfGp_isPauseFlag()`) shuts down:
+- <span id="gl-draw-method"></span>**Draw method**: Runs once per frame to render a process. For actors this is where geometry is submitted to the GPU; the scene's draw method also runs particle simulation and walks the [draw tag queue](#gl-draw-tag-queue)
+  - <span id="gl-draw-tag-queue"></span>**Draw tag queue** (`g_fopDwTg_Queue`): A persistent sorted list actors are added to once on creation, ordered by draw priority. The scene walks it every draw phase to render actors in the correct order. Separate from the [line queue](#gl-line-queue), which only controls when logic runs
+- <span id="gl-delete-method"></span>**Delete method**: Called once when a process is removed. Tears down game state, removes the process from the [line queue](#gl-line-queue), and frees its memory
+- <span id="gl-pause-flag"></span>**Pause flag**: A per-process flag that can independently halt execute (flag 1) or draw (flag 2). The scene-wide pause flag (`dComIfGp_isPauseFlag()`) shuts down:
   - the event system
   - the cutscene system
   - vibration
   - particles
   - background object movement
-- <a id="gl-pause-timer"></a>**Pause timer**: A countdown timer on the scene (`dScnPly_c::pauseTimer`). While it's nonzero, the scene's execute aborts immediately, freezing all game logic for that frame. Used primarily for hitstun
-- <a id="gl-overlay"></a>**Overlay**: A [leaf process](#gl-leaf-process) (`overlap_task_class`) that plays a screen transition animation (fade to black, white, etc.). At most one is active at a time. See also: [Wipe / Overlap](#gl-wipe)
+- <span id="gl-pause-timer"></span>**Pause timer**: A countdown timer on the scene (`dScnPly_c::pauseTimer`). While it's nonzero, the scene's execute aborts immediately, freezing all game logic for that frame. Used primarily for hitstun
+- <span id="gl-overlay"></span>**Overlay**: A [leaf process](#gl-leaf-process) (`overlap_task_class`) that plays a screen transition animation (fade to black, white, etc.). At most one is active at a time. See also: [Wipe / Overlap](#gl-wipe)
 
 ### Game Objects
 
-- <a id="gl-gameinfo"></a>**Game info** (`g_dComIfG_gameInfo`): The global game state object. Every `dComIfG*` accessor in the codebase reads from or writes to this one object. Created once at boot and reset on each scene teardown. Holds:
+- <span id="gl-gameinfo"></span>**Game info** (`g_dComIfG_gameInfo`): The global game state object. Every `dComIfG*` accessor in the codebase reads from or writes to this one object. Created once at boot and reset on each scene teardown. Holds:
   - save data and persistent flags
   - runtime state: current and next stage, particles, simple models, vibration
   - the draw list and resource manager
-- <a id="gl-scene"></a>**Scene**: A [node process](#gl-node-process) that owns a distinct game state. Scene types include gameplay (`dScnPly_c`), menus, and the logo screen; exactly one is active at a time. During gameplay, the play scene manages all actors in the current area through its child [layer](#gl-layer)
-- <a id="gl-actor"></a>**Actor**: Any game object that exists in the world and runs logic each frame. Each has an execute method and usually a draw method. Exists as a [leaf process](#gl-leaf-process). Examples:
+- <span id="gl-scene"></span>**Scene**: A [node process](#gl-node-process) that owns a distinct game state. Scene types include gameplay (`dScnPly_c`), menus, and the logo screen; exactly one is active at a time. During gameplay, the play scene manages all actors in the current area through its child [layer](#gl-layer)
+- <span id="gl-actor"></span>**Actor**: Any game object that exists in the world and runs logic each frame. Each has an execute method and usually a draw method. Exists as a [leaf process](#gl-leaf-process). Examples:
   - Link, Midna
   - enemies, NPCs
   - doors, switches, items
@@ -67,36 +67,36 @@ date: 2026-05-29 00:00:00
 
 ### Stage Structure and Loading
 
-- <a id="gl-stage"></a>**Stage**: A self-contained section of the game world with its own actor layout, geometry, and data files. The scene is the in-code object that loads and owns the current stage. Every time the player moves between areas, the old stage is unloaded and a new one is loaded in its place
-  - <a id="gl-room"></a>**Room**: A spatial subdivision within a stage. A stage contains one or more rooms; each room has its own actor layout (described in a DZR file) and is managed by a `dScnRoom_c` scene process ([list ID](#gl-list-id) 0) that loads and unloads room data independently as the player moves through the area. Room transitions do not unload the full stage
-  - <a id="gl-dzrs"></a>**DZS / DZR**: Binary data files that describe which actors to spawn. DZS covers the whole stage; DZR covers individual rooms. `dStage_Create()` reads these to spawn everything
-  - <a id="gl-archive"></a>**Archive**: A compressed file container (`.arc`) that groups related assets for loading from disc. Stage geometry, particle definitions, audio wave banks, and message text each live in separate archives. Loading an archive is asynchronous; the game waits on it before proceeding
-    - <a id="gl-stg00"></a>**Stg_00**: The shared stage archive loaded at the start of every stage. Contains geometry and textures used across the whole area. A second archive, Xtg_00, holds additional shared data
+- <span id="gl-stage"></span>**Stage**: A self-contained section of the game world with its own actor layout, geometry, and data files. The scene is the in-code object that loads and owns the current stage. Every time the player moves between areas, the old stage is unloaded and a new one is loaded in its place
+  - <span id="gl-room"></span>**Room**: A spatial subdivision within a stage. A stage contains one or more rooms; each room has its own actor layout (described in a DZR file) and is managed by a `dScnRoom_c` scene process ([list ID](#gl-list-id) 0) that loads and unloads room data independently as the player moves through the area. Room transitions do not unload the full stage
+  - <span id="gl-dzrs"></span>**DZS / DZR**: Binary data files that describe which actors to spawn. DZS covers the whole stage; DZR covers individual rooms. `dStage_Create()` reads these to spawn everything
+  - <span id="gl-archive"></span>**Archive**: A compressed file container (`.arc`) that groups related assets for loading from disc. Stage geometry, particle definitions, audio wave banks, and message text each live in separate archives. Loading an archive is asynchronous; the game waits on it before proceeding
+    - <span id="gl-stg00"></span>**Stg_00**: The shared stage archive loaded at the start of every stage. Contains geometry and textures used across the whole area. A second archive, Xtg_00, holds additional shared data
 
 ### Simulation Systems
 
-- <a id="gl-suspend"></a>**Actor suspend system** (`daSus_c`): Manages designer-placed suspension zones that put off-screen actors into a dormant state, skipping their execute each frame
-- <a id="gl-bgsp"></a>**Bgsp** (background space, `dComIfG_Bgsp()`): Holds the world's static and dynamic collision geometry. Actors query it during execute for ground, wall, roof, and water checks; moving objects (platforms, doors) have their geometry stepped during draw via `Move()`
-- <a id="gl-ccsp"></a>**Ccsp** (collision shape space, `dComIfG_Ccsp()`): Holds actor collision shapes (spheres, cylinders, etc). Actors update shape positions via `setCollision()` during execute; detection runs at the start of draw via `Move()`, which tests attack shapes against target shapes and correction shapes (push colliders that physically separate overlapping actors) against each other
-- <a id="gl-attention"></a>**Attention system** (`dAttention_c`): Manages L-targeting. Iterates all live actors each frame, scores candidates by a distance-and-angle weight function, and tracks lock-on state
-- <a id="gl-event"></a>**Event system** (`dEvt_control_c`): The state machine for scripted interactions. Actors submit requests via `order()`; the scene calls `Step()` once per frame to advance the active event and start the next queued one
-- <a id="gl-demo"></a>**Demo system** (`dDemo_c`): The cutscene playback system. Wraps [JStudio](#gl-jstudio) with game-specific adapter objects, `dDemo_camera_c` for cameras and `dDemo_actor_c` for actors, that receive keyframe data as the sequence plays. Sequences are STB binary files
+- <span id="gl-suspend"></span>**Actor suspend system** (`daSus_c`): Manages designer-placed suspension zones that put off-screen actors into a dormant state, skipping their execute each frame
+- <span id="gl-bgsp"></span>**Bgsp** (background space, `dComIfG_Bgsp()`): Holds the world's static and dynamic collision geometry. Actors query it during execute for ground, wall, roof, and water checks; moving objects (platforms, doors) have their geometry stepped during draw via `Move()`
+- <span id="gl-ccsp"></span>**Ccsp** (collision shape space, `dComIfG_Ccsp()`): Holds actor collision shapes (spheres, cylinders, etc). Actors update shape positions via `setCollision()` during execute; detection runs at the start of draw via `Move()`, which tests attack shapes against target shapes and correction shapes (push colliders that physically separate overlapping actors) against each other
+- <span id="gl-attention"></span>**Attention system** (`dAttention_c`): Manages L-targeting. Iterates all live actors each frame, scores candidates by a distance-and-angle weight function, and tracks lock-on state
+- <span id="gl-event"></span>**Event system** (`dEvt_control_c`): The state machine for scripted interactions. Actors submit requests via `order()`; the scene calls `Step()` once per frame to advance the active event and start the next queued one
+- <span id="gl-demo"></span>**Demo system** (`dDemo_c`): The cutscene playback system. Wraps [JStudio](#gl-jstudio) with game-specific adapter objects, `dDemo_camera_c` for cameras and `dDemo_actor_c` for actors, that receive keyframe data as the sequence plays. Sequences are STB binary files
 
 ### Screen Transitions
 
-- <a id="gl-wipe"></a>**Wipe / Overlap**: The screen transition effect between stages (fade to black, white flash, etc.). Managed by the overlap system (`fopOvlpM`). While a wipe is playing, the scene is paused and in "peek" mode
-  - <a id="gl-peek"></a>**Peek**: The window during a wipe transition where the old scene is frozen and the new one hasn't started yet. BGM startup and pause timer logic are skipped during peek
+- <span id="gl-wipe"></span>**Wipe / Overlap**: The screen transition effect between stages (fade to black, white flash, etc.). Managed by the overlap system (`fopOvlpM`). While a wipe is playing, the scene is paused and in "peek" mode
+  - <span id="gl-peek"></span>**Peek**: The window during a wipe transition where the old scene is frozen and the new one hasn't started yet. BGM startup and pause timer logic are skipped during peek
 
 ### Rendering
 
-- <a id="gl-display-list"></a>**Display list**: A pre-recorded sequence of GPU commands on the GameCube. Draw calls are written into the list once at load time and then replayed each frame in a single call, which is cheaper than re-issuing the commands individually
-  - <a id="gl-simple-model"></a>**Simple model**: Fixed background geometry (floors, walls, scenery) that can't move or change. At scene setup, the game pre-records its draw commands into [display lists](#gl-display-list), one per model group. Those lists replay at the very end of each frame: cheaper than re-submitting each piece individually
+- <span id="gl-display-list"></span>**Display list**: A pre-recorded sequence of GPU commands on the GameCube. Draw calls are written into the list once at load time and then replayed each frame in a single call, which is cheaper than re-issuing the commands individually
+  - <span id="gl-simple-model"></span>**Simple model**: Fixed background geometry (floors, walls, scenery) that can't move or change. At scene setup, the game pre-records its draw commands into [display lists](#gl-display-list), one per model group. Those lists replay at the very end of each frame: cheaper than re-submitting each piece individually
 
 ### Platform and Libraries
 
-- <a id="gl-aram"></a>**ARAM**: Audio RAM, a separate memory pool on the GameCube dedicated to audio data
-- <a id="gl-jstudio"></a>**JStudio**: Nintendo's animation sequencer library. Parses STB binary cutscene files and drives playback by pushing each frame's keyframe data to registered adapter objects (cameras and actors). Used via [`dDemo_c`](#gl-demo)
-- <a id="gl-z2audio"></a>**Z2Audio**: The audio library the game uses. `mDoAud_Execute()` submits commands to it once per frame after all game logic finishes
+- <span id="gl-aram"></span>**ARAM**: Audio RAM, a separate memory pool on the GameCube dedicated to audio data
+- <span id="gl-jstudio"></span>**JStudio**: Nintendo's animation sequencer library. Parses STB binary cutscene files and drives playback by pushing each frame's keyframe data to registered adapter objects (cameras and actors). Used via [`dDemo_c`](#gl-demo)
+- <span id="gl-z2audio"></span>**Z2Audio**: The audio library the game uses. `mDoAud_Execute()` submits commands to it once per frame after all game logic finishes
 
 ---
 
@@ -235,7 +235,7 @@ The loop runs continuously. The play scene sets the tick rate to 30 Hz (`OS_TIME
   - #### Apply any priority changes ([f_pc/f_pc_priority.cpp](https://github.com/zeldaret/tp/blob/main/src/f_pc/f_pc_priority.cpp))
     - Relocates any processes that requested a new [line queue](#gl-line-queue) position before logic runs
 
-  - #### <a id="creation-handler"></a>Create new objects ([f_pc/f_pc_creator.cpp](https://github.com/zeldaret/tp/blob/main/src/f_pc/f_pc_creator.cpp))
+  - #### <span id="creation-handler"></span>Create new objects ([f_pc/f_pc_creator.cpp](https://github.com/zeldaret/tp/blob/main/src/f_pc/f_pc_creator.cpp))
     - Works through all pending creation requests. Most actors aren't created instantly; the framework calls their [`create_method`](#gl-create-method) over multiple frames with [phases](#gl-phase-handler) until loading finishes
     - When a process finishes creation, it gets marked ready and inserted into the [line queue](#gl-line-queue). If it's a [node](#gl-node-process), its children get inserted too
 
