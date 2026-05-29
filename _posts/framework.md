@@ -191,7 +191,7 @@ flowchart LR
   - `mDoCPd_c::create()`: sets up the controller pad
   - `fapGm_Create()` ([f_ap/f_ap_game.cpp](https://github.com/zeldaret/tp/blob/main/src/f_ap/f_ap_game.cpp)):
     - `fpcM_Init()`: creates the root layer with 10 node lists (for [list ID](#gl-list-id)s 0-9, used by top-level processes: the scene and overlays) and the global [line queue](#gl-line-queue). Node processes like the scene get their own child layer with 16 node lists (0-15) when they are created, which is where actors and cameras live
-    - `fopScnM_Init()`, `fopOvlpM_Init()`, `fopCamM_Init()`: scene, overlap, and camera manager initialization (all empty stubs at this stage)
+    - `fopScnM_Init()`, `fopOvlpM_Init()`, `fopCamM_Init()`: scene, overlap, and camera manager initialization (all empty stubs)
     - `fopDwTg_CreateQueue()`: creates the [draw tag queue](#gl-draw-tag-queue), the persistent sorted list actors are added to once when they finish creating
   - Drops into the infinite game loop
 
