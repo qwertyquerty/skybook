@@ -2,7 +2,7 @@
 layout: post
 title: Mistargeted DMA
 description: Executing archive files as program code
-author: blizzardblanc&wolfegarden
+author: blizzardblanc_wolfegarden
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory, status-unsolved]
 pin: true
@@ -13,7 +13,7 @@ date: 2025-09-12 00:00:00
 
 ## The Glitch
 
-A _Twilight Princess_ glitch hunter, S0ft, posted a screenshot of some logs from Dolphin resembling the following:
+A _Twilight Princess_ glitch hunter, BlizzardBlanc, posted a screenshot of some logs from Dolphin resembling the following:
 
 ```
 Core\PowerPC\MMU.cpp:412 E[MASTER]: Warning: Unable to resolve write address 104100a3 PC 830
