@@ -2,7 +2,7 @@
 layout: post
 title: Mistargeted DMA
 description: Executing archive files as program code
-author: wolfegarden, blizzard blanc
+author: blizzardblanc_&_wolfegarden
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory, status-unsolved]
 pin: true
