@@ -5,7 +5,7 @@ description: Moving the name entry cursor past the bounds of the name entry lets
 authors: [qwertyquerty, zcanann]
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory, meta-major-glitch, eyeshredder]
-date: 2026-02-10 00:00:00
+date: 2026-09-30 00:00:00
 ---
 
 ## Summary
