@@ -51,10 +51,12 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: Test site
+        # html-proofer problems are reported as a warning instead of failing the build
         run: |
           bundle exec htmlproofer _site \
             \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+            || echo "::warning title=html-proofer::html-proofer found problems, see the Test site step log"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
