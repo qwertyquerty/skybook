@@ -28,7 +28,7 @@ If you're new to *Twilight Princess* glitch hunting and technical knowledge, the
 
 ### ZeldaSpeedRuns
 
-**[ZeldaSpeedRuns](https://www.zeldaspeedruns.com/tp/)** has traditionally been the main spot for information and tutorials on glitches and techniques useful for speedrunning
+**[ZeldaSpeedRuns](https://www.zsr.gg/tp/)** has traditionally been the main spot for information and tutorials on glitches and techniques useful for speedrunning
 
 ### TPGZ
 
