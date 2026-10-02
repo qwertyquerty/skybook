@@ -4,7 +4,7 @@ title: Wall Collisions and Correction
 description: A reference for how collider positions are resolved with wall polygons
 author: qwertyquerty
 categories: [Reference]
-tags: [reference, mechanic-collision]
+tags: [type-reference, mechanic-collision]
 pin: true
 math: true
 mermaid: true
@@ -87,7 +87,8 @@ bool dBgW::WallCorrectSort(dBgS_Acch* collider) {
                 }
 
                 int triangleVertA, triangleVertB, triangleVertC;
-                // If exactly one triangle point intersects the plane of the circle, the segment length would be 0 so we can skip collision checking at this y height
+                // If exactly one triangle point lies on the plane of the circle, skip collision checking at this y height
+                // (this skips both a single-vertex touch and the case where the plane passes through one vertex and the opposite edge)
                 if (triangleVertPlaneIntersectionCount != 1) {
                     // Figure out the order of the triangle points, so we can find the orientation of the triangle and find the two segments of the triangle the plane intersects
                     if (
@@ -170,11 +171,12 @@ bool dBgW::WallCorrectSort(dBgS_Acch* collider) {
                         if (
                             // Checks that the collider isn't too far from the wall pusher segment to collide
                             !(colliderDistanceToWallPusherSquared > circleRadiusSquared) &&
-                            // Checks that the collider isn't on the other side of the wall
+                            // Checks that the circle center isn't already in front of the wall pusher (clear of the wall)
                             !(circleOffsetFromWallPusherX * wallPusherOffset.x + circleOffsetFromWallPusherZ * wallPusherOffset.z < 0.0f)
                         ) {
                             if (colliderPerpendicularToWall) {
-                                // The collider is perpendicular to the wall (not on one of the corners) so we push the collider out normal to the wall
+                                // The circle center projects onto the wall pusher segment (not past one of the corners) so we push the collider out normal to the wall
+                                // positionWallCorrect moves it by (distance to the pusher line - 1) along the wall normal and calls SetWallHit itself
                                 positionWallCorrect(collider, wallSlant, tri->m_plane, collider->GetPos(), JMAFastSqrt(colliderDistanceToWallPusherSquared));
                                 collider->CalcMovePosWork();
                                 collider->SetWallCirHit(circleIndex);
@@ -182,7 +184,8 @@ bool dBgW::WallCorrectSort(dBgS_Acch* collider) {
                                 collider->SetWallAngleY(circleIndex, cM_atan2s(tri->m_plane.GetNP()->x, tri->m_plane.GetNP()->z));
                                 corrected = true;
                             } else {
-                                // The collider is along one of the ends of the segment, the corners of the wall
+                                // The circle center projects past one of the ends of the segment, the corners of the wall
+                                // Remove the pusher offset so the segment ends are the actual wall corners again
                                 wallPusherSegmentX0 -= wallPusherOffset.x;
                                 wallPusherSegmentY0 -= wallPusherOffset.z;
                                 wallPusherSegmentX1 -= wallPusherOffset.x;
@@ -212,14 +215,14 @@ bool dBgW::WallCorrectSort(dBgS_Acch* collider) {
                                         JUT_ASSERT(0, !isnan(wallPusherSegmentX0));
                                         JUT_ASSERT(0, !isnan(wallPusherSegmentY0));
 
-                                        // Draws a line starting at the edge of the wall pusher, towards the wall, until it intersects with the collider circle
+                                        // Casts a line from the wall corner in the -normal direction until it exits the collider circle
                                         f32 circleLineCollisionX, circleLineCollisionY;
                                         cM2d_CrossCirLin(
                                             *collider->GetWallCirP(circleIndex), wallPusherSegmentX0, wallPusherSegmentY0, negWallNormalX, negWallNormalY,
                                             &circleLineCollisionX, &circleLineCollisionY
                                         );
                                         
-                                        // Move the collider circle so it doesn't interesect with the wall pusher corner anymore
+                                        // Push the collider circle out along the wall normal so its edge just touches the wall corner
                                         collider->GetPos()->x += wallPusherSegmentX0 - circleLineCollisionX;
                                         collider->GetPos()->z += wallPusherSegmentY0 - circleLineCollisionY;
 
@@ -238,14 +241,14 @@ bool dBgW::WallCorrectSort(dBgS_Acch* collider) {
                                     JUT_ASSERT(0, !isnan(wallPusherSegmentX1));
                                     JUT_ASSERT(0, !isnan(wallPusherSegmentY1));
 
-                                    // Draws a line starting at the edge of the wall pusher, towards the wall, until it intersects with the collider circle
+                                    // Casts a line from the wall corner in the -normal direction until it exits the collider circle
                                     f32 circleLineCollisionX, circleLineCollisionZ;
                                     cM2d_CrossCirLin(
                                         *collider->GetWallCirP(circleIndex), wallPusherSegmentX1, wallPusherSegmentY1, negWallNormalX, negWallNormalY,
                                         &circleLineCollisionX, &circleLineCollisionZ
                                     );
 
-                                    // Move the collider circle so it doesn't interesect with the wall pusher corner anymore
+                                    // Push the collider circle out along the wall normal so its edge just touches the wall corner
                                     collider->GetPos()->x += wallPusherSegmentX1 - circleLineCollisionX;
                                     collider->GetPos()->z += wallPusherSegmentY1 - circleLineCollisionZ;
 

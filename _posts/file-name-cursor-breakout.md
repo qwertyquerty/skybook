@@ -4,7 +4,7 @@ title: File Name Cursor Breakout
 description: Moving the name entry cursor past the bounds of the name entry lets you write character records up to 2 KB past the name buffer.
 authors: [qwertyquerty, zcanann]
 categories: [Glitches]
-tags: [type-glitch, mechanic-memory, meta-major-glitch, eyeshredder]
+tags: [type-glitch, mechanic-memory, meta-major-glitch]
 date: 2026-09-30 00:00:00
 ---
 
@@ -18,7 +18,7 @@ The name entry cursor can move past the end of the 8 character name, and typing 
 
 In `dName_c` ([d/d_name.cpp](https://github.com/zeldaret/tp/blob/main/src/d/d_name.cpp)), each name slot is an 8 byte `ChrInfo_c`: keyboard column, row, character set, `1`, then the character code as an `int`.
 
-D-pad right only stops at exactly position `7`. When you type an addition character, the cursor gets moved to position `8`, allowing d-pad right to advance again. It can keep going to `255` and wrap to `0`:
+D-pad right only stops at exactly position `7`. Typing a character at position `7` moves the cursor to position `8`, and from there d-pad right can advance again. It can keep going to `255` and wrap to `0`:
 
 ```c++
     if (mDoCPd_c::getTrigRight(PAD_1)) {
@@ -32,7 +32,7 @@ D-pad right only stops at exactly position `7`. When you type an addition charac
         }
 ```
 
-`setMoji` fails only at exactly `8` or when all 8 slots are full. Past `8`, its check for letters after the cursor (`for (int i = mCurPos; i < 8; i++)`) doesn't run, so it takes the last branch and writes to `mChrInfo[mCurPos]` with no bounds check:
+[`setMoji`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_name.cpp#L766-L830) fails only at exactly `8` or when the last slot (slot `7`) is filled ([`nameCheck()`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_name.cpp#L327-L341) returns the index of the last non-blank slot plus one). Past `8`, its check for letters after the cursor (`for (int i = mCurPos; i < 8; i++)`) doesn't run, so it takes the last branch and writes to `mChrInfo[mCurPos]` with no bounds check:
 
 ```c++
 void dName_c::setMoji(int moji) {
@@ -176,7 +176,7 @@ On Wii, the `dName_c` block is 4 bytes bigger, so every object after it starts 4
 ### Region Differences
 
 * **PAL:** Y switches uppercase and lowercase. Lowercase letters in a preloaded name keep the blank slot's column and row because `NameStrSet` compares them wrongly. This doesn't affect the glitch.
-* **JP:** The X button and the dakuten (like ゛) keys adjust the word at `+4` of the record before the cursor, but only if it has the format of a kana record (the first byte is `0-12` and the char set is not `2`).
+* **JP:** The X button and the dakuten and handakuten keys adjust the word at `+4` of the record before the cursor, but only if it looks like a kana record: the char set is not `2` and the column is one with small or voiced variants (see [`dName_c::mojiChange`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_name.cpp#L469-L582) and [`dName_c::checkDakuon`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_name.cpp#L609-L635)).
 
 ## Eye Shredder
 
@@ -201,7 +201,7 @@ Any column 12 character works (`M`, `Z`, `m`, `z`, space on NTSC-U). Testing fou
 
 * **Nothing important is in range:** Only reaches name screen objects, on a heap that gets freed when file select is closed. The saved name in your file is built from slots `0-7` only.
 * **No way to write valid pointers:** Records replace whole words with a limited set of too small of values, so every pointer it can touch will become invalid and crash on console.
-  * Pointers are 4 byte aligned, so each one lines up with exactly one half of a record. The first word can be at most `0x0C040201`. The second word is the character code stored big-endian as a 4 byte `int`, so it's at most `0x000000FF` (PAL `moji & 0xFF`) or `0x0000FFFF` (JP Shift-JIS). The only byte that can be `0x80` or higher is the last byte of the record, and a 4 byte aligned pointer can never start there. Every overwritten pointer will always be below `0x0D000000`, and memory is only mapped from `0x80000000` up.
+  * Pointers are 4 byte aligned, so each one lines up with exactly one half of a record. The first word can be at most `0x0C040201`. The second word is the character code stored big-endian as a 4 byte `int`, so it's at most `0x000000FF` (PAL `moji & 0xFF`) or `0x0000FFFF` (JP Shift-JIS). The only bytes that can be `0x80` or higher are the last byte of the record (and the one before it on JP), and a 4 byte aligned pointer can never start there. Every overwritten pointer will always be below `0x0D000000`, and memory is only mapped from `0x80000000` up.
 * **No path to a bigger write:** A small write could become a big one if it changed a count or index that the game later uses to write memory, like a loop bound. All but one of the counts in range don't work that way:
   * `mTexGenNum` (material record `5`) makes a loop call `GXSetTexCoordGen` too many times. That only sends GPU register writes, and its one CPU-side write is limited by a `switch` state whose `default` case stays in bounds.
   * `mColorChanNum` (material record `3`, Eye Shredder) makes a loop call `GXSetChanCtrl` with garbage. That masks the channel with `& 3` and only sends GPU register writes.

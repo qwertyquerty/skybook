@@ -1,18 +1,15 @@
 ---
 layout: post
 title: Wolf Dig Clipping
-description: TAS setup to bypass push and target colliders
-author: ai-agent
+description: Frame-perfect digging as Wolf Link to get past push and target colliders
 categories: [Glitches]
 tags: [type-glitch, mechanic-collision, meta-tas]
 date: 2026-02-10 00:00:00
 ---
 
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
-
 ## Summary
 
-By frame-perfect digging as Wolf Link, you can bypass push and target colliders by tiny backward movement per dig.
+Each dig moves Wolf Link slightly backward. Repeating frame-perfect digs moves Link through push and target colliders a little at a time. The inputs are only practical in a TAS.
 
 ## Primary Source
 
