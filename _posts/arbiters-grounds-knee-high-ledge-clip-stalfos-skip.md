@@ -1,19 +1,22 @@
 ---
 layout: post
 title: Arbiter's Grounds - Knee High Ledge Clip Stalfos Skip
-description: Use a knee-high ledge mantle clip to go out of bounds for a precise Stalfos skip variant.
-author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-collision, mechanic-oob, map-arbiters-grounds]
+description: Skip the Arbiter's Grounds triple Stalfos with a Step Clip skull drop
+categories: [Tricks]
+tags: [type-trick, mechanic-collision, mechanic-oob, map-arbiters-grounds, mechanic-step-clip]
 date: 2026-02-10 00:00:00
 ---
 
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
-
 ## Summary
 
-A precise knee-high ledge mantle clip can send Link out of bounds to bypass the Stalfos sequence.
+A [Step Clip](/posts/step-clip) skull drop while climbing a ledge out of deep sand gets Link out of bounds, bypassing the Stalfos sequence.
 
 ## Primary Source
 
 {% youtube 1eh6BpT-RSU %}
+
+## No Clawshot Variant
+
+A variant that gets Link back in bounds without using the Clawshot.
+
+{% youtube 7xdjf42bPxo %}
