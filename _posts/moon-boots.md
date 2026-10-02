@@ -13,45 +13,62 @@ date: 2025-09-14 00:00:00
 
 ## How it works
 
-When Link does a jump attack, jump strike, ending blow, or backslice while wearing the iron boots / heavy magic armor and then force unequips them shortly after leaving the ground he can get more height out of the attack. This happens because each of these attacks is specifically programmed to give Link more vertical speed to overcome the increased downward gravity acceleration given by Link's heavy state
+When Link does a jump attack, jump strike, ending blow, or back slice while wearing the Iron Boots or the heavy Magic Armor, and then force unequips them shortly after leaving the ground, he gets more height out of the attack. Each of these attacks gives Link extra vertical speed when [`daAlink_c::checkHeavyStateOn`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12668-L12681) is true, to make up for the stronger gravity of the heavy state.
 
-Normal gravity is 3.4 while gravity in a heavy state is 7.65. Unequipping immediately switches from high gravity back to low gravity allowing us to still reap the benefits of the higher vertical velocity for the remaining frames.
+Normal gravity is 3.4 ([`mAutoJump.m.mGravity = -3.4`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_HIO_data.inc#L1021)). In [`daAlink_c::posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12908-L13293), a heavy Link instead uses `speed.y += gravity * 2.25f`, which is 7.65 per frame:
+
+```c++
+if (checkHeavyStateOn(TRUE, TRUE) && mProcID != PROC_SPINNER_READY &&
+    !checkNoResetFlg0(FLG0_WATER_IN_MOVE))
+{
+    speed.y += gravity * 2.25f; // -3.4 * 2.25 = -7.65
+
+    if (speed.y < maxFallSpeed * 1.5f) {
+        speed.y = maxFallSpeed * 1.5f;
+    }
+} else {
+    speed.y += gravity;
+    // ...
+}
+```
+
+Unequipping immediately switches back to normal gravity, so Link keeps the boosted vertical speed while losing it at the normal rate for the remaining frames.
 
 #### Version Differences
 
-Normally it's only possible to do moon boots with jump attack and ending blow on frame 1 on Wii, as you can open the item wheel and start an attack on the same frame; the best GCN can do for those is frame 2 moon boots. However if GCN has jump strike, this unlocks frame 1 moon boots for jump attacks.
+Normally, frame 1 moon boots with jump attack and ending blow is only possible on Wii, since you can open the item wheel and start an attack on the same frame. The best GCN can do for those is frame 2 moon boots. However, if GCN has jump strike, frame 1 moon boots becomes possible for jump attacks.
 
 ## Jump Attack
 
-> Note: it is also possible to perform moon boots on a mid-air jump slash, gaining just 0.9 units of height for frame 1 MB on the Wii version only
+> Note: it is also possible to perform moon boots on a mid-air jump slash, gaining just 0.9 units of height for frame 1 MB on the Wii version only.
 
 #### Code
 
-According to the following code, jump attacks get a 35% vertical speed boost when in a heavy state:
+According to the following code ([`daAlink_c::setCutJumpSpeed`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L849-L885), [`daAlink_c::procCutJumpInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L1563-L1584)), jump attacks get a 35% vertical speed boost when in a heavy state:
 
 ```c++
-void daAlink_c::setCutJumpSpeed(int i_airAt) {
-    if (checkNoResetFlg0(FLG0_UNDERWATER)) {
+void daAlink_c::setCutJumpSpeed(BOOL i_isAirCut) {
+    if (checkNoResetFlg0(FLG0_WATER_IN_MOVE)) {
         ...
-    } else if (checkHeavyStateOn(1, 1)) {
+    } else if (checkHeavyStateOn(TRUE, TRUE)) {
         speed.y *= 1.35f;
     }
   
     ...
 }
 
-int daAlink_c::procCutJumpInit(int i_airCut) {
+int daAlink_c::procCutJumpInit(BOOL i_isAirCut) {
     ...
 
-    if (i_airCut) {
-        mNormalSpeed = daAlinkHIO_cutJump_c0::m.mAirJumpSpeedH;
-        speed.y = daAlinkHIO_cutJump_c0::m.mAirJumpSpeedV; // 13
+    if (i_isAirCut) {
+        mNormalSpeed = mpHIO->mCut.mCutJump.m.mAirJumpSpeedH;
+        speed.y = mpHIO->mCut.mCutJump.m.mAirJumpSpeedV; // 13
     } else {
-        mNormalSpeed = daAlinkHIO_cutJump_c0::m.mBaseJumpSpeedH;
-        speed.y = daAlinkHIO_cutJump_c0::m.mBaseJumpSpeedV; // 27
+        mNormalSpeed = mpHIO->mCut.mCutJump.m.mBaseJumpSpeedH;
+        speed.y = mpHIO->mCut.mCutJump.m.mBaseJumpSpeedV; // 27
     }
 
-    setCutJumpSpeed(i_airCut);
+    setCutJumpSpeed(i_isAirCut);
 
     ...
 }
@@ -60,7 +77,7 @@ int daAlink_c::procCutJumpInit(int i_airCut) {
 
 #### Frame Data
 
-The greatest Y displacement you can get with a jump attack moon boots is `136.8` units with frame 1 MB or `105.45` with frame 2 MB on GCN without jump strike
+The greatest Y displacement you can get with a jump attack moon boots is `136.8` units with frame 1 MB, or `105.45` with frame 2 MB on GCN without jump strike.
 
 | Frame | No MB Y  | MB Frame 1 Y | MB Frame 2 Y |
 | :---- | :------: | :----------: | :----------: |
@@ -88,13 +105,13 @@ The greatest Y displacement you can get with a jump attack moon boots is `136.8`
 
 #### Code
 
-According to the following code, jump strikes get a 35% vertical speed boost when in a heavy state:
+According to the following code ([`daAlink_c::setCutJumpSpeed`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L849-L885), [`daAlink_c::procCutLargeJump`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L2385-L2446)), jump strikes get a 35% vertical speed boost when in a heavy state:
 
 ```c++
-void daAlink_c::setCutJumpSpeed(int i_airAt) {
-    if (checkNoResetFlg0(FLG0_UNDERWATER)) {
+void daAlink_c::setCutJumpSpeed(BOOL i_isAirCut) {
+    if (checkNoResetFlg0(FLG0_WATER_IN_MOVE)) {
         ...
-    } else if (checkHeavyStateOn(1, 1)) {
+    } else if (checkHeavyStateOn(TRUE, TRUE)) {
         speed.y *= 1.35f;
     }
   
@@ -106,8 +123,8 @@ int daAlink_c::procCutLargeJump() {
 
             if (!checkModeFlg(2) && frameCtrl->getFrame() >= 5.0f) {
                 ...
-                speed.y = daAlinkHIO_cutLargeJump_c0::m.mCutSpeedV; // 33
-                setCutJumpSpeed(0);
+                speed.y = mpHIO->mCut.mCutLargeJump.m.mCutSpeedV; // 33
+                setCutJumpSpeed(FALSE);
             }
 
     ...
@@ -116,7 +133,7 @@ int daAlink_c::procCutLargeJump() {
 
 #### Frame Data
 
-The greatest Y displacement you can get with jump strike moon boots is `218.9` units with frame 5 MB
+The greatest Y displacement you can get with jump strike moon boots is `218.9` units with frame 5 MB.
 
 | Frame | No MB Y | MB Frame 5 Y | MB Frame 6 Y | MB Frame 7 Y |
 | :---- | :-----: | :----------: | :----------: | :----------: |
@@ -152,17 +169,17 @@ The greatest Y displacement you can get with jump strike moon boots is `218.9` u
 
 #### Code
 
-According to the following code, ending blow attacks get a 50% vertical speed boost when in a heavy state:
+According to the following code ([`daAlink_c::procCutDownInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L2029-L2105)), ending blow attacks get a 50% vertical speed boost when in a heavy state:
 
 ```c++
 int daAlink_c::procCutDownInit() {
     ...
 
-        speed.y = daAlinkHIO_cutDown_c0::m.mRecoverSpeedH; // 40
+        speed.y = mpHIO->mCut.mCutDown.m.mRecoverSpeedH; // 40
 
-        if (checkNoResetFlg0(FLG0_UNDERWATER)) {
+        if (checkNoResetFlg0(FLG0_WATER_IN_MOVE)) {
             ...
-        } else if (checkHeavyStateOn(1, 1)) {
+        } else if (checkHeavyStateOn(TRUE, TRUE)) {
             speed.y *= 1.5f;
         }
 
@@ -172,7 +189,7 @@ int daAlink_c::procCutDownInit() {
 
 #### Frame Data
 
-The greatest Y displacement you can get with ending blow moon boots on Wii is `429.6` units with frame 1 MB and for GCN `368.75` units with frame 2 MB
+The greatest Y displacement you can get with ending blow moon boots on Wii is `429.6` units with frame 1 MB, and on GCN `368.75` units with frame 2 MB.
 
 | Frame |  No MB Y  | MB Frame 1 Y | MB Frame 2 Y | MB Frame 3 Y | MB Frame 4 Y | MB Frame 5 Y |
 | :---- | :-------: | :----------: | :----------: | :----------: | :----------: | :----------: |
@@ -214,24 +231,24 @@ The greatest Y displacement you can get with ending blow moon boots on Wii is `4
 
 ## Back Slice
 
-> Note: Back slice moon boots does not work with iron boots and must be done with magic armor
+> Note: Back slice moon boots does not work with the Iron Boots and must be done with the Magic Armor.
 
 #### Code
 
-According to the following code, back slice attacks get a 50% vertical speed boost when in a heavy state:
+According to the following code ([`daAlink_c::procCutFinishJumpUpInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_cut.inc#L1338-L1386)), back slice attacks get a 50% vertical speed boost when in a heavy state:
 
 ```c++
 int daAlink_c::procCutFinishJumpUpInit() {
     ...
   
-    speed.y = daAlinkHIO_cutFnJU_c0::m.mSpeedV; // 33
+    speed.y = mpHIO->mCut.mCutFinishJumpUppercut.m.mSpeedV; // 33
 
     ...
 
-    if (checkNoResetFlg0(FLG0_UNDERWATER)) {
+    if (checkNoResetFlg0(FLG0_WATER_IN_MOVE)) {
         ...
-    } else if (checkHeavyStateOn(1, 1)) {
-        speed.y *= 1.5;
+    } else if (checkHeavyStateOn(TRUE, TRUE)) {
+        speed.y *= 1.5f;
     }
 
     ...
@@ -240,7 +257,7 @@ int daAlink_c::procCutFinishJumpUpInit() {
 
 #### Frame Data
 
-The greatest Y displacement you can get with back slice moon boots on is `278.85` units with frame 1 MB
+The greatest Y displacement you can get with back slice moon boots is `278.85` units with frame 1 MB.
 
 | Frame | No MB Y | MB Frame 1 Y | MB Frame 2 Y | MB Frame 3 Y | MB Frame 4 Y | MB Frame 5 Y |
 | :---- | :-----: | :----------: | :----------: | :----------: | :----------: | :----------: |
