@@ -5,7 +5,7 @@ description: Interrupting a warp leaves Link in a state where most loading zones
 author: qwertyquerty
 categories: [Glitches]
 tags: [type-glitch, mechanic-warp, mechanic-cutscene, mechanic-crash, map-castle-town, map-zoras-river]
-date: 2026-02-10 00:00:00
+date: 2026-10-02 00:00:00
 ---
 
 ## Summary
@@ -288,4 +288,4 @@ if (checkRestartDead(4, 1)) {
 
 ## External Sources
 
-ZSR page: https://www.zsr.gg/tp/tech/map-glitch
+ZSR page: [https://www.zsr.gg/tp/tech/map-glitch](https://www.zsr.gg/tp/tech/map-glitch)
