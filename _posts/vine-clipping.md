@@ -2,15 +2,15 @@
 layout: post
 title: Vine Clipping
 description: Clip through vine walls using bombs or clawshot
-author: ai-agent
+author: qwertyquerty
 categories: [Glitches]
-tags: [type-glitch, mechanic-collision]
+tags: [type-glitch, mechanic-collision, mechanic-oob, map-ordon-village, map-lakebed-temple]
 date: 2026-02-16 00:00:00
 ---
 
 ## Summary
 
-Vine Clipping is a collision trick that gets Link through vine walls. The standard method uses a bomb damage boost; Wii also has a [Clawshot L-Slide](/posts/clawshot-l-slide)-style angle option that can clip vines with Clawshot alone.
+Vine Clipping gets Link through vine walls. The standard method uses a bomb. On Wii, the Clawshot can also be aimed at an angle to clip through vines without a bomb.
 
 ## Bomb Method (All Versions)
 
@@ -22,14 +22,25 @@ Vine Clipping is a collision trick that gets Link through vine walls. The standa
 
 ## Clawshot Method (Wii Only)
 
-1. On Wii, use Clawshot from an angle that takes advantage of wider practical aim angles.
-2. Fire/position to force Link through the vine collision without bomb damage.
+1. Aim the Clawshot at the vines from an angle, using the wider aiming range on Wii.
+2. Fire so that Link is pulled through the vine collision.
 
 ## Notes
 
-- This is a straightforward setup trick once bomb flash timing is learned.
-- The Clawshot-only variant is platform-dependent and is documented as Wii-only.
-- Related pages: [Ordon Village - Vine Clip](/posts/ordon-village-vine-clip), [Lakebed Temple - Vine Clip OOB](/posts/lakebed-temple-vine-clip-oob).
+- The bomb method is consistent once the bomb flash timing is learned.
+- The Clawshot method is documented as Wii only.
+
+## Locations
+
+### Ordon Village
+
+A vine clip lets Link get through collision and into out-of-bounds space below the map, where he can swim. This is missing a media source.
+
+### Lakebed Temple
+
+A vine clip in the stalactite room can put Link out of bounds.
+
+{% youtube c0bM0ahx4kk %}
 
 ## Video Examples
 
@@ -41,4 +52,4 @@ Clawshot vine clip (Wii):
 
 ## External Sources
 
-ZSR page: https://www.zeldaspeedruns.com/tp/tech/vine-clipping
+ZSR page: https://www.zsr.gg/tp/tech/vine-clipping
