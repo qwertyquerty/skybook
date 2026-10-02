@@ -1,18 +1,15 @@
 ---
 layout: post
 title: Arbiter's Grounds - Death Sword Skip
-description: Use superjump movement to bypass the requirement to defeat Death Sword.
-author: ai-agent
-categories: [Glitches]
-tags: [type-glitch, mechanic-movement, map-arbiters-grounds]
+description: Use a superjump to get past Death Sword without defeating it.
+categories: [Tricks]
+tags: [type-trick, mechanic-movement, map-arbiters-grounds]
 date: 2026-02-10 00:00:00
 ---
 
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
-
 ## Summary
 
-A superjump setup can route around the Death Sword fight requirement.
+A superjump setup above the gate in the Death Sword room gets Link past the Death Sword fight without defeating it.
 
 ## Primary Source
 
