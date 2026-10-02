@@ -4,7 +4,7 @@ title: 21/20 Goats
 author: qwertyquerty
 description: Letting a counted goat escape the pen and come back in counts it twice, so the goat herding minigame never ends.
 categories: [Glitches]
-tags: [type-glitch, map-goats, type-softlock]
+tags: [type-glitch, map-goats, mechanic-softlock]
 date: 2026-10-01 00:00:00
 ---
 
