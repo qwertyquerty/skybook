@@ -18,7 +18,7 @@ and can eventually cause actors or resources to stop loading.
 
 {% youtube 43IlXCPBlbQ %}
 
-## Evidence Boundary
+## Unresolved Ownership
 
 The one-frame Wii timing is not interchangeable with the GameCube timing in
 [Save Leak (J2D)](/posts/save-leak-j2d). The GameCube variant has been traced
@@ -30,7 +30,7 @@ Community tests associate repeated Wii setups with persistent heap pressure and
 later loads. That establishes a retained-memory effect, but not which heap,
 archive registration, or object lifetime is responsible.
 
-## Research Checklist
+## Required Trace
 
 A mechanism trace should compare a successful one-frame setup against both
 neighboring timings and record:
@@ -45,7 +45,7 @@ orphaned archive, and a leaked resource-table entry can all make future actors
 disappear, but they select targets differently and survive different kinds of
 loads.
 
-## Related Observation
+## Habreno's Run
 
 [Habreno's Memory Glitch](/posts/habrenos-memory-glitch) may have begun with
 this reset timing, but that causal link remains a hypothesis rather than a

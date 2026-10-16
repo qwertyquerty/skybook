@@ -29,7 +29,7 @@ that can succeed, enabling [Actor Corruption](/posts/actor-corruption).
 - For later dupes, split fishing lines/bobbers indicate successful dupes; merged lines/bobbers usually indicate failure.
 - Rod pull-out sound generally indicates on-time or late input; no sound usually indicates early input.
 
-## Memory Mechanism
+## Retained Allocations
 
 On the investigated GameCube build, one duplicate costs approximately:
 
@@ -84,7 +84,7 @@ Example:
 - [Mistargeted DMA](/posts/mistargeted-dma), which begins from more extreme
   heap pressure and a current-heap restoration failure
 
-## Testing Guidance
+## Reproduction Variables
 
 For a new application, record GameHeap and ZeldaHeap's **largest free block**
 as well as total free space. Also record which actor or archive request fails;

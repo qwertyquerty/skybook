@@ -45,7 +45,7 @@ videos do not distinguish those possibilities.
 
 {% youtube IZtlmQ1IUV8 %}
 
-## Full Glitch from Console Boot
+## Missing Full-Session Recording
 
 A pre-run Wii test appears to include the likely glitch trigger; around 10:56 it may include a Save Leak.
 
@@ -53,13 +53,13 @@ Note: Video appears to be taken down! Does anybody have a copy?
 
 {% youtube nheMQIZkiiA %}
 
-## What Is Established
+## Confirmed Observations
 
 - The anomalous actor and audio behavior persisted across ordinary area loads.
 - The run occurred on Wii, where the one-frame ACT Save Leak is known.
 - A pre-run sequence reportedly contained the relevant reset timing.
 
-## What Remains Unknown
+## Missing Evidence
 
 - The removed full-session recording prevents verification of the complete
   causal chain from reset to later symptoms.

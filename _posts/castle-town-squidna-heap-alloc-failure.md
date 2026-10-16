@@ -16,7 +16,7 @@ Load any file before the Squidna cutscene and monitor Dolphin logs; as the cutsc
 
 {% youtube lKe3qDPTybs %}
 
-## What the Log Establishes
+## Allocation Warnings
 
 An allocation warning proves that a particular request did not fit in its
 selected heap. It does not by itself prove actor corruption, identify which
@@ -30,7 +30,7 @@ separate route result. A useful trace should associate each warning with its
 request size, heap, and return address, then check whether the demo archive was
 registered and whether the event returned control.
 
-## Why Loading Another File Matters
+## Allocator History
 
 Loading a file first changes the live allocation set and the sizes of the
 remaining contiguous holes. The later cutscene can therefore fail even when a

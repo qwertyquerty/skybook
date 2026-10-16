@@ -22,7 +22,7 @@ pressure and allocator layouts.
 
 {% youtube uXepgqiXDdc %}
 
-## What Is Being Exhausted
+## Heap Roles
 
 Actor creation uses more than one heap, so "free memory" is not a single
 number:
@@ -43,7 +43,7 @@ single free block is large enough, even if the sum of several smaller holes is
 greater than the request. This is why two setups with similar reported free
 space can corrupt different actors.
 
-## Failure Points
+## Creation Failure Points
 
 A simplified actor load looks like this:
 
@@ -65,7 +65,7 @@ loader releases the REL reference when that allocation fails. Persistent
 future-instance corruption requires a longer-lived shared resource or
 registration imbalance, not merely one rejected process allocation.
 
-## Choosing a Useful Target
+## Target Selection
 
 The strongest targets have all of the following properties:
 
@@ -97,7 +97,7 @@ general property of actor corruption.
 - [Permanent Desert State 8 Cinematic](/posts/permanent-desert-state-8-cinematic)
   records another event-load failure state.
 
-## Research Guidance
+## Test Protocol
 
 When testing a new target, record more than whether the actor is visible:
 

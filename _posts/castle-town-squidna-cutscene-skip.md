@@ -19,7 +19,7 @@ and return control without presenting the normal sequence.
 
 {% youtube LjVlufLlXHw %}
 
-## Why Heap Pressure Can Skip an Event
+## Fail-Open Demo Archive
 
 Room loading has a path for optional demo archives. The room layer selects a
 `DemoXX_YY` archive, and the engine asks the object-resource controller to load
@@ -31,7 +31,7 @@ That asymmetry is the useful part. The goal is not to run the entire game out
 of memory; it is to deny the large cutscene allocation while preserving the
 smaller allocations required to keep the map and player functional.
 
-## Setup Sensitivity
+## Allocation Window
 
 Duplicate count alone is not a stable measurement. Existing allocations and
 fragmentation determine the largest block available when the event is
@@ -50,7 +50,7 @@ The related [Squidna Heap Allocation Failure](/posts/castle-town-squidna-heap-al
 page documents visible allocation warnings. Warnings alone do not prove that
 the useful cutscene failure occurred; the post-event state must also be checked.
 
-## Result Classification
+## Failure Mode
 
 This is a selective resource-load failure, not a wrong write. Its usefulness
 comes from event sequencing: the room survives without the cutscene resource,

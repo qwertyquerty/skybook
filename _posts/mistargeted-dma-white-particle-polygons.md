@@ -16,7 +16,7 @@ effect is not corrupted pot geometry and is not itself an out-of-bounds write.
 It is the fallback rendering path of a particle whose 3D-model callback was
 never installed after a failed allocation.
 
-## Failed Allocation
+## Particle-Pool Allocation Failure
 
 After the Fish On setup, `JKRHeap::sCurrentHeap` can remain set to SystemHeap
 (`0x80457CC0`) instead of ZeldaHeap (`0x80502400`). During scene creation,
@@ -28,7 +28,7 @@ SystemHeap has only `57,820` free bytes and a largest block of `57,796` bytes,
 so the allocation returns null. The global particle-model pool pointer
 `_mModel` at `0x80450E98` remains null.
 
-## Why White Polygons Appear
+## Missing Model Callback
 
 When `_mModel` is null, `dPa_modelEcallBack::setup()` returns without assigning
 the particle's model callback. Ordinarily `dPa_modelPcallBack::draw()` renders
@@ -46,14 +46,14 @@ Setting the particle callback to null in an otherwise vanilla state reproduces
 the same polygon effect, confirming that malformed source geometry is not
 required.
 
-## Reproduction Scope
+## Affected Break Effects
 
 The effect has been observed from multiple breakable objects, including pots
 and skulls on the ground. The exact object is less important than whether its
 break effect requests one of the affected model particles while the pool is
 missing.
 
-## Exploit Relevance
+## Diagnostic Value
 
 This failure is useful as an **allocation oracle**:
 

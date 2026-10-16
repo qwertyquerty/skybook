@@ -27,7 +27,7 @@ and crashes instead of producing the confirmed Save leak.
 Using this to alloc J2D objects into Zelda heap:
 {% youtube sUazCj0PbiM %}
 
-## Confirmed Memory Effect
+## Retained Allocations
 
 Retail GameCube tests on both NTSC-U and Japanese builds found that one
 successful setup orphans:
@@ -44,7 +44,7 @@ This is retained allocation ownership, not merely stale archive bytes. Memory
 from a normally freed archive can remain readable too, so finding a RARC header
 in memory by itself is not proof of a leak.
 
-## Why the Archive Is Orphaned
+## Mount Ownership Race
 
 The Save menu starts an asynchronous mount into J2D heap and stores the command
 in `mpMount`. Once the command completes, the normal `_open()` path transfers
@@ -65,7 +65,7 @@ That deterministic shift is visible to
 change which cursor position reaches which field: the name object, array
 cookie, and following J2D objects all move together.
 
-## Timing Notes
+## Reset Timing
 
 The historical recipe counts the reset frame as the first frame: reset, 16
 neutral frames, then A on frame 18. A controller soft-reset chord can add input
@@ -76,7 +76,7 @@ Neighboring timings do not produce the same ownership leak. Some alter retained
 font reference counts, but repeated testing made the message-font count grow
 rather than approach an exploitable underflow.
 
-## Limits
+## Current Limits
 
 Opening Collection again after the confirmed leak wedges during construction
 because the remaining J2D space is too small. This prevents the straightforward
