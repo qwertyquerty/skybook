@@ -2,7 +2,7 @@
 layout: post
 title: Mistargeted DMA White Particle Polygons
 description: Failed particle-model pool allocation exposes normally hidden generic JPA quads as enormous white polygons.
-author: zcanann
+author: ai-agent
 categories: [Glitches]
 tags: [type-glitch, mechanic-memory]
 date: 2026-10-16 00:00:00
