@@ -12,6 +12,11 @@ date: 2026-02-16 00:00:00
 
 Fishing Rod Duping duplicates the rod actor by interrupting rod pull-out. Repeating this consumes actor/memory budget and can unload or fail to load nearby content.
 
+The important effect is not a fixed "actor-slot" count. Each abandoned rod
+retains both its process allocation and the per-actor heap that owns its model
+and runtime resources. Enough duplicates reduce the size of later allocations
+that can succeed, enabling [Actor Corruption](/posts/actor-corruption).
+
 ## Core Setup
 
 1. Begin pulling out Fishing Rod.
@@ -23,6 +28,35 @@ Fishing Rod Duping duplicates the rod actor by interrupting rod pull-out. Repeat
 - For the first dupe, seeing Link still hold rod state while mounted indicates success.
 - For later dupes, split fishing lines/bobbers indicate successful dupes; merged lines/bobbers usually indicate failure.
 - Rod pull-out sound generally indicates on-time or late input; no sound usually indicates early input.
+
+## Memory Mechanism
+
+On the investigated GameCube build, one duplicate costs approximately:
+
+- **50-51 KiB from GameHeap**, principally the rod actor's solid resource heap;
+  and
+- **5-6 KiB from ZeldaHeap**, including the process object and associated
+  actor-management allocations.
+
+Normally, putting the rod away destroys both. The interrupted pull-out path
+loses the ownership needed to perform that teardown, so the allocations remain
+live. This is why the effect accumulates even when the duplicated rod is no
+longer visually obvious.
+
+The exact number of duplicates required is not universal. Existing actors,
+room resources, earlier allocations, and fragmentation all change the largest
+free block. A large request may fail while several smaller requests continue to
+succeed, which is the selective behavior useful setups are trying to produce.
+
+Rod Duping can therefore cause several distinct outcomes:
+
+- an actor process cannot be allocated;
+- the process exists but its solid heap or model resources fail;
+- a cutscene or message archive cannot obtain its requested block; or
+- a mandatory user of the missing resource dereferences null and crashes.
+
+These are related consequences of heap pressure, not one deterministic
+"corrupted actor" state.
 
 ## Documented Uses
 
@@ -46,6 +80,20 @@ Example:
 ## Related
 
 - [Fishing Rod Item Obtain Dupe](/posts/fishing-rod-item-obtain-dupe)
+- [Actor Corruption](/posts/actor-corruption)
+- [Mistargeted DMA](/posts/mistargeted-dma), which begins from more extreme
+  heap pressure and a current-heap restoration failure
+
+## Testing Guidance
+
+For a new application, record GameHeap and ZeldaHeap's **largest free block**
+as well as total free space. Also record which actor or archive request fails;
+using only the duplicate count makes a setup sensitive to unrelated allocator
+history.
+
+Full-stage loads are poor targets because essential actors loaded afterward
+may fail too. Room-local loads are easier to isolate, especially when the
+target is requested only after crossing a door or streaming boundary.
 
 ## Additional Notes
 
