@@ -8,11 +8,17 @@ tags: [type-glitch, status-partially-solved, platform-wii, mechanic-actor-corrup
 date: 2026-02-10 00:00:00
 ---
 
-This page was migrated from the compendium by an AI agent, and could use human cleanup!
-
 ## Summary
 
-Our leading theory is that Habreno likely accidentally did Save Leaking on Wii to start a chain reaction of Actor Corruption (TODO: Cite), resulting in actors disappearing over the course of his run.
+During one of Habreno's Wii playthroughs, actors progressively disappeared and
+audio behavior became abnormal across multiple areas. The leading explanation
+is persistent heap or resource-state damage caused by an accidental
+[Save Leak (ACT)](/posts/save-leak-act), followed by
+[Actor Corruption](/posts/actor-corruption) on later loads.
+
+That explanation is plausible but not confirmed. The later symptoms are
+consistent with allocation failures; they do not by themselves identify the
+original leak or prove that every missing actor shared one corrupted archive.
 
 ## Save File Creation
 
@@ -28,7 +34,10 @@ Shows one visible effect in a later run after the earlier Wii glitch trigger seq
 
 ## Audio Glitches
 
-Likely actor corruption side effects causing audio issues across different locations.
+These recordings show that the abnormal state was not limited to one visible
+actor or room. Audio symptoms could result from failed resource allocation,
+missing actors that normally own sounds, or a separate subsystem failure; the
+videos do not distinguish those possibilities.
 
 {% youtube ukjTlZi2XDY %}
 
@@ -36,11 +45,32 @@ Likely actor corruption side effects causing audio issues across different locat
 
 {% youtube IZtlmQ1IUV8 %}
 
-## Full glitch from console boot
+## Missing Full-Session Recording
 
 A pre-run Wii test appears to include the likely glitch trigger; around 10:56 it may include a Save Leak.
 
 Note: Video appears to be taken down! Does anybody have a copy?
 
 {% youtube nheMQIZkiiA %}
+
+## Confirmed Observations
+
+- The anomalous actor and audio behavior persisted across ordinary area loads.
+- The run occurred on Wii, where the one-frame ACT Save Leak is known.
+- A pre-run sequence reportedly contained the relevant reset timing.
+
+## Missing Evidence
+
+- The removed full-session recording prevents verification of the complete
+  causal chain from reset to later symptoms.
+- No before/after heap map, resource-registration census, or REL-link trace is
+  available.
+- The state has not been reproduced from a clean boot while recording those
+  systems.
+
+A useful reproduction should save memory snapshots immediately before the
+reset, after returning to gameplay, and at the first missing actor. Comparing
+live heap blocks and resource registrations at those three points would tell us
+whether this is cumulative heap loss, a shared archive problem, or another
+persistent subsystem state.
 
