@@ -10,271 +10,395 @@ mermaid: true
 date: 2026-11-11 00:00:00
 ---
 
-This page walks through one frame of human Link on foot: every step that moves his position or judges it, in the order the code runs them. It covers on-foot Link only; wolf, swimming and riding branch off elsewhere ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18151-L18155)). Code links point to the decomp at commit `c8fa8c9`.
+This page follows human Link through one frame, in the order the game runs it: every place where his position is moved, and every place where it is checked against the stage's collision. Code links point to the decomp at commit `c8fa8c9`.
 
 ## Terms
 
-- **pos**: the point at Link's feet. **old.pos**: pos at the start of the frame.
-- **CrrPos**: the background collision routine that runs steps 4 to 10 ([`dBgS_Acch::CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L310-L463)).
-- **Circle**: one of three horizontal test circles at fixed heights above the feet.
-- **Slice**: the line where a wall crosses a circle's height. **Pusher**: the slice moved one circle radius out from the wall.
-- **Mode**: flags that every proc (Link's current action) sets.
-- **CC push**: the push from colliding with another actor, such as a pot or an enemy.
+**Positions and state**
+
+- **pos**: the point at Link's feet. **old.pos**: where pos was at the start of the frame.
+- **Proc**: Link's current action, such as walking, falling or hanging. Each proc has a function that runs once per frame.
+- **Mode**: a set of flags that comes with each proc. Several steps below turn on or off by mode. The ones that matter here:
+  - 0x2: a jump or fall;
+  - 0x40: hanging from a ledge;
+  - 0x4000: many special actions, for example ledge hangs, crawling forward, item gets, chests and door opens;
+  - 0x10000: ladders and vines.
+
+**Collision**
+
+- **Face**: one collision triangle. Its normal points out of its front, away from the solid side, and **n.y** is the normal's vertical part.
+- **Floor, wall and roof**: every face is one of the three, by n.y ([`c_bg_w.cpp`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/SSystem/SComponent/c_bg_w.cpp#L24-L45)):
+  - floor: n.y >= 0.5;
+  - roof: n.y < -0.8;
+  - wall: anything in between.
+- **Circle**: for walls, Link's body is three horizontal circles at fixed heights above his feet, all centered on pos.
+- **Slice** and **pusher**: the slice is where a wall face crosses a circle's height. The pusher is that slice moved one circle radius out from the wall.
+- **Line check**: a line cast between two points that reports the nearest face it crosses.
+- **Ground hit, roof hit, wall hit**: flags the collision code sets when Link stands on ground, has a roof within his height, or was pushed by a wall this frame.
+- **CC push**: the push from touching another actor, such as a pot or an enemy.
+- **CrrPos**: the routine that runs all of Link's level collision, steps [4](#4-line-check-pass-1) to [10](#10-line-down-check) ([`dBgS_Acch::CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L310-L463)).
 
 ![Face types](/assets/reference/link-frame-collision/00_surface_types.png)
 
-- Every face is a roof, wall or floor by its normal's y part (n.y) ([`c_bg_w.cpp`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/SSystem/SComponent/c_bg_w.cpp#L24-L45)).
-- The ground check uses its own, looser rule: n.y >= 0.014 (step 8).
+- The ground check (step [8](#8-ground-check)) uses its own, looser rule: any face with n.y >= 0.014 can be ground.
 
-All diagrams share one color key, listed in each legend: green floors, orange walls, pink roofs, teal water, blue Link and his result, gray earlier positions, yellow arrows for movement (before to after), purple dashed probes, red bad outcomes.
+**Diagram colors:**
 
-## Overview
+- green floors, orange walls, pink roofs, teal water;
+- blue for Link and his result, gray for earlier positions;
+- yellow arrows for movement (before to after), purple dashed lines for probes;
+- red for bad outcomes.
+
+## The Frame at a Glance
+
+### Overview
 
 ![Overview](/assets/reference/link-frame-collision/00_overview.png)
 
-- Steps 1 to 3 and 11 to 15 run in Link's `execute`; steps 4 to 10 run inside CrrPos.
-- A few sub-steps run outside their step's slot: 13.1 and 13.2 run before step 11, and 9.3 runs after it.
+- Step [1.1](#1-frame-start-and-moving-platforms) is done by the actor framework. Steps [1.2](#1-frame-start-and-moving-platforms) to [3](#3-movement-posmove) and [11](#11-ice-slip-wall-check) to [15](#15-crush-check) run in Link's own `execute`. Steps [4](#4-line-check-pass-1) to [10](#10-line-down-check) run inside CrrPos ([called here](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18160-L18161)).
+- Three sub-steps run outside their numbered slot ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18163-L18173)):
+  - [13.1](#13-position-restores) and [13.2](#13-position-restores) run right after CrrPos, before step [11](#11-ice-slip-wall-check);
+  - [9.3](#9-water-check) runs after step [11](#11-ice-slip-wall-check).
 
-## Flow chart
+### Order
 
 ![Order](/assets/reference/link-frame-collision/00_flow_order.png)
 
-- Boxes run top to bottom; the italic line says when a step runs.
-- Red boxes are outcomes: a proc change, a restart or a scene change.
+- Boxes run top to bottom. The italic line in a box says when that step runs.
+- Red boxes on the right are outcomes: a proc change, a restart or a scene change.
+
+### Values
 
 ![Values (a)](/assets/reference/link-frame-collision/00_flow_values_a.png)
 
 ![Values (b)](/assets/reference/link-frame-collision/00_flow_values_b.png)
 
-- Each row is a value: the steps that write it, then the steps that read it this frame and next frame.
-- One link worth knowing: the wall pass runs before this frame's ground check. Its slope term only counts after a ground check lifted Link (this frame's line-check floor hit, or last frame's ground check); otherwise it is 0 ([`GetWallAddY`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L598-L612)).
+- Each row is one value: the steps that write it, the steps that read it later this frame, and the steps that read it next frame.
+- **The wall pass and the ground slope:**
+  - The wall pass (step [5](#5-wall-pass)) runs before this frame's ground check, so it cannot use this frame's slope.
+  - Its slope term counts only if a ground check lifted Link onto the ground: either last frame's ground check, or a ground check this frame after a line check floor hit (step [4.5](#45-floor-hit)). Otherwise the term is 0, for example on the frame after a slope snap or in the air.
+  - Code: [`GetWallAddY`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L598-L612), [lift](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L163-L175), [cleared each frame](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L398-L400).
 
-## 1. Frame start and moving floors
+### Proc changes
+
+These are the only steps that can switch Link to a new proc. The overview tags each of them.
+
+- **[2.1](#21-demo-action) to [2.6](#25-to-26-damage-and-boomerang-catch)**: the action checks before the proc runs.
+- **[3.1](#31-the-proc-runs)**: the proc itself, for example landing from a fall or starting a slide.
+- **[14.3](#14-restart-checks), [14.4](#14-restart-checks) and [14.6](#14-restart-checks)**: the lava return and the freeze return start their own procs.
+- **Restarts and exits** do not change the proc in the frame they fire. They set a cutscene ("demo") mode and reload the room or change the scene ([`startRestartRoom`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13478-L13517)).
+- **On a later frame**, [2.1](#21-demo-action) can start a proc for some of those demo modes ([`checkDemoAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L406-L483)):
+  - a fall for the ground-code-5 exit;
+  - in some states, a next action after a restart.
+
+## 1. Frame Start and Moving Platforms
 
 ![Frame start](/assets/reference/link-frame-collision/01_frame_start.png)
 
-- **1.1** The framework copies pos into old.pos before every frame ([`f_op_actor.cpp`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/f_op/f_op_actor.cpp#L331)).
-- **1.2 to 1.3** If Link stands on a moving platform (or a moving magnetic surface), its motion is added to both pos and old.pos ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L17726-L17770)).
-- **1.4** A copy of old.pos is kept for steps 11 and 12.
-- **Why it matters:** the carry moves both points, so the line check never sees it. Only the one-sided wall pass can stop a platform carrying Link into a wall.
+- **1.1** The framework copies pos into old.pos before Link's code runs ([`f_op_actor.cpp`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/f_op/f_op_actor.cpp#L331)).
+- **1.2 to 1.3** If Link stood on a moving platform last frame (or, with magnet boots, a moving magnetic surface), its motion is added to both pos and old.pos. A few states, such as hookshot flight, skip this ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L17726-L17770)).
+- **1.4** A copy of old.pos is saved for steps [11](#11-ice-slip-wall-check) and [12](#12-snap-down-autogroundhit) ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L17772)).
+- **Why it matters:** the carry moves both points, so the line check (step [4](#4-line-check-pass-1)) never sees it. Only the one-sided wall pass (step [5](#5-wall-pass)) can stop a platform from carrying Link into a wall.
 
-## 2. Action checks before the proc
+## 2. Action Checks Before the Proc
+
+Before the proc runs, a chain of checks can switch it ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18086-L18098)).
+
+- The whole step is skipped in special demo modes and during a clothes change.
+- [2.1](#21-demo-action) to [2.4](#24-swim-entry) are one chain: once one of them acts, the rest are skipped. [2.3](#23-auto-jump-judge) and [2.4](#24-swim-entry) are also skipped while a cutscene proc started by [2.1](#21-demo-action) is active.
+- [2.5](#25-to-26-damage-and-boomerang-catch) and [2.6](#25-to-26-damage-and-boomerang-catch) always run.
+
+### 2.1 Demo Action
+
+- Starts the proc an event or cutscene asks for ([`checkDemoAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L71-L486)).
+- Most of these wait until Link is on the ground ([early return](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L95-L120)).
+
+### 2.2 Dead Action
+
+- At 0 HP with no event running, Link starts the death proc if he is on the ground or swimming. In the air he starts a fall instead ([`checkDeadAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L1269-L1304)).
+
+### 2.3 Auto-Jump Judge
 
 ![Auto-jump judge](/assets/reference/link-frame-collision/02_3_auto_jump.png)
 
-Before the proc runs, a chain of checks can switch it ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18086-L18097)):
+- **When:** Link had no ground hit last frame, and the ground is more than 50.01 below his feet ([`checkAutoJumpAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L10733-L10747)).
+  - It uses last frame's ground hit and ground height.
+  - It is skipped while jumping, climbing, swimming or riding (mode mask 0x70C12), with magnet boots on, and in a few other states such as door opens and warps.
+- **Result:**
+  - Running fast with the stick held, facing the way he is moving: an auto jump.
+  - At a ledge with a wall just below: a climb-down or a ledge hang.
+  - Otherwise: a fall.
+- **It can move Link.** Before switching it ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L10774-L10909)):
+  - raises pos.y by last frame's fall speed;
+  - probes the ground and the wall below the edge;
+  - can move Link sideways onto the edge it found, and nudges him along the wall's normal.
+- **Other branches** start a glide jump in an updraft, a roll jump, or a fall when magnet boots lose their surface ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L10920-L10926)).
+- Smaller drops are handled by the snap in step [12](#12-snap-down-autogroundhit).
 
-- **2.1** Event demos ([`checkDemoAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L71-L139)).
-- **2.2** Death at 0 HP ([`checkDeadAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L1269-L1296)).
-- **2.3** Auto-jump: with no ground hit and the ground more than 50.01 below, Link starts a jump, fall or ledge proc. Before that it probes the ground and walls with its own lines and can move Link onto a ledge edge ([`checkAutoJumpAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L10733-L10918)). Separate branches start a glide jump in updrafts, a roll jump, or a fall when magnet boots let go. Smaller drops are handled by the snap in step 12.
-- **2.4** Entering deep water ([`checkSwimAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_swim.inc#L346-L470)).
-- **2.5** Taking a hit ([`checkDamageAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_damage.inc#L376-L470)).
-- **2.6** Catching the boomerang.
-- 2.1 to 2.4 form an else-if chain; 2.5 and 2.6 always run.
-- 2.3 can move Link, so the overview draws step 2 as a step that moves him.
+### 2.4 Swim Entry
 
-Other proc changes in a frame:
+- If last frame's water check found water deep enough over Link's body, he starts a swim proc ([`checkSwimAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_swim.inc#L346-L493)).
+- Landing in water from a jump also sets his height here ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_swim.inc#L422-L424)).
 
-- **3.1** The proc itself can switch, for example landing from a fall or starting a slide.
-- **14.3, 14.4, 14.6** The lava and freeze returns start their own procs.
-- Restarts, voids and scene exits change the proc too, but not in the frame they fire: they set a demo mode, and 2.1 starts the matching proc on a later frame ([`checkDemoAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_demo.inc#L406-L483)). The overview tags every step that can change the proc.
+### 2.5 to 2.6 Damage and Boomerang Catch
 
-## 3. posMove
+- Taking a hit starts a damage proc ([`checkDamageAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_damage.inc#L376-L771)).
+- Catching the boomerang starts the catch proc ([`checkBoomerangCatchAction`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink_boom.inc#L333-L349)).
 
-All the frame's movement is added to pos here, before any collision runs ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12908-L13293)).
+## 3. Movement (posMove)
 
-### 3.1 Set-pos
+All of the frame's movement is added to pos here, before any wall or floor is checked ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12908-L13293)).
+
+### 3.1 The Proc Runs
 
 ![Set-pos](/assets/reference/link-frame-collision/03_1_set_pos.png)
 
-- The proc runs first and may place Link directly, for example at the start of a roof hang.
-- Those placements keep old.pos, so the line check covers the jump, except in hanging states (mode 0x40), where the line check is off and 3.2 resets old.pos. Ledge grabs and hang starts are such states.
-- Event placements come from cutscene data or other actors, before step 2. They also reset old.pos, so their jump is never line-checked ([`setPlayerPosAndAngle`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L9188-L9195)).
+- The proc runs first and may place Link directly, for example at the start of a roof hang ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18139)).
+- **Such a placement keeps old.pos**, so the line check in step [4](#4-line-check-pass-1) covers the jump.
+- **Ledge hangs are the exception.** Ledge grabs and hang starts put Link in mode 0x40. In that mode:
+  - the line check is off ([`commonProcInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L15158-L15160));
+  - step [3.2](#32-animation-offsets-and-the-oldpos-reset) also resets old.pos.
+- **Event placements** do not come from the proc: other actors or Link's cutscene code (before step [2](#2-action-checks-before-the-proc)) place him. They reset old.pos too, so that jump is never line-checked ([`setPlayerPosAndAngle`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L9188-L9199)).
 
-### 3.2 Root offsets and the old.pos reset
+### 3.2 Animation Offsets and the old.pos Reset
 
 ![old.pos reset](/assets/reference/link-frame-collision/03_2_old_reset.png)
 
-- In hang states and step moves, one root mode sets old.pos = pos, so the next line check has zero length ([`transAnimeProc`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12763-L12770)).
-- Other root modes move pos by the animation offset and leave old.pos alone.
+- **Root mode:** a value the proc sets that says how the animation's own movement is applied to pos.
+- **Root mode 0x50**, in mode 0x40 or a step move, sets old.pos = pos. The next line check then has zero length ([`transAnimeProc`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12763-L12770)).
+- **Other root modes** move pos by the animation's offset and leave old.pos alone ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12776-L12822)).
+- **Root mode 0x70** also probes the ground and lifts Link onto it if he is below it ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12805-L12814)).
 
-### 3.3 to 3.6 Angle, speed, gravity, ice
+### 3.3 to 3.6 Slope, Speed, Gravity and Ice
 
 ![Ground angle](/assets/reference/link-frame-collision/03_3_ground_angle.png)
 
-- **3.3 to 3.4** Speed follows the facing, scaled by the cosine of the slope, and by 0.85 uphill ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12919-L12963)). The slope counts only on floor-type ground.
-- **3.5** Gravity: -3.4 per frame, down to -200; iron boots use 2.25 times the gravity ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13050-L13065)).
-- **3.6** On ice, part of each speed change goes into a separate slip velocity ([`setIceSlipSpeed`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L5259-L5299)).
+- **3.3 to 3.4 Speed** points along Link's movement angle (`current.angle.y`), scaled by the cosine of the slope under him ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L12919-L12963)).
+  - Uphill it is also scaled by 0.85.
+  - The slope counts only with a ground hit on floor-type ground, outside jumps, climbs and riding.
+- **3.5 Gravity** is -3.4 per frame, down to a fall speed of -200 ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13050-L13065)). Iron boots use 2.25 times the gravity and 1.5 times the limit.
+- **3.6 Ice:** part of each speed change goes into a separate slip velocity ([`setIceSlipSpeed`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L5259-L5302)). Link keeps sliding after he stops.
 
-### 3.7 to 3.14 Moves added to pos
+### 3.7 to 3.14 Moves Added to pos
 
 ![Move chain](/assets/reference/link-frame-collision/03_7_move_chain.png)
 
-- In order: speed and grab offset, CC push, outside power, ice slip, water stream, wind, root motion ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13096-L13243)).
-- The CC push and the other forces are skipped while hanging (mode 0x40).
-- **3.14** Hanging and magnet boots run their own small wall checks. Apart from those and one root-motion mode's ground probe, posMove checks no collision.
+- **In this order** ([`posMove`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13084-L13243)):
+  - speed and the grab offset;
+  - the CC push;
+  - outside power;
+  - ice slip;
+  - water stream;
+  - wind;
+  - animation root motion.
+- **When they apply:**
+  - The CC push, outside power, ice slip, stream and wind are skipped while hanging (mode 0x40) and in some cutscene states.
+  - Outside power, ice slip and wind are also skipped during events. The stream is too, except in events that allow it.
+- **3.14** Hanging and magnet boots run their own small wall line checks ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13249-L13292)). Apart from those and the root mode 0x70 ground probe, posMove checks no collision.
 
-## 4. Line check, pass 1
+## 4. Line Check, Pass 1
 
-One line per circle, from where Link was to where he is now ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L209-L308)).
+One line per circle, at that circle's height, from old.pos to pos ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L209-L308)). The wall pass cannot pull back a center that ended behind a wall, so this line is the only guard against crossing a wall in one frame.
 
-- **4.1 Trigger:** forced on for Link in most states, so even a 1-unit move is checked ([`commonProcInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L15158-L15163)). It is off while hanging, in step moves, on door open and in one cutscene fall; on chest open, a boar knockback and the board only big moves are checked.
-- **Why it matters:** the wall pass cannot pull back a center that ends behind a wall, so this line is the only guard against crossing a wall in one frame.
+### 4.1 Trigger
 
-### 4.2 Line heights
+- **The rule:** the line check runs when Link moved more than 35 sideways, dropped more than 9.99, or when it is forced ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L360-L366)).
+- **In practice:** Link forces it on every proc change, so every move is checked, even a 1-unit one ([`commonProcInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L15158-L15163)).
+- **Off entirely:**
+  - while hanging (mode 0x40);
+  - in step moves;
+  - on door open;
+  - in the fall after a ground-code-5 exit.
+- **Only big moves checked:** on chest open, in a boar-battle knockback and on the board.
+
+### 4.2 Line Heights
 
 ![Line heights](/assets/reference/link-frame-collision/04_2_line_heights.png)
 
-- Lines run at the circle heights 50.01, 129.99 and 180.
-- Under a low roof, the first line above it runs just under the roof and the rest are skipped.
-- When falling outside fly states, the line end is raised by the fall speed, so the line is level when gravity was the only vertical move this frame.
+- **Heights:** the lines run at the circle heights, 50.01, 129.99 and 180 ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L210-L251)).
+- **Under a low roof** above old.pos:
+  - the first line that would be above it runs 1 under the roof;
+  - the lines above that one are skipped.
+- **Falling:** when Link is falling outside jumps and climbs, the end of each line is raised by the fall speed. When gravity was the only vertical move, the line is level.
 
-### 4.3 Front faces only
+### 4.3 Front Faces Only
 
 ![Front faces](/assets/reference/link-frame-collision/04_3_front_faces.png)
 
-- A face counts only if the line starts in front of it and ends behind it; the nearest hit wins ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L427-L433)).
-- With only three lines, a crack in the collision at those heights lets a move through.
+- A face counts only if the line starts in front of it and ends on or behind it. The nearest hit wins ([`dBgWKCol::LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L427-L433)).
+- With only three lines, a crack in the collision at exactly those heights lets a move through.
 
-### 4.4 Wall-type hit
+### 4.4 Wall or Roof Hit
 
 ![Wall hit](/assets/reference/link-frame-collision/04_4_wall_hit.png)
 
-- Link is placed 1 unit in front of the hit, and that circle's wall check is pinned to this height ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L263-L272)).
+- **Placement:** Link is placed 1 unit out from the face, along its normal ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L263-L272)).
+- **Pinned height:** that circle's wall check in step [5](#5-wall-pass) is pinned to this height.
+- **Later lines** still start at old.pos but end at the new pos.
+- **Roof-clamped line:** if the clamped line from [4.2](#42-line-heights) hits a wall, Link ends up lower than his old height. The code subtracts the circle's full height, not the clamped one ([clamp](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L229-L236), [subtraction](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L272)).
 
-### 4.5 Floor-type hit
+### 4.5 Floor Hit
 
 ![Floor hit](/assets/reference/link-frame-collision/04_5_floor_hit.png)
 
-- Link is placed at the hit and a ground check runs there, which can pop him up onto the floor ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L273-L276)).
+- Link is placed 1 unit under the hit, and a ground check runs from there. It lifts him onto the floor the line hit ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L273-L276)).
+- A hit by a high line can pop him up by up to that line's height.
 
-## 5. Wall pass
+## 5. Wall Pass
 
 The wall pushers that hold Link's body away from walls ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1013-L1460)). See also [Wall Collisions and Correction](/posts/wall-correct-sort).
 
-- **5.1** Skipped while wall correction is off (door open, chest open, a boar knockback).
+- **5.1** Skipped while wall correction is off: door open, chest open and a boar-battle knockback ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L368-L374)).
 
 ### 5.2 Circles
 
 ![Circles](/assets/reference/link-frame-collision/05_2_circles.png)
 
-- Three circles of radius 35 at 50.01, 129.99 and 180 above the feet, sharing one center ([`playerInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L4498-L4500)).
-- Some states change them, for example 25/25/25 while ledge hanging.
+- **Default:** three circles of radius 35 at 50.01, 129.99 and 180 above the feet, all sharing one center ([`playerInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L4498-L4500)).
+- **Per proc:** each proc change sets them again ([`setBgCheckParam`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L8936-L9029)). Some states use other values, for example 25/25/25 while hanging from a ledge and 30/80/80 while crawling.
 
-### 5.3 Sorted list
+### 5.3 Sorted List
 
 ![Sorted list](/assets/reference/link-frame-collision/05_3_sorted_list.png)
 
-- Walls are sorted so the one Link faces is corrected last and has the final say.
-- At most 84 walls per collision source; any wall found after that is dropped ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1163-L1229)).
+- **Order:** walls are sorted by the angle between Link's movement angle (`current.angle.y`) and the wall's normal. Walls behind him come first, then walls beside him, and the wall in front of him comes last, so it has the final say ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1158-L1229)).
+- **Limit:** at most 84 walls per collision source. Any wall found after the list is full is dropped.
 
-### 5.4 Slice height and slice test
+### 5.4 Slice Height and Slice Test
 
 ![Slope term](/assets/reference/link-frame-collision/05_4a_slope_term.png)
 
+- **Test height:** each circle tests walls at its own height, plus a slope term ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1262-L1266)).
+- **Slope term:** raises the height by how much the ground rises toward the wall over one circle radius. It only counts after a ground check lifted Link (see [Values](#values)).
+- **Fall speed:** the frame's fall is taken back out of the height, so when gravity was the only vertical move the slices sit at last frame's heights.
+
 ![Slice test](/assets/reference/link-frame-collision/05_4b_slice_test.png)
 
-- Each circle tests walls at its height, raised a little when the ground rises toward the wall (only after a ground check lifted Link onto that ground).
-- A wall band that lies between two circle heights never pushes.
+- A wall is tested only if it crosses that height ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1267-L1291)).
+- A wall band that lies entirely between two circle heights never pushes.
 
-### 5.5 to 5.6 Push zone
+### 5.5 to 5.6 Push Zone
 
 ![Push zone](/assets/reference/link-frame-collision/05_5_push_zone.png)
 
-- A center between the wall and its pusher is pushed out to 1 unit inside the pusher ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1350-L1364)).
-- **One-sided:** a center behind the wall line is never pushed back out.
-- The pusher sits about 35.0064 out, which leaves the seam used by the [displacement clip](/posts/displacement-clipping).
+- **Push:** a center between the wall and its pusher is pushed out to 1 unit inside the pusher, for a vertical wall ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1337-L1364)).
+- **One-sided:** a center behind the wall line is more than 35 from the pusher, so it is never pushed back out.
+- **Seam:** the pusher sits about 35.0064 out, not 35. This leaves the seam used by [displacement clipping](/posts/displacement-clipping).
+- **Height:** pushes only move Link sideways, never up or down.
 
 ### 5.7 Corners
 
 ![Corner push](/assets/reference/link-frame-collision/05_7_corner.png)
 
-- Past the end of a wall, the circle is pushed until the wall's end touches it.
+- Past the end of a wall, the circle is pushed along the wall's normal until the wall's end lies on it ([`WallCorrectSort`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L1377-L1449)).
 
-## 6. Line check, pass 2
+## 6. Line Check, Pass 2
 
 ![Line check pass 2](/assets/reference/link-frame-collision/06_line_check_2.png)
 
-- Runs again from old.pos only if a wall pushed Link ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L376-L378)).
-- It catches a corner push that carried Link across another wall. Nothing wall-corrects its result again.
+- **When:** the line check from old.pos runs again if pass 1 ran and a wall pushed Link ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L376-L378)).
+- **What it catches:** a corner push that carried Link across another wall.
+- **No second wall pass:** nothing wall-corrects its result again this frame.
 
-## 7. Roof check
+## 7. Roof Check
 
 ![Roof check](/assets/reference/link-frame-collision/07_roof_check.png)
 
-- Finds the lowest roof above the feet. If it is less than 180 above, Link has a roof hit and a roof limit 180 below the roof ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L380-L396)).
-- It moves nothing itself; steps 8 and 15 use it. If the ground turns out to be above the roof, step 8 clears the roof hit.
+- **Search:** finds the lowest roof face straight above the feet ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L380-L396)).
+- **Roof hit:** if that roof is less than 180 above the feet, Link has a roof hit and a roof limit 180 below the roof. The 180 is Link's height. Some states use other values, for example 80 on the spinner.
+- **No move:** the roof check moves nothing itself. Steps [8](#8-ground-check) and [15](#15-crush-check) use its results.
+- **Off:** on ladders and vines (mode 0x10000, [`commonProcInit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L15092-L15096)).
 
-## 8. Ground check
+## 8. Ground Check
 
-### 8.1 to 8.2 Start and thin-ceiling clamp
+### 8.1 to 8.2 Start and Thin-Ceiling Clamp
 
 ![Thin ceiling](/assets/reference/link-frame-collision/08_2_thin_ceiling.png)
 
-- The search starts 60 above the feet, lowered to any roof in between ([`GroundCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L142-L157)).
-- A roof face within 60 above the feet hides every floor above it.
+- **Start:** the search starts 60 above the feet, lowered to any roof face directly above the feet ([`GroundCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L142-L157)).
+- **Hidden floors:** a roof face less than 60 above the feet hides every floor above it.
 
-### 8.3 to 8.4 Search and step-up
+### 8.3 to 8.4 Search and Step-Up
 
 ![Ground search](/assets/reference/link-frame-collision/08_3_search.png)
 
-- Takes the highest face below the start with n.y >= 0.014, so steep walls count as ground here ([`GroundCross`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L570-L587)).
-- If it is above Link, he is lifted onto it: this is the step-up. It never moves him down.
+- **Search:** takes the highest face below the start with n.y >= 0.014, so steep wall-type faces count as ground here ([`GroundCross`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_w_kcol.cpp#L570-L587)).
+- **Step-up:** if that ground is above Link's height when CrrPos started, he is lifted onto it ([`GroundCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L163-L175)). The lift also:
+  - sets the fall speed to 0;
+  - sets the ground hit.
+- **Never down:** it never moves him down. Going down is gravity, or the snap in step [12](#12-snap-down-autogroundhit).
+- **Ground found but not lifted:** the ground height is still kept for steps [12](#12-snap-down-autogroundhit), [14](#14-restart-checks) and [15](#15-crush-check).
 
-### 8.5 Roof-limit clamp
+### 8.5 to 8.6 Roof-Limit Clamp
 
 ![Roof limit](/assets/reference/link-frame-collision/08_5a_roof_limit.png)
 
+- **Clamp:** if the ground is below the roof limit and Link is above the limit, he is lowered to the limit ([`GroundRoofProc`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L193-L207)).
+- **8.6 Roof re-check:** if the ground is at or above the roof, the roof is checked again from the new pos and the roof hit is cleared.
+
 ![Floor-level roof](/assets/reference/link-frame-collision/08_5b_floor_level_roof.png)
 
-- If the ground is below the roof limit and Link is above it, he is lowered to the limit ([`GroundRoofProc`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L193-L207)).
-- A roof face level with a floor (a closed shutter, for example) puts Link 180 under that floor.
+- **Floor-level roof:** a roof face level with a floor, such as a closed shutter, puts Link 180 under that floor.
+  - The start clamp hides the floor at the roof's level.
+  - The search finds a lower floor.
+  - The roof limit then pulls Link down to 180 under the roof.
 
-## 9. Water check
+## 9. Water Check
 
 ![Water check](/assets/reference/link-frame-collision/09_water_check.png)
 
-- Looks for a water surface between the ground and the roof above Link. It never moves him ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L408-L453)).
-- The water height feeds the restart checks.
+- **Search:** looks for a water surface between the ground (or 50 below the feet, with no ground) and the underwater roof above Link ([`CrrPos`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L408-L453)). It never moves him.
+- **9.3 Copy:** the water height is copied for later steps after step [11](#11-ice-slip-wall-check) ([`setWaterY`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L8860-L8873)).
+- **Readers:** the restart checks this frame, and the swim entry ([2.4](#24-swim-entry)) next frame.
 
-## 10. Line-down check
+## 10. Line-Down Check
 
 ![Line-down check](/assets/reference/link-frame-collision/10_line_down.png)
 
-- A downward line exists in the code, but its flag is never set, so it never runs ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L281-L307)).
+- A downward line exists in the code, but nothing ever sets its flag, so it never runs ([`LineCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/d_bg_s_acch.cpp#L281-L307)).
 
-## 11. Ice slip wall check
+## 11. Ice Slip Wall Check
 
 ![Ice slip check](/assets/reference/link-frame-collision/11_ice_slip.png)
 
-- While sliding on ice, one line at feet height + 10 stops Link 35 short of a wall along the slide ([`iceSlipBgCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L5232-L5257)).
+- **When:** Link is sliding on ice with a ground hit ([`iceSlipBgCheck`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L5232-L5257)).
+- **The line:** one line at feet height + 10, from the saved frame-start position past pos, extended 35 along the slide.
+- **On a wall hit:** Link stops 35 short of the wall along the slide. Nothing wall-corrects this again.
 
-## 12. autoGroundHit
+## 12. Snap Down (autoGroundHit)
 
 ![autoGroundHit](/assets/reference/link-frame-collision/12_auto_ground_hit.png)
 
-- With no ground hit, Link snaps down to floor-type ground up to 50.01 below (more on slopes) ([`autoGroundHit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13341-L13382)).
-- This keeps him on stairs and slopes. Further drops leave him in the air for the auto-jump judge (2.3) next frame.
+- **When:** Link has no ground hit after CrrPos and is not jumping, climbing, swimming or riding. Ledge hangs still snap ([`autoGroundHit`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13341-L13382)).
+- **Snap:** if floor-type ground lies up to 50.01 below him, he is snapped down onto it. The reach grows when he moves downhill.
+- **Why:** this keeps him on stairs and slopes.
+- **Out of reach:** a bigger drop leaves him in the air, and the auto-jump judge ([2.3](#23-auto-jump-judge)) handles it next frame.
 
-## 13. Position restores
+## 13. Position Restores
 
 ![Position restores](/assets/reference/link-frame-collision/13_restores.png)
 
-- Some states throw the collision result away ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18194-L18229)).
-- Mode 0x4000 (ledge hang, crawling forward, item get, chest; not crawl start, end or auto move) keeps the old x/z but the new y, so sideways drift in those states passes through walls.
+- **Throwing the result away:** some states throw the collision result away and use a position saved earlier ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18194-L18229)).
+- **Early restores:** 13.1 (magnet boots) and 13.2 (Zora swim) run right after CrrPos, before step [11](#11-ice-slip-wall-check) ([source](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18163-L18169)).
+- **Mode 0x4000** keeps the x/z from before collision but the new y. Examples are ledge hangs, crawling forward, item gets, chests and door opens, but not crawl start, end or auto move. Any sideways drift in those states passes through walls.
 
-## 14. Restart checks
+## 14. Restart Checks
 
 ![Restart checks](/assets/reference/link-frame-collision/14_restart_checks.png)
 
-- An else-if chain; the first match wins ([`checkRestartRoom`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13557-L13658)).
-- It runs every frame; only the scene exit after it also needs HP above 0.
-- Lava ground starts the lava return; ground codes 4 and 10 exit through the floor's exit (code 4 on landing, while swimming over water, or after a long fall).
-- With no ground at all, Link only voids after falling more than 2000 in a jump or fall state, or while swimming over water.
+- **The chain:** an else-if chain where the first match wins ([`checkRestartRoom`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13557-L13658)).
+- **Every frame:** the chain runs even at 0 HP. Only the scene exit after it also needs HP above 0 ([`execute`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L18255-L18257)).
+- **Lava:** lava ground starts the lava return.
+- **Ground codes 4 and 10:** these exit through the floor's exit.
+  - Code 4 exits on landing on it, while swimming above it, or after a long fall over it.
+  - Code 10 exits within 3000 above it.
+- **No ground at all:** Link voids only after falling more than 2000 below his jump start in a jump or fall, and only with no water below. The limit is 3000 in F_SP114 and 1000 in the boar battle.
 
-## 15. Crush check
+## 15. Crush Check
 
 ![Crush check](/assets/reference/link-frame-collision/15_crush_check.png)
 
-- With a roof hit and a ground hit, a roof below Link's head top minus 10 voids him ([`checkRoofRestart`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13524-L13555)).
-- The head height comes from the animation, so crouching lowers the threshold.
+- **Gate:** with a roof hit and a ground hit, a roof below Link's head top minus 10 voids him with 4 damage ([`checkRoofRestart`](https://github.com/zeldaret/tp/blob/c8fa8c9e2aab72cf4e5db0e5d1c84a9ea6ee6eb0/src/d/actor/d_a_alink.cpp#L13524-L13555)).
+- **Exceptions:** not with magnet boots, at the start or end of a crawl, in the coach escort game, or under two specific moving objects (`OBJ_SO` and `Obj_SCannon`).
+- **Threshold:** the head height comes from the animation, so crouching lowers the threshold.
+- **After a re-check:** [8.6](#85-to-86-roof-limit-clamp) clears the roof hit, so it never fires after that re-check.
