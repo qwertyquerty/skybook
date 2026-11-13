@@ -24,7 +24,7 @@ This page goes through one frame of human Link in the order the game runs it, li
   - 0x4000: many special actions, for example ledge hangs, crawling forward, item gets, chests and door opens
   - 0x10000: ladders and vines
 
-**Math**
+**Math** (diagrams and more detail: [Geometry and World Space](/posts/geometry-and-world-space))
 
 - **[Vector](https://en.wikipedia.org/wiki/Euclidean_vector)**: a quantity with a direction and a length, stored as x, y and z values. Positions, speeds and pushes are all vectors.
 - **[Unit vector](https://en.wikipedia.org/wiki/Unit_vector)**: a vector of length 1, used only to give a direction.
@@ -350,7 +350,7 @@ The wall pushers that hold Link's body away from walls ([`WallCorrectSort`](http
 
 ![Floor-level roof](/assets/reference/link-frame-collision/08_5b_floor_level_roof.png)
 
-- A roof face level with a floor, such as a closed shutter, puts Link 180 under that floor:
+- A roof face level with a floor, such as a closed shutter (the name of a specific gate actor), puts Link 180 under that floor:
   - The start clamp hides the floor at the roof's level.
   - The search finds a lower floor.
   - The roof limit then pulls Link down to 180 under the roof.
