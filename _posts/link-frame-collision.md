@@ -24,6 +24,18 @@ This page goes through one frame of human Link in the order the game runs it, li
   - 0x4000: many special actions, for example ledge hangs, crawling forward, item gets, chests and door opens
   - 0x10000: ladders and vines
 
+**Math**
+
+- **[Vector](https://en.wikipedia.org/wiki/Euclidean_vector)**: a quantity with a direction and a length, stored as x, y and z values. Positions, speeds and pushes are all vectors.
+- **[Unit vector](https://en.wikipedia.org/wiki/Unit_vector)**: a vector of length 1, used only to give a direction.
+- **[Normal](https://en.wikipedia.org/wiki/Normal_(geometry))**: a vector [perpendicular](https://en.wikipedia.org/wiki/Perpendicular) to a surface. Moving "along the normal" means moving straight out from the face.
+- **[Component](https://en.wikipedia.org/wiki/Euclidean_vector#Decomposition_or_resolution)**: one axis of a vector. n.y is the y component of a face's normal.
+- **[Half-space](https://en.wikipedia.org/wiki/Half-space_(geometry))**: one of the two sides of a face's plane. "In front of" a face means on the side its normal points to, and "behind" means the other side.
+- **[Triangle mesh](https://en.wikipedia.org/wiki/Triangle_mesh)**: a surface built from triangles that share edges. A stage's collision is one.
+- **[Line segment](https://en.wikipedia.org/wiki/Line_segment)**: the straight path between two points. The line check tests the segment from old.pos to pos.
+- **[Slope](https://en.wikipedia.org/wiki/Slope)**: how steep a surface is, as rise over run or as an angle from horizontal.
+- **[Angle](https://en.wikipedia.org/wiki/Angle)**: game angles such as the movement angle `current.angle.y` are 16-bit [binary angles](https://en.wikipedia.org/wiki/Binary_angular_measurement): 0x10000 is a full turn, so 0x4000 is 90 degrees.
+
 **Collision**
 
 - **Face**: one collision triangle. Its normal points out of its front, away from the solid side, and **n.y** is the normal's vertical part.
