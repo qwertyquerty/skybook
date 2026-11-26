@@ -36,6 +36,8 @@ This lets you reach Ook's outdoor monkey swing sequence early.
 ## Related EBF Side Effects
 
 - EBF behavior is also used for [Lakebed Temple - Early Deku Toad](/posts/lakebed-temple-early-deku-toad) when boss flag is nonzero.
+- [Monkey Business](/posts/forest-temple-monkey-business) uses the four early
+  followers as the starting point for a stale-pointer memory-corruption setup.
 - The source page documents anti-uses including [Diababa Soft Lock](/posts/diababa-soft-lock) behavior at boss flag value `1` and armor despawns related to [Despawn Armor Enemies](/posts/despawn-armor-enemies).
 
 ## EBF Setup Routes
